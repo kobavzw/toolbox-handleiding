@@ -1,0 +1,35 @@
+---
+title: Inloggen
+sidebar_position: 1
+---
+
+De beheerder kan instellen op welke manier de eindgebruiker kan inloggen op Toolbox:
+
+- Toolbox gebruikersnaam en paswoord
+- Smartschool account
+- Office 365 account
+- Google Workspace
+
+## Gebruikersnaam en paswoord
+
+Elke gebruiker die via de module Synchronisatie Leraren wordt ingelezen uit Informat of Wisa, krijgt automatisch een gebruikersnaam en paswoord binnen Toolbox. Dat paswoord kan via de PDF in deze module worden opgevraagd.
+
+Deze optie kan worden uitgeschakeld zodat gebruikers enkel via bovenvermelde single sign on opties kunnen inloggen op Toolbox.
+
+In de instellingen kan je ook bepalen of personeel dat ondertussen uit dienst is nog mag inloggen.
+
+## Smartschool account
+
+De loginpagina van Toolbox kan worden ingesteld zodat er via de Smartschool account kan worden ingelogd. Er worden twee platformen ondersteund. Belangrijk hierbij is dat de gebruikersnamen in Smartschool en Toolbox overeen komen. Bijkomend kan een validatie gebeuren op 'intern nummer'. Die bijkomende validatie kan ook uitgeschakeld worden.
+
+## Office 365
+
+Het is ook mogelijk om via de Office 365 account in te loggen. Hiervoor moeten het domein/domeinen waarmee de gebruiker mag inloggen worden ingesteld. Ook hier moeten de gebruikersnamen van Office 365 overeen komen met die van Toolbox.
+
+In de instellingen - Office365 - Oauth kan je bepalen vanuit welk domein of domeinen (scheiden door komma's) gebruikers mogen inloggen.
+
+## Google Workspace
+
+Net zoals de login via Office kunnen gebruikers inloggen via hun Google account van de school. Ook hier moet je opgeven welke domeinen toegelaten zijn. Dat doe je in de instellingen - Google Workspace.
+
+ 

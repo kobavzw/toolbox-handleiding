@@ -1,0 +1,31 @@
+---
+title: Netwerken
+hide_title: true
+---
+
+<ImageTitle img="vlan.png">Netwerken</ImageTitle>
+
+De module netwerken is ontwikkeld om documentatie van het netwerk op een gestructureerde manier te kunnen noteren en meteen ook te kunnen koppelen aan de gebouwen en lokalen en de module inventaris.
+
+Binnen deze module kan je momenteel 3 zaken noteren:
+- vlans
+- patchkasten
+- netwerk outlets
+
+## VLANs
+
+In dit onderdeel kan je de vlans die op school gebruikt worden registreren. Per vlan kan je de ID, de naam van de vlan, het subnet, subnetmasker + korte notatie, de gateway, start IP en eind IP noteren. Je kan een vlan koppelen aan een vestiging en bijkomende opmerkingen noteren.
+
+Eens een vlan is aangemaakt, kan je vooraan op het tweede icoontje klikken. Je krijgt dan een lijst van alle IP-adressen in die vlan te zien. In de laatste kolom kan je zien aan welk item uit de inventaris dat IP-adres is toegewezen.
+
+Door op het IP-adres te klikken, kan je meteen naar dat IP surfen. Handig voor toestellen die over een webinterface beschikken.
+
+## Patchkasten
+
+In de module patchkasten kan je bijhouden welke patchkasten er in de school aanwezig zijn en in welk lokaal ze staan.
+
+## Netwerk outlets
+
+In deze module kan je alle netwerk outlets in de lokalen bijhouden. Per outlet kan je registreren naar welke patchkast de andere kant van de kabel gaat.
+
+In de inventaris kan je per item aanduiden op welke outlet het item is aangesloten.

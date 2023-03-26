@@ -1,0 +1,32 @@
+---
+title: Gebruikersbeheer
+hide_title: true
+---
+
+<ImageTitle img="gebruikersbeheer.png">Gebruikersbeheer</ImageTitle>
+
+Een personeelslid kan pas toegang krijgen tot Toolbox wanneer die is ingegeven in het administratief pakket (Informat of Wisa). Vervolgens moet het personeelslid gesynchroniseerd worden met Toolbox. Meer info vind je bij synchronisatie leraren.
+
+Volgende modules zijn voor alle personeelsleden onmiddellijk toegankelijk wanneer de module geactiveerd is in de instellingen van Toolbox:
+- Fietsvergoeding 
+- Openbaar vervoer 
+- Ziektepapieren
+- Adresboek 
+- Fotolijst
+- Paswoorden (van leerlingen) resetten 
+
+Voor een aantal modules in Toolbox moeten er expliciet rechten worden toegekend aan de gebruikers. Dat kan via de module Gebruikersbeheer.
+
+<LegacyAction img="gebruikersbeheer.png" text="Gebruikers aan beveiligingsgroepen koppelen" />
+
+Selecteer bovenaan de module waar je rechten voor wil toekennen. Links op het scherm staan de personeelsleden die reeds rechten hebben voor de module, rechts diegenen die geen rechten hebben. Selecteer één of meerdere personen en zet ze d.m.v. de blauwe pijlen in de juiste kolom. De aanpassingen worden automatisch opgeslagen.
+
+<LegacyAction img="gebruikers.png" text="Beveiligingsgroepen aan gebruikers koppelen" />
+
+Selecteer bovenaan het personeelslid waar je rechten voor wil toekennen. Links op het scherm staan de modules waar de geselecteerde gebruiker reeds toegang tot heeft, rechts die waar de gebruiker nog geen toegang tot heeft. Selecteer één of meerdere modules en zet ze d.m.v. de blauwe pijlen in de juiste kolom. De aanpassingen worden automatisch opgeslagen.
+
+<LegacyAction img="paswoord.png" text="Paswoord wijzigen" />
+
+Wanneer een gebruiker zijn paswoord niet meer kent, kan het hier gereset worden. Gebruik hiervoor het origineel paswoord dat je vindt in de module Synchronisatie leraren. Daar kan een nieuwe PDF met gebruikersnaam en wachtwoord worden afgedrukt via PDF afdrukken. 
+
+Voer dit paswoord in bij het gebruikersbeheer en klik vervolgens op Paswoord wijzigen. De gebruiker kan nu opnieuw inloggen met deze gegevens en in het hoofdmenu bovenaan rechts op het profiel te klikken en in de paswoord-tab zijn paswoord opnieuw wijzigen.

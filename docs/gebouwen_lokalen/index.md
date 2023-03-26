@@ -1,0 +1,32 @@
+--- 
+title: Gebouwen en lokalen
+hide_title: true
+---
+
+<ImageTitle img="school.png">Gebouwen en lokalen</ImageTitle>
+
+De module Gebouwen en lokalen is in eerste instantie ontwikkeld om de items uit de module inventaris aan een lokaal te kunnen toewijzen. Ondertussen heeft deze module al wat extra functies gekregen.
+
+## Voorbereiding
+
+Om de module optimaal te kunnen gebruiken, is het belangrijk om eerst Vestigingen en Gebouwen aan te maken. Vervolgens kan je lokalen toevoegen en die aan een Gebouw koppelen.
+
+Een vestiging is een locatie (adres). Op één vestiging kunnen één of meerdere Gebouwen staan. 
+
+Via de knop bovenaan kan je een vestiging aanmaken. Daar vul je het adres in. Eens aangemaakt, klik je op het huisje voor het adres. Je komt in het onderdeel Gebouwen terecht. Daar maak je minstens één gebouw per vestiging aan (bv. hoofdgebouw, sporthal, Blok A, ...).
+
+Als dat is gebeurd, kan je de lokalen toevoegen.
+
+## Lokalen toevoegen
+
+Elk lokaal is gekoppeld aan een gebouw. Dat gebouw kan je kiezen uit de lijst. Vervolgens kan je nog bijkomende parameters invullen: de naam van het lokaal, verdieping, wat voor soort lokaal het is (berging, bureel, gang, leslokaal, sanitair, ....). Bij de functie kan je opgeven waarvoor het lokaal effectief gebruikt wordt: bureel ICT, Boekhouding, Labo chemie, Computerlokaal, ...
+
+Je kan eventueel nog opgeven of een lokaal aan een bepaalde school is gekoppeld. Dit is een stukje tekst en kan je vrij kiezen. Denk hierbij aan Middenschool of Bovenbouw of Internaat of ...
+
+Aan een lokaal kan je ook een verantwoordelijk personeelslid koppelen alsook de oppervlakte opgeven.
+
+Als je gebruik maakt van de module lessenrooster dan kan je vanuit de lokalenlijst het lesrooster voor dat lokaal opvragen. Hiervoor wordt standaard naar de naam van het lokaal gekeken. Als deze naam afwijkt van de gebruikte naam in het lesrooster, kan je kiezen om een Alias lesrooster voor dat lokaal in te vullen. Indien ingevuld, wordt de koppeling hierop gemaakt.
+
+## Lesrooster en items in lokaal opvragen
+
+Vanuit de lijst van lokalen kan je twee icoontjes aanklikken (naast het icoontje om een lokaal te wijzigen). Met het eerste icoontje kan je opvragen welke items vanuit de inventaris gekoppeld zijn aan dit lokaal. Met het icoontje ernaast kan je opvragen wat het lesrooster is voor dit lokaal (en dus ook wanneer het lokaal vrij is).

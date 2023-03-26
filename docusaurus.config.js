@@ -53,18 +53,60 @@ const config = {
       navbar: {
         title: 'Handleiding Toolbox',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Toolbox logo',
           src: 'img/logo.png',
         },
       },
       prism: {
-        theme: lightCodeTheme
+        theme: {
+          ...lightCodeTheme,
+          plain: {
+            ...lightCodeTheme.plain,
+            backgroundColor: "#ffff"
+          }
+        },
+        additionalLanguages: ['powershell'],
+        
       },
       colorMode: {
         defaultMode: "light",
         disableSwitch: true
-      }
+      },
+      zoom: {
+        selector: '.markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        },
+        // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        config: {}
+      },
     }),
+
+    plugins: [
+      async function myPlugin(context, options) {
+        return {
+          name: "docusaurus-tailwindcss",
+          configurePostCss(postcssOptions) {
+            // Appends TailwindCSS and AutoPrefixer.
+            postcssOptions.plugins.push(require("tailwindcss"));
+            postcssOptions.plugins.push(require("autoprefixer"));
+            return postcssOptions;
+          },
+        };
+      },
+      require.resolve('docusaurus-plugin-image-zoom'),
+      [
+        require.resolve("@cmfcmf/docusaurus-search-local"),
+        {
+          indexBlog: false,
+          language: "nl"
+        },
+      ],
+    ],
+    stylesheets: [
+      'https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,200;0,400;0,500;0,600;0,800;1,400&display=swap'
+    ]
 };
 
 module.exports = config;

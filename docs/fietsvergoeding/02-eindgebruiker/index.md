@@ -1,0 +1,38 @@
+---
+title: Eindgebruiker
+---
+
+De module Fietsvergoeding is voor elke Toolbox beschikbaar. Er moeten dus geen bijkomende rechten worden ingesteld voor de eindgebruikers.
+
+Als een eindgebruiker de module voor de eerste keer opstart, krijgt hij de melding dat er eerst fietstrajecten aangemaakt moeten worden. Dat kan door middel van het icoontje achter ‘Wijzig je fietstraject(en)’.
+
+![Wijzig fietstrajecten](./fiets_09.png)
+
+In dat scherm voeg je je persoonlijke fietstrajecten toe. De eindgebruiker geeft hier enkelvoudige trajecten in. Dat wil zeggen: de afstand van thuis tot aan de school. Heeft een eindgebruiker meerdere officiële verblijfsadressen, dan moet hij meerdere trajecten aanmaken. Fietst een gebruiker naar meerdere campussen, dan maakt hij voor elk traject ‘thuis - campus’ een traject aan.
+
+![Overzicht fietstrajecten](./trajecten.png)
+
+## Samengestelde trajecten
+
+Als de school meerdere campussen heeft, dan kan een eindgebruiker die tussen de campussen fietst gebruik maken van samengestelde trajecten.
+
+Een samengesteld traject bestaat altijd uit een ‘normaal’ traject van thuis tot aan een eerste campus, een traject (of meerdere trajecten) tussen campussen en een traject van de laatste campus naar huis. Op die manier wordt het verkeer tussen de campussen ook vergoed.
+
+Een eindgebruiker kan die samengestelde trajecten een zelfgekozen naam geven, bv. Fietstraject Maandag.
+
+![Samengestelde Trajecten](./samengesteld_traject.png)
+![Samengesteld Traject](./samengestelde_trajecten.png)
+
+## Invullen en indienen
+
+In het hoofdscherm selecteert de eindgebruiker eerst een traject. Vervolgens selecteert hij de dag of dagen waarop hij dat traject heeft afgelegd.
+
+![Fietsvergoeding indienen](./indienen.png)
+
+Als de school heeft ingesteld dat er digitaal mag ingediend worden, dan vinkt de eindgebruiker het vinkje ‘ik verklaar op eer dat deze maand naar waarheid is ingevuld’ aan en klikt op de knop Indienen. Er wordt normaals gevraagd om bevestiging. De PDF is in dit geval louter informatief.
+
+Als de school heeft gekozen om niet digitaal in te dienen, dan drukt de eindgebruiker de PDF af, ondertekent die en brengt die binnen op het verwerkende secretariaat. Van zodra de maand digitaal is ingediend, zijn wijzigingen niet meer mogelijk.
+
+Moet de gebruiker een document inleveren, dan mag na hij het afdrukken van de PDF en het verwerken er van door het secretariaat, geen wijzigingen meer doorvoeren. Anders dient een nieuw document afgedrukt te worden.
+
+Een gebruiker kan ook aanduiden dat hij een maand niet heeft gefietst door het vinkje ‘ik heb deze maand niet gefietst’ aan te vinken. Dat is handig voor de verwerking.
