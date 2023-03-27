@@ -1,6 +1,7 @@
 ---
 title: Canon Uniflow
 hide_title: true
+slug: /uniflow
 ---
 
 <ImageTitle img="uniflow.png">Canon Uniflow</ImageTitle>
