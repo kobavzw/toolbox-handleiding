@@ -1,0 +1,129 @@
+---
+title: Synchronisatie met ActiveDirectory
+---
+Aangezien Toolbox in de cloud draait en moet kunnen communiceren met de ActiveDirectory die (meestal) in de school draait, werd een bijkomende component 'Toolbox Gateway' ontwikkeld.
+
+Toolbox Gateway draait op de AD of op een machine die verbonden is met de AD. De gateway bestaat uit een webserver (IIS) en enkele PHP/Powershell scripts. Die zorgen voor een beveiligde verbinding tussen Toolbox en de ActiveDirectory.
+
+![ActiveDirectory](./SchemaADGateway.png) 
+
+## Webserver installeren
+
+Om Toolbox te laten communiceren met de ActiveDirectory in de school, moeten we de Toolbox Gateway installeren. Die vereist eerst en vooral de installatie van een Webserver (IIS) die PHP kan draaien.
+
+De webserver mag geïnstalleerd worden op de ActiveDirectory server zelf of op een (virtuele) Windows server in het netwerk van de school die ook lid is van het AD domein.
+
+Voeg eerst en vooral een 'Rol' toe via de server manager.
+
+<Thumbnails img={[
+    require('./webserver1.png').default, 
+    require('./webserver2.png').default, 
+    require('./webserver3.png').default, 
+    require('./webserver4.png').default, 
+]} />
+
+Vink Web Server (IIS) aan
+
+<Thumbnails img={[
+    require('./webserver5.png').default, 
+]} />
+
+Installeer de Management Console mee (staat standaard aan).
+
+<Thumbnails img={[
+    require('./webserver6.png').default, 
+]} />
+
+In het volgende scherm vink je de module Active Directory for powershell aan.
+
+<Thumbnails img={[
+    require('./webserver7.png').default, 
+]} />
+
+In het scherm 'Select role services' vink je onder Application Development de optie 'CGI' aan.
+ 
+<Thumbnails img={[
+    require('./webserver8.png').default,
+    require('./webserver9.png').default,  
+]} />
+
+Bevestig
+
+<Thumbnails img={[
+    require('./webserver10.png').default,
+    require('./webserver11.png').default,  
+]} />
+
+Ben je hiermee klaar, ga dan verder: PHP installeren op je webserver
+
+## PHP op de webserver installeren
+
+Ga naar https://windows.php.net - Downloads
+
+Download daar de X64 Non Thread Safe versie van PHP (in zip formaat).
+
+<Thumbnails img={[
+    require('./PHP1.png').default,
+    require('./PHP2.png').default,  
+]} />
+
+Pak dit zip-bestand uit in de locatie c:\php.
+
+<Thumbnails img={[
+    require('./PHP3.png').default,
+]} />
+
+Om te testen of PHP werkt, dubbelklik je op php-cgi.exe. Als je een foutmelding krijgt over een ontbrekende DLL, dan moet je de C++ redistributable 2015-2019 installeren.
+
+    The VC15 and VS16 builds require to have the Visual C++ Redistributable for Visual Studio 2015-2019 x64 or x86 installed.
+
+Zorg eerst dat PHP opstart alvorens verder te gaan!
+
+Wijzig de naam van het bestand php.ini-production naar php.ini.
+
+Open het bestand en zoek naar fastcgi.impersonate = 1. Haal daar de puntkomma voor die lijn weg en bewaar het bestand. Activeer ook de extensie openssl: extension=openssl (puntkomma verwijderen voor deze lijn).
+
+<Thumbnails img={[
+    require('./PHP4.png').default,
+]} />
+
+Ga naar de Internet Information Services Manager.
+
+<Thumbnails img={[
+    require('./PHP5.png').default,
+]} />
+
+Ga naar de Handler Mappings en voeg een Module Mapping toe.
+
+<Thumbnails img={[
+    require('./PHP6.png').default,
+]} />
+
+Vul volgende instellingen in:
+
+- Request path: *.php
+- Module: FastCgiModule
+- Executable: C:\php\php-cgi.exe
+- Name: PHP via FastCGI
+
+<Thumbnails img={[
+    require('./PHP7.png').default,
+]} />
+
+Maak nu door middel van Kladblok een testbestand aan in de map c:\inetpub\wwwroot. 
+Noem dit bestand test.php (let op daar er geen verborgen .txt extensie achter staat).
+In het bestand zet je deze inhoud: 
+
+    <?php
+    phpinfo();
+    ?> 
+
+
+Surf nu op de server naar http://localhost/test.php. Als alles goed gaat, krijg je deze pagina te zien:
+
+<Thumbnails img={[
+    require('./PHP8.png').default,
+]} />
+
+## Toolbox gateway AD installeren
+Lees hier hoe
