@@ -1,3 +1,74 @@
 ---
-title: synchronisatie Smartschool
+title: Synchronisatie Smartschool
 ---
+
+Om Toolbox met Smartschool te kunnen laten communiceren, is het nodig om in Smartschool de Webservices te activeren.
+
+Dit doe je in Smartschool > menu 'Ga naar' > Algemene configuratie > Webservices.
+
+ 
+
+## Globaal wachtwoord
+Onder Globaal kan je een wachtwoord invullen dat toegang geeft tot alle methodes. Dat is voor Toolbox niet nodig, we geven de voorkeur aan het gebruik van een profiel (zie verder).
+ 
+
+## Doelgroep
+Als je Toolbox gebruikt om gebruikers aan te maken (bv. leraren of externen), dan is het belangrijk dat er een Doelgroep wordt ingesteld. Dat mag een bestaande groep zijn maar het mag ook een extra groep zijn (bv. Webservice).
+
+Deze groep wordt gebruikt om nieuwe gebruikers tijdelijk te 'stockeren' om ze van daaruit dan naar de juiste groep te verplaatsen.
+
+Bv. een nieuwe leraar wordt aangemaakt door Toolbox en vervolgens in die doelgroep geplaatst. Daarna wordt die leraar verplaatst naar de groep die in Toolbox werd ingesteld om nieuwe leraren aan te maken.
+
+Als er toch gebruikers in de doelgroep blijven staan, wil dat zeggen dat er een fout zit in de configuratie.
+
+## Uniek veld
+Het uniek veld bepaalt hoe een gebruiker in Smartschool zal worden aangesproken. Smartschool biedt daar twee opties: Gebruikersnaam en Intern nummer.
+
+Vanuit Toolbox geven we de voorkeur aan het gebruik van Intern nummer. Daarbij wordt de gebruiker aangesproken door middel van het nummer dat ingevuld is in het gebruikersprofiel - intern nummer (standaard veld). Vanuit Toolbox vullen we daar altijd de pointer in die vanuit Informat of Wisa meekomt.
+
+Het is ook mogelijk om de Gebruikersnaam te gebruiken. Die moet in Toolbox dan wel exact overeenkomen met wat in Smartschool staat.
+
+## Profielen
+We raden aan om een profiel te gebruiken om de webservices in Smartschool voor Toolbox te activeren. Daarbij hebben we volgende methodes nodig:
+
+- getAbsents
+- getAbsentsByDate
+- getAbsentsByDateAndGroup
+- getAbsentsWithAlias
+- getAbsentsWithAliasByDate
+- getAbsentsWithInternalNumberByDate
+- getAbsentsWithUsernameByDate
+- getAllAccounts
+- getAllAccountsExtended
+
+<br />
+
+- clearGroup
+- delClass
+- delUser
+- getAccountPhoto
+- getAllGroupsAndClasses
+- getClassList
+- getClassListJson
+- getClassTeachers
+- getUserDetails
+- getUserDetailsByNumber
+- getUserDetailsByUsername
+- getUserOfficialClass
+- removeCoAccount
+- removeUserFromGroup
+- replaceInum
+- savePassword
+- saveSchoolyearDataOfClass
+- saveUser
+- saveUserParameter
+- saveUserToClass
+- saveUserToClasses
+- saveUserToClassesAndGroups
+- sendMsg
+- setAccountPhoto
+- setAccountStatus
+- unregisterStudent
+
+Indien Toolbox enkel gebruikt wordt voor de Leerlingenrekeningen, dan volstaan de eerste reeks methodes.
+
