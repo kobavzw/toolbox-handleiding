@@ -1,5 +1,5 @@
 ---
-title: Kasinstellingen en -beheer
+title: Kasinstellingen en -gebruik
 ---
 
 ## Kasinstellingen
