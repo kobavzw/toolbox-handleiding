@@ -7,7 +7,7 @@ export default function ImageTitle({ img, children }) {
         src={require("@site/static/img/modules/" + img).default}
         className="max-h-[50px]"
       />
-      <h1 className="text-5xl m-0">{children}</h1>
+      <h1 style={{fontSize: "var(--ifm-h1-font-size)"}} className="text-[2rem] sm:text-5xl m-0 leading-none">{children}</h1>
     </div>
   );
 }
