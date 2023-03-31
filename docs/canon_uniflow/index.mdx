@@ -36,7 +36,14 @@ In de loop van het schooljaar kan je nieuwe gebruikers (bv. interims) klassen la
 
 ## XML Ophalen op Uniflow
 
-De XML moet op regelmatige basis worden ingeladen in Uniflow. Hiervoor voorzien we een PowerShell script dat via een Windows taak bijvoorbeeld elke nacht de XML ophaalt en aan Uniflow aanlevert.
+De XML moet op regelmatige basis worden ingeladen in Uniflow. Recente versies van Uniflow kunnen de basisgegevens van de school rechtstreeks uit Toolbox ophalen. Je dient enkel de URL van Toolbox, de referentie van de school en de sleutel in te vullen.
+
+<Thumbnails img={[
+    require('./uniflow2.png').default, 
+    require('./uniflow3.png').default, 
+]} />
+
+Oudere versies van Uniflow dienen nog gebruik te maken van het PowerShell script hieronder dat via een Windows taak bijvoorbeeld elke nacht de XML ophaalt en aan Uniflow aanlevert.
 
 ```powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
