@@ -14,11 +14,11 @@ const config = {
   url: 'https://www.tbvs.be/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/handleiding',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'KOBA vzw', // Usually your GitHub org/user name.
+  organizationName: 'toolbox-kobavzw', // Usually your GitHub org/user name.
   projectName: 'toolbox-handleiding', // Usually your repo name.
 
   onBrokenLinks: 'throw',
