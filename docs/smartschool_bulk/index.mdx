@@ -5,3 +5,66 @@ slug: /smartschool_bulkmail
 ---
 
 <ImageTitle img="smsbulk.png">Smartschool bulkmail</ImageTitle>
+
+Deze module laat toe om in bulk berichten te verzenden binnen Smartschool. Deze module vertrekt vanuit een Excel-document waarin je per lijn de ontvanger opgeeft. Je kan ook per lijn tot 19 bijkomende kolommen invullen. De waarde van die kolommen kan je vervolgens in de tekst van het bericht opnemen.
+
+Deze module werd in eerste instantie ontwikkeld om makkelijk te **communiceren over afwezigheden van leerlingen**. In de module Afwezigheden van Smartschool kan je makkelijk via het afdrukcentrum afwezigheden een Overzichtslijst afwezigheden genereren. Die excel kan je meteen gebruiken om via deze module met ouders en/of leerlingen te communiceren.
+
+<Thumbnails img={[
+    require('./bulk1.png').default, 
+    require('./bulk2.png').default, 
+]} />
+
+![bulk3](./bulk3.png)
+
+Selecteer bovenaan via welk Smartschool-platform je berichten wenst te verzenden (indien je meerdere platformen hebt). Vervolgens vul je een titel en een bericht in.
+
+In dat bericht kan je verwijzen naar de inhoud van de kolommen in het Excel-document. Je gebruikt daarvoor de variabelen $$1$$, $$2$$, $$3$$, ... $$20$$. Die variabelen worden dan bij het verzenden vervangen door de eigenlijke waarde van die kolom.
+
+Selecteer vervolgens het gewenst Excel-document (in .xlsx formaat) en duid aan in welke kolom het systeem de interne nummers van de leerling kan terugvinden. Voor de afwezigheden is dat momenteel kolom 3.
+
+Bevat het document kolomhoofdingen, dan kan je dat ook aanduiden. Deze lijn wordt dan genegeerd en niet gebruikt voor het verzenden van een bericht.
+
+Tot slot kan je nog aanduiden naar welke accounts het bericht moet gestuurd worden: hoofdaccount en/of co-accounts.
+
+![bulk4](./bulk4.png)
+
+#### Voorbeeld
+Deze module kan je ook gebruiken om in bulk gepersonaliseerde berichten naar bv. personeel te versturen. Als voorbeeld zou je bijvoorbeeld een bijdrage voor het personeelsfeest kunnen vragen.
+
+Het excel document zou dan bijvoorbeeld deze kolommen kunnen bevatten:
+
+|intern nummer personeelslid| totaalbedrag|aantal personen|naam|voornaam|
+|---|---|---|---|---|
+|123|15|1|Peeters|Jef|
+|456|30|2|Wouters|Marie|
+|789|30|2|Janssens|Bernard|
+
+
+Als tekst zou je dan deze tekst kunnen gebruiken:
+
+    Beste $$5$$
+
+    Jij hebt ingeschreven voor het personeelsfeest voor $$3$$ personen. Hiervoor vragen we een bedrag van $$2$$ euro.
+
+    Gelieve dit over te maken op de rekening van de school.
+
+    Met dank,
+    De directie
+
+ 
+
+In het geval van Marie, wordt de tekst dan zo verstuurd:
+
+    Beste Marie
+
+    Jij hebt ingeschreven voor het personeelsfeest voor 2 personen. Hiervoor vragen we een bedrag van 30 euro.
+
+    Gelieve dit over te maken op de rekening van de school.
+
+    Met dank,
+    De directie
+
+ 
+
+Dit bericht stuur je vervolgens enkel naar de hoofdaccount en je vinkt aan dat er in de Excel kolomhoofdingen staan.
