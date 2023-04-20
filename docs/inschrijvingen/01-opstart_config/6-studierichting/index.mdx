@@ -14,11 +14,17 @@ Selecteer eerst het schooljaar waarvoor je een studierichting wil aanmaken. Auto
 
 Vul de gegevens van de studierichting in. Voor sommige velden kan je gebruik maken van een keuzelijst via de pijltjes. 
 
-Net zoals bij de keuzevakken, kan je ook per studierichting quota opgeven. Dit is echter niet verplicht. Indien de keuzevakken nog niet volzet zijn, maar de studierichting wel, kan er niet meer worden ingeschreven. 
 
-Indien de Toolbox meerdere instellingsnummers bevat, kan men bij het veld Instellingsnummer opgeven voor welke instelling de studierichting toegevoegd moet worden. Dit is geen verplicht veld. Men kan ook overkoepelend inschrijven en de inschrijvingen later verdelen over de instellingsnummers. 
+- **Jaar:** Het studiejaar
+- **Quota:** Net zoals bij de keuzevakken, kan je ook per studierichting quota opgeven. Dit is echter niet verplicht. Indien de keuzevakken nog niet volzet zijn, maar de studierichting wel, kan er niet meer worden ingeschreven. 
+- **Nr. administratieve groep:** Het officieel nummer van de studierichting, bepaald door het ministerie van onderwijs en terug te vinden op hun website [Onderwijs Vlaanderen](https://onderwijs.vlaanderen.be/nl). 
+- **Locatie ID:** 
+    - Voor de import in **Informat** moet deze ID correct ingevuld worden. De code bestaat steeds uit 3 cijfers en is terug te vinden in Informat via Algemeen > Structuur > Edison nummer. 
+    - Voor **Wisa** is deze ID niet verplicht. In dit geval mag je een fictieve 3-cijferige code opgeven, bv. 000. 
+- **Instellingsnummer:** Indien de Toolbox meerdere instellingsnummers bevat, kan men bij het veld Instellingsnummer opgeven voor welke instelling de studierichting toegevoegd moet worden. Dit is geen verplicht veld. Men kan ook overkoepelend inschrijven en de inschrijvingen later verdelen over de instellingsnummers. 
+- **Klascode:** Door de klascode van Informat in te geven, worden leerlingen na de import onmiddellijk in de gekoppelde klas in Informat gezet. Dit veld kan enkel gebruikt worden als men zeker weet dat er slechts 1 klas zal zijn voor deze studierichting. 
 
-Door de klascode van Informat in te geven, worden leerlingen die ingeschreven worden in deze studierichting onmiddellijk in de gekoppelde klas in Informat gezet (na synchronisatie met Informat).  Klik op 'Aanmaken' om de studierichting toe te voegen. 
+Klik op 'Aanmaken' om de studierichting toe te voegen. 
 
 ![richting3](./richting3.png)
 
@@ -26,13 +32,29 @@ De toegevoegde studierichting verschijnt in het overzicht. Je kan de studiericht
 
 ![richting4](./richting4.png)
 
-Bovenaan krijg je opnieuw de algemene gegevens van de studierichting te zien. Onder die gegevens, kan je de studierichting verder instellen.
+## Thuisregistratie instellen
 
-Standaard staat de thuisregistratie op 'nee'. Dat kan je aanpassen door de juiste optie te selecteren uit de keuzelijst. Ook voor de thuisregistratie kan je een quota instellen. Dat moet niet overeenkomen met het quota op de overeenkomstige studierichting. Het quota voor de thuisregistratie kan zowel lager als hoger liggen. 
+Bovenaan krijg je opnieuw de algemene gegevens van de studierichting te zien. Daaronder kan je de studierichting verder instellen.
+
+Standaard staat de thuisregistratie op 'nee'. Dat kan je aanpassen door de juiste optie te selecteren uit de keuzelijst. Ook voor de thuisregistratie kan je een quota instellen. Dat **moet niet** overeenkomen met het quota op de overeenkomstige studierichting. 
+
+:::caution Belangrijk 
+Indien het quota voor de thuisregistratie is bereikt, kunnen leerlingen nog steeds aanmelden. Ze komen dan op een wachtlijst terecht. Het is dus niet nodig om het quota voor de thuisinschrijving hoger te zetten dan voor de studierichting.
+:::
 
 Verder kan je enkele teksten instellen die de ouders te zien krijgen bij het thuis registreren. Het is eveneens mogelijk om de ouders meteen een weigeringsattest te laten downloaden als de studierichting volzet is. Klik daarvoor op <LegacyAction img="buttonGrijs.png"/> bij  'Weigeringsattest downloadbaar door de ouders'. 
 
+Een aantal zaken voor thuisaanmelden en het weigeringsattest moeten ingesteld worden in de module Instellingen van Toolbox. Klik [hier](/inschrijvingen/opstart_config/instelling/) voor meer info. 
+
 ![richting5](./richting5.png)
+
+Indien de school met een aanmeldsysteem werkt, verschijnt de knop <LegacyAction img="code.PNG"/>. De ontvangen codes kunnen hier worden toegevoegd in de vorm *voornaam,achternaam,code1,code2* gescheiden door komma's.   
+
+![richting13](./richting13.png)
+
+De toegevoegde codes zijn onmiddellijk terug te vinden in het overzicht bij de thuisaanmeldingen. Klik [hier](/inschrijvingen/verwerking/opvolging_verwerking/) voor meer info. 
+
+## Pagina's, documenten en brieven koppelen
 
 Vervolgens kan je pagina's en documenten koppelen indien die zijn aangemaakt.
 
@@ -51,15 +73,20 @@ Een pagina/document volledig verwijderen, doe je via de instellingen van pagina'
 
 ![richting8](./richting8.png)
 
-Tot slot kan je nog keuzevakken aan de studierichting koppelen. Dat doe je door een slot aan te maken. Je geeft een naam op voor het slot en geeft via de schuifknop aan of het keuzevak al dan niet optioneel is. Indien een keuze verplicht is, kan de inschrijving niet afgerond worden zonder de keuze op te geven. Klik daarna op 'Aanmaken'. 
+## Keuzevakken koppelen
+
+Tot slot kan je nog keuzevakken aan de studierichting koppelen. Dat doe je door per keuze die de leerlingen moeten opgeven een slot aan te maken. Je geeft een naam op voor het slot en geeft via de schuifknop aan of het keuzevak al dan niet optioneel is. Indien een keuze verplicht is, kan de inschrijving niet afgerond worden zonder de keuze op te geven. Klik daarna op 'Aanmaken'. 
 
 ![richting9](./richting9.png)
 
-Nadat een slot is aangemaakt, kan je de keuzemogelijkheden koppelen. Je kan één keuzemogelijkheid aanbieden (bv. CLIL => ja of nee), maar je kan ook meerdere keuzemogelijkheden aanbieden waarbij er één vak gekozen kan/moet worden bij de inschrijving. Selecteer een keuzevak en voeg het toe via het plusteken. Daarna kan je op dezelfde manier een volgende keuzevak toevoegen.
+Nadat een slot is aangemaakt, kan je de keuzemogelijkheden koppelen. Je kan één keuzemogelijkheid aanbieden (bv. CLIL => ja of nee), maar je kan ook meerdere keuzemogelijkheden aanbieden waarbij er één vak gekozen kan/moet worden bij de inschrijving. Selecteer een keuzevak en voeg het toe via het plusteken. Daarna kan je op dezelfde manier een volgende keuzevak/slot toevoegen.
 
 ![richting10](./richting10.png)
 
-Je kan keuzevakken verwijderen door op het vuilbakje achter het vak te klikken. Je kan ook het volledige slot verwijderen door op het vuilbakje achter de naam van het slot te klikken. 
-Je kan voor elke studierichting ook meerdere slots aanmaken. 
+Je kan keuzevakken verwijderen door op het vuilbakje achter het vak te klikken. Je kan ook het volledige slot verwijderen door op het vuilbakje achter de naam van het slot te klikken. Je kan voor elke studierichting ook meerdere slots aanmaken. 
+
+In onderstaand voorbeeld moet een leerling voor de studierichting 1A verplicht één keuze maken uit de opties Techniek, STEM, Maatschappij en welzijn en Wetenschappen. 
 
 ![richting11](./richting11.png)
+
+Indien men twee keuzes moet kunnen maken uit een reeks keuzevakken, moeten er 2 verschillende slots aangemaakt worden waaraan je telkens de verschillende keuzevakken koppelt. Het eerste slot kan je dan 'Keuze 1' noemen en het tweede slot 'keuze 2'. 
