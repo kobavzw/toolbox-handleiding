@@ -29,21 +29,21 @@ Om met de recentste boekhoudkundige gegevens te kunnen werken, moet er regelmati
 
 ![openstaanden1](./openstaanden1.jpg)
 
-Via de taakbalk kan je aan de hand van verschillende filters selecteren welke gegevens er getoond moeten worden. Het veld 'filter' werkt als zoekfunctie waarin je een aantal karakters kan typen en vervolgens de zoekresultaten te zien krijgt door te enteren. 
+Via de taakbalk kan je aan de hand van verschillende filters selecteren welke gegevens er getoond moeten worden. Het veld **filter** werkt als zoekfunctie waarin je een aantal karakters kan typen en vervolgens de zoekresultaten te zien krijgt door te enteren. 
 
-Door een bepaalde Notagroep te selecteren, worden enkel de openstaande facturen van die notagroep getoond.
+Door een bepaald **dagboek** of een bepaalde **notagroep** te selecteren, worden enkel de openstaande facturen van dat dagboek of van die notagroep getoond.
 
-Filteren op Aanmaningen biedt de mogelijkheid om alle facturen op te vragen waarvoor bv. al een 1e of 2e aanmaning werd verstuurd. Dat maakt de administratieve opvolging eenvoudiger. 
+Filteren op **aanmaningen** biedt de mogelijkheid om alle facturen op te vragen waarvoor bv. al een 1e of 2e aanmaning werd verstuurd. Dat maakt de administratieve opvolging eenvoudiger. 
 
 In de tabel zelf kan je ook klikken op de pointer of de naam van een relatie. Dan wordt meteen een overzicht van openstaande facturen van die relatie getoond.
 
 Je kan ook klikken op een klas of vestiging om daarop te filteren.
 
-![openstaanden2](./openstaanden2.jpg)
-
 De taakbalk daaronder laat je toe om de gegevens op verschillende manieren te sorteren. 
 
-<LegacyAction img="person.png"/> Via dit icoon (voor de naam van elke leerling) open je de relatiefiche van de leerling. Dit bevat een overzicht met e-mailadressen, alle openstaande facturen en de schoolloopbaan van de leerling. 
+![openstaanden2](./openstaanden2.jpg)
+
+<LegacyAction img="person.png"/> Via dit icoon (vóór de naam van elke leerling) open je de relatiefiche van de leerling. Deze fiche bevat de contactgegevens uit het administratief pakket, maar ook info over de schoolloopbaan. Je vindt er eveneens een overzicht van de openstaande facturen terug voor de dagboeken die gekoppeld zijn aan jouw Toolbox. Daaronder worden ook de openstaande facturen getoond in andere dagboeken binnen eenzelfde Exact Online dossier. Wanneer je met de vzw werkt in een eengemaakt dossier, zal je hier dus ook de openstaande facturen van deze leerling in de andere scholen (binnen de vzw) kunnen raadplegen. Je zal die enkel kunnen consulteren en kan daar verder geen acties voor ondernemen. 
 
 <br />
 <br />
@@ -56,36 +56,72 @@ De taakbalk daaronder laat je toe om de gegevens op verschillende manieren te so
 
 ## 3. Mogelijke acties
 
-### Betalingsherinnering versturen
+### <LegacyAction img="reminder.png"/> Betalingsherinnering versturen
 
-Je hebt de mogelijkheid om herinneringen te versturen via mail of Smartschool of door een PDF af te genereren. Je selecteert in het overzicht één of meerdere facturen van één of meerdere leerlingen. De herinneringstypes en daarbij horende teksten kunnen gedefinieerd en aangepast worden in de module [Instellingen](./openstaande_facturen/instellingen) Toolbox. Indien je aanvinkt dat de afdruk of mailing meetelt als herinnering, zal het aantal aanmaningen in het overzicht optellen. LET OP als je de herinneringen eerst als PDF genereert om ze vervolgens te versturen via mail of Smartschool. In dat geval vink je deze optie best af vóór het genereren van de PDF om te voorkomen dat je de herinnering 2 keer als aanmaning registreert. 
+Je hebt de mogelijkheid om herinneringen te versturen via mail of Smartschool of door een PDF te genereren. Je selecteert in het overzicht één of meerdere facturen van één of meerdere leerlingen. 
 
-Noot: Indien je een sjabloon gebruikt waarin een overzicht van alle openstaande facturen wordt getoond m.b.v. de variabele $$OPENSTAANDE_FACTUREN$$, volstaat het om per leerling 1 factuur aan te vinken. Per vinkje wordt er een pdf-document gegenereerd/mail/smartschoolbericht verstuurd. Wanneer er bij een leerling met 5 openstaande facturen alle facturen worden aangevinkt, zullen er 5 identieke documenten worden aangemaakt of 5 identieke berichten worden verstuurd.
+:::caution Opgelet
+Indien je een sjabloon gebruikt waarin een overzicht van alle openstaande facturen wordt getoond m.b.v. de variabele $$OPENSTAANDE_FACTUREN$$, volstaat het om per leerling 1 factuur aan te vinken. Per vinkje wordt er een pdf-document gegenereerd/mail/smartschoolbericht verstuurd. Wanneer er bij een leerling met 5 openstaande facturen alle facturen worden aangevinkt, zullen er 5 identieke documenten worden aangemaakt of 5 identieke berichten worden verstuurd. 
 
-### Actie toevoegen
+Maak gebruik van de knop <LegacyAction img="select.png" text="Selecteer unieke leerlingen"/> om in een hele lijst van openstaande facturen elke leerling maar 1x te selecteren.
+:::
+
+![mail](./mail.PNG)
+
+Indien je aanvinkt dat de afdruk of mailing meetelt als herinnering, zal het aantal aanmaningen in het overzicht optellen. LET OP als je de herinneringen eerst als PDF genereert om ze vervolgens te versturen via mail of Smartschool. In dat geval vink je deze optie best af vóór het genereren van de PDF om te voorkomen dat je de herinnering 2 keer als aanmaning registreert. 
+
+Indien je kiest voor mail of Smartschool kan je hier het bericht nog aanpassen. Die aanpassing heeft enkel betrekking op deze berichten. Indien je de tekst standaard wil wijzigen, doe je dat via de module [Instellingen](./openstaande_facturen/instellingen) van Toolbox of via <LegacyAction img="configure.png" text="Teksten"/> in de module Openstaande facturen zelf. 
+
+Je hebt ook steeds de mogelijkheid om digitale berichten te versturen in testmodus. Vervolgens verschijnt er een pop-up met de vraag naar welk e-mailadres/smartschoolaccount het testbericht verstuurd mag worden. Het bericht zal bijgevolg niet naar de ouders vertrekken, maar naar de opgegeven ontvanger. 
+
+De herinneringstypes en daarbij horende teksten kunnen gedefinieerd en aangepast worden in de module [Instellingen](./openstaande_facturen/instellingen) van Toolbox of via <LegacyAction img="configure.png" text="Teksten"/> in de module Openstaande facturen zelf. 
+
+
+### <LegacyAction img="actie.png"/> Actie toevoegen
 Je kan allerlei ondernomen acties registreren, zoals bv. een telefonisch contact met de ouders. Dergelijke actie kan je ook laten meetellen als aanmaning, waardoor het totaal aantal aanmaningen in het overzichtsscherm zal verhogen. Standaard kan je uit een aantal acties kiezen, maar je kan evengoed zelf een actie intypen in het tekstveld. Naast bijkomende info kan je ook een bijlage opladen, zoals bv. een e-mailbericht. De laatst geregistreede actie wordt getoond in het overzichtsscherm. 
 
 ![openstaanden4](./openstaanden4.jpg)
 
-### Opmerking bij relatie wijzigen
-In dit tekstveld kan je vrij allerhande opmerkingen en bijkomende info toevoegen. Enkele mogelijkheden: de factuur of herinnering moet altijd op papier worden meegegeven met de leerling, de grootouders betalen de factuur, de contactgegevens van de schuldbemiddelaar, ...
+### <LegacyAction img="noAccess.png"/> Niet verwerken
+Je kan een factuur selecteren en ervoor kiezen om deze niet te verwerken. Wanneer je vervolgens in bulk facturen selecteert om herinneringen te versturen, zal deze factuur niet mee aangevinkt worden. Men zal bijgevolg voor deze factuur geen herinnering ontvangen. 
 
-De info die hier wordt ingevoerd, wordt automatisch mee overgenomen naar de module leerlingenrekeningen (inschrijvingen en aanrekenen) en andersom. In het overzichtsscherm geeft het informatie-icoon   weer dat er info beschikbaar is. Die kan je raadplegen door je cursor op het icoon te plaatsen of door 1x te klikken. Dubbelklikken op het icoon laat je toe om wijzigingen aan te brengen. 
+Als je een tekst gebruikt met de variabele $$OPENSTAANDE_FACTUREN$$ wordt er normaliter een overzicht van alle openstaande facturen van die leerling getoond. Door een factuur aan te duiden als ‘niet verwerken’ wordt deze factuur niet meer getoond in dit overzicht.
 
-![openstaanden5](./openstaanden5.jpg)
+Je kan deze actie ongedaan maken door achteraan op het klembord <LegacyAction img="checklist.png"/> te klikken. Via het rode kruisje kan je de actie verwijderen en zal de factuur opnieuw mee verwerkt worden in het overzicht. De rode lijn zal opnieuw zwart zijn.  
 
-### Betalingsregeling relatie wijzigen
+![openstaanden](./openstaanden6.jpg)
+
+### <LegacyAction img="person.png"/> <LegacyAction img="budget.png"/> Betalingsregeling relatie wijzigen
 Tot slot kan je een betalingsregeling registreren. Die wordt weergegeven in het overzichtsscherm. Je kan kiezen uit de volgende mogelijkheden:
 
 - Incassobureau
 - Collectieve schuldenregeling
 - OCMW
 - Afbetalingsplan
-- Meer info over de betalingsregeling kan je invoeren via 'opmerkingen bij relatie wijzigen'. 
+- Voorafbetaling
 
-<Thumbnails img={[
-    require('./openstaanden6.jpg').default, 
-]} />
+Meer info over de betalingsregeling kan je invoeren via 'opmerkingen bij relatie wijzigen'. 
 
-## 4. Instellingen
-De herinneringstypes en daarbij horende teksten kunnen gedefinieerd en aangepast worden in de module [Instellingen](./openstaande_facturen/instellingen) van Toolbox. 
+### <LegacyAction img="person.png"/> <LegacyAction img="edit.png"/> Opmerking bij relatie wijzigen
+In dit tekstveld kan je vrij allerhande opmerkingen en bijkomende info toevoegen. Enkele mogelijkheden: de factuur of herinnering moet altijd op papier worden meegegeven met de leerling, de grootouders betalen de factuur, de contactgegevens van de schuldbemiddelaar, ...
+
+De info die hier wordt ingevoerd, wordt automatisch mee overgenomen naar de module leerlingenrekeningen (inschrijvingen en aanrekenen) en andersom. In het overzichtsscherm geeft het <LegacyAction img="info.png"/> icoon weer dat er info beschikbaar is. Die kan je raadplegen door je cursor op het icoon te plaatsen of door 1x te klikken. Dubbelklikken op het icoon laat je toe om wijzigingen aan te brengen. 
+
+![openstaanden5](./openstaanden5.jpg)
+
+### <LegacyAction img="klembord.png"/> Verzendrapporten
+
+Via deze knop kan je nagaan wanneer er digitaal herinneringen werden verstuurd en of het verzenden geslaagd is. 
+
+![openstaanden7](./openstaanden7.JPG)
+![openstaanden8](./openstaanden8.jpg)
+
+### <LegacyAction img="pdf.png"/><LegacyAction img="excel.png"/>Rapporten in Excel en PDF
+
+Je kan een overzicht van openstaande facturen genereren en deze naar Excel en/of PDF exporteren. Dat kan je doen voor alle openstaande of voor een beperkte selectie (aangevinkte) facturen. 
+
+### <LegacyAction img="configure.png"/> Teksten instellen
+De teksten kunnen gedefinieerd en aangepast worden in de module [Instellingen](./openstaande_facturen/instellingen) of rechtstreeks in de module Openstaande facturen (indien deze optie is geactiveerd in de module Instellingen). [Hier](/openstaande_facturen/voorbeeldteksten) vind je enkele voorbeeldteksten. 
+
+In de module zelf kan je ook de betaaltermijn definiëren. De overige instellingen, zoals welke dagboeken er getoond worden, zijn enkel in te stellen via de module [Instellingen](./openstaande_facturen/instellingen). Deze module is enkel toegankelijk voor een beheerder. Om te weten wie je Toolbox-beheerder is, klik je op de startpagina van Toolbox rechts bovenaan op het vraagteken > contact.
+
