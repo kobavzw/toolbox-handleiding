@@ -8,6 +8,8 @@ export default function Text({ children, color = null }) {
           ? "text-rose-600"
           : color === "green"
           ? "text-green-600"
+          : color === "blue"
+          ? "text-blue-600"
           : ""
       }`}
     >
