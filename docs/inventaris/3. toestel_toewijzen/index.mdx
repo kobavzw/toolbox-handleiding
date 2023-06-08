@@ -56,7 +56,7 @@ Helemaal onderaan in het contract kan je een ontvangstbewijs (al dan niet digita
     require('./toewijzen7.PNG').default, 
 ]} />
 
-Contracten kunnen ook **in bulk gemaild** worden **ter ondertekening**. Dit kan handig zijn wanneer toestellen in de klassen worden uitgedeeld en de waarborgfacturen vooraf of achteraf aan de leerlingen worden bezorgd. De toestellen moeten reeds toegewezen zijn aan een leerling, waardoor er automatisch een contract werd opgemaakt. Ga vervolgens naar het menu > Contracten. Kies in de dropdownlijst de gewenste contracten en vink de te versturen contracten aan. Klik tot slot op <LegacyAction img="mail.png" text="Mail contracten ter ondertekening"/>.
+Contracten kunnen ook **in bulk gemaild** worden **ter ondertekening**. Dit kan handig zijn wanneer toestellen in de klassen worden uitgedeeld en de waarborgfacturen vooraf of achteraf aan de leerlingen worden bezorgd. De toestellen moeten reeds toegewezen zijn aan een leerling, waardoor er automatisch een contract werd opgemaakt. Ga vervolgens naar het menu **Contracten**. Kies in de dropdownlijst de gewenste contracten en vink de te versturen contracten aan. Klik tot slot op <LegacyAction img="mail.png" text="Mail contracten ter ondertekening"/>. Wanneer een contract digitaal werd ondertekend, zie je in de kolom 'Ondertekend' een groen vinkje <LegacyAction img="vinkjeGroenRond.png"/>. Dat stelt je in staat om op een snelle en eenvoudige manier op te volgen wie het contract al dan niet heeft ondertekend. 
 
 ## Contract wijzigen
 
@@ -96,7 +96,7 @@ Cashbetalingen kunnen via deze weg overgezet worden naar de Kas in Toolbox (op v
 
 ![toewijzen11](./toewijzen11.PNG)
 
-## Facturen
+## Facturen en creditnota's
 In het menu **Facturen** kan je de door Toolbox aangemaakte facturen opvolgen. Dat kunnen waarborgfacturen zijn, maar ook herstelfacturen als gevolg van schade/herstellingen of creditnota's na het stopzetten van een contract. 
 
 Via een dropdownlijst kan je per factuurtype kiezen of je alle facturen of enkel de verwerkte of nog te verwerken facturen wil zien. Facturen die nog niet zijn overgezet naar de module Leerlingenrekeningen (= te verwerken), hebben achteraan factuurnummer 0. Je kan ze aanvinken en vervolgens overzetten naar de module Leerlingenrekeningen via de knop <LegacyAction img="factuur.png"/>. De facturen worden daar aangemaakt in een aparte school 'Inventaris'. Die school wordt automatisch aangemaakt wanneer je de eerste keer facturen overzet vanuit de module Inventaris. 
@@ -105,14 +105,24 @@ De filter <LegacyAction img="filter.png"/> in de kolom Modaliteit maakt het moge
 
 ![toewijzen12](./toewijzen12.png)
 
-Aangezien **waarborgfacturen** op verschillende manieren betaald kunnen worden, moet je bij dit factuurtype nog wat extra info opgeven alvorens je kan overzetten naar de leerlingenrekeningen, nl. welke referentie er op de factuur moet komen.
-- **Contractnummer als referentie**: Deze optie moet worden aangeduid bij waarborgen die reeds betaald zijn bij afhaling (cash, met BC of POM). Bij deze betalingen werd het contractnummer gebruikt als referentie. Dit nummer zal ook worden overgenomen in de module Leerlingenrekeningen en vervolgens in Exact Online. Op die manier kunnen de betaling en de factuur tegenover elkaar worden afgepunt. De verwerking in de module Leerlingenrekeningen is in dit geval puur administratief/boekhoudkundig. De facturen worden over het algemeen niet meer aan de ouders bezorgd. 
-- **Gestructureerde mededeling als referentie**: Wanneer de waarborgfacturen niet meteen bij afhaling van het toestel betaald worden, kunnen ze overgezet worden naar de leerlingenrekeningen met een gestructureerde mededeling. Vanuit de module Leerlingenrekeningen kunnen de facturen vervolgens worden afgedrukt of digitaal verstuurd. De ouders kunnen dan gebruik maken van de gestructureerde mededeling (OGM-nummer) voor de betaling, waardoor de factuur ook weer automatisch kan worden afgepunt in Exact Online. 
-
-Voor **herstelfacturen** moet deze keuze niet gemaakt worden, aangezien dergelijke facturen steeds voorzien worden van een gestructureerde mededeling om vervolgens te verwerken zoals een gewone factuur in de module Leerlingenrekeningen. 
-
-Bij de **terug te betalen waarborgen** zal de creditnota rekening houden met eventuele schade aan het toestel bij stopzetting van het contract. De prijs van de schade wordt apart vermeld op de creditnota, waardoor het terug te storten bedrag lager zal zijn dan het oorspronkelijke waarborgbedrag. Wanneer het schadebedrag hoger is dan de waarborg, zal er voor het restbedrag een aanrekening gemaakt worden. 
-
 Bij alle factuurtypes is het mogelijk om facturen aan te duiden als 'niet te verwerken'. Dit kan nodig zijn, omdat je bepaalde kosten bv. al manueel hebt toegevoegd aan de leerlingenrekeningen. In dat geval vink je de betreffende factu(u)r(en) aan en klik je op <LegacyAction img="noAccess.png" text="Markeer als niet te verwerken"/>. De geselecteerde facturen zullen in het rood getoond worden en kunnen niet meer aangevinkt worden, waardoor ze niet per ongeluk overgezet kunnen worden naar de leerlingenrekeningen. Je kan deze actie ongedaan maken door achteraan op <LegacyAction img="noAccess.png"/> te klikken.
 
 ![toewijzen13](./toewijzen13.png)
+
+### Waarborgfacturen
+
+Aangezien waarborgfacturen op verschillende manieren betaald kunnen worden, moet je bij dit factuurtype nog wat extra info opgeven alvorens je kan overzetten naar de leerlingenrekeningen, nl. welke referentie er op de factuur moet komen.
+- **Contractnummer als referentie**: Deze optie moet worden aangeduid bij waarborgen die reeds betaald zijn bij afhaling (cash, met BC of POM). Bij deze betalingen werd het contractnummer gebruikt als referentie. Dit nummer zal ook worden overgenomen in de module Leerlingenrekeningen en vervolgens in Exact Online. Op die manier kunnen de betaling en de factuur tegenover elkaar worden afgepunt. De verwerking in de module Leerlingenrekeningen is in dit geval puur administratief/boekhoudkundig. De facturen worden over het algemeen niet meer aan de ouders bezorgd. 
+- **Gestructureerde mededeling als referentie**: Wanneer de waarborgfacturen niet meteen bij afhaling van het toestel betaald worden, kunnen ze overgezet worden naar de leerlingenrekeningen met een gestructureerde mededeling. Vanuit de module Leerlingenrekeningen kunnen de facturen vervolgens worden afgedrukt of digitaal verstuurd. De ouders kunnen dan gebruik maken van de gestructureerde mededeling (OGM-nummer) voor de betaling, waardoor de factuur ook weer automatisch kan worden afgepunt in Exact Online. 
+
+### Herstelfacturen
+
+Voor herstelfacturen moet de keuze m.b.t. de referentie niet gemaakt worden, aangezien dergelijke facturen steeds voorzien worden van een gestructureerde mededeling om vervolgens te verwerken zoals een gewone factuur in de module Leerlingenrekeningen. 
+
+### Terugbetaling waarborg
+
+Bij de terug te betalen waarborgen zal de creditnota rekening houden met eventuele schade aan het toestel bij stopzetting van het contract. De prijs van de schade wordt apart vermeld op de creditnota, waardoor het terug te storten bedrag lager zal zijn dan het oorspronkelijke waarborgbedrag. Wanneer het schadebedrag hoger is dan de waarborg, zal er voor het restbedrag een aanrekening worden gemaakt. 
+
+In het overzicht met terug te betalen waarborgen is er een bijkomende kolom voorzien met het rekeningenummer waarop de waarborg teruggestort moet worden. Het rekeningnummer wordt enkel getoond wanneer het werd ingevuld bij het stopzetten van het contract. Het kan nadien ook nog steeds worden aangevuld. Ga hiervoor naar het menu **Contracten** en kies voor 'Afgelopen contracten' in de dropdownlijst. Open het betreffende contract en klik helemaal onderaan op <LegacyAction img="stop.png" text="Wijzig informatie stop contract"/>.
+
+![toewijzen14](./toewijzen14.png)
