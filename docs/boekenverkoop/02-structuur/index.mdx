@@ -17,7 +17,12 @@ In de middelste kolom kan je per vak optioneel nog twee opties toevoegen: het aa
 
 ![Studierichting vakken](./studierichting_vakken.png)
 
-Alvorens verder te gaan, moet de lijst van artikels klaar staan. Ook die lijst kan geïmporteerd worden door de helpdesk. Volgende jaren kunnen best via de module zelf gebeuren omdat de koppeling dan ook wordt overgenomen.
+Alvorens verder te gaan, moet de lijst van artikels klaar staan. Ook die lijst kan geïmporteerd worden door de helpdesk. Volgende jaren kunnen best via de module zelf gebeuren omdat de koppeling dan ook wordt overgenomen. Indien er gewerkt wordt met de applicatie van Standaard Boekhandel, is het mogelijk om zelf de boekenlijst (Excel) te uploaden in Toolbox. Dat doe je bij 'Artikelen' via het icoon <LegacyAction img="SBS.png"/>. In SBS vind je de export bij Artikelen > Vakboeken > Uitgebreide XLSX export. 
+
+<Thumbnails img={[
+    require('./standaardboekhandel1.png').default,
+    require('./standaardboekhandel2.png').default
+]} />
 
 Het artikelbestand bevat volgende velden: naam artikel (titel boek), ISBN nummer, interne code* en Verkoopprijs. Optioneel kunnen deze velden ook meegegeven worden: informatie, uiteverij, auteur(s), druk, tweedehands aan te kopen (0 of 1), tweedehands te verkopen (0 of 1). Indien het boek tweedehands kan ingeleverd worden of tweedehands verkocht wordt, moeten ook de aan- en verkoopprijzen voor categorie A en B voorzien worden. Dat wil zeggen dat er dus 4 extra velden voorzien worden: ap_cat_a, ap_cat_b, vp_cat_a, vp_cat_b. Als de school een marge wil nemen op de tweedehandsboeken, dan moet de aankoopprijs lager liggen dan de verkoopprijs van het boek.
 
