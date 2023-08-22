@@ -1,0 +1,27 @@
+---
+title: Opstart en configuratie
+---
+
+## Gebruikersrechten toekennen
+
+Om de module Vervangingslijsten te kunnen gebruiken, moeten er gebruikersrechten worden toegekend. Dat gebeurt door een beheerder via de module [Gebruikersbeheer](/gebruikersbeheer). Voor de module Vervangingslijsten bestaan er 2 verschillende rechten:
+- **Vervangingslijsten**: met dit gebruikersrecht kan men alle functionaliteiten binnen de module Vervangingslijsten gebruiken, zoals afwezige leraren en/of klassen ingeven, maar ook de vervangingslijsten aanmaken, vervangers koppelen, leraren en leerlingen via Smartschool verwittigen, ...
+- **Vervangingslijsten_alleenlezen**: met dit gebruikersrecht kan men enkel de opgemaakte vervangingslijsten raadplegen. Er kunnen verder geen wijzigingen worden aangebracht. 
+
+## Algemene instellingen 
+
+Alvorens te kunnen starten met de module Vervangingslijsten moeten er een aantal algemene zaken worden ingesteld. Deze instellingen moeten in principe slechts éénmaal worden geconfigureerd, zolang er geen structurele zaken worden gewijzigd.
+
+In de module Instellingen => Vervangingslijsten kan je voorgedefinieerde vervangingslijsten maken.
+
+- Stap 1: Kies een naam voor de vervangingslijst
+
+- Stap 2: Kies de klassen die je wil toevoegen of verwijderen uit de selectie. Dit kan je op enkele manieren doen:
+
+    Door te beginnen met een ^ duid je aan dat de klas moet beginnen met dat deel. Bijvoorbeeld : ^1,^2 toont alle klassen die beginnen met 1 of 2
+
+    Door te beginnen met een - filter je de klassen met dat deel eruit. Bijvoorbeeld: ^3,^4,-BAV,-WKD toont alle klassen die beginnen met 3 of 4 maar niet de klassen 3BAV, 4BAV, 3WKD en 4WKD
+
+  <Thumbnails img={[
+    require('./vervangingslijst1.png').default, 
+  ]} />
