@@ -10,9 +10,9 @@ Om de module Inventaris te kunnen gebruiken, moeten er rechten toegekend worden.
 
 ## Algemene instellingen
 
-Vooraleer je aan de slag kan met de module Inventaris, moeten er nog een aantal zaken worden ingesteld in de module Instellingen van Toolbox. Die module is enkel toegankelijk voor een beheerder. 
+Vooraleer je aan de slag kan met de module Inventaris, moeten er nog een aantal zaken worden ingesteld in de module Instellingen => Inventaris. Die module is enkel toegankelijk voor een beheerder. 
 
-Allereerst moeten een aantal boekhoudkundige parameters worden ingevuld voor het opmaken van de waarborg- en herstelfacturen. 
+Allereerst moeten een aantal boekhoudkundige parameters worden ingevuld voor het opmaken van de waarborg- en herstelfacturen. In de modaliteiten zelf kan je deze parameters nog aanpassen. Dat kan nodig zijn wanneer er voor verschillende modaliteiten andere boekhoudkundige parameters gelden. De instellingen in de modaliteit overrulen die van de module Instellingen. 
 
 <Thumbnails img={[
     require('./instellingen1.PNG').default,  
@@ -63,11 +63,25 @@ Per type item kan je via de <LegacyAction img="pluscircle.png"/> in de kolom Sub
 
 ### Modaliteiten
 
-Wanneer je toestellen (items) wil koppelen aan gebruikers zal je eerst één of meerdere modaliteiten moeten aanmaken. In elke modaliteit kan je de contractvoorwaarden instellen. Zo kan je bv. een modaliteit maken voor 'laptops leraren' maar ook één voor 'tablet leerlingen', omdat de uitleenvoorwaarden voor de leraren anders zijn dan voor de leerlingen. 
+Wanneer je toestellen (items) wil koppelen aan gebruikers zal je eerst één of meerdere modaliteiten (modelcontracten) moeten aanmaken. In elke modaliteit kan je de contractvoorwaarden instellen. Zo kan je bv. een modaliteit maken voor 'laptops leraren' maar ook één voor 'tablet leerlingen', omdat de uitleenvoorwaarden voor de leraren anders zijn dan voor de leerlingen. 
 
-Een modaliteit maak je aan via het menu Modaliteiten. Voeg een nieuwe modaliteit toe en vul vervolgens de velden in. Moet een leerling een waarborg betalen voor het toestel? Dan kan je dat hier opgeven. Toolbox zal bij het toekennen van een toestel dan automatisch een factuur opmaken voor die waarborg. De boekhoudkundige parameters worden automatisch overgenomen uit de algemene instellingen. Indien voor dit contact andere parameters gelden, kunnen die hier (enkel voor deze modaliteit) worden aangepast. 
+Een modaliteit maak je aan via het menu Modaliteiten. Voeg een nieuwe modaliteit toe en vul vervolgens de velden in. 
+
+![modaliteit](./modaliteit.PNG)
+
+- **Status toestel**: selecteer hier de nieuwe status die een toestel moet krijgen wanneer het gekoppeld wordt aan een bepaalde modaliteit. 
+- **Benaming item**: hier kan je opgeven over welk soort item het gaat. Deze naam wordt mee overgenomen op de facturen. Bv. bij de benaming 'laptop' wordt dat: waarborg laptop, herstelling laptop, terugbetaling waarborg laptop. 
+
+Moet een leerling een waarborg betalen voor het toestel? Dan kan je dat hier opgeven. Toolbox zal bij het toekennen van een toestel dan automatisch een factuur opmaken voor die waarborg. De boekhoudkundige parameters worden automatisch overgenomen uit de algemene instellingen. Indien voor dit contract andere parameters gelden, kunnen die hier (enkel voor deze modaliteit) worden aangepast. De parameters van de modaliteit overrulen die uit de module Instellingen. 
 
 Als je je gebruikers een gepersonaliseerd document wil bezorgen, dan kan je dat in de tekstvelden aanmaken. Je kan in die tekst gebruik maken van de variabelen die onder het tekstvak staan. Op die manier kan de leerling een PDF krijgen waarin staat welk type toestel hij/zij kreeg en welk serienummer dat toestel heeft.
+
+Toelichting bij enkele variabelen:
+
+- $$EERSTE_ITEM...$$ is steeds van toepassing voor nieuwe contracten en wordt gebruikt in de eerste tekst 'document ontvangst toestel'). 'Eerste' slaat hier op het allereerste toestel dat aan een leerling/personeelslid werd toegekend. 
+- $$HUIDIGE_ITEMS$$: deze variabele kan gebruikt worden in de derde tekst 'wijziging contract'. Wanneer er een defect toestel in herstelling gaat en een leerling/personeelslid ontvangt (tijdelijk) een ander toetsel, kan er een document afgedrukt worden waarin er overzicht getoond wordt van de items die zich momenteel in het contract bevinden. 
+- $$HANDTEKENING_SCHOOL$$: om deze variabele te kunnen gebruiken, moet bovenaan in de modaliteit een handtekening geselecteerd zijn. Indien er geen handetekening beschikbaar is, mag die ingescand bezorgd worden aan het Toolbox-team. 
+- $$DIGITALE_HANDTEKENING_OUDERS$$: deze variabele is nodig om het contract (of de stopzetting ervan) digitaal te kunnen laten handtekenen, **zowel door de ouders als door personeelsleden**.
 
 In de tabel (overzicht) van de modaliteiten kan je via <LegacyAction img="list.png"/> ook nog opgeven welke **bijkomende accessoires** een gebruiker ontving. Denk bijvoorbeeld aan een adapter (lader) en een beschermhoes. Je kan daarbij optioneel ook de prijs, het merk en het model van de accessoire opgeven. De prijzen die hier worden ingegeven, worden niet doorgerekend via het contract. Ze zijn louter ter info. 
 
@@ -76,10 +90,3 @@ De bijkomende accessoires in een modaliteit worden automatisch mee opgenomen in 
 Een modaliteit kan enkel verwijderd worden wanneer ze nog niet in gebruik is. Van zodra er één toestel aan een bepaalde modaliteit is gekoppeld, kan die niet meer verwijderd worden. Achteraan in het overzicht wordt dan dit teken <LegacyAction img="noAccess.png"/> getoond. Wijzigen aanbrengen kan altijd nog. Indien je een bepaalde gebruikte modaliteit op non-actief wil zetten, volstaat het om het vinkje <LegacyAction img="vinkjeGroenRond.png"/> uit te zetten. Het zal dan niet meer mogelijk zijn om deze modaliteit te gebruiken voor nieuwe toewijzingen. 
 
 ![instellingen5](./instellingen5.PNG)
-
-Toelichting bij enkele variabelen:
-
-- $$EERSTE_ITEM...$$ is steeds van toepassing voor nieuwe contracten en wordt gebruikt in de eerste tekst 'document ontvangst toestel'). 'Eerste' slaat hier op het allereerste toestel dat aan een leerling/personeelslid werd toegekend. 
-- $$HUIDIGE_ITEMS$$: deze variabele kan gebruikt worden in de derde tekst 'wijziging contract'. Wanneer er een defect toestel in herstelling gaat en een leerling/personeelslid ontvangt (tijdelijk) een ander toetsel, kan er een document afgedrukt worden waarin er overzicht getoond wordt van de items die zich momenteel in het contract bevinden. 
-- $$HANDTEKENING_SCHOOL$$: om deze variabele te kunnen gebruiken, moet bovenaan in de modaliteit een handtekening geselecteerd zijn. Indien er geen handetekening beschikbaar is, mag die ingescand bezorgd worden aan het Toolbox-team. 
-- $$DIGITALE_HANDTEKENING_OUDERS$$: deze variabele is nodig om het contract digitaal te kunnen laten handtekenen, **zowel door de ouders als door personeelsleden**.
