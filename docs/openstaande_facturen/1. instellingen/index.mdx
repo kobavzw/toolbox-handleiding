@@ -22,7 +22,11 @@ In het tekstbericht kunnen allerlei dynamische variabelen gebruikt worden. Hiero
 - $$POINTER$$: het uniek nummer van de leerling (zowel in Toolbox, Exact Online als in het administratief pakket voor de leerlingenadministratie bv. Informat of Wisa)
 - $$MAIL_ONTVANGERS$$: Daarmee kan je de mailadressen die gemarkeerd zijn voor facturatie mee in de tekst opnemen. Meerdere mailadressen worden gescheiden door komma’s. 
 - $$HUIDIGE_DATUM$$: De datum van vandaag
-- $$OPENSTAANDE_FACTUREN$$: Hiermee geef je een overzicht van alle openstaande facturen met een link naar de originele facturen. 
+- $$OPENSTAANDE_FACTUREN$$: Hiermee geef je in een tabel een overzicht weer van alle openstaande facturen van een bepaalde leerling. Indien de herinneringen verstuurd worden via e-mail of Smartschool, staat er in het overzicht naast elke openstaande factuur een link naar de originele factuur.  
+:::caution
+BELANGRIJKE NOOT:  Bij het gebruik van deze variabele volstaat het om **per leerling slechts 1 factuur aan te vinken**. Per vinkje wordt er een pdf-document gegenereerd of een bericht verstuurd. Wanneer er b.v. bij een leerling met 5 openstaande facturen alle facturen worden aangevinkt, zullen er 5 identieke documenten worden aangemaakt of 5 identieke berichten worden verstuurd. Gebruik de actieknop <LegacyAction img="select.png" text="Selecteer unieke leerlingen"/> om automatisch elke leerling maar 1x te selecteren. 
+Wens je een bepaalde factuur niet mee op te nemen in het overzicht, gebruik dan de actieknop <LegacyAction img="noAccess.png" text="Niet verwerken"/>.
+:::
 - $$OPENSTAANDE_FACTUREN_ZONDER_LINK$$: Hiermee geef je een overzicht van alle openstaande facturen zonder de link naar de originele facturen
 - $$FACTUURLINK$$: De link naar de originele factuur
 - $$FACTUURBEDRAG_OPENSTAAND$$: Het openstaande factuurbedrag (Indien er reeds een deelbetaling heeft plaatsgevonden, wordt dit verrekend) 

@@ -31,7 +31,7 @@ Om met de recentste boekhoudkundige gegevens te kunnen werken, moet er regelmati
 
 Via de taakbalk kan je aan de hand van verschillende filters selecteren welke gegevens er getoond moeten worden. Het veld **filter** werkt als zoekfunctie waarin je een aantal karakters kan typen en vervolgens de zoekresultaten te zien krijgt door te enteren. 
 
-Door een bepaald **dagboek** of een bepaalde **notagroep** te selecteren, worden enkel de openstaande facturen van dat dagboek of van die notagroep getoond.
+Door een bepaald **dagboek** of een bepaalde **notagroep** te selecteren, worden enkel de openstaande facturen van dat dagboek of van die notagroep getoond. Voor de dagboeken is mogelijk om meerdere tegelijk te selecteren. Bij de notagroepen kan er slechts één geselecteerd worden. Wanneer er geen enkel dagboek en/of geen enkele notagroep geselecteerd is, wordt er steeds een volledig overzicht van alle dagboeken en/of notagroepen met openstaande facturen getoond. 
 
 Filteren op **aanmaningen** biedt de mogelijkheid om alle facturen op te vragen waarvoor bv. al een 1e of 2e aanmaning werd verstuurd. Dat maakt de administratieve opvolging eenvoudiger. 
 
@@ -39,7 +39,7 @@ In de tabel zelf kan je ook klikken op de pointer of de naam van een relatie. Da
 
 Je kan ook klikken op een klas of vestiging om daarop te filteren.
 
-De taakbalk daaronder laat je toe om de gegevens op verschillende manieren te sorteren. 
+De taakbalk daaronder laat je toe om de gegevens op verschillende manieren te sorteren. Zo kan je niet alleen op naam of klas sorteren, maar ook op betalingsregeling, opmerking, aantal aanmaningen, ... 
 
 ![openstaanden2](./openstaanden2.jpg)
 
@@ -83,15 +83,19 @@ Je kan allerlei ondernomen acties registreren, zoals bv. een telefonisch contact
 ![openstaanden4](./openstaanden4.jpg)
 
 ### <LegacyAction img="noAccess.png"/> Niet verwerken
-Je kan een factuur selecteren en ervoor kiezen om deze niet te verwerken. Wanneer je vervolgens in bulk facturen selecteert om herinneringen te versturen, zal deze factuur niet mee aangevinkt worden. Men zal bijgevolg voor deze factuur geen herinnering ontvangen. 
+Je kan een factuur selecteren en ervoor kiezen om deze niet te verwerken. Wanneer je vervolgens in bulk facturen selecteert om herinneringen te versturen, zal deze factuur niet mee aangevinkt worden. Men zal bijgevolg voor deze factuur geen herinnering ontvangen. Je kan dit ook ineens voor meerdere facturen tegelijk doen door ze vooraan te selecteren. 
 
 Als je een tekst gebruikt met de variabele $$OPENSTAANDE_FACTUREN$$ wordt er normaliter een overzicht van alle openstaande facturen van die leerling getoond. Door een factuur aan te duiden als ‘niet verwerken’ wordt deze factuur niet meer getoond in dit overzicht.
 
 Je kan deze actie ongedaan maken door achteraan op het klembord <LegacyAction img="checklist.png"/> te klikken. Via het rode kruisje kan je de actie verwijderen en zal de factuur opnieuw mee verwerkt worden in het overzicht. De rode lijn zal opnieuw zwart zijn.  
 
-![openstaanden](./openstaanden6.jpg)
+![openstaanden6](./openstaanden6.jpg)
 
-### <LegacyAction img="person.png"/> <LegacyAction img="budget.png"/> Betalingsregeling relatie wijzigen
+Je kan dit ook ineens voor meerdere facturen tegelijk doen door de lijnen vooraan te selecteren en te klikken op <LegacyAction img="noAccess.png" text="Niet verwerken"/>. Vervolgens kan je het 'niet verwerken' (eventueel in bulk) ongedaan maken. 
+
+![openstaanden9](./openstaanden9.png)
+
+### <LegacyAction img="person.png"/> <LegacyAction img="budget.png"/> Relatie: Betalingsregeling relatie wijzigen
 Tot slot kan je een betalingsregeling registreren. Die wordt weergegeven in het overzichtsscherm. Je kan kiezen uit de volgende mogelijkheden:
 
 - Incassobureau
@@ -102,12 +106,17 @@ Tot slot kan je een betalingsregeling registreren. Die wordt weergegeven in het 
 
 Meer info over de betalingsregeling kan je invoeren via 'opmerkingen bij relatie wijzigen'. 
 
-### <LegacyAction img="person.png"/> <LegacyAction img="edit.png"/> Opmerking bij relatie wijzigen
+### <LegacyAction img="person.png"/> <LegacyAction img="edit.png"/> Relatie: Opmerking bij relatie wijzigen
 In dit tekstveld kan je vrij allerhande opmerkingen en bijkomende info toevoegen. Enkele mogelijkheden: de factuur of herinnering moet altijd op papier worden meegegeven met de leerling, de grootouders betalen de factuur, de contactgegevens van de schuldbemiddelaar, ...
 
 De info die hier wordt ingevoerd, wordt automatisch mee overgenomen naar de module leerlingenrekeningen (inschrijvingen en aanrekenen) en andersom. In het overzichtsscherm geeft het <LegacyAction img="info.png"/> icoon weer dat er info beschikbaar is. Die kan je raadplegen door je cursor op het icoon te plaatsen of door 1x te klikken. Dubbelklikken op het icoon laat je toe om wijzigingen aan te brengen. 
 
 ![openstaanden5](./openstaanden5.jpg)
+
+### <LegacyAction img="select.png"/>Selecteer unieke leerlingen
+Dit is een handige functie in combinatie met het gebruik van de variabele $$OPENSTAANDE_FACTUREN$$. Aan de hand van deze variabele wordt er in een tabel een overzicht van alle openstaande facturen getoond. Daarbij volstaat het om per leerling slechts één factuur aan te vinken, want per vinkje wordt er een pdf-document gegenereerd of een bericht gestuurd. Wanneer er b.v. bij een leerling met vijf openstaande facturen alle facturen worden aangevinkt, zullen er dus vijf identieke documenten worden aangemaakt of vijf identieke berichten worden verstuurd.
+
+Door de knop <LegacyAction img="select.png" text="Selecteer unieke leerlingen"/> te gebruiken, selecteer je automatisch elke leerling maar één keer, waardoor er voor elke leerling ook maar één pdf-document wordt gegenereerd of maar één e-mail- of smartschoolbericht wordt verstuurd.  
 
 ### <LegacyAction img="klembord.png"/> Verzendrapporten
 
@@ -121,7 +130,11 @@ Via deze knop kan je nagaan wanneer er digitaal herinneringen werden verstuurd e
 Je kan een overzicht van openstaande facturen genereren en deze naar Excel en/of PDF exporteren. Dat kan je doen voor alle openstaande of voor een beperkte selectie (aangevinkte) facturen. 
 
 ### <LegacyAction img="configure.png"/> Teksten instellen
-De teksten kunnen gedefinieerd en aangepast worden in de module [Instellingen](./openstaande_facturen/instellingen) of rechtstreeks in de module Openstaande facturen (indien deze optie is geactiveerd in de module Instellingen). [Hier](/openstaande_facturen/voorbeeldteksten) vind je enkele voorbeeldteksten. 
+De teksten kunnen gedefinieerd en aangepast worden in de module [Instellingen](./openstaande_facturen/instellingen) of rechtstreeks in de module Openstaande facturen (indien deze optie is geactiveerd in de module Instellingen). [Hier](/openstaande_facturen/voorbeeldteksten) vind je enkele voorbeeldteksten. Klik [hier](./openstaande_facturen/instellingen) voor een overzicht van alle mogelijke variabelen. 
 
 In de module zelf kan je ook de betaaltermijn definiëren. De overige instellingen, zoals welke dagboeken er getoond worden, zijn enkel in te stellen via de module [Instellingen](./openstaande_facturen/instellingen). Deze module is enkel toegankelijk voor een beheerder. Om te weten wie je Toolbox-beheerder is, klik je op de startpagina van Toolbox rechts bovenaan op het vraagteken > contact.
+
+### <LegacyAction img="pdf.png"/> Leerlingenrekeningen
+Door middel van deze actieknop kunnen de originele facturen (uit de leerlingenrekeningen) in bulk als PDF opgevraagd worden. Selecteer vooraan de openstaande facturen waarvoor u de originele factuur wil opvragen en klik op de actieknop. 
+
 
