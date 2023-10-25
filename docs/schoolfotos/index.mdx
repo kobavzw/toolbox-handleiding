@@ -16,21 +16,35 @@ Rechten voor een module worden toegekend via de tegel [gebruikersbeheer](/gebrui
 
 ## Instellingen
 
-Vooraleer je aan de slag kan gaan met de module **Verwerking schoolfoto's**, moet je een aantal zaken instellen in de module **Instellingen** van Toolbox > Schoolfoto's. Deze module is enkel toegankelijk voor een beheerder van Toolbox. Om te weten wie je beheerder is, klik je rechtsbovenaan op het vraagteken > contact. 
+Vooraleer je aan de slag kan gaan met de module **Verwerking schoolfoto's**, moet je een aantal zaken instellen in de module **Instellingen** van Toolbox => Schoolfoto's. Deze module is enkel toegankelijk voor een beheerder van Toolbox. Om te weten wie je beheerder is, klik je rechtsboven op het vraagteken => contact. 
 
 1. Bovenaan stel je het schooljaar in waarvoor je de foto's wil uitleveren. Let op dat je steeds volgende structuur gebruikt: 2023-24  (en niet 2023-<Text color="red">~~20~~</Text>24)
 
  ![foto1](./foto1.PNG)
 
-2. Indien je bij het inleveren of bijbestellen van foto's een bevestiging wil versturen via Smartschool, kan je dat daaronder instellen. Dit werkt enkel indien er een Smartschoolplatform is gekoppeld met Toolbox. Geef op vanuit welk Smartschoolaccount het bericht moet vertrekken. Daaronder kan je het onderwerp van het bericht en het tekstbericht zelf instellen. Daarvoor kan je gebruik maken van enkele dynamische variabelen die bij het versturen van het bericht vervangen worden door de overeenkomstige leerling- of bestelgegevens.
+2. Je kan bij het inleveren of bijbestellen van foto's een automatische bevestiging versturen via Smartschool. Dit werkt enkel indien er een Smartschoolplatform is gekoppeld met Toolbox (Instellingen => Smartschool). 
+    - Geef op vanuit welk Smartschoolaccount het bericht moet vertrekken. Dit is de gebruikersnaam of het intern nummer van de afzender in Smartschool. Via de module Instellingen => Smartschool kan je nagaan of de school het intern nummer of de gebruikersnaam gebruikt als uniek veld in Smartschool. 
+    - Geef vervolgens mee vanuit welke naam of functie het bericht verstuurd moet worden. 
+    - Tot slot stel je het onderwerp van het bericht en het tekstbericht zelf in. Je kan hierbij gebruik maken van enkele dynamische variabelen die bij het versturen van het bericht vervangen worden door de overeenkomstige leerling- of bestelgegevens.
 
- Hieronder een voorbeeld:
+      ![foto2](./foto2.PNG)
 
- *Beste\n\nHierbij bevestigen wij volgende foto\'s te hebben ontvangen van $$VOORNAAM_LEERLING$$ $$NAAM_LEERLING$$, $$KLAS_LEERLING$$:\n\n$$INGELEVERDE_FOTOS$$\n\n\n\nVolgende items werden bijbesteld:\n$$BIJBESTELDE_FOTOS$$\n\n\n\nDaardoor zal er € $$TOTAALBEDRAG$$ aangerekend worden via de eerstvolgende schoolrekening.\n\n\nMet vriendelijke groeten\n$$NAAM_AFZENDER$$\n$$FUNCTIE_AFZENDER$$*
+      Hieronder een voorbeeld van een tekstbericht met variabelen:
 
- ![foto2](./foto2.PNG)
+          Beste
 
-3. Vervolgens kan je instellen hoe het pakket dat de leerlingen meekrijgen, is samengesteld. De structuur is als volgt: Code,Benaming,Prijs; => INDFOTOS,Individuele foto's,8.00;
+          Hierbij bevestigen wij volgende foto's te hebben ontvangen van $$VOORNAAM_LEERLING$$ $$NAAM_LEERLING$$,
+          $$KLAS_LEERLING$$: $$INGELEVERDE_FOTOS$$
+      
+          Volgende items werden bijbesteld:$$BIJBESTELDE_FOTOS$$
+      
+          Daardoor zal er € $$TOTAALBEDRAG$$ aangerekend worden via de eerstvolgende schoolrekening.
+      
+          Met vriendelijke groeten
+          $$NAAM_AFZENDER$$
+          $$FUNCTIE_AFZENDER$$
+
+3. Verder moet er nog ingesteld worden hoe het pakket dat de leerlingen meekrijgen, is samengesteld. Er is een aparte instelling voorzien voor secundaire scholen en basisscholen. De structuur is in beide gevallen als volgt: Code,Benaming,Prijs; => INDFOTOS,Individuele foto's,8.00;
 
    - De **code** is nodig voor de import in de leerlingenrekeningen. Deze bevat best geen spaties of speciale tekens. Bv. INDFOTOS
    - De **benaming** wordt getoond in de module 'Verwerking schoolfoto's'. Die mag wel spaties of andere tekens bevatten. Bv. Individuele foto's
@@ -41,7 +55,7 @@ Vooraleer je aan de slag kan gaan met de module **Verwerking schoolfoto's**, moe
   Je kan ook opgeven welke foto's bijbesteld kunnen worden zoals bv. vergrotingen. Hiervoor hanteer je dezelfde codering als voor het standaardpakket. 
 
   Bv. INDVERGROTING1318,Grote individuele foto 13/18 cm,6.00;
-
+  
   ![foto3](./foto3.PNG)
 
 ## Foto's uitdelen
