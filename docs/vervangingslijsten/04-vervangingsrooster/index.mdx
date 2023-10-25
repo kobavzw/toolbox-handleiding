@@ -4,11 +4,11 @@ title: Vervangingsrooster maken
 
 ## Rooster opties kiezen
 
-- Stap 1: Kies een voorgedefinieerde vervangingslijst of selecteer voor welke jaren je een rooster wil maken.
+- Stap 1: Kies een voorgedefinieerde vervangingslijst (aangemaakt via de module Instellingen) of selecteer voor welke jaren je een rooster wil maken.
 - Stap 2: Selecteer de datum waarvoor een je vervangrooster wil maken. 
-- Stap 3: (optioneel) Selecteer voor welke uren je een rooster wil maken. Indien je dit niet doet, worden standaard alle uren genomen.
-- Stap 4: Duidt aan of je een toezichtrooster wil maken voor een bepaalde campus of niet.
-- Stap 5: Klik op Aanmaken
+- Stap 3 (optioneel): Selecteer voor welke uren je een rooster wil maken. Indien je dit niet doet, worden standaard alle uren genomen.
+- Stap 4: Duid aan of je een toezichtrooster wil maken voor een bepaalde campus of niet. Dit kan enkel gebruikt worden indien de toezichten zijn ingevoerd in de module 'Wacht-en toezichtbeurten' of in het roosterprogramma.
+- Stap 5: Klik op 'Aanmaken'.
 
 ![vervangingslijst2](./vervangingslijst2.png)
 
@@ -16,30 +16,35 @@ title: Vervangingsrooster maken
 
 In het rooster kan je nu verschillende velden aanpassen/invullen:
 
-- Klas: Indien het niet gewoon de klas maar bijvoorbeeld een keuzegroep is, kan je de naam aanpassen zodat het in het rooster duidelijk wordt welke klas/groep geen les heeft.
-- Leraar: Als de les wel doorgaat maar wordt overgenomen door een andere leerkracht, kan je die hier invullen.
-- Vervangende Activiteit: Kies hier een vervangende activiteit of vul er zelf 1 in. Een lijst met standaardactiviteiten kan je instellen in "Instellingen --> Vervangingslijsten"
-- Van Lokaal: Dit lokaal dat in de lessenrooster staat, kan je wijzigen indien die klas/groep tijdelijk in een ander lokaal zit.
-- Naar Lokaal: Kies hier het lokaal waar de leerlingen naartoe moeten. Deze lijst met standaarlokalen kan je instellen in "Instellingen --> Vervangingslijsten". Deze wordt aangevuld met de lokalen die op dat uur niet in gebruik zijn volgens het lessenrooster.
-- Wachtbeurt: Kies hier de leerkracht die de wachtbeurt op zich moet nemen. Deze lijst met standaardwachters kan je instellen in "Instellingen --> Vervangingslijsten". Deze wordt aangevuld met de leerkrachten die op dat moment een wachtbeurt hebben. Maar hier kunnen ook alle leerkrachten ingevuld worden.
-- Via het kruisje achteraan kan je een lijn verwijderen, bijvoorbeeld wanneer een klas op excursie is.
+- **Klas**: Indien het niet gewoon de klas, maar bijvoorbeeld een keuzegroep is, kan je de naam aanpassen zodat het in het rooster duidelijk wordt welke klas/groep geen les heeft.
+- **Leraar**: Als de les wel doorgaat maar wordt overgenomen door een andere leerkracht, kan je die hier invullen.
+- **Vervangende Activiteit**: Selecteer hier een vervangende activiteit of vul er zelf één in. Een lijst met standaardactiviteiten kan je vooraf definiëren in de module Instellingen => Vervangingslijsten.
+- **Van Lokaal**: Dit is het lokaal uit het lessenrooster. Dat kan je hier nog wijzigen indien die klas/groep tijdelijk in een ander lokaal zit.
+- **Naar Lokaal**: Kies hier het lokaal waar de leerlingen naartoe moeten. De lijst met standaardlokalen kan je eveneens invoeren in de module Instellingen => Vervangingslijsten. Deze lijst wordt aangevuld met de lokalen die op dat uur niet in gebruik zijn volgens het lessenrooster.
+- **Wachtbeurt**: Kies hier de leerkracht die de wachtbeurt op zich moet nemen. De lijst met standaardwachters kan je vooraf invoeren in de module Instellingen => Vervangingslijsten. Deze lijst wordt aangevuld met de leerkrachten die op dat moment vrijkomen of een wachtbeurt hebben. Verder kunnen hier ook steeds alle andere leerkrachten geselecteerd worden. Het aantal wachtbeurten telt op zodat ze bij het toewijzen eerlijk verdeeld kunnen worden. Wanneer een leraar klasleraar is in de klas op de wachtlijst, zal er een sterretje verschijnen bij diens naam. 
+
+    ![wachtbeurt](./wachtbeurt.PNG)
+    
+    Bij het toekennen van de wachtbeurt kan je er tevens voor kiezen om de beurt niet te laten meetellen en om de toezichthoudende leraar op de hoogte te brengen van zijn wachtbeurt door middel van een Smartschoolbericht. Het standaardbericht kan ingevoerd worden via de module Instellingen => Vervangingslijsten. In deze module kan er nog een extra notitie worden toegevoegd aan het bericht (bv. de titularis zal halverwege het lesuur terug zijn, de taak ligt in de leraarskamer, ...).
+
+    ![wachtbeurt2](./wachtbeurt2.PNG)
+
+- Via het oogje achteraan kan je een lijn verbergen <LegacyAction img="oogrood.png"/> of juist zichtbaar maken <LegacyAction img="oogzwart.png"/> op de vervanginglijst. Het is eveneens mogelijk om alle rijen ineens te verbergen of zichtbaar te maken via de 2 actieknoppen bovenaan. 
+- Met behulp van het Smartschoolicoon achteraan <LegacyAction img="smartschool1.png"/> kan je berichten versturen naar de leerlingen, hun co-accounts en eventueel bijkomende ontvangers zoals de directie, administratie, onthaal. Je kan meerdere templates creëren via de module Instellingen => Vervangingslijsten. 
 
 ![vervangingslijst3](./vervangingslijst3.png)
 
 ## Toezichtrooster aanpassen
 
-Indien er een toezicht wegvalt door een afwezige leerkracht, kan je onderaan in het toezichtrooster een vervanger aanduiden voor deze toezicht indien nodig.
+Indien er een toezicht wegvalt omwille van een afwezige leerkracht, kan je onderaan in het toezichtrooster een vervanger selecteren voor dit toezicht. 
 
-<Thumbnails img={[
-    require('./vervangingslijst4.png').default, 
-]} />
-
+![vervangingslijst4](./vervangingslijst4.png)
 
 ## Afdrukken / publiceren
 
-Bovenaan de pagina vind je een link om de vervang- en toezichtrooster om te zetten in een PDF-bestand.
+Wanneer de vervangingslijst en (optioneel) het toezichtrooster gepubliceerd kunnen worden, kan je een PDF- of XLS-bestand genereren door de actieknoppen bovenaan de pagina te gebruiken. 
 
 ![vervangingslijst5](./vervangingslijst5.png)
 
-Het is eveneens mogelijk om de vervangingslijsten te tonen op schermen in de school. De koppeling daarmee gebeurt via de module Digital signage.
+Het is eveneens mogelijk om de vervangingslijsten te tonen op tv-schermen in de school. De koppeling daarmee gebeurt via de module [Digital signage](/digital_signage).
 
