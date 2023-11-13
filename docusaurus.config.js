@@ -3,7 +3,7 @@ require('dotenv').config();
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
+const lightCodeTheme = require('prism-react-renderer').themes.github;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -99,7 +99,7 @@ const config = {
       },
       require.resolve('docusaurus-plugin-image-zoom'),
       ...(process.env.DISABLE_SEARCH === 'true' ? [] : [[
-        require.resolve("@cmfcmf/docusaurus-search-local"),
+        require.resolve("@easyops-cn/docusaurus-search-local"),
         {
           indexBlog: false,
         },
