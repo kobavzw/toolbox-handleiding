@@ -14,39 +14,41 @@ In deze module kan je de afwezigheid van een leerkracht registreren alsook de aa
 
   Je kan zelf de verschillende redenen instellen in de module [Instellingen](/afwezigheden/instellingen/) => Afwezigheden.
 
-  <Thumbnails img={[
-    require('./afwezig1.png').default, 
-  ]} />
+  ![afwezig1](./afwezig1.png)
 
 - Stap 3: Duid aan of de leerkracht afwezig is voor een hele dag, enkel de voor- of namiddag of voor de avond (indien gedefinieerd in de lessenrooster). Het is ook mogelijk om één of enkele lesuren aan te vinken. 
 - Stap 4: Voeg de afwezigheid toe.
 
- <Thumbnails img={[
-    require('./afwezig2.png').default, 
-  ]} />
+  <Thumbnails img={[
+      require('./afwezig2.png').default, 
+    ]} />
 
 ## Overzicht afwezige leraren & vervanging ingeven
 
 De afwezigheid wordt geregistreerd en komt onderaan in het overzicht te staan. In dat overzicht kan je op verschillende manieren zoeken en filteren. 
 
+Standaard worden enkel de afwezigheden van vandaag en in de toekomst getoond. Vul een datum in om de afwezigheden op een bepaalde datum op te vragen. Door de historiek te tonen (aanvinken) worden er ook afwezigheden uit het verleden getoond. 
+
+Enkel de afwezigheidstypes die in de module **Instellingen => Afwezigheden** ingesteld zijn als 'standaard tonen' worden automatisch getoond. Door te **filteren op redenen** kan je manueel filteren op afwezigheidstype. Hierbij is het mogelijk om meerdere of alle types tegelijk te tonen. Klik steeds op **Filters toepassen** om de gekozen filters te activeren. 
+
 ![afwezig3](./afwezig3.png)
 
-In deze lijst kan je een afwezigheid verwijderen, als die foutief was.
-Je kan ook bestaande afwezigheden aanpassen, zoals de begin- en/of einddatum of de reden van afwezigheid.
 
-In het overzicht zie je per afwezig personeelslid achteraan een percentage staan, dat duidt aan hoeveel % van de lessen van die leerkracht al een vervanger heeft toegewezen gekregen.
-Indien het lessenrooster is aangepast waardoor de leerkracht geen lessen meer op zijn naam heeft staan, staat hier standaard 100%.
+- **Verwijderen**: Via <LegacyAction img="remove.png"/> kan je een afwezigheid verwijderen in het geval die foutief was.
 
-Door de historiek te tonen (aanvinken) worden er ook afwezigheden uit het verleden getoond. 
+- **Aanpassen**: Via <LegacyAction img="edit.png"/> kan je bestaande afwezigheden aanpassen, zoals de begin- en/of einddatum of de reden van afwezigheid.
 
-Via de knop in de kolom 'Lessenrooster' <LegacyAction img="calendar.png"/> krijg je het lessenrooster van de leerkracht te zien. Hier kan je een vervanger registreren voor de uren in het rooster. 
+- **Lessenrooster en vervanger**: Door op deze knop <LegacyAction img="calendar.png"/> te klikken in de kolom 'Lessenrooster' krijg je helemaal onderaan het lessenrooster van de leerkracht te zien. Hier kan je een vervanger registreren voor de uren in het rooster. 
 
-Dit kan je ineens voor alle uren doen door 'Selecteer Alles' te kiezen. Je kan ook een vervanging ingeven voor één specifiek vak of voor alle lesuren van 1 dag door op die dag te klikken.
-Je kan evenees zelf de verschillende uren aanvinken of je kan slechts 1 lesuur aanpassen door op het icoontje achteraan de les te klikken.
+  Dit kan je ineens voor alle uren doen door 'Selecteer Alles' te kiezen. Je kan ook een vervanging ingeven voor één specifiek vak of voor alle lesuren van 1 dag door op die dag te klikken. Je kan evenees zelf de verschillende uren aanvinken of je kan slechts 1 lesuur aanpassen door op het icoontje achteraan de les te klikken.
 
-Onderaan kan je dan de vervanger invullen of kiezen uit de lijst en een begin- en einddatum opgeven voor die vervanging. Standaard staat hier al de begin- en einddatum van de afwezigheid ingevuld. Die kan steeds gewijzigd worden. 
+  Onderaan kan je dan de vervanger invullen of kiezen uit de lijst en een begin- en einddatum opgeven voor die vervanging. Standaard staat hier al de begin- en einddatum van de afwezigheid ingevuld. Die kan steeds gewijzigd worden. 
 
-![afwezig4](./afwezig4.png)
+  ![afwezig4](./afwezig4.png)
+
+- **Vervanging**: In het overzicht zie je per afwezig personeelslid achteraan een percentage staan, dat duidt aan hoeveel procent van de lessen van die leraar al een vervanger heeft toegewezen gekregen. Indien het personeelslid geen lessen (meer) op zijn naam heeft staan, staat hier standaard 100%.
+
+- **Informat**: In de kolom Informat kan je manueel aanvinken welke afwezigheden je al verwerkt hebt in Informat. 
 
 ## Aangevraagde afwezigheden behandelen
 
@@ -75,6 +77,4 @@ Dit kan handig zijn voor studiemeesters/roostermakers zodat zij ineens op de hoo
 
 In de module [Vervangingslijsten](/vervangingslijsten) kan er door studiemeesters op een gelijkaardige manier ook iemand afwezig worden gezet. Ook voor deze module kan er via de module Instellingen opgegeven worden of de administratie hiervan verwittigd moet worden.
 
-<Thumbnails img={[
-    require('./afwezig5.png').default, 
-  ]} />
+![afwezig5](./afwezig5.png)
