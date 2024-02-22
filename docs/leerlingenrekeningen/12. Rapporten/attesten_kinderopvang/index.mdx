@@ -77,7 +77,28 @@ Ook in de module Leerlingenrekeningen bij het menu 'Scholen' moeten nog een aant
 
 ![attest4](./attest4.png)
 
-### 2.3 Rijksregisternummers controleren
+### 2.3 In Informat
+
+Alle persoonsgegevens van zowel de leerlingen als de leerplichtverantwoordelijken worden via de synchronisatiemodule uit Informat gehaald. Om automatisch in Toolbox de correcte persoonsgegevens op de fiscale attesten te kunnen overnemen, moeten in Informat al deze gegevens correct geregistreerd zijn.
+
+- **Leerplichtverantwoordelijke** 
+
+    Vul in Informat (=> Relaties) het juiste rijksregisternummer in bij de juiste leerplichtverantwoordelijke. Wil je een relatie wijzigen van bv. LPV 2 naar LPV 1, klik dan op de pen helemaal vooraan bij de relatie, bv. in geval van gescheiden ouders.  
+
+    ![Informat1](./Informat1.PNG)
+
+    Toolbox zal prioritair rekening houden met de leerplichtverantwoordelijke waarvoor een rijksregisternummer is ingevuld. Mogelijke situaties:
+    - Zowel voor LPV 1 als LPV 2 zijn de rijksregisternummers ingevuld => Toolbox neemt de gegevens van LPV 1 over op het fiscaal attest.
+    - Enkel voor LPV 1 is het rijksregisternummer ingevuld => Toolbox neemt de gegevens van LPV 1 over op het fiscaal attest.
+    - Enkel voor LPV 2 is het rijksregisternummer ingevuld => Toolbox neemt de gegevens van LPV 2 over op het fiscaal attest.
+
+- **Domicilieadres van de leerplichtverantwoordelijke**
+
+    Koppel in Informat (=> Adressen) het juiste adres als domicilieadres aan de juiste leerplichtverantwoordelijke. Indien er meerdere adressen beschikbaar zijn, koppel je elk adres aan de juiste relatie. Indien er geen adres gekoppeld is als domicilieadres, zal Toolbox geen leerplichtverantwoordelijke kunnen tonen op het fiscaal attest. 
+
+    ![Informat2](./Informat2.png)
+
+### 2.4 Rijksregisternummers controleren
 Alvorens je de fiscale attesten genereert, kan je controleren voor welke leerlingen of leerplichtverantwoordelijken er géén rijksregisternummer is ingevuld in Informat. Deze rijksregisternummers zijn noodzakelijk voor het afleveren van het attest en het indienen via Belcotax-on-web. 
 
 Ga naar de module **Leerlingenrekeningen => Rapporten => Attest kinderopvang**. Selecteer het inkomstenjaar (bv. 2023 voor de aangifte in het jaar 2024) en klik op volgend icoon <LegacyAction img="rrnr.png"/>. 
@@ -213,9 +234,7 @@ Aan de hand van het  waarschuwingsicoon <LegacyAction img="alert.png"/> kan je a
 
 Op basis van de foutmeldingen in Toolbox voer je de nodige aanpassingen door in het administratief pakket en synchroniseer je opnieuw met Toolbox via de module 'Synchronisatie leerlingen'.
 
-De attesten in Toolbox worden NIET AUTOMATISCH GEÜPDATET na aanpassingen in het administratief pakket. Je zal de foutieve attesten moeten verwijderen en opnieuw genereren. Vink hiervoor alle foutieve attesten in Toolbox aan verwijder ze via het rode kruisje <LegacyAction img="remove.png"/> bovenaan. Ik het geval van attesten zonder leerplichtverantwoordelijke kan je gebruik maken van de link 'Selecteer attesten zonder relatie' net boven de tabel. 
-
-Klik opnieuw op de rekenmachine <LegacyAction img="calculator.png"/> om de gecorrigeerde attesten aan te maken. Voor leerlingen die reeds een correct attest hadden in het overzicht, zal met deze actie geen nieuw (lees: dubbel) attest aangemaakt worden. 
+De attesten in Toolbox worden NIET AUTOMATISCH GEÜPDATET na aanpassingen in het administratief pakket. Je kan het attest updaten door achteraan op het splitsingsicoon <LegacyAction img="splits.png"/> te klikken en (opnieuw) de juiste leerplichtverantwoordelijke te selecteren. Indien het gaat om veel attesten, kan je ook de foutieve attesten verwijderen en opnieuw genereren. Vink hiervoor alle foutieve attesten in Toolbox aan verwijder ze via het rode kruisje <LegacyAction img="remove.png"/> bovenaan. Ik het geval van attesten zonder leerplichtverantwoordelijke kan je gebruik maken van de link 'Selecteer attesten zonder relatie' net boven de tabel. Klik opnieuw op de rekenmachine <LegacyAction img="calculator.png"/> om de gecorrigeerde attesten aan te maken. Voor leerlingen die reeds een correct attest hadden in het overzicht, zal met deze actie geen nieuw (lees: dubbel) attest aangemaakt worden. 
 
 ![foutmelding](./foutmelding.png)
 
@@ -241,10 +260,7 @@ Ook deze gegevens dien je aan te passen in het administratief pakket (Informat o
 
 ![Informat2](./Informat2.png)
 
-
-De attesten in Toolbox worden NIET AUTOMATISCH GEÜPDATET na aanpassingen in het administratief pakket. Je zal de foutieve attesten moeten verwijderen en opnieuw genereren. Vink hiervoor alle foutieve attesten in Toolbox aan verwijder ze via het rode kruisje <LegacyAction img="remove.png"/> bovenaan. 
-
-Klik opnieuw op de rekenmachine <LegacyAction img="calculator.png"/> om de gecorrigeerde attesten aan te maken. Voor leerlingen die reeds een correct attest hadden in het overzicht, zal met deze actie geen nieuw (lees: dubbel) attest aangemaakt worden. 
+De attesten in Toolbox worden NIET AUTOMATISCH GEÜPDATET na aanpassingen in het administratief pakket. Je kan het attest updaten door achteraan op het splitsingsicoon <LegacyAction img="splits.png"/> te klikken en (opnieuw) de juiste leerplichtverantwoordelijke te selecteren. Indien het gaat om veel attesten, kan je ook de foutieve attesten verwijderen en opnieuw genereren. Vink hiervoor alle foutieve attesten in Toolbox aan verwijder ze via het rode kruisje <LegacyAction img="remove.png"/> bovenaan. Klik opnieuw op de rekenmachine <LegacyAction img="calculator.png"/> om de gecorrigeerde attesten aan te maken. Voor leerlingen die reeds een correct attest hadden in het overzicht, zal met deze actie geen nieuw (lees: dubbel) attest aangemaakt worden. 
 
 ### 7.3 Voor leerlingen die uitgeschreven zijn, worden de aanpassingen niet automatisch mee overgenomen naar Toolbox na synchronisatie.
 
@@ -292,5 +308,5 @@ Het XML-bestand wordt nu gedownload. Je kan het terugvinden links onderaan of re
 
 ![opvang4](./opvang4.PNG)
 
-Om het bestand te kunnen indienen bij Belcotax-on-web moet het XML-bestand nog worden omgezet naar een BOW-bestand. Hoe je dat doet, lees je [hier](https://tbvs.be/downloads/Xml_naar_bow.pdf). Dit BOW-bestand moet worden opgeladen via de online toepassing van Belcotax-on-web. Indien je geen toegang hebt tot deze applicatie, neem je best contact op met je regioboekhouder. 
+Om het bestand te kunnen indienen bij Belcotax-on-web moet het XML-bestand nog worden omgezet naar een BOW-bestand. Dit BOW-bestand moet worden opgeladen via de online toepassing van Belcotax-on-web. Indien je geen toegang hebt tot deze applicatie, neem je best contact op met je regioboekhouder. 
 
