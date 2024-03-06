@@ -1,0 +1,66 @@
+---
+title: Synchronisatie O365 via app-credentials
+---
+
+Met deze handleiding kan je vanuit Toolbox synchroniseren met Office365 zonder dat de Toolboxgebruiker zelf beheerdersrechten moet hebben in Azure AD.
+
+## Stap 1: nieuwe app-registratie 
+Ga naar de Azure AD / Entra ID Portal en klik links op “App-registraties” <LegacyAction img="app_registraties.jpg"/> en vervolgens op “Nieuwe registratie” <LegacyAction img="nieuwe_registratie.jpg"/>.
+
+- Vul als naam iets betekenisvol in, bijvoorbeeld “KOBA Toolbox”.
+- Duid aan dat alleen accounts in de organisatie toegang mogen hebben.
+- Vul bij omleidings-URI de juiste url in o.b.v. het hoofddomein van de toolbox: https://o365.kobam.be, https://o365.kobank.be, https://o365.noordkant.be, https://o365.kobavoorkempen.be, https://o365.kobart.be, https://o365.kobazuidkant.be, https://o365.kobazuiderkempen.be, https://o365.kobaheli.be, https://o365.tbvs.be
+- Klik op Registreren.
+
+![sync_O365_1](./sync_0365_1.jpg) 
+
+- Kopieer de Toepassings-id (client-id) en de Map-id (tenant-id) van het volgende scherm.
+
+![sync_O365_2](./sync_0365_2.jpg) 
+
+## Stap 2: machtiging toevoegen
+In het volgende scherm klik je links onder Beheren op "API-machtigingen" en dan op “Een machtiging toevoegen”.
+
+![sync_O365_3](./sync_0365_3.jpg) 
+![sync_O365_6](./sync_0365_6.jpg) 
+
+Klik in de verschenen balk op “Microsoft Graph” en dan op “Toepassingsmachtigingen”.
+
+<Thumbnails img={[
+    require('./sync_0365_4.jpg').default, 
+    require('./sync_0365_5.jpg').default, 
+]} />
+
+Voeg de volgende machtigingen toe:
+
+![sync_O365_7](./sync_0365_7.jpg) 
+
+Daarna klik je bovenaan de tabel op “Beheerderstoestemming verlenen voor …”
+
+## Stap 3: clientgeheim toevoegen
+
+Ga naar “Certificaten en geheimen” en klik op “Nieuw clientgeheim”.
+
+![sync_O365_8](./sync_0365_8.jpg) 
+
+Geef een passende beschrijving in en zet de verloopdatum zover mogelijk vooruit (maximum 2 jaar).
+
+![sync_O365_9](./sync_0365_9.jpg) 
+
+Kopieer de tekst die in de kolom “Waarde” staat.
+
+![sync_O365_10](./sync_0365_10.jpg) 
+
+## Stap 4: credentials instellen in Toolbox
+
+Ga naar de Toolbox => Instellingen => Office 365.
+
+- De Toepassings-id uit stap 2 vul je in bij de Client ID.
+- De gekopieerde “waarde” uit stap 4 vul je in bij de Client Secret.
+- Bij de login URL vul je de volgende URL in waarbij je de *** vervangt door de Map-id uit stap 2: https://login.microsoft.com/***/oauth2/token .
+
+Dat ziet er dan ongeveer zo uit:
+
+![sync_O365_11](./sync_0365_11.jpg) 
+
+Als je de knop “Office365 Interactief” uitzet, maak je in de synchronisatie gebruik van de client ID en hoef je dus geen beheerder meer te zijn om de synchronisatie te kunnen uitvoeren.
