@@ -16,20 +16,31 @@ Zorg er eerst voor dat er een project is in [Google Cloud](https://console.cloud
 ![Gsync_3](./Gsync_3.png) 
 
 - Selecteer het gewenste project en ga vervolgens naar 'APIs & Services > Bibliotheek' (APIs & Services > Library). Zoek hier naar de 'Admin SDK API', en schakel hem in.
+![Gsync_4](./Gsync_4.png) ![Gsync_5](./Gsync_5.png) ![Gsync_6](./Gsync_6.png) 
 - Ga nu naar 'APIs & Services > Inloggegevens' (APIs & Services > Credentials) en klik op 'Inloggegevens maken > Serviceaccount' (Create Credentails > Serviceaccount). 
+![Gsync_7](./Gsync_7.png) 
 - Geef de naam 'toolbox' op voor de accountnaam en klik op 'aanmaken' tot je op het overzichtsscherm van de API accounts komt. 
+![Gsync_8](./Gsync_8.png) 
 - Klik op de account die je net aangemaakt hebt en selecteer de tab 'Sleutels' (Keys). 
+![Gsync_9](./Gsync_9.png) ![Gsync_10](./Gsync_10.png) 
 - Hier klik je op de knop 'Sleutel toevoegen' > 'Nieuwe sleutel maken' (Add key > Create new Key). 
+![Gsync_11](./Gsync_11.png) 
 - Selecteer de JSON optie en download het sleutelbestand.
+![Gsync_12](./Gsync_12.png) ![Gsync_13](./Gsync_13.png) 
 
 ## 3. Een admin account aanmaken
 
 De service account die je net hebt aangemaakt, kan in principe enkel gebruikt worden om zonder gebruikersinteractie geauthenticeerde API calls te maken. Er dient nog een gebruiker aangemaakt te worden door wie de wijzigingen in de achtergrond zullen worden doorgevoerd. In principe kan hiervoor een bestaand, persoonlijk admin account gebruikt worden, maar i.v.m. continuiteit raden we aan om hiervoor een nieuw account, specifiek voor toolbox, in te richten.
 
 Ga naar https://admin.google.com en maak daar een gebruiker aan, toolbox@[domein]. Zorg ervoor dat deze gebruiker rechten heeft op alle mogelijke rechten in de groep 'Gebruikers' (Users).
+![Gsync_14](./Gsync_14.png) ![Gsync_15](./Gsync_15.png) 
+![Gsync_16](./Gsync_16.png) ![Gsync_17](./Gsync_17.png) 
 
 Als laatste moeten we onze API nog toegang geven tot de directory. 
 - Ga hiervoor in de Adminconsole naar 'Beveiliging > Toegangs- en Gegevenscontrole > API functies' (Security > Access & data control > API controls), en ga onderaan de pagina naar 'Domeinbrede machtigingen' (Domain-wide delegation). 
 - Klik op 'Nieuw toevoegen' (Add new). Plak onder het 'Client-Id' het 'Client-Id' uit het JSON-bestand dat je eerder downloadde en voeg volgend Oauth bereik toe:
 https://www.googleapis.com/auth/admin.directory.user .
 - Klik nu op 'Autoriseren' (Authorise).
+
+In de Toolboxinstellingen > Google vul je onderaan de inhoud van de json in, en ook de gebruikersnaam van de account die je hebt aangemaakt.
+![Gsync_18](./Gsync_18.png) 
