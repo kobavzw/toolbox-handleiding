@@ -60,7 +60,7 @@ De toegevoegde vakken verschijnen in het overzicht. In deze tabel kan je alle ko
 
 ### 1.2 Klassen/Groepen
 
-Bij het structuuronderdeel 'Groepen' wordt er een onderscheid gemaakt tussen enerzijds **officiële klasgroepen** en anderzijds **alternatieve groepen**. Die laatste kunnen klasdoorbrekende groepen zijn zoals keuze-uren, CLIL, ... waarbij een aantal leerlingen uit verschillende officiële klassen worden samengezet. Daarnaast kunnen de alternatieve groepen ook gebruikt worden om uren toe te kennen die geen effectieve lesopdracht inhouden, bv. uren voor bijzondere pedagogische taken (BPT), uren aanvangsbegeleiding (AVB), uren ondersteuning kerntaak leraar (OKT), ...
+Bij het structuuronderdeel 'Groepen' wordt er een onderscheid gemaakt tussen enerzijds **officiële klasgroepen** en anderzijds **alternatieve groepen**. Die laatste kunnen klasdoorbrekende groepen zijn zoals keuze-uren, CLIL,... waarbij een aantal leerlingen uit verschillende officiële klassen worden samengezet. Daarnaast kunnen de alternatieve groepen ook gebruikt worden om uren toe te kennen die geen effectieve lesopdracht inhouden, bv. uren voor bijzondere pedagogische taken (BPT), uren aanvangsbegeleiding (AVB), uren ondersteuning kerntaak leraar (OKT), ...
 
 Via het onderdeel **Structuur => Groepen => Groep toevoegen** kan je op dezelfde manier zowel de officiële als de alternatieve groepen aanmaken. De officiële klasgroepen zullen gekenmerkt worden door een groene bol in de kolom 'Klasgroep'. Alternatieve groepen krijgen een oranje bol. 
 
@@ -84,17 +84,27 @@ De toegevoegde groepen verschijnen in het overzicht. In deze tabel kan je alle k
 - Gebruik deze actieknop <LegacyAction img="vinkjeGroenRond.png"/> om een groep (tijdelijk) de activeren of deactiveren. 
 
 - Gebruik deze actieknop <LegacyAction img="edit.png"/> om de gegevens over de groep te wijzigen. 
-- Gebruik deze actieknop <LegacyAction img="link2.png"/> om aan deze groep een alternatieve groep (oranje bol) te koppelen. In het voorbeeld bevat de alternatieve groep '1A keuzepakketten' alle vakken die bij inschrijving in het eerste jaar als keuzevak genomen kunnen worden, o.a. Stem-Technieken, Stem-Wetenschappen, Voeding & Horeca, Econmie & Organisatie, Maatschappij & Welzijn ... In de praktijk worden tijdens dit keuze-uurtje de leerlingen uit alle 1A-klassen gehergroepeerd op basis van het gekozen pakket. Daarom koppelen we de groep '1A keuzepakketten' aan alle officiële '1A' klasgroepen. In dit voorbeeld is de koppeling enkel nog maar gelegd met de klasgroepen 1A1 en 1A2. In de kolom 'Gekoppeld' zie je bij deze 2 klassen 1 koppeling. 
+- Gebruik deze actieknop <LegacyAction img="link2.png"/> om aan deze groep een alternatieve groep (oranje bol) te koppelen. In het voorbeeld bevat de alternatieve groep '1A keuzepakketten' alle vakken die bij inschrijving in het eerste jaar als keuzevak genomen kunnen worden, o.a. Stem-Technieken, Stem-Wetenschappen, Voeding & Horeca, Econmie & Organisatie, Maatschappij & Welzijn ... In de praktijk worden tijdens dit keuze-uurtje de leerlingen uit alle 1A-klassen gehergroepeerd op basis van het gekozen pakket. Daarom koppelen we de groep '1A keuzepakketten' aan alle officiële '1A' klasgroepen. In dit voorbeeld is de koppeling enkel nog maar gelegd met de klasgroepen 1A1 en 1A2. In de kolom 'Gekoppeld' (in de afbeelding hierboven) zie je bij deze 2 klassen 1 koppeling. 
    
     Klik in de rechterkolom op de alternatieve groep die je wil koppelen. Die groep wordt nu naar de linkerkolom verplaatst. Je maakt de koppeling terug ongedaan door in de linkerkolom opnieuw op de betreffende groepsnaam te klikken, waardoor die terug naar rechts verplaats zal worden en zodoende niet meer gekoppeld zal zijn.
 
     ![groep_4](./groep_4.png)
 
-- Gebruik deze actieknop <LegacyAction img="treeview.png"/> om na te gaan hoeveel lesuren er aan deze groep gekoppeld zijn en eventueel ook welke alternatieve groep(en). 
+    Een ander voorbeeld: De officiële klasgroep 5 Latijn-Grieks (5 LAGR) zit voor het vak Grieks samen met de officiële klasgroep 5 Grieks-Wiskunde (5 GRWI). Voor het vak Latijn zit deze klas samen met 5 Latijn-Moderne talen (5 LAMT). 
+     - Stap 1: Maak 3 officiële klasgroepen aan (groene bol), nl. 5 Latijn-Grieks, 5 Grieks-Wiskunde en 5 Latijn-Moderne talen.
 
-    <Thumbnails img={[
-        require('./groep_5.PNG').default, 
-    ]} />
+     - Stap 2: Koppel aan elk van deze 3 officiële klasgroepen de vakken waarvoor de betreffende klas apart zit, dus waarvoor de leerlingen niet samenzitten met leerlingen uit een andere klasgroep. In dit voorbeeld voeg je dus geen vak Grieks of Latijn toe. Hoe je vakken aan groepen koppelt, vind je terug bij [punt 1.3 Vakken en groepen koppelen](opdrachten/structuur/#13-vakken-en-groepen-koppelen).
+     - Stap 3: Maak 2 alternatieve groepen aan (oranje bol), bv. '5 LAGR-GRWI Grieks' en '5 LAGR-LAMT Latijn'. Dit zijn de samengestelde groepen voor respectievelijk de vakken Grieks en Latijn. NOOT! Indien samengestelde groepen voor meerdere vakken worden samengezet, kunnen er uiteraard meerdere vakken aan de alternatieve groep worden gekoppeld. 
+     - Stap 4: Koppel aan de alternatieve groep '5 LAGR-GRWI Grieks' enkel het vak Grieks en aan '5 LAGR-LAMT Latijn' enkel het vak Latijn. 
+     - Stap 4: Nu kan je bij **Structuur => Groepen** het link-icoontje <LegacyAction img="link2.png"/> gebruiken achter de 3 officiële klassen. Daarmee kan je aan elke officiële klasgroep een alternatieve groep koppelen. 
+        - Koppel aan 5 LAGR de groepen '5 LAGR-GRWI Grieks' en '5 LAGR-LAMT Latijn'.
+        - Koppel aan 5 GRWI de groep '5 LAGR-GRWI Grieks'.
+        - Koppel aan 5 LAMT de groep '5 LAGR-LAMT Latijn'.
+     - Als dat is gebeurd, verschijnt er achteraan de groep een extra icoontje <LegacyAction img="treeview.png"/> dat aangeeft dat er aan die klas nog andere groepen gekoppeld zijn. De leraren die je vervolgens koppelt aan bv. het vak Grieks in de groep '5 LAGR-GRWI Grieks' zijn nu ook automatisch gekoppeld aan de klas 5LAGR.
+
+        <Thumbnails img={[
+            require('./koppeling_5.PNG').default, 
+        ]} />
 
 - Gebruik deze actieknop <LegacyAction img="remove.png"/> om de groep uit het overzicht te verwijderen.  
 
@@ -133,10 +143,10 @@ De gekozen vakken verschijnen in een overzicht.
     - keuzevak
     - richtingsvak
     - complementair vak
-
-- **Volgorde**: De vakken worden standaard alfabetisch getoond. Je kan de volgorde aanpassen door een nummering toe te kennen aan de vakken. De vakken zullen vervolgens gesorteerd worden op basis van het toegekende nummer en dat van laag naar hoog.
-
+- **Roosteren**: Wil je dit vak mee overnemen in de export voor het roosterprogramma (bv. Untis, Mondriaan, ...)? Behoud dan het groene vinkje. Is dat niet nodig? Bv. bepaalde BPT-uren moeten niet ingeroosterd worden. Vink deze optie dan uit door op het icoontje <LegacyAction img="vinkjeGroenRond.png"/> te klikken waardoor het grijs wordt <LegacyAction img="vinkjeGrijsRond.png"/>.
 - **Skore**: Voor de export naar Skore (terug te vinden bij Rapporten) worden standaard de vakafkortingen gebruikt. Indien je voor Skore een andere afkorting wil gebruiken kan je die in dit veld ingeven. Laat je het veld leeg, wordt de standaard vakafkorting overgenomen.  
+
+- **Volgorde**: De vakken worden standaard alfabetisch getoond. Je kan de volgorde aanpassen door een nummer toe te kennen aan elk vak. De vakken zullen vervolgens gesorteerd worden op basis van het toegekende nummer en dat van laag naar hoog.
 
 - Via dit icoon <LegacyAction img="remove.png"/> kan je een vak terug verwijderen uit de lessentabel.
 
