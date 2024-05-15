@@ -28,7 +28,7 @@ Is er een item teveel opgegeven, dan kan dit eenvoudig worden geschrapt door op 
 ### Stap 3: Selecteer een betaalmethode
 Afhankelijk van de ingestelde betaalmodaliteit (in de module Instellingen Toolbox) kan er op verschillende manieren betaald worden. 
 
-- **Aanrekenen of retour via leerlingenrekening** 
+#### 1. Aanrekenen of retour via leerlingenrekening
 
 Via deze methode zullen de aangerekende artikels worden bijgeschreven op de schoolfactuur. Aangezien het hier een uitgestelde betaling betreft kan er veel flexibeler worden omgegaan met aan wie wordt aangerekend en wanneer de betaling wordt gevorderd. Zo kan er naast de individuele aanrekening ook aan volledige klassen worden aangerekend of een groep personen van een welbepaalde klas.
 
@@ -36,13 +36,13 @@ Nadat er gedrukt is op 'Aanrekenen via leerlingenrekening' verschijnt onderstaan
 
 ![bedienen4](./bedienen4.jpg)
 
-**_a. Aanrekenen aan een individuele leerling_**
+#### **_a. Aanrekenen aan een individuele leerling_**
 
 Een individuele leerling kan eenvoudig gevonden worden door in het witte tekstvak enkele opeenvolgde karakters uit de naam op te geven. Het systeem zal vervolgens filteren op leerlingen die de opgegeven karaktersequentie in hun naam hebben. Er wordt gezocht op zowel naam als voornaam.
 
 Het is ook mogelijk om een leerling op te geven door een betaalkaart te scannen die is aangemaakt via de module Betaalkaarten van de Toolbox.
 
-**_b. Aanrekenen aan een volledige klas of meerdere leerlingen uit een klas_** 
+#### **_b. Aanrekenen aan een volledige klas of meerdere leerlingen uit een klas_** 
 
 Om één of meerdere klassen of enkele leerlingen uit een klas te selecteren moet er op de blauwe hyperlink met de naam van de school gedrukt worden. 
 
@@ -58,16 +58,49 @@ Het is ook mogelijk om uit een bepaalde klas één of meerdere leerlingen te sel
 
 ![bedienen6](./bedienen6.jpg)
 
-- **Betalen via budget**
+#### **_c. Aanrekeningen importeren op de schoolrekening_** 
+
+Aanrekeningen die via deze betaalmethode worden geregistreerd, verschijnen niet automatisch op de schoolrekening. Ze kunnen in de module **Leerlingenrekeningen** via het menu **Importeer** geïmporteerd worden door te klikken op 'Aanrekeningen via de kassa'. Alvorens dit te doen, is het belangrijk om in het startscherm de gewenste school, het gewenste schooljaar en de gewenste notagroep te selecteren. 
+
+![importeer1](./importeer1.png)
+
+- **Stap 1**: Stel de periode in waarvoor je de aanrekeningen wil importeren op de schoolrekening.
+- **Stap 2**: Je kan filteren op artikel, categorie, kassa, klas of een combinatie hiervan. Klik achteraan op 'Filter toepassen' om de gefilterde resultaten weer te geven. Indien je alle aanrekeningen van de ingestelde periode ineens wil tonen, stel je geen filters in en klik je meteen achteraan op 'Filter toepassen'. 
+- **Stap 3**: Selecteer de aanrekeningen die je wenst te importeren of vink ineens alles aan m.b.v. de bovenste checkbox. 
+- **Stap 4**: Klik op 'Importeer selectie'.
+- **Stap 5**: Je kan de geïmporteerde aanrekeningen terugvinden bij 'Aanrekenen artikel'. Daar kan je nog aanpassingen doorvoeren indien nodig.
+
+:::caution OPGELET
+Aanrekeningen uit de kassa kunnen slechts eenmalig geïmporteerd worden. 
+:::
+
+#### 2. Aanrekenen via leerlingenrekening IN BULK
+Met behulp van deze betaalmethode kan je in combinatie met een scanapparaat heel snel één artikel of een vaste set aan artikels aanrekenen aan meerdere leerlingen. Een voorbeeld: 's Middags wordt er soep verkocht wordt in de refter. Selecteer in de kassa éénmalig het artikel 'soep' en kies voor 'Aanrekenen via leerlingenrekening in bulk'. Er verschijnt een pop-up waarna je de leerlingenkaarten kan beginnen scannen. Voor elke gescande leerling wordt de portie soep aangerekend via de leerlingenrekening. Er is een controle ingebouwd dat er niet dubbel gescand kan worden. Indien je een leerling een tweede keer probeert te scannen, krijg je de melding dat die leerling reeds gescand is. 
+
+:::caution OPGELET! 
+Indien je meerdere artikels tegelijk wil aanrekenen, gaat het steeds om een vaste set aan artikels. M.a.w. deze artikels worden steeds aan alle gescande leerlingen aangerekend. Indien men een keuze kan maken tussen de artikels, kan het aanrekenen in bulk niet gebruikt worden. Dan is de gewone aanrekening via de leerlingenrekeningen beter geschikt. 
+:::
+
+Aanrekeningen die via deze betaalmethode worden geregistreerd, verschijnen niet automatisch op de schoolrekening. Klik [hier](/kassa/gebruik_verwerking/bedienen/#c-aanrekeningen-importeren-op-de-schoolrekening) om te lezen hoe je de aanrekeningen importeert in de module Leerlingenrekeningen.
+
+#### 3. Aanrekenen via budget
 Je krijgt een overzicht te zien van de beschikbare budgetten. Klik op het betreffende budget en bevestig met OK. Je kan het budget opvolgen via <LegacyAction img="budget.png" text="Beheer budgetten"/>. 
 
-- **Betalen via POM**
-Er wordt een QR code gegenereerd die men kan scannen via Payconiq of in de eigen bankapp. POM is echter wel betalend en zal pas functioneel zijn van zodra het contract is geactiveerd. Tarieven raadplegen en activeren kan via https://app.pom.be/nl/connect/koba-toolbox/tarieven. De transactiekost kan indien gewenst via de kassa worden doorgerekend aan de 'klant'. Dit kan ingesteld worden in de module Instellingen Toolbox. 
+#### 4. Aanrekenen via POM
+Er wordt een QR code gegenereerd die men kan scannen via Payconiq of in de eigen bankapp. POM is echter wel betalend en zal pas functioneel zijn van zodra het contract met POM is geactiveerd. Tarieven raadplegen en activeren kan via https://app.pom.be/nl/connect/koba-toolbox/tarieven. De transactiekost kan indien gewenst via de kassa worden doorgerekend aan de 'klant'. Dit kan ingesteld worden in de module **Instellingen => Toolbox**. 
 
-- **Betalen via Wallet**
-Deze functie werkt enkel in combinatie met de module Wallet in Toolbox. Leerlingen (of hun ouders) en personeelsleden kunnen geld opladen in hun digitale wallet en kunnen hun aankopen hiermee betalen. De wallet werkt in combinatie met een scanapparaat en een unieke barcode per persoon. 
+#### 5. Cash betalen
+Een verrichting kan gekoppeld worden aan een leerling, maar er kan ook anoniem betaald worden. Dit maakt het mogelijk om ook aan externen te verkopen via de kassa. Het wisselgeld wordt automatisch berekend na het invoeren van het ontvangen bedrag.
 
-- **Cash betalen**
-Je kan de betaling anoniem registreren of op naam van de leerling. Het wisselgeld wordt automatisch berekend na het invoeren van het ontvangen bedrag.
+Voor cash betalingen is er **geen** koppeling met de module Kas voorzien. De kassa zal periodiek geledigd moeten worden. Via de rubriek [Opvolging verkopen](/kassa/gebruik_verwerking/verkopen_opvolgen/) is het mogelijk om voor een bepaalde periode een overzicht van alle cashverrichtingen te genereren. Dit document geldt als verantwoordingsstuk en zal in de module Kas als document aan de verrichting (geld uit de kassa naar de kas) toegevoegd moeten worden. De cashverrichtingen voor een bepaalde periode kunnen in één verrichting als één groot bedrag worden ingegeven. Het is niet nodig om elke verrichting apart in te geven in de module Kas. 
 
- ![bedienen7](./bedienen7.PNG)
+![bedienen7](./bedienen7.PNG)
+
+#### 6. Betaald via Payconiq, SumUp of extern betaalsysteem
+Je kan de betaling anoniem registreren of op naam van de leerling. Hiermee registreer je enkel dat de betaling heeft plaatsgevonden via een bepaald systeem. Deze registraties kunnen per betaalmiddel opgevolgd worden in het menu [Opvolging verkopen](/kassa/gebruik_verwerking/verkopen_opvolgen/). Er is echter geen koppeling voorzien met deze externe systemen.
+
+![betaling](./betaling.PNG)
+
+#### 7. Betalen via Wallet
+Deze functie werkt enkel in combinatie met de module [Wallet](/wallet) in Toolbox. Leerlingen (of hun ouders) en personeelsleden kunnen geld opladen in hun digitale wallet en kunnen hun aankopen hiermee betalen. De wallet werkt in combinatie met een scanapparaat en een unieke barcode per persoon. Om een aankoop te betalen met de wallet volstaat het om de barcode of QR code te scannen van de leerlingenkaart, identiteitskaart van de leraar of pasje de externe. Het bedrag zal onmiddellijk in mindering worden gebracht. Na de aankoop wordt het beschikbare saldo op de wallet getoond. 
+
