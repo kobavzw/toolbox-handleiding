@@ -2,24 +2,48 @@
 title: Leerlingen
 ---
 
-Van zodra het schooljaar is aangemaakt in de module Boekenverkoop én het schooljaar actief staat voor ouders/leerlingen, kan via de module Synchronisatie - Leerlingen de lijst van leerlingen voor de boekenverkoop worden opgevuld. Pas als een leerling een account heeft in Toolbox én ook gesynchroniseerd werd met de boekenverkoop, kan hij/zij een bestelling plaatsen!
+## 1. Leerlingen synchroniseren met de module Boekenverkoop
+
+Van zodra het schooljaar is aangemaakt in de module Boekenverkoop én het schooljaar actief staat voor ouders/leerlingen, kan via de module **Synchronisatie Leerlingen => Synchroniseer met Boekenverkoop** de lijst van leerlingen voor de boekenverkoop worden opgevuld. Pas als een leerling een account heeft in Toolbox én ook gesynchroniseerd werd met de boekenverkoop, kan hij/zij een bestelling plaatsen!
 
 De leerlingen worden opgehaald uit de administratieve software Informat of Wisa. 
 
-Om op het einde van het schooljaar reeds de leerlingen van volgend schooljaar op te halen, kan je in de instellingen van Toolbox - Schooljaar het veld 'Schooljaar Informat/Wisa leerlingen inschrijvingen' invullen met het volgende schooljaar. Als dat veld is ingevuld, zal Toolbox de leerlingen voor het nieuwe schooljaar ophalen en synchroniseren. Als er dan wordt gesynchroniseerd met de boekenverkoop, komen die nieuwe leerlingen ook in de lijst terecht in klas TBINSCHR.
+Om op het einde van het schooljaar reeds de leerlingen van volgend schooljaar op te halen, kan je in de module **Instellingen => Schooljaar** in het veld 'Schooljaar Informat/Wisa leerlingen inschrijvingen' het volgende schooljaar invullen. Let op dat je het correcte datumformaat gebruikt. Voor informat is dat bv. 2024-25, voor Wisa bv. 2024. 
 
 ![leerlingen3](./leerlingen3.PNG)
 
+Daarna zal Toolbox de leerlingen voor het nieuwe schooljaar ophalen. Als er vervolgens wordt gesynchroniseerd met de module Boekenverkoop, komen die nieuwe leerlingen ook in de lijst van de boekenverkoop terecht in klas TBINSCHR. Dit alles vindt plaats in de module **Synchronisatie Leerlingen**:
+- Stap 1: Gegevens ophalen
+- Stap 2: Synchroniseer gegevens
+- Stap 3: Synchroniseer met Boekenverkoop
+
 Het is dus belangrijk om nieuwe inschrijvingen zo snel mogelijk administratief te verwerken en te synchroniseren met Toolbox en Boekenverkoop. Idealiter wordt die taak dan ook overgelaten aan de leerlingenadministratie.
 
-Indien een leerling niet (meteen) kan worden toegevoegd via de administratie, is het mogelijk om een leerling manueel toe te voegen aan de lijst van leerlingen. Voor die leerlingen zal het icoontje 'Overzetten' actief worden. Van zodra er voor de manueel toegevoegde leerling een 'echte' (lees: via de administratie toegevoegde) leerling wordt aangemaakt, kan de manueel toegevoegde leerling overgezet worden naar de administratieve leerling.
+Indien een leerling niet (meteen) kan worden toegevoegd via de administratie, is het mogelijk om een leerling manueel toe te voegen aan de lijst van leerlingen. Voor die leerlingen zal achteraan het icoontje 'Overzetten' <LegacyAction img="back.png"/> actief worden. Van zodra er voor de manueel toegevoegde leerling een 'echte' (lees: via Informat/Wisa toegevoegde) leerling wordt aangemaakt, kan de manueel toegevoegde leerling via dit icoon overgezet worden naar de administratieve leerling.
 
 :::caution
-Manueel toegevoegde leerlingen kunnen niet inloggen op het leerlingenplatform en kunnen dus zelf ook geen bestelling plaatsen!
+Manueel toegevoegde leerlingen kunnen **niet** inloggen op het leerlingenplatform en kunnen dus zelf ook geen bestelling plaatsen! Probeer het gebruik van manueel toegevoegde leerlingen zoveel als mogelijk te beperken. 
 :::
 
 ![leerlingen1](./leerlingen1.png)
 
-Leerlingen kunnen hun tweedehandsboeken registreren of nieuwe boeken bestellen via de Toolbox voor leerlingen. Die is te vinden in de submap leerling (bv. https://mijnschool.tbvs.be/leerling). Leerlingen kunnen hier ook gebruik maken van single sign on met Smartschool of Office 365.
+## 2. Webshop
+
+### Toolbox voor leerlingen
+Leerlingen kunnen boeken bestellen of hun tweedehandsboeken registreren via de **Toolbox voor leerlingen**. Die is te vinden in de submap leerling. Indien de url naar de Toolbox van de school bv. https://mijnschool.tbvs.be is, dan is de url naar de bijhorende Toolbox voor leerlingen https://mijnschool.tbvs.be/leerling. 
 
 ![leerlingen2](./leerlingen2.png)
+
+### Inloggen
+
+Leerlingen kunnen op verschillende manieren inloggen in de Toolbox voor leerlingen:
+- via gebruikersnaam en wachtwoord. 
+- via single sign on met Smartschool, Google of Office 365. Om hiervan gebruik te kunnen maken, moet dit ingesteld zijn in de module **Instellingen** (van de schooltoolbox) **=> Toolbox leerlingen**. Bij gebruik van de single sign on met Smartschool kunnen ook co-accounts inloggen op de Toolbox voor leerlingen met hun persoonlijke co-account. Het is dan mogelijk om aan alle (co-)accounts een Smartschoolbericht te versturen met daarin de URL naar de Toolbox voor leerlingen. Leerlingen en/of co-accounts zijn onmiddellijk ingelogd in de Toolbox voor leerlingen na het klikken op de link en moeten niet eerst opnieuw hun inloggegevens invullen.   
+
+![leerlingen4](./leerlingen4.png)
+
+Nieuwe leerlingen moeten sowieso inloggen met gebruikersnaam en wachtwoord aangezien zij nog niet beschikken over een account in Smartschool, Google of Office. Die inloggegevens zijn terug te vinden in de module **Synchronisatie leerlingen**. Helemaal onderaan kan je een Excel-bestand downloaden. In dit bestand vind je niet alleen de inloggegevens voor Toolbox, maar ook de e-mailadressen van de leerplichtverantwoordelijken. Deze gegevens worden opgehaald uit Informat en zijn rechtstreeks in dat pakket in te voeren of aan te passen. Het Excel-bestand maakt het mogelijk om via een mail merge een gepersonaliseerde mail te sturen naar de ouders met daarin de algemene info i.v.m. de boekenverkoop, maar daarnaast ook de persoonlijke inloggegevens voor Toolbox. 
+
+Een mail merge maak je in MS Word via het lint 'Verzendlijsten'. Ga via 'Afdruk samenvoegen starten' naar 'E-mailberichten'. Stel je e-mailbericht op en koppel het eerder gedownloade en opgeslagen Excel-bestand. 
+
+![leerling5](./leerling5.PNG)
