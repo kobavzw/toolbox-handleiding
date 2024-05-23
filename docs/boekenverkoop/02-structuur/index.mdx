@@ -4,35 +4,62 @@ title: Structuur
 
 Zodra het schooljaar is aangemaakt, kan er gestart worden met het opzetten van de structuur. Die structuur is een combinatie van vakken, studierichtingen, types van vakken (bv. Algemene vakken, richtingsvakken, keuzevakken, ...) en artikels.
 
-<Thumbnails img={[
-    require('./studierichtingen.png').default, 
-    require('./vakken.png').default
-]} />
+## Studierichtingen, vakken en vaktypes ingeven
 
-Bij een eerste opzet van de module is het aangewezen om te starten met het voorzien van enkele basisgegevens: lijst van studierichtingen en lijst van vakken. De helpdesk kan die lijsten (in Excel of CSV formaat) importeren op de databank om het overtypwerk te reduceren. Het koppelen van vakken aan richtingen moet echter wel in de module zelf gebeuren maar kan de volgende jaren worden overgenomen.
+Bij een eerste opzet van de module Boekenverkoop kan de helpdesk van Toolbox lijsten met studierichtingen, vakken en vaktypes (in Excel of CSV formaat) importeren op de databank om het overtypwerk te reduceren. Alle koppelingen moeten echter wel in de module zelf gebeuren, maar kunnen de volgende jaren worden steeds overgenomen worden van het voorgaande jaar.
 
-Als de studierichtingen en vakken klaar zitten, kan via Structuur - Studierichtingen/Vakken de koppeling gemaakt worden tussen de vakken die in een studierichting voorkomen. Dat gebeurt door in de linkse kolom de studierichting te selecteren en vervolgens in de rechtse kolom de gewenste vakken aan te vinken. De toegevoegde vakken verschijnen vervolgens in de middelste kolom en worden in de rechtse kolom in het grijs weergegeven. De niet toegevoegde vakken blijven in het blauw staan.
+### Studierichtingen
+In het menu **Structuur => Studierichtingen** kan je alle studierichtingen ingeven door te klikken op de witte plus. Elke studierichting bestaat uit een volledige benaming en een afkorting. Werk je met tweedehandsboeken? Maak dan voor elk studiejaar één aparte studierichting met als code 'TWH' aan. Voor het vierde jaar kan de code dan zijn '4TWH' en als naam '4e jaar - Tweedehands'.
 
-In de middelste kolom kan je per vak optioneel nog twee opties toevoegen: het aantal uur dat een vak wordt gegeven binnen die richting en het vaktype. Dat laatste gegeven komt vanuit de lijst van Vaktypes (te vinden onder Structuur). 
+![Studierichtingen](./studierichtingen.png)
 
-![Studierichting vakken](./studierichting_vakken.png)
+### Vakken
 
-Eens de artikels correct zijn ingesteld, kan je bij **Structuur > Vakken/artikels** aangeven welke artikels een leerling dient aan te kopen voor een bepaald vak in een bepaalde studierichting. Om een artikel toe te voegen, klik je op de zwarte plus achter de naam van het vak. Vervolgens krijg je een zoekvenster waarin je kan zoeken naar artikel. Vink elke toe te voegen artikel aan en sluit het venster.
+Via het menu **Structuur => Vakken** kan je alle vakken invoeren, evenees met de witte plus. Moeten de leerlingen ook andere materialen kunnen bestellen zoals schoolgerei, werkmaterialen, persoonlijke beschermingsmiddelen, ...? Dan kan je voor elke categorie van artikels een apart vak aanmaken. In een latere fase ga je aan elk vak artikels koppelen. Op die manier blijft alles mooi overzichtelijk in de webshop. Werk je met tweedehandsboeken? Voorzie dan ook 1x het vak 'Tweedehands'.
 
-Per artikel worden de bijkomende opties getoond aan de hand van vinkjes: Is het een verplicht - via de school - aan te kopen artikel? Kan het artikel tweedehands aangekocht worden? Is het te huur? Deze instellingen worden automatisch overgenomen van de artikels, maar kunnen hier nog gewijzigd worden. De wijzigingen die je hier doet, worden niet doorgevoerd naar het algemene artikelinstellingen. De verkoopprijs voor tweedehands- en huurboeken kan eveneens enkel ingesteld worden bij de artikels.  
+![Structuur1](./structuur1.PNG)
 
-Een artikel verwijderen uit de studierichting/vak kan via het rode kruisje.
+### Vaktypes
 
-Onderaan de lijst met vakken kan je aangeven of een studierichting klaar is voor publicatie of niet. Indien niet gepubliceerd, zullen leerlingen een melding krijgen bij het selecteren van die richting. De icoontjes voor de naam van de studierichting worden hier ook door aangepast zodat het visueel duidelijk is welke richtingen afgewerkt zijn en welke niet.
+Via het menu **Structuur => Vaktypes** kan je categorieën van vakken ofwel 'vaktypes' specifiëren. Dit is facultatief te gebruiken, maar maakt het wel mogelijk om een duidelijk ingedeelde webshop aan te bieden. Enkele voorbeelden van mogelijke vaktypes: 
+- Algemene vakken 
+- Richtingsvakken
+- Keuzevakken
+- Schoolbenodigdheden
+- Varia
+- ...
+
+In een latere fase kan je aan elk vak (op niveau van de studierichting) een vaktype koppelen. Bij het openen van de webshop (of bij Structuur => Vakken-Artikels) zal je zien dat alle vakken die behoren tot hetzelfde vaktype netjes gegroepeerd worden en dat de naam van het vaktype de tussentitel is van die groep met artikels. 
+
+![Structuur2](./structuur2.PNG)
+
+## Vakken aan studierichtingen koppelen
+
+Als de studierichtingen, vakken en vaktypes klaarstaan, kan via **Structuur => Studierichtingen/Vakken** ingesteld worden welke vakken er ingericht worden in elke studierichting. Dat gebeurt door in de linkse kolom de studierichting te selecteren en vervolgens in de rechtse kolom de gewenste vakken aan te vinken. De toegevoegde vakken verschijnen vervolgens in de middelste kolom en worden in de rechtse kolom in het grijs weergegeven. De niet toegevoegde vakken blijven in het blauw staan.
+
+Je kan een vak verwijderen uit de studierichting via het rode kruisje <LegacyAction img="remove.png"/>. Het vak zal dan in de rechterkolom opnieuw in het blauw getoond worden. Het vak wordt dus enkel ontkoppeld van deze studierichting en niet volledig verwijderd uit Toolbox. Indien je het vak wel volledig wil verwijderen uit de module Boekenverkoop ga je via het menu **Structuur => Vakken**. 
+
+In de middelste kolom kan je per vak optioneel nog twee zaken toevoegen: het aantal uur dat een vak wordt gegeven binnen die richting en het vaktype. Dat laatste gegeven komt vanuit de lijst van Vaktypes (te vinden onder Structuur). 
 
 ![Vakken Artikels](./vakken_artikels.png)
 
+## Artikels aan vakken koppelen op niveau van de studierichting
+Bij **Structuur > Vakken - Artikels** kan je aangeven welke artikels een leerling dient aan te kopen voor een bepaald vak in een bepaalde studierichting. Om dit te kunnen doen, moeten eerst alle voorgaande stappen zijn afgerond alsook de algemene lijst met artikels zijn ingevoerd via het menu **Artikels**. Om een artikel te koppelen aan een vak, klik je op de zwarte plus achter de naam van het vak. Vervolgens verschijnt er een zoekvenster waarin je kan zoeken naar artikel. Vink elk toe te voegen artikel aan en sluit het venster.
+
+![Structuur3](./structuur3.png)
+
+Per artikel worden de bijkomende opties getoond aan de hand van vinkjes: Is het een verplicht - via de school - aan te kopen artikel? Kan het artikel tweedehands aangekocht worden? Is het te huur? Deze instellingen worden automatisch overgenomen van de artikels, maar kunnen hier nog gewijzigd worden. De wijzigingen die je hier doet, worden niet doorgevoerd naar het algemene artikelinstellingen. De verkoopprijs voor tweedehands- en huurboeken kan eveneens enkel ingesteld worden bij de artikels.  
+
+Een artikel verwijderen uit de studierichting/vak kan via het rode kruisje achteraan.
+
+Onderaan de lijst met vakken kan je aangeven of een studierichting klaar is voor publicatie of niet. Indien niet gepubliceerd, zullen leerlingen een melding krijgen bij het selecteren van die richting. De icoontjes voor de naam van de studierichting worden hier ook door aangepast zodat het visueel duidelijk is welke richtingen gepubliceerd zijn en welke niet.
+
 ## Tweedehandsboeken
 
-Om aan te geven welke tweedehandsboeken ingeleverd mogen worden door leerlingen, moeten er studierichtingen aangemaakt worden met in de code 'TWH'. We raden aan om voor elk jaar zo'n 'studierichting' aan te maken. Voor het vierde jaar kan de code dan zijn 4TWH en als naam '4e jaar - Tweedehands'.
+Om aan te geven welke tweedehandsboeken ingeleverd mogen worden door leerlingen, moeten er studierichtingen aangemaakt worden met de code 'TWH'. We raden aan om voor elk jaar zo'n 'studierichting' aan te maken. Voor het vierde jaar kan de code dan zijn 4TWH en als naam '4e jaar - Tweedehands'.
 
-Binnen die richting kan je werken met vakken maar het volstaat eigenlijk om één vak (bv. Tweedehands) te voorzien. Binnen elke tweedehands-richting voeg je de boeken toe die leerlingen mogen inleveren. Vink zeker voor elk boek de optie TWH aan in de structuur - vakken/artikels.
+Binnen die richting kan je werken met vakken maar het volstaat eigenlijk om één vak (bv. Tweedehands) te voorzien. Binnen elke tweedehands-richting voeg je de boeken toe die leerlingen mogen inleveren. Vink zeker voor elk boek de optie TWH aan in het menu **Structuur => Vakken - artikels**.
 
-Om te controleren of je alle boeken hebt toegevoegd en aangevinkt, ga je naar Tweedehands - Boekenlijst. Die lijst toont alle boeken die ingeleverd mogen worden.
+Om te controleren of je alle boeken hebt toegevoegd en aangevinkt, ga je naar het menu **Tweedehands => Boekenlijst**. Die lijst toont alle boeken die ingeleverd mogen worden.
 
 ![Tweedehandsboeken](./tweedehands.png)
