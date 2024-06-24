@@ -34,10 +34,10 @@ Via het **contract** kan je de herstelling verder opvolgen. Daar is het eveneens
 De herstelfactuur wordt automatisch gegenereerd wanneer er een bedrag (kostprijs voor de gebruiker) wordt ingevuld bij het invoeren van de herstelling. De herstelfacturen zijn terug te vinden in het menu **Facturen**. Van daaruit kunnen ze overgezet worden naar de module Leerlingenrekeningen. Voor meer info over het verwerken van facturen in de module Inventaris, klik [hier](/inventaris/toestel_toewijzen/#facturen). 
 
 ## Koppeling met Signpost M4S
-Via het Menu **Signpost M4S** kunnen herstellingen vanuit M4S opgehaald worden via de knop <LegacyAction img="refresh.png" text="Haal meest recente informatie" op/>. Door op de blauwe link van het item nr. te klikken, wordt je doorgestuurd naar het betreffende item in de inventarislijst. 
 
-:::caution Under construction
-Er wordt momenteel nog gewerkt aan een automatische koppeling tussen de herstellingen in M4S en Toolbox om de opvolging eenvoudiger en efficiënter te maken. 
-:::
+De inventarismodule heeft een automatische koppeling met Signpost M4S. Om die te activeren moet je eerst in de instellingen van Toolbox - Signpost M4S de API credentials toevoegen. Die kan je zelf genereren in M4S via Instituten - API Toegangscodes. 
+In de instellingen kan je ook een standaard contactpersoon invullen. Dat mag ook gedeeltelijk, bv. enkel een vast mailadres zoals ict@school.be. De andere velden worden ingevuld op basis van de ingelogde gebruiker.
 
-![herstelling4](./herstelling4.png)
+De koppeling met M4S werkt voor alle items die gekoppeld zijn aan een leverancier met waar de naam 'Signpost' in voorkomt. 'Signpost nv' zal dus ook herkend worden. Het is dus belangrijk om voor die items de leverancier correct in te stellen.
+
+Van zodra je een herstelling vanuit een item of vanuit een contract toevoegt, zal je een extra knop te zien krijgen. Daarmee kan je de herstelling aanmaken in Toolbox en meteen doorgaan naar het scherm waarmee je de herstelling in M4S aanmaakt. De informatie van de herstelling in Toolbox wordt automatisch overgenomen in de herstelling voor M4S.
