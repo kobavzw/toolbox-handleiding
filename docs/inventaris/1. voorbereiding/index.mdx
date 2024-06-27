@@ -50,6 +50,8 @@ Elk item kan voorzien worden van één of meerdere labels. Door middel van label
 ### Leveranciers
 Elk item dat je toevoegt, kan je koppelen aan een leverancier. Alvorens items aan te maken, kan je best de nodige leveranciers aanmaken via het menu Leveranciers. Via het mannetje achteraan <LegacyAction img="person.png"/> kan je per leverancier de contactperso(o)n(en) raadplegen of toevoegen. 
 
+Wil je gebruik maken van de koppeling met M4S, maak dan ook zeker de leverancier Signpost aan en koppel die aan alle inventaristoestellen die in M4S beheerd worden. 
+
 ### Statussen
 Naast de items kan je ook zelf de statussen van de items aanmaken via het menu Statussen. Daar voeg je zelf de gewenste statussen toe. Enkele voorbeelden: Actief, Defect, Te koop, Verloren, Uitgeleend, Afgevoerd, In herstelling, In bestelling, Verkocht. Bij elke status kan je aangeven of het item met die status nog in de school is of uit de school.
 
@@ -69,12 +71,14 @@ Een modaliteit maak je aan via het menu Modaliteiten. Voeg een nieuwe modaliteit
 
 ![modaliteit](./modaliteit.PNG)
 
-- **Status toestel**: selecteer hier de nieuwe status die een toestel moet krijgen wanneer het gekoppeld wordt aan een bepaalde modaliteit. 
+- **Handtekening school**: Indien er een handtekening is opgeladen kan je die hier selecteren. Als je in de teksten vervolgens de variabele $$HANDTEKENING_SCHOOL$$ gebruikt, zal die handtekening automatisch worden opgeladen bij het genereren van het document (contract, wijziging of stopzetting). Indien er geen handtekening beschikbaar is, mag je die mailen naar toolbox@kobavzw.be. 
+- **Status toestel bij toewijzing**: selecteer hier de nieuwe status die een toestel standaard moet krijgen wanneer het gekoppeld wordt aan een bepaalde modaliteit. Deze status kan op het moment van de toewijzing nog worden aangepast. 
+- **Status toestel bij stopzetting**: selecteer hier de nieuwe status die een toestel standaard moet krijgen een contract wordt stopgezet of het toestel uit een lopend contract wordt gehaald. Deze status kan op het moment van de stopzetting nog worden aangepast. 
 - **Benaming item**: hier kan je opgeven over welk soort item het gaat. Deze naam wordt mee overgenomen op de facturen. Bv. bij de benaming 'laptop' wordt dat: waarborg laptop, herstelling laptop, terugbetaling waarborg laptop. 
 
-Moet een leerling een waarborg betalen voor het toestel? Dan kan je dat hier opgeven. Toolbox zal bij het toekennen van een toestel dan automatisch een factuur opmaken voor die waarborg. De boekhoudkundige parameters worden automatisch overgenomen uit de algemene instellingen. Indien voor dit contract andere parameters gelden, kunnen die hier (enkel voor deze modaliteit) worden aangepast. De parameters van de modaliteit overrulen die uit de module Instellingen. 
+Moet een leerling een waarborg betalen voor het toestel? Dan kan je dat in het daarvoor voorziene tabblad opgeven. Toolbox zal bij het toekennen van een toestel dan automatisch een factuur opmaken voor die waarborg. De boekhoudkundige parameters worden automatisch overgenomen uit de algemene instellingen. Indien voor dit contract andere parameters gelden, kunnen die hier (enkel voor deze modaliteit) worden aangepast. De parameters van de modaliteit overrulen die uit de module Instellingen. 
 
-Als je je gebruikers een gepersonaliseerd document wil bezorgen, dan kan je dat in de tekstvelden aanmaken. Je kan in die tekst gebruik maken van de variabelen die onder het tekstvak staan. Op die manier kan de leerling een PDF krijgen waarin staat welk type toestel hij/zij kreeg en welk serienummer dat toestel heeft.
+Als je je gebruikers een gepersonaliseerd document wil bezorgen, dan kan je dat in verschillende tabbladen teksten aanmaken. Je kan in die teksten gebruik maken van de variabelen die onder het tekstvak staan. Op die manier kan de leerling een PDF krijgen waarin staat welk type toestel hij/zij kreeg en welk serienummer dat toestel heeft.
 
 Toelichting bij enkele variabelen:
 
@@ -82,6 +86,8 @@ Toelichting bij enkele variabelen:
 - $$HUIDIGE_ITEMS$$: deze variabele kan gebruikt worden in de derde tekst 'wijziging contract'. Wanneer er een defect toestel in herstelling gaat en een leerling/personeelslid ontvangt (tijdelijk) een ander toetsel, kan er een document afgedrukt worden waarin er overzicht getoond wordt van de items die zich momenteel in het contract bevinden. 
 - $$HANDTEKENING_SCHOOL$$: om deze variabele te kunnen gebruiken, moet bovenaan in de modaliteit een handtekening geselecteerd zijn. Indien er geen handetekening beschikbaar is, mag die ingescand bezorgd worden aan het Toolbox-team. 
 - $$DIGITALE_HANDTEKENING_OUDERS$$: deze variabele is nodig om het contract (of de stopzetting ervan) digitaal te kunnen laten handtekenen, **zowel door de ouders als door personeelsleden**.
+
+In de modaliteit kan je ook de mailtekst voor 'stop contract' aanpassen. Stop je het contract, dan wordt die tekst gebruikt voor het e-mailbericht. Is er geen tekst ingevuld, dan wordt de algemene tekst gebruikt die op de achtergrond voorzien is door Toolbox. 
 
 In de tabel (overzicht) van de modaliteiten kan je via <LegacyAction img="list.png"/> ook nog opgeven welke **bijkomende accessoires** een gebruiker ontving. Denk bijvoorbeeld aan een adapter (lader) en een beschermhoes. Je kan daarbij optioneel ook de prijs, het merk en het model van de accessoire opgeven. De prijzen die hier worden ingegeven, worden niet doorgerekend via het contract. Ze zijn louter ter info. 
 

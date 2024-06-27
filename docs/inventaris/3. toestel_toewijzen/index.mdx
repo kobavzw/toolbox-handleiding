@@ -13,7 +13,7 @@ Leerlingen en personeelsleden worden via de synchronisatiemodules automatisch va
 
 Als je de juiste persoon hebt gevonden, vul je het inventarisnummer, serienummer of externe assettag in het tekstvak in. Je kan hiervoor ook een barcodescanner gebruiken als je veel toestellen moet uitleveren.
 
-Geeft de nieuwe status van het toestel in, bv. uitgeleend en selecteer de modaliteit waaraan je het toestel wil koppelen. Klik vervolgens op 'Wijs toestel toe'.
+Selecteer de modaliteit waaraan je het toestel wil koppelen en geef de nieuwe status van het toestel in (bv. uitgeleend). Indien in de modaliteit een 'status toestel bij toewijzing' werd ingegeven, wordt die status default ingevuld bij het selecteren van de modaliteit. Die status kan in dit scherm nog gewijzigd worden. Klik vervolgens op 'Wijs toestel toe'.
 
 Er wordt nu een nieuw contract opgemaakt. Binnen dat contract wordt het toestel aan de gebruiker gekoppeld. 
 
@@ -22,22 +22,23 @@ Er wordt nu een nieuw contract opgemaakt. Binnen dat contract wordt het toestel 
 
 ## Contract
 
-Na het toewijzen, kom je rechtstreeks in het scherm van het contract terecht. Hier kan je de overeenkomst verder finaliseren. Je kan ook steeds de contracten raadplegen via het menu > Contracten. Daar krijg je automatisch een overzicht van de **lopende contracten**, maar je kan ook alle afgelopen contracten nog raadplegen. Volgende overzichten zijn mogelijk:
+Na het toewijzen, kom je rechtstreeks in het scherm van het contract terecht. Hier kan je de overeenkomst verder finaliseren. Je kan ook steeds de contracten raadplegen via het menu Contracten. Daar krijg je automatisch een overzicht van de **lopende contracten**, maar je kan ook alle afgelopen contracten nog raadplegen. Volgende overzichten zijn mogelijk:
 - Alle contracten
 - Lopende contracten
 - Afgesloten contracten
 - Alle ingeschreven leerlingen (met de vermelding wie een contract heeft en wie niet)
 - Leerlingen zonder contract
 - Uitgeschreven leerlingen met contract
+- Personeel uit dienst met contract 
 
 Je kan in de overzichten zoeken op naam en/of klas en je kan de resultaten op verschillende manieren sorteren. Klik op <LegacyAction img="detail.png"/> om het contract te openen. 
 
-![toewijzen3](./toewijzen3.PNG)
+![toewijzen3](./toewijzen3.PNG)![toewijzen3.1](./toewijzen3.1.PNG)
 
 In het scherm van het contract heb je een overzicht van het toegewezen toestel, de meegeleverderde accessoires, te betalen waarborg, ...
-Je kan enkel **accessoires** toevoegen die gekoppeld zijn aan de gekozen modaliteit. Indien je bijkomende accessoires wil opnemen in het contract, voeg je die toe op niveau van de modaliteit (via menu > [Modaliteiten](/inventaris/voorbereiding/#modaliteiten)). Indien je aan het contract een **document** toevoegt, is dat gekoppeld aan het contract van deze leerling/leraar en niet aan het item. Dit kan bv. een volmachtdocument zijn van de ouders. Alle toegevoegde documenten zijn te raadplegen via het menu > [Documenten](/inventaris/documenten/). 
+Je kan enkel **accessoires** toevoegen die gekoppeld zijn aan de gekozen modaliteit. Indien je bijkomende accessoires wil opnemen in het contract, voeg je die toe op niveau van de modaliteit (via menu [Modaliteiten](/inventaris/voorbereiding/#modaliteiten)). Indien je aan het contract een **document** toevoegt, is dat gekoppeld aan het contract van deze leerling/leraar en niet aan het item. Dit kan bv. een volmachtdocument zijn van de ouders. Alle toegevoegde documenten zijn te raadplegen via het menu [Documenten](/inventaris/documenten/). 
 
-Een **betaalde waarborg** of ontvangen voorschot kan je registreren bij <LegacyAction img="pluscircle.png" text="Betaling toevoegen"/>. Dat kan voor een betaling met bancontact, POM (mits contract met deze betaalprovider) of cash. Betalingen kunnen opgevolgd worden via het menu > [Betalingen](/inventaris/toestel_toewijzen/#betalingen). Indien er aan de modaliteit een waarborg gekoppeld is, wordt er sowieso een factuur opgemaakt, ongeacht of er een betaling is geregistreerd. Deze facturen kunnen worden overgezet naar de leerlingenrekeningen om vervolgens in te lezen in Exact Online. Indien er **geen betaling** werd geregistreerd, is het mogelijk om de automatisch aangemaakte facturen via de leerlingenrekeningen verder te verwerken, bv. facturen afdrukken of digitaal bezorgen aan de ouders en opvolgen via de module Openstaande facturen. Lees hierover meer in het onderdeel [Facturen](/inventaris/toestel_toewijzen/#facturen).
+Een **betaalde waarborg** of ontvangen voorschot kan je registreren bij <LegacyAction img="pluscircle.png" text="Betaling toevoegen"/>. Dat kan voor een betaling met bancontact, POM (mits contract met deze betaalprovider) of cash. Betalingen kunnen opgevolgd worden via het menu [Betalingen](/inventaris/toestel_toewijzen/#betalingen). Indien er aan de modaliteit een waarborg gekoppeld is, wordt er sowieso een factuur opgemaakt, ongeacht of er een betaling is geregistreerd. Deze facturen kunnen worden overgezet naar de module Leerlingenrekeningen om vervolgens in te lezen in Exact Online. Indien er **geen betaling** werd geregistreerd, is het mogelijk om de automatisch aangemaakte facturen via de leerlingenrekeningen verder te verwerken, bv. facturen afdrukken of digitaal bezorgen aan de ouders en opvolgen via de module Openstaande facturen. Lees hierover meer in het onderdeel [Facturen](/inventaris/toestel_toewijzen/#facturen). Helemaal onderaan in het contract kan je zien welke facturen er werden aangemaakt en wat de status ervan is.
 
 Je kan eventueel ook **opmerkingen** toevoegen aan het contract. Je hebt opmerkingen die mee in het contract kunnen worden afgedrukt (mits de variabele $$OPMERKINGEN$$ in de tekst werd opgenomen), maar ook opmerkingen die niet afgedrukt worden en meer voor intern gebruik zijn bedoeld.
 
@@ -52,8 +53,9 @@ Indien het contract volledig op punt staat, kan het ondertekend en/of afgedrukt 
 
 Wanneer het contract ondertekend is, wijzigt bovenaan in het scherm van het contract de status naar 'Contract is digitaal ondertekend'. Je kan eventueel de handtekening verwijderen en het ondertekenproces opnieuw starten. 
 
-Helemaal onderaan in het contract kan je een ontvangstbewijs (al dan niet digitaal ondertekend) afdrukken of het ontvangstbewijs mailen naar een nog nader te bepalen ontvanger. 
+Zowel helemaal bovenaan als helemaal onderaan in het contract kan je een ontvangstbewijs (al dan niet digitaal ondertekend) afdrukken of het ontvangstbewijs mailen naar een nog nader te bepalen ontvanger. 
 
+![contract1](./contract1.PNG)
 <Thumbnails img={[
     require('./toewijzen6.PNG').default, 
     require('./toewijzen7.PNG').default, 
@@ -61,9 +63,13 @@ Helemaal onderaan in het contract kan je een ontvangstbewijs (al dan niet digita
 
 Contracten kunnen ook **in bulk gemaild** worden **ter ondertekening**. Dit kan handig zijn wanneer toestellen in de klassen worden uitgedeeld en de waarborgfacturen vooraf of achteraf aan de leerlingen worden bezorgd. De toestellen moeten reeds toegewezen zijn aan een leerling, waardoor er automatisch een contract werd opgemaakt. Ga vervolgens naar het menu **Contracten**. Kies in de dropdownlijst de gewenste contracten en vink de te versturen contracten aan. Klik tot slot op <LegacyAction img="mail.png" text="Mail contracten ter ondertekening"/>. Wanneer een contract digitaal werd ondertekend, zie je in de kolom 'Ondertekend' een groen vinkje <LegacyAction img="vinkjeGroenRond.png"/>. Dat stelt je in staat om op een snelle en eenvoudige manier op te volgen wie het contract al dan niet heeft ondertekend. 
 
+![contract2](./contract2.png)
+
 ## Contract wijzigen
 
 Stel dat iemand een lopend contract heeft maar een ander toestel moet krijgen. Kan je ervoor voor kiezen om het bestaande contract te behouden en enkel het huidige toestel te stoppen. Dat doe je door achteraan in de tabel met toestellen op het Stop-icoon <LegacyAction img="stop.png"/> te klikken. Hierdoor geef je aan dat het contract nog wel loopt maar dat het toestel niet meer in bezit is van de gebruiker. Je kan nu eventueel een ander toestel toevoegen aan het lopende contract.
+
+![contract3](./contract3.png)
 
 Als een toestel defect geraakt binnen een lopend contract, is het aanbevolen om ook dat via het contract te registreren. Vóór elk toestel staat er een icoontje <LegacyAction img="defect.png"/> waarmee je schade kan registreren, de status van het toestel kan aanpassen en eventueel de kostprijs voor de gebruiker kan vaststellen. Wanneer dit bedrag wordt ingevuld, zal Toolbox automatisch een herstelfactuur aanmaken dat via de leerlingenrekeningen verder verwerkt kan worden. 
 
@@ -72,28 +78,36 @@ De defecten/herstellingen worden binnen het contract onder het juiste toestel ge
 Je kan eveneens een bevestiging van de wijziging van het contract afdrukken of via mail versturen. De teksten voor dit document moeten op voorhand worden ingesteld bij de modaliteiten (Tekst wijziging contract).  
 
 ## Contract stopzetten
-Het stopzetten van een contract gebeurt helemaal onderaan in het contract via de knop <LegacyAction img="stop.png" text="Stop contract"/>. Als je een contract stopt, kan je bijkomende informatie over de staat van het toestel invullen. Je kan het toestel ook meteen een nieuwe status binnen de inventaris geven (bv. opnieuw beschikbaar of in herstelling). Vervolgens kan je het inleverbewijs afdrukken of per mail versturen. De teksten voor dit document moeten op voorhand worden ingesteld bij de modaliteiten (Tekst document inlevering toestel). 
+Het stopzetten van een contract kan zowel helemaal bovenaan als helemaal onderaan in het contract via de knop <LegacyAction img="stop.png" text="Stop contract"/>. Als je een contract stopt, kan je bijkomende informatie over de staat van het toestel invullen. Je kan het toestel ook meteen een nieuwe status binnen de inventaris geven (bv. opnieuw beschikbaar of in herstelling). Wanneer je in de modaliteit de 'status toestel bij stopzetting' hebt ingegeven, zal die status standaard worden overgenomen bij stopzetting van het contract. Deze status kan bij de stopzetting nog steeds aangepast worden. Vervolgens kan je het inleverbewijs afdrukken of per mail versturen. De teksten voor dit document moeten op voorhand worden ingesteld bij de modaliteiten (Tekst document inlevering toestel). 
 
-Indien er een waarborg aan het contract was gekoppeld, wordt er bij het stopzetten automatisch een creditnota aangemaakt voor de terugbetaling ervan. Als er schade is vastgesteld én er wordt een kostprijs ingevuld, zal dat bedrag van de waarborg worden afgehouden.  De credinota's kunnen eenvoudig worden overgezet naar de leerlingenrekeningen om vervolgens in te lezen in Exact Online. Bij schade is het zinvol om ook een herstelling voor het item aan te maken. Daar kan een foto van de vastgestelde schade aan worden toegevoegd. Voor meer info over herstellingen klik [hier](/inventaris/herstelling/). 
+Indien er een **waarborg** aan het contract was gekoppeld, wordt er bij het stopzetten automatisch een creditnota aangemaakt voor de terugbetaling ervan. Als er schade is vastgesteld én er wordt een kostprijs ingevuld, zal dat bedrag van de waarborg worden afgehouden.  De credinota's kunnen eenvoudig worden overgezet naar de leerlingenrekeningen om vervolgens in te lezen in Exact Online. Bij schade is het zinvol om ook een herstelling voor het item aan te maken. Daar kan een foto van de vastgestelde schade aan worden toegevoegd. Indien de kostprijs voor de schade al werd ingegeven bij de stopzetting van het contract, moet die niet opnieuw worden doorgerekend bij de herstelling. Voor meer info over herstellingen klik [hier](/inventaris/herstelling/). 
+
+Bij het stopzetten van een contract kan je ook meteen **permanente schade** invullen. Dat is schade die op het niveau van het toestel wordt bijgehouden en die later steeds terug te vinden is via het menu Items. Denk bijvoorbeeld aan cosmetische schade (hoekje af) die niet hersteld zal worden, maar die je wel op het contract van de volgende eigenaar wil vermelden zodat die er uiteindelijk niet voor moet opdraaien. Om permanente schade in een nieuw contract te vermelden, gebruik je de variabele $$EERSTE_ITEM_SCHADE$$ in de modaliteit.
 
 ![toewijzen8](./toewijzen8.PNG)
 
-Ook bij de stopzetting van een contract is de mogelijkheid voorzien om digitaal te handtekenen indien de variabele $$DIGITALE_HANDTEKENING_OUDERS$$ gebruikt werd in de modaliteit. Dit is vooral zinvol wanneer er schade is vastgesteld aan een toestel. Op die manier is er achteraf geen discussie mogelijk. Voor meer info, zie ook het onderdeel [Contract ondertekenen](/inventaris/toestel_toewijzen/#contract-ondertekenen).
+Ook bij de stopzetting van een contract is de mogelijkheid voorzien om digitaal te handtekenen indien de variabele $$DIGITALE_HANDTEKENING_OUDERS$$ gebruikt werd in de modaliteit. Deze variabele kan ook gebruikt worden voor de ondertekening door personeelsleden. Een stopzetting laten handtekenen is vooral zinvol wanneer er schade is vastgesteld aan een toestel. Op die manier is er achteraf geen discussie mogelijk. Voor meer info, zie ook het onderdeel [Contract ondertekenen](/inventaris/toestel_toewijzen/#contract-ondertekenen).
 
 ![toewijzen15](./toewijzen15.png)
 
 ## Stopgezet contract opnieuw activeren
 
-Het kan gebeuren dan een contract onterecht werd stopgezet. Die stopzetting kan terug ongedaan gemaakt worden door onderaan in het contract te klikken op <LegacyAction img="undo.png" text="Contract opnieuw opstarten"/>. Indien aan het originele contract een waarborg werd gekoppeld, wordt er bij de stopzetting automatisch een creditnota gegenereerd voor de (gedeeltelijke) terugbetaling ervan. Een contract kan enkel opnieuw opgestart worden als de creditnota nog niet is overgezet naar de leerlingenrekeningen. Bij de reactivatie van het contract zal de creditnota automatisch verwijderd worden uit de module Inventaris zodat die niet meer (onterecht) kan overgezet worden naar de leerlingenrekeningen. 
+Het kan gebeuren dan een contract onterecht werd stopgezet. Die stopzetting kan terug ongedaan gemaakt worden door bovenaan of onderaan in het contract te klikken op <LegacyAction img="undo.png" text="Contract opnieuw opstarten"/>. Indien aan het originele contract een waarborg werd gekoppeld, wordt er bij de stopzetting automatisch een creditnota gegenereerd voor de (gedeeltelijke) terugbetaling ervan. Een contract kan enkel opnieuw opgestart worden als de creditnota nog niet is overgezet naar de leerlingenrekeningen. Bij de reactivatie van het contract zal de creditnota automatisch verwijderd worden uit de module Inventaris zodat die niet meer (onterecht) kan overgezet worden naar de leerlingenrekeningen. 
 
-![toewijzen16](./toewijzen16.png)
+:::caution opgelet
+Als je een stopgezet contract opnieuw activeert, zal het toestel niet automatisch terug geactiveerd worden. Dit zal je manueel terug moeten toevoegen aan het contract.  
+:::
 
 ## Toegewezen toestellen 
 Via het menu **Toegewezen** kan je zien welke toestellen aan welke persoon zijn toegewezen. Door vooraan op het contractnummer te klikken, open je het contract. Door op het item nr. te klikken, open je het item. In het menu **Items school** zie je in de kolom 'Naam toestel' ook steeds aan wie het toestel is toegewezen. 
 
 ## Betalingen
 
-In het contract kan je een betaling (van bv. een waarborg) registreren. Die betaling moet vervolgens boekhoudkundig verwerkt worden en gekoppeld worden aan de overeenkomstige factuur. Een betaling registreren kan voor volgende betaalmodaliteiten:
+In het contract kan je een betaling (van bv. een waarborg) registreren. Die betaling moet vervolgens boekhoudkundig verwerkt worden en gekoppeld worden aan de overeenkomstige factuur. 
+
+![betaling](./betaling.png)
+
+Een betaling registreren kan voor volgende betaalmodaliteiten:
 
 - **Bancontact**: Hiervoor moet de school beschikken over een betaalterminal. Het is mogelijk om de terminal zo in te stellen dat elke transactie apart in Exact Online terecht komt. Alvorens de ouders kunnen betalen, moet er een referentie in het toestel worden ingevoerd. Dat is steeds het contractnummer. Door op deze manier te werken, worden de waarborgfacturen na het inlezen in Exact Online automatisch afgepunt.  
 - **Cash**: Wanneer ouders cash betalen, kan de betaling worden overgezet naar de module [Kas](/kas) in Toolbox. Van daaruit kan de betaling (gekoppeld aan het contractnummer en de juiste leerlingenfiche) overgezet worden naar Exact Online. 
@@ -114,19 +128,21 @@ In het menu **Facturen** kan je de door Toolbox aangemaakte facturen opvolgen. D
 
 Via een dropdownlijst kan je per factuurtype kiezen of je alle facturen of enkel de verwerkte of nog te verwerken facturen wil zien. Facturen die nog niet zijn overgezet naar de module Leerlingenrekeningen (= te verwerken), hebben achteraan factuurnummer 0. Je kan ze aanvinken en vervolgens overzetten naar de module Leerlingenrekeningen via de knop <LegacyAction img="factuur.png"/>. De facturen worden daar aangemaakt in een aparte school 'Inventaris'. Die school wordt automatisch aangemaakt wanneer je de eerste keer facturen overzet vanuit de module Inventaris. 
 
-De filter <LegacyAction img="filter.png"/> in de kolom Modaliteit maakt het mogelijk om de 'te verwerken facturen' te filteren op modaliteit en zo facturen met een verschillende modaliteit apart over te zetten naar de module Leerlingenrekeningen. Voor bepaalde modaliteiten moet er bv. onmiddellijk betaald worden, terwijl er voor andere een achterafbetaling via factuur moet plaatsvinden. Door modaliteiten apart over te zetten, komen de facturen ook in een aparte notagroep (in de module Leerlingenrekeningen) terecht. 
+De filter <LegacyAction img="filter.png"/> in de kolom Modaliteit maakt het mogelijk om de facturen te filteren op modaliteit en zo facturen met een verschillende modaliteit apart over te zetten naar de module Leerlingenrekeningen. Voor bepaalde modaliteiten moet er bv. onmiddellijk betaald worden, terwijl er voor andere een achterafbetaling via factuur moet plaatsvinden. Door modaliteiten apart over te zetten, komen de facturen ook in een aparte notagroep (in de module Leerlingenrekeningen) terecht. 
 
 ![toewijzen12](./toewijzen12.png)
 
-Bij alle factuurtypes is het mogelijk om facturen aan te duiden als 'niet te verwerken'. Dit kan nodig zijn, omdat je bepaalde kosten bv. al manueel hebt toegevoegd aan de leerlingenrekeningen. In dat geval vink je de betreffende factu(u)r(en) aan en klik je op <LegacyAction img="noAccess.png" text="Markeer als niet te verwerken"/>. De geselecteerde facturen zullen in het rood getoond worden en kunnen niet meer aangevinkt worden, waardoor ze niet per ongeluk overgezet kunnen worden naar de leerlingenrekeningen. Je kan deze actie ongedaan maken door achteraan op <LegacyAction img="noAccess.png"/> te klikken.
+Bij alle factuurtypes is het mogelijk om facturen aan te duiden als 'niet te verwerken'. Dit kan nodig zijn, omdat je bepaalde kosten bv. al manueel hebt toegevoegd aan de leerlingenrekeningen. In dat geval vink je de betreffende factu(u)r(en) aan en klik je op <LegacyAction img="noAccess.png" text="Markeer als niet te verwerken"/>. De geselecteerde facturen zullen in het rood getoond worden en kunnen niet meer aangevinkt worden, waardoor ze niet per ongeluk overgezet kunnen worden naar de leerlingenrekeningen. Je kan deze actie ongedaan maken door achteraan op <LegacyAction img="noAccess.png"/> te klikken. Door het vakje 'Toon gemarkeerde facturen' boven uit te vinken, worden deze rode lijnen niet meer getoond in het overzicht. 
 
-![toewijzen13](./toewijzen13.png)
+![niet_verwerken](./niet_verwerken.png)
 
 ### a. Waarborgfacturen
 
 Aangezien waarborgfacturen op verschillende manieren betaald kunnen worden, moet je bij dit factuurtype nog wat extra info opgeven alvorens je kan overzetten naar de leerlingenrekeningen, nl. welke referentie er op de factuur moet komen.
 - **Contractnummer als referentie**: Deze optie moet worden aangeduid bij waarborgen die reeds betaald zijn bij afhaling (cash, met BC of POM). Bij deze betalingen werd het contractnummer gebruikt als referentie. Dit nummer zal ook worden overgenomen in de module Leerlingenrekeningen en vervolgens in Exact Online. Op die manier kunnen de betaling en de factuur tegenover elkaar worden afgepunt. De verwerking in de module Leerlingenrekeningen is in dit geval puur administratief/boekhoudkundig. De facturen worden over het algemeen niet meer aan de ouders bezorgd. 
 - **Gestructureerde mededeling als referentie**: Wanneer de waarborgfacturen niet meteen bij afhaling van het toestel betaald worden, kunnen ze overgezet worden naar de leerlingenrekeningen met een gestructureerde mededeling. Vanuit de module Leerlingenrekeningen kunnen de facturen vervolgens worden afgedrukt of digitaal verstuurd. De ouders kunnen dan gebruik maken van de gestructureerde mededeling (OGM-nummer) voor de betaling, waardoor de factuur ook weer automatisch kan worden afgepunt in Exact Online. 
+
+![toewijzen13](./toewijzen13.png)
 
 ### b. Herstelfacturen
 
