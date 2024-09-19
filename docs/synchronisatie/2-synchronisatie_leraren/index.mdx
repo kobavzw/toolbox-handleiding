@@ -4,23 +4,44 @@ hide_title: true
 ---
 <ImageTitle img="leraren.png">Synchronisatie leraren</ImageTitle>
 
-De module Synchronisatie leraren haalt gegevens van personeel uit Informat of Wisa op. In de module Instellingen > Synchronisatie leraren kan je instellen uit welke software de gegevens moeten komen.
+In Toolbox moeten personeelsleden nooit manueel worden aangemaakt. Het vertrekpunt is steeds het administratief pakket waar het personeelsdossier up-to-date gehouden wordt. Via de synchronisatiemodules in Toolbox worden de gegevens van personeelsleden opgehaald uit Informat of Wisa. In de module Instellingen > Synchronisatie leraren kan je instellen uit welke software die gegevens moeten komen.
 
-Toolbox maakt gebruik van het intern nummer/pointer uit Informat of Wisa. Bij Informat is die sowieso uniek, bij Wisa kan die nummering door elkaar lopen. Om dat op te lossen kan een prefix gedefinieerd worden die voor de pointer wordt gezet. Op die manier kunnen leraren en leerlingen uit elkaar gehouden worden.
+Toolbox maakt gebruik van het intern nummer (pointer) uit Informat of Wisa. Bij Informat is dat nummer sowieso uniek. Bij Wisa kan het voorvallen dat een leerling en een personeelslid eenzelfde intern nummer hebben gekregen. Om dat op te lossen kan er in de module Instellingen een prefix ingesteld worden die voor de pointer wordt gezet. Op die manier kunnen leraren en leerlingen uit elkaar gehouden worden.
 
-Na het ophalen van de gegevens worden gebruikersnamen aangemaakt. Het formaat kan je ook in de instellingen instellen. Het is ook mogelijk om een maximale lengte in te stellen: gebruikersnamen worden dan ingekort. Staat de lengte op 0, dan is er geen limiet.
+Na het ophalen van de gegevens worden gebruikersnamen aangemaakt. Het formaat kan je ook zelf definiëren via de module Instellingen > Synchronisatie leraren. Het is eveneens mogelijk om een maximale lengte in te stellen: gebruikersnamen worden dan ingekort. Staat de lengte op 0, dan is er geen limiet.
+
+## Synchroniseren
 
 Het synchroniseren gebeurt altijd in twee stappen:
 
 1. Informat/Wisa uitlezen = het ophalen van de gegevens uit Informat of Wisa
 2. Synchroniseer leraren = het intern synchroniseren/gegevens overzetten naar Toolbox
 
-Daarna kan er gesynchroniseerd worden met andere software al naargelang die optie is aangevinkt in de instellingen.
+Daarna kan er gesynchroniseerd worden met andere software al naargelang die optie is aangevinkt in de module Instellingen > Synchronisatie leraren. 
 
-Via PDF afdrukken kan je de gebruikersnamen en wachtwoorden voor de leraren afdrukken. 
+![syncll1](./sync_ll1.png)
 
+## Inloggegevens
 
-## Gegevens uit Informat ophalen
+Via **PDF afdrukken** in de synchronisatiemodule kan je de gebruikersnamen en wachtwoorden voor de leraren afdrukken en/of versturen per e-mail. Toolbox gebruikt het e-mailadres dat is ingegeven in het administratief pakket. Je kan zelf bepalen hoe die PDF eruit ziet via de module Instellingen > PDF leerlingen (...). Er zijn heel wat dynamische variabelen beschikbaar waardoor het document dynamisch wordt samengesteld en de variabelen worden vervangen door de overeenkomstige gegevens voor het betreffende personeelslid. Dat stelt je in staat om ineens heel wat info mee te geven zoals bv. inloggegevens voor andere softwareplatformen. Je kan deze gegevens ook exporteren naar Excel. 
+
+![syncll2](./sync_ll2.PNG)
+
+## Gebruikersnamen controleren en/of wijzigen
+In de synchronisatiemodule kan je de gebruikersnamen van personeelsleden controleren en indien nodig te wijzigen. Klik hiervoor in het menu links op **Controle gebruikersnamen**. Hier kan je controleren op lengte of op naamswijziging. In deze twee overzichten krijg je enkel de gebruikersnamen te zien waar een controle voor moet gebeuren, bv. omdat er in het administratief pakket een naamswijziging heeft plaatsgevonden en de huidige gebruikersnaam komt niet overeen met de voorgestelde gebruikersnaam door Toolbox of omdat een gebruikersnaam langer is dan 20 karakters. Een gebruikersnaam wijzigen kan met behulp van het groene potloodje <LegacyAction img="edit.png"/>. Heb je een gebruikersnaam gecontroleerd en is die goed bevonden, dan kan je vooraan aanvinken dat de gebruikersnaam gevalideerd is. 
+
+Bij de controle op naamswijzigingen krijg je 2 kolommen met gebruikersnamen te zien. Enerzijds de huidige gebruikersnaam en anderszijds de (door Toolbox) berekende gebruikersnaam. De berekende gebruikersnaam overnemen kan heel eenvoudig door te klikken op het bijhorende icoontje <LegacyAction img="config.png"/>.
+
+![sync3](./sync3.png)
+
+Je kan de gebruikersnamen ook vrij wijzigen. Dan krijg je een lijst te zien van alle personeelsleden. Wijzigen kan ook hier door middel van het potloodje <LegacyAction img="edit.png"/>.
+
+:::tip 
+Lukt het voor een gebruiker niet om in te loggen in Toolbox via de koppeling met MS Office of Smartschool? Controleer dan steeds of de gebruikersnaam in MS (alles voor de @schoolnaam.be) of Smartschool overeenkomt met de gebruikersnaam in Toolbox. Indien dat niet het geval is, pas je één van op hogervermelde manieren de gebruikersnaam aan in Toolbox. 
+:::
+
+## Koppeling met administratief pakket 
+### Gegevens uit Informat ophalen
 Het ophalen van gegevens uit Informat gebeurt via de webservices van Informat. Hiervoor zijn drie WSDLs voorzien:
 
 Algemeen
@@ -51,7 +72,7 @@ In de configuratie zet je deze regels:
 Die regels zeggen dat voor die twee instellingsnummers de tweede gebruiker/paswoord moet worden gebruikt.
 
 
-## Gegevens uit Wisa ophalen
+### Gegevens uit Wisa ophalen
 
 Om gegevens uit Wisa op te halen, moeten er enkele stappen doorlopen worden:
 
