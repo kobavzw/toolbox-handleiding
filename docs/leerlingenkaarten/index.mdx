@@ -63,3 +63,31 @@ Om leerlingenkaarten af te drukken voor individuele leerlingen, moet je deze lee
 <Thumbnails img={[
     require('./kaart8.png').default, 
 ]} />
+
+### Aangepaste etiketten of kaartprinter
+
+Wil je gebruik maken van andere etiketten of beschik je over een kaartprinter die op bankkaartformaat kan afdrukken, dan kan je via de Toolbox API de nodige gegevens uitlezen. Die kan je dan in een Exceldocument binnenhalen en dat document kan je koppelen aan bv. Word of de applicatie waarmee je de kaartprinter kan aansturen.
+
+Je kan de API aanspreken vanuit een eigen applicatie of je kan gebruik maken van het powershell script hieronder. Om de API te kunnen gebruiken, vraag je aan de Toolbox helpdesk eerst credentials. Die vul je in het powershell script in bij $username en $password (lijnen 4 en 5). In de variabele $strURL (lijn1) vervang je 'toolbox.be' door het adres van je eigen Toolbox.
+
+:::info powershell script
+Klik [hier](./Powershell.zip) om het powershell script te downloaden.  
+:::
+
+Als je het Powershell script nu laat lopen, wordt er een bestand aangemaakt met de naam ‘leerlingenkaarten.json’. Dit bestand bevat alle informatie om de leerlingenkaarten aan te kunnen maken in json formaat.
+
+Dit json bestand kan je vervolgens koppelen aan bv. een Excel document. In Excel kan dat via de optie Gegevens > Gegevens ophalen (power query). Daar selecteer je dan het json bestand. Dat bestand kan je vervolgens in je excel importeren. 
+
+Zijn er nieuwe leerlingen? Voer dan opnieuw het powershell script uit en klik in het exceldocument op ‘gegevens vernieuwen’. Excel leest nu het bijgewerkt json bestand in.
+
+Op basis van het Excel document kan je nu een mailmerge maken in Word. Je kan de velden die in het excelbestand voorkomen op de juiste plaats slepen en op die manier je etiket/leerlingenkaart vorm geven.
+
+Je kan ook de foto’s van de leerlingen invoegen op basis van de URL die in het excelbestand zit. Daarvoor gebruik je de optie ‘includepicture’ die je kan vinden via invoegen - veld. De syntax wordt dan deze:
+
+```js
+{INCLUDEPICTURE { IF TRUE "{ MERGEFIELD foto }" } \d}
+```
+
+Kies vervolgens om alle documenten afzonderlijk te bewerken, vervolgens select All en op F9 drukken. Dan pas worden alle foto's ingelezen en getoond.
+
+
