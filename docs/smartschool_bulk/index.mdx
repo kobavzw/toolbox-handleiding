@@ -17,7 +17,7 @@ Deze module werd in eerste instantie ontwikkeld om makkelijk te **communiceren o
 
 ![bulk3](./bulk3.png)
 
-Selecteer bovenaan via welk Smartschool-platform je berichten wenst te verzenden (indien je meerdere platformen hebt). Vervolgens vul je een titel en een bericht in.
+Selecteer vervolgens in de module **Smartschool bulkmail** in **Toolbox** bovenaan via welk Smartschoolplatform je berichten wenst te verzenden (indien je meerdere platformen hebt). Vervolgens vul je een titel en een bericht in.
 
 In dat bericht kan je verwijzen naar de inhoud van de kolommen in het Excel-document. Je gebruikt daarvoor de variabelen $$1$$, $$2$$, $$3$$, ... $$20$$. Die variabelen worden dan bij het verzenden vervangen door de eigenlijke waarde van die kolom.
 
@@ -40,31 +40,19 @@ Het excel document zou dan bijvoorbeeld deze kolommen kunnen bevatten:
 |456|30|2|Wouters|Marie|
 |789|30|2|Janssens|Bernard|
 
+**Als tekst zou je volgende deze tekst kunnen gebruiken:**<br/><br/>
+        *Beste $$5$$<br/><br/>
+        Jij hebt ingeschreven voor het personeelsfeest voor $$3$$ personen. Hiervoor vragen we een bedrag van $$2$$ euro.<br/>
+        Gelieve dit over te maken op de rekening van de school.<br/><br/>
+        Met dank,<br/>
+        De directie<br/>*
 
-Als tekst zou je dan deze tekst kunnen gebruiken:
+**In het geval van Marie wordt het bericht dan zo verstuurd:**<br/><br/>
+        *Beste Marie<br/><br/>
+        Jij hebt ingeschreven voor het personeelsfeest voor 2 personen. Hiervoor vragen we een bedrag van 30 euro.<br/>
+        Gelieve dit over te maken op de rekening van de school.<br/><br/>
+        Met dank,<br/>
+        De directie<br/>*
 
-    Beste $$5$$
 
-    Jij hebt ingeschreven voor het personeelsfeest voor $$3$$ personen. Hiervoor vragen we een bedrag van $$2$$ euro.
-
-    Gelieve dit over te maken op de rekening van de school.
-
-    Met dank,
-    De directie
-
- 
-
-In het geval van Marie, wordt de tekst dan zo verstuurd:
-
-    Beste Marie
-
-    Jij hebt ingeschreven voor het personeelsfeest voor 2 personen. Hiervoor vragen we een bedrag van 30 euro.
-
-    Gelieve dit over te maken op de rekening van de school.
-
-    Met dank,
-    De directie
-
- 
-
-Dit bericht stuur je vervolgens enkel naar de hoofdaccount en je vinkt aan dat er in de Excel kolomhoofdingen staan.
+**In dit geval stuur je het bericht enkel naar de hoofdaccount. Je vinkt ook aan dat er in de Excel kolomhoofdingen staan.**
