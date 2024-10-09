@@ -15,7 +15,7 @@ Klik [hier](./ppt.pdf) om de powerpoint te raadplegen die gebruikt werd tijdens 
 
 De module openstaande facturen biedt de mogelijkheid om onbetaalde schoolrekeningen op te volgen nadat ze verwerkt zijn in de module leerlingenrekeningen en geïmporteerd in Exact Online (EOL). Vanuit deze module kunnen herinneringen verstuurd worden naar de ouders. Per leerling kan men opvolgingsacties, (af)betalingsregelingen en bijkomende informatie registreren. De synchronisatie met Exact Online maakt het mogelijk om steeds met actuele boekhoudkundige gegevens te werken zonder dat er een account voor EOL nodig is.
 
-Waar de vorige module standaard vertrok van een overzicht van alle openstaande facturen, is de vernieuwde module ingericht om herinneringen per factuur (notagroep) te sturen. Hiervoor kan je 4 verschillende herinneringsteksten definiëren in de module Instellingen Toolbox. Idealiter is de eerste herinnering een vriendelijke tekst waarin je vermeldt dat de ontvanger de factuur mogelijk over het hoofd heeft gezien. Hierbij kan je een link naar de originele factuur toevoegen. Na de vervaldatum van de eerste herinnering kan een tweede, iets dwingendere herinnering gestuurd worden. Het derde sjabloon kan eventueel gebruikt worden als melding aan de ouder(s) dat de factuur na herhaaldelijk herinneren aan een gerechtsdeurwaarder of incassobureau wordt overgemaakt. In het vierde sjabloon kan je bv. een overzicht van alle onbetaalde facturen instellen zonder te verwijzen naar een specifieke factuur. Enkele voorbeeldteksten vind je [hier](./openstaande_facturen/voorbeeldteksten).
+De module is ingericht om per factuur (lees: per notagroep) te herinneren, maar ook het versturen van overzichten behoort tot de mogelijkheden. Hiervoor kan je 6 verschillende herinneringsteksten instellen. Idealiter is de eerste herinnering een vriendelijke tekst waarin je vermeldt dat de ontvanger de factuur mogelijk over het hoofd heeft gezien. Hierbij kan je een link naar de originele factuur toevoegen. Na de vervaldatum van de eerste herinnering kan een tweede, iets dwingendere herinnering gestuurd worden. Het derde sjabloon kan eventueel gebruikt worden als melding aan de ouder(s) dat de factuur na herhaaldelijk herinneren aan een gerechtsdeurwaarder of incassobureau wordt overgemaakt. In het vierde sjabloon kan je bv. een overzicht van alle onbetaalde facturen instellen zonder te verwijzen naar een specifieke factuur. Enkele voorbeeldteksten vind je [hier](./openstaande_facturen/voorbeeldteksten).
 
 ## 1. Synchronisatie met Exact Online
 
@@ -29,13 +29,17 @@ Om met de recentste boekhoudkundige gegevens te kunnen werken, moet er regelmati
 
 Via de taakbalk kan je aan de hand van verschillende filters selecteren welke gegevens er getoond moeten worden. Het veld **filter** werkt als zoekfunctie waarin je een aantal karakters kan typen en vervolgens de zoekresultaten te zien krijgt door te enteren. 
 
+Standaard worden alle facturen apart weergegeven. Heeft een leerling 5 openstaande facturen, dan zal die leerling 5 keer voorkomen in het overzicht. Door de **weergave** te wijzigen naar 'Totalen', krijg je per leerling 1 lijn te zien met het totaalbedrag van alle openstaande facturen. Via deze weergave is het aantal acties beperkt. Enkel de [betalingsregeling](#--relatie-betalingsregeling-relatie-wijzigen) en de [opmerkingen](#--relatie-opmerking-bij-relatie-wijzigen) kunnen aangepast worden. 
+
+Standaard worden enkel facturen **Buiten vervaltermijn** getoond. Wil je graag een overzicht van alle openstaande facturen, wijzig dan bovenaan de filter bij 'Toon'. 
+
 Door een bepaald **dagboek** of een bepaalde **notagroep** te selecteren, worden enkel de openstaande facturen van dat dagboek of van die notagroep getoond. Voor de dagboeken is mogelijk om meerdere tegelijk te selecteren. Bij de notagroepen kan er slechts één geselecteerd worden. Wanneer er geen enkel dagboek en/of geen enkele notagroep geselecteerd is, wordt er steeds een volledig overzicht van alle dagboeken en/of notagroepen met openstaande facturen getoond. 
 
 Filteren op **aanmaningen** biedt de mogelijkheid om alle facturen op te vragen waarvoor bv. al een 1e of 2e aanmaning werd verstuurd. Dat maakt de administratieve opvolging eenvoudiger. 
 
 In de tabel zelf kan je ook klikken op de pointer of de naam van een relatie. Dan wordt meteen een overzicht van openstaande facturen van die relatie getoond.
 
-Je kan ook klikken op een klas of vestiging om daarop te filteren.
+Je kan ook op een klas, vestiging of dagboek klikken om daarop te filteren.
 
 De taakbalk daaronder laat je toe om de gegevens op verschillende manieren te sorteren. Zo kan je niet alleen op naam of klas sorteren, maar ook op betalingsregeling, opmerking, aantal aanmaningen, ... 
 
@@ -93,7 +97,7 @@ Je kan dit ook ineens voor meerdere facturen tegelijk doen door de lijnen vooraa
 ![openstaanden9](./openstaanden9.png)
 
 ### <LegacyAction img="person.png"/> <LegacyAction img="budget.png"/> Relatie: Betalingsregeling relatie wijzigen
-Tot slot kan je een betalingsregeling registreren. Die wordt weergegeven in het overzichtsscherm. Je kan kiezen uit de volgende mogelijkheden:
+Via het relatie-icoontje <LegacyAction img="person.png"/> kan je een betalingsregeling registreren. Deze info wordt vervolgens weergegeven in het overzichtsscherm. Door te dubbelklikken in het veld, kan je eveneens de betalingsregeling toevoegen of aanpassen. Ook in de weergave 'Totalen' is de betalingsregeling beschikbaar en bewerkbaar. In de module Leerlingenrekeningen kan je diezelfde info terugvinden en eventueel aanpassen via het menu Inschrijvingen. Je kan kiezen uit de volgende mogelijkheden:
 
 - Incassobureau
 - Collectieve schuldenregeling
@@ -106,7 +110,7 @@ Meer info over de betalingsregeling kan je invoeren via 'opmerkingen bij relatie
 ### <LegacyAction img="person.png"/> <LegacyAction img="edit.png"/> Relatie: Opmerking bij relatie wijzigen
 In dit tekstveld kan je vrij allerhande opmerkingen en bijkomende info toevoegen. Enkele mogelijkheden: de factuur of herinnering moet altijd op papier worden meegegeven met de leerling, de grootouders betalen de factuur, de contactgegevens van de schuldbemiddelaar, ...
 
-De info die hier wordt ingevoerd, wordt automatisch mee overgenomen naar de module leerlingenrekeningen (inschrijvingen en aanrekenen) en andersom. In het overzichtsscherm geeft het <LegacyAction img="info.png"/> icoon weer dat er info beschikbaar is. Die kan je raadplegen door je cursor op het icoon te plaatsen of door 1x te klikken. Dubbelklikken op het icoon laat je toe om wijzigingen aan te brengen. 
+De info die hier wordt ingevoerd, wordt automatisch mee overgenomen naar de module leerlingenrekeningen (inschrijvingen en aanrekenen) en andersom. In het overzichtsscherm geeft het <LegacyAction img="info.png"/> icoon weer dat er info beschikbaar is. Die kan je raadplegen door je cursor op het icoon te plaatsen of door 1x te klikken. Dubbelklikken op het icoon laat je toe om wijzigingen aan te brengen. Je kan de info ook wijzigen via het relatie-icoontje <LegacyAction img="person.png"/>. 
 
 ![openstaanden5](./openstaanden5.jpg)
 
