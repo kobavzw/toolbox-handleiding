@@ -5,20 +5,20 @@ slug: /rl
 ---
 <ImageTitle img="rl.png">RL</ImageTitle>
 
-Deze module laat toe om alle RL's digitaal aan personeelsleden te bezorgen en/of beschikbaar te stellen in hun profiel in Toolbox.
+Deze module laat toe om alle RL's en Persona berichten digitaal aan personeelsleden te bezorgen en/of beschikbaar te stellen in hun profiel in Toolbox.
 
-Klik op <LegacyAction img="pdf.png" text="RL toevoegen"/> om een bestand met één of meerdere RL's toe te voegen. Je sleept pdf's uit Informat in deze module (zowel die per personeelslid als die per zending) en Toolbox zal de pdf meteen uitsplitsen per personeelslid. 
-De RL's verschijnen vervolgens in het een overzicht. In dit overzicht kan je op verschillende manieren zoeken, filteren en sorteren. 
+Klik op <LegacyAction img="pdf.png" text="RL of Personabericht toevoegen"/> om een bestand met één of meerdere RL's of Persona berichten toe te voegen. Je sleept pdf's uit Informat in deze module (zowel die per personeelslid als die per zending) en Toolbox zal de pdf meteen uitsplitsen per personeelslid. 
+De RL's en/of Personaberichten verschijnen vervolgens in het een overzicht. In dit overzicht kan je op verschillende manieren zoeken, filteren en sorteren. 
 
-Door te klikken op <LegacyAction img="remove.png" text="Verwijder RL's"/> kan je de geselecteerde RL's definitief verwijderen uit het overzicht. 
+Door te klikken op <LegacyAction img="remove.png" text="Verwijder geselecteerde document"/> kan je de geselecteerde RL's en/of Persona berichten definitief verwijderen uit het overzicht. 
 
 ![rl1](./rl1.png)
 
-Via het pdf-icoon <LegacyAction img="pdf.png"/> vooraan kan je per personeelslid de RL in pdf raadplegen of via <LegacyAction img="download2.png"/> het document downloaden. 
+Via het pdf-icoon <LegacyAction img="pdf.png"/> vooraan kan je per personeelslid de RL of het Persona bericht in pdf raadplegen of via <LegacyAction img="download2.png"/> het document downloaden. 
 
-## RL mailen
+## RL/Pesonabericht versturen per e-mail
 
-Klik op <LegacyAction img="mail.png" text ="Mail RL's"/> om de geselecteerde RL's te versturen via e-mail. Achteraan in het overzicht zie je welke RL's reeds gemaild zijn. Wanneer een mail geopend is, wordt de datum en tijd van het openen toegevoegd aan de kolom 'Gelezen op'. 
+Klik op <LegacyAction img="mail.png" text ="Verzenden"/> en vervolgens op <LegacyAction img="mail.png" text ="Mail RL's of Persona berichten"/> om de geselecteerde documenten te versturen via e-mail. Achteraan in het overzicht zie je welke RL's reeds gemaild zijn. Wanneer een mail geopend is, wordt de datum en tijd van het openen toegevoegd aan de kolom 'Gelezen op'. 
 
 - Niet verstuurd: <LegacyAction img="mailEnveloppe.png"/> 
 
@@ -26,11 +26,26 @@ Klik op <LegacyAction img="mail.png" text ="Mail RL's"/> om de geselecteerde RL'
 - Geen e-mailadres beschikbaar in Informat. Voeg een e-mailadres toe en synchroniseer opnieuw met Toolbox (Synchronisatie leraren): <LegacyAction img="alert.png"/> 
 
 
-Alvorens te kunnen mailen moeten er een aantal zaken worden ingesteld in de module Instellingen > RL. Deze module is enkel toegankelijk voor een Toolbox-beheerder. Om te weten wie beheerder is in een Toolbox, klik je in het startscherm op het vraagteken > contact. Indien er bij 'Afzender mail' geen afzender beschikbaar is of niet de juiste afzender, moet die nog geconfigureerd worden in de module Instellingen > [E-mail](/e-mail).
+Alvorens te kunnen mailen moeten er een aantal zaken worden ingesteld in de module Instellingen > RL. Deze module is enkel toegankelijk voor een Toolboxbeheerder. Om te weten wie beheerder is in een Toolbox, klik je in het startscherm op het vraagteken > contact. 
+
+Selecteer de afzender van de e-mailberichten. Indien er bij 'Afzender mail' geen afzender beschikbaar is of niet de juiste afzender, moet die nog geconfigureerd worden in de module Instellingen > [E-mail](/e-mail). Verder vul je ook het tekstbericht en het onderwerp van het bericht aan. In het tekstbericht moet de variabele $$LINK$$ worden gebruikt. Dit zal in het e-mailbericht de link zijn naar de RL of het Persona bericht van het personeelslid. 
 
 ![rl2](./rl2.PNG)
 
+## RL/Personabericht versturen via Smartschool
 
-## RL beschikbaar stellen in Toolbox-profiel
+Klik op <LegacyAction img="mail.png" text ="Verzenden"/> en vervolgens op <LegacyAction img="smartschool.png" text ="RL's of Persona berichten via Smartschool"/> om de geselecteerde documenten te versturen via Smartschool. Achteraan in het overzicht zie je welke documenten reeds verzonden zijn. Wanneer een bericht geopend is, wordt de datum en tijd van het openen toegevoegd aan de kolom 'Gelezen op'. 
+
+- Niet verstuurd: <LegacyAction img="smartschool.png"/> 
+
+- Verstuurd: <LegacyAction img="mailVerzonden.png"/>
+
+Alvorens te kunnen versturen via Smartschool moeten er een aantal zaken worden ingesteld in de module Instellingen > RL. Deze module is enkel toegankelijk voor een Toolboxbeheerder. Om te weten wie beheerder is in een Toolbox, klik je in het startscherm op het vraagteken > contact. 
+
+Zo moet het tekstbericht worden ingesteld alsook het onderwerp van het bericht. In het tekstbericht moet de variabele $$LINK$$ worden gebruikt. Dit zal in het Smartschoolbericht de link zijn naar de RL of het Persona bericht van het personeelslid. Verder moet er ook een afzender voor Smartschool worden ingevuld. Afhankelijk of de school gebruik maakt van het intern nummer of de gebruikersnaam van het personeelslid als uniek veld in Smartschool, vul je hier het intern nummer of de gebruikersnaam van de afzender in. 
+
+![rl3](./rl3.PNG)
+
+## RL/Personabericht beschikbaar stellen in Toolboxprofiel
 
 De personeelsleden kunnen hun RL's in hun persoonlijk profiel in Toolbox terugvinden wanneer het vinkje in de kolom 'zichtbaar' bij de betreffende RL is aangevinkt <LegacyAction img="vinkjeGroenRond.png"/>. Indien een RL niet meer zichtbaar mag zijn in het profiel, vink je die eenvoudigweg terug uit. 
