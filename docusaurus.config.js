@@ -56,7 +56,7 @@ const config = {
         title: 'Handleiding Toolbox',
         logo: {
           alt: 'Toolbox logo',
-          src: 'img/logo.png',
+          src: 'img/logo.svg',
         },
       },
       prism: {
