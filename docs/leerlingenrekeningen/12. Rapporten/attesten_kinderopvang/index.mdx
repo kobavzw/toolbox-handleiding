@@ -9,19 +9,91 @@ Herbekijk hier de webinar van dinsdag 19 december 2023 of lees verder onder de v
 
 <Youtube url="https://www.youtube.com/embed/0RT98-WFmhA"/>
 
-## 1. Artikels die recht geven op een fiscaal attest kinderopvang
+## 1. Voorbereiding 
 
-### 1.1 Voor- en naschoolse opvang en opvang tijdens middagpauzes
+### 1.1 In de module Instellingen
+
+Om correcte fiscale fiches te genereren, moeten er eerst een aantal zaken worden ingesteld in de module Instellingen van Toolbox. Deze module is enkel beschikbaar voor Toolboxbeheerders. Heb je zelf geen toegang tot de module Instellingen, klik dan op het vraagteken rechtsbovenaan in Toolbox om na te gaan wie er beheerder is in jouw Toolbox en vraag aan deze persoon om onderstaande in orde te brengen. 
+
+De gegevens van de school/werkgever die op de fiscale fiches komen zijn dezelfde voor personeelsleden als voor de attesten kinderopvang voor ouders en moeten worden ingesteld in de module Instellingen => Woon-werkverkeer. 
+
+Vul alle gevraagde gegevens in, zowel van de schuldenaar als van de afzender. In de praktijk zullen deze twee meestal dezelfde zijn. Let op dat je hier de gegevens van de VZW invult en niet die van de school. De VZW is namelijk de werkgever. 
+
+Selecteer onderaan ook het inkomstenjaar (2024) waarvoor de personeelsleden via de module **Openbaar vervoer** of de module **Fietsvergoeding** de fiscale fiche kunnen downloaden. 
+
+<Thumbnails img={[
+    require('./opvang1.PNG').default, 
+    require('./opvang2.PNG').default, 
+]} />
+
+![opvang3](./opvang3.PNG)
+
+### 1.2 In de module Leerlingenrekeningen
+
+Ook in de module Leerlingenrekeningen bij het menu 'Scholen' moeten nog een aantal zaken ingesteld worden alvorens men fiscale attesten kan genereren. Klik op het potloodje vóór de school en ga naar het tabblad 'Attest kinderopvang'. 
+
+- Vink aan dat de school attesten voor kinderopvang maakt. 
+- Vul verder de naam en hoedanigheid van de ondertekenaar in. 
+- Onderaan kan ook de handtekening van de ondertekenaar geselecteerd worden (indien die werd ingescand en doorgegeven aan het Toolbox-team via de helpdesk - het vraagteken rechtsboven in Toolbox). 
+- Wanneer de attesten kinderopvang via mail verstuurd worden, kan je hier de tekst voor het e-mailbericht instellen. Daarvoor kan je gebruik maken van enkele dynamische variabelen die bij het versturen van het bericht opgevuld zullen worden met de corresponderende leerlingengegevens.
+- Als alles correct is ingesteld, klik je op 'School bijwerken'.  
+
+![attest4](./attest4.png)
+
+### 1.3 In Informat
+
+Alle persoonsgegevens van zowel de leerlingen als de leerplichtverantwoordelijken worden via de synchronisatiemodule uit Informat gehaald. Om automatisch in Toolbox de correcte persoonsgegevens op de fiscale attesten te kunnen overnemen, moeten in Informat al deze gegevens correct geregistreerd zijn.
+
+- **Domicilieadres van de leerplichtverantwoordelijke (LPV)**
+
+    Koppel in Informat (=> Adressen) het juiste adres als domicilieadres aan de overeenkomstige leerplichtverantwoordelijke. Indien er meerdere adressen beschikbaar zijn, koppel je elk adres aan de juiste relatie. Indien er geen adres gekoppeld is als domicilieadres, zal Toolbox geen leerplichtverantwoordelijke kunnen tonen op het fiscaal attest. 
+
+    Toolbox houdt prioritair rekening met het domicilieadres, daarna pas met het rijksregisternummer en als laatste met de categorisering LPV1 of 2. 
+
+    ![Informat2](./Informat2.png)
+
+- **Rijksregisternummer van de leerplichtverantwoordelijke (LPV)** 
+
+    Vul in Informat (=> Relaties) het juiste rijksregisternummer in bij de overeenkomstige leerplichtverantwoordelijke. Wil je een relatie wijzigen van bv. LPV 2 naar LPV 1, klik dan op de pen helemaal vooraan bij de relatie.  
+
+    ![Informat1](./Informat1.PNG)
+
+    Toolbox houdt prioritair rekening met het domicilieadres (zie hoger), daarna met de leerplichtverantwoordelijke waarvoor een rijksregisternummer is ingevuld en als laatste met de categorisering LPV1 of 2. Enkele mogelijke situaties:
+    - Zowel voor LPV 1 als LPV 2 zijn de rijksregisternummers ingevuld én is er een adres gekoppeld als domicilieadres => Toolbox neemt de gegevens van LPV 1 over op het fiscaal attest.
+    - Enkel voor LPV 1 is het rijksregisternummer ingevuld én is er een adres gekoppeld als domicilieadres => Toolbox neemt de gegevens van LPV 1 over op het fiscaal attest.
+    - Enkel voor LPV 2 is het rijksregisternummer ingevuld. Voor beide LPV's is er een adres gekoppeld als domicilieadres. => Toolbox neemt de gegevens van LPV 2 over op het fiscaal attest en niet die van LPV 1!!
+    - Enkel voor LPV 1 is het rijksregisternummer ingevuld, maar er is voor deze LPV geen adres gekoppeld als domicilieadres. Voor LPV 2 is er wel een domicilieadres gekoppeld, maar geen rijksregisternummer ingevuld. => Toolbox neemt de gegevens over van LPV 2, omdat de LPV mét een domicilieadres voorrang krijgt. Er zal dus geen correct attest afgeleverd kunnen worden, omdat er voor LPV 2 geen rijksregisternummer beschikbaar is. 
+
+
+### 1.4 Rijksregisternummers controleren
+Alvorens je de fiscale attesten genereert, kan je controleren voor welke leerlingen of leerplichtverantwoordelijken er géén rijksregisternummer is ingevuld in Informat. Deze rijksregisternummers zijn noodzakelijk voor het afleveren van het attest en het indienen via Belcotax-on-web. 
+
+Ga naar de module **Leerlingenrekeningen => Rapporten => Attest kinderopvang**. Selecteer het inkomstenjaar (bv. 2024 voor de aangifte in het jaar 2025) en klik op volgend icoon <LegacyAction img="rrnr.png"/>. 
+
+Voor de getoonde leerlingen met **LPV zonder rijksregisternummer** is er voor geen enkele leerplichtverantwoordelijke een rijksregisternummer ingevuld in het administratief pakket (Informat). Van zodra er voor minimaal één LPV een rijksregisternummer beschikbaar is, zal de leerling niet meer getoond worden in dit overzicht. 
+
+Wanneer je de rijksregisternummers hebt aangevuld in Informat, laat je de twee eerste stappen van de synchronisatie (Leerlingen of Leerlingen basisschool) in Toolbox nog eens lopen om de aanpassingen in te laden in Toolbox. 
+
+<br/>
+
+![rrnr1](./rrnr1.PNG)
+
+## 2. Artikels die recht geven op een fiscaal attest kinderopvang
+
+### 2.1 Voor- en naschoolse opvang en opvang tijdens middagpauzes
 
 In de module Leerlingenrekeningen kan je via het menu [Artikels](/leerlingenrekeningen/Artikels%20en%20artikelgroepen/#artikels) voor elk artikel aangeven of het recht geeft op belastingsvermindering. Voor voor- en naschoolse opvang en opvang tijdens de middagpauzes volstaat het dat dit vinkje is aangezet. Alle aanrekeningen waarin het artikel wordt gebruikt, zullen toegevoegd worden aan het attest kinderopvang. 
 
 ![kinderopvang1](./kinderopvang1.PNG)
 
 :::caution OPGELET
-Dit werkt niet met terugwerkende kracht! Heb je in het verleden reeds artikels aangerekend die recht geven op belastingsvermindering, maar waarvoor het vinkje niet was aangezet, dan zullen deze artikels niet mee in rekening worden gebracht op het attest kinderopvang. Contacteer in dat geval het Toolbox-team. 
+Dit werkt niet met terugwerkende kracht! Heb je in het verleden reeds artikels aangerekend die recht geven op belastingsvermindering, maar waarvoor het vinkje niet was aangezet, dan zullen deze artikels niet automatisch mee in rekening worden gebracht op het attest kinderopvang. Overloop de reeds gefactureerde notagroepen en open de betreffende aanrekeningen via 'Aanrekenen' of 'Aanrekenen artikel'. Klik helemaal bovenaan (in het artikel) op het rode kruisje bij 'attest kinderopvang' om het vinkje ineens bij alle leerlingen aan te zetten. Zie schermafbeeldingen hieronder. 
 :::
 
-### 1.2 Uitstappen tijdens het weekend en schoolvakanties
+![artikel1](./artikel1.png)
+![artikel2](./artikel2.png)
+
+### 2.2 Uitstappen tijdens het weekend en schoolvakanties
 Indien de school ook uitstappen of reizen organiseert die tijdens het weekend of tijdens een schoolvakantie plaatsvinden, moet er ook hiervoor een fiscaal attest voor kinderopvang worden afgeleverd. Om voor dergelijke activiteiten een correct fiscaal attest te kunnen genereren vanuit Toolbox, moet de aanrekening gekoppeld zijn aan een activiteit uit de [Activiteitenmodule](/activiteiten). Hier zijn 2 werkwijzes mogelijk:
 1. De Activiteitenmodule is in gebruik op de school en de activiteit werd hierin aangemaakt. Vervolgens werd ze geïmporteerd in de module Leerlingenrekeningen om aan te rekenen via de schoolrekening. De werkwijze hiervoor vind je terug in de handleiding van de [Activiteitenmodule](/activiteiten). Toolbox heeft met deze werkwijze voldoende info om correcte fiscale attesten kinderopvang te kunnen afleveren voor deze activiteit. 
 
@@ -46,82 +118,17 @@ Indien de school ook uitstappen of reizen organiseert die tijdens het weekend of
      Indien je voor eenzelfde activiteit meerdere facturen hebt gemaakt (bv. voorschotfacturen voor een meerdaagse reis), dien je alle deelfacturen te koppelen aan de activiteit. Op basis daarvan heeft Toolbox voldoende info om correcte fiscale attesten kinderopvang op te maken. 
      
 
-## 2. Voorbereiding 
-
-### 2.1 In de module Instellingen
-
-Om correcte fiches te genereren, moeten er eerst een aantal zaken worden ingesteld in de module Instellingen van Toolbox.
-
-De gegevens van de school/werkgever die op de fiscale fiches komen zijn dezelfde voor personeelsleden als voor de attesten kinderopvang voor ouders en moeten worden ingesteld in de Instellingen => Woon-werkverkeer. 
-
-Vul alle gevraagde gegevens in, zowel van de schuldenaar als van de afzender. In de praktijk zullen deze twee meestal dezelfde zijn. Let op dat je hier de gegevens van de VZW invult en niet van de school. De VZW is namelijk de werkgever. 
-
-Selecteer onderaan ook het inkomstenjaar (2023) waarvoor de personeelsleden via de module **Openbaar vervoer** of de module **Fietsvergoeding** de fiscale fiche kunnen downloaden. 
-
-<Thumbnails img={[
-    require('./opvang1.PNG').default, 
-    require('./opvang2.PNG').default, 
-]} />
-
-![opvang3](./opvang3.PNG)
-
-### 2.2 In de module Leerlingenrekeningen
-
-Ook in de module Leerlingenrekeningen bij het menu 'Scholen' moeten nog een aantal zaken ingesteld worden alvorens men fiscale attesten kan genereren. Klik op het potloodje vóór de school en ga naar het tabblad 'Attest kinderopvang'. 
-
-- Vink aan dat de school attesten voor kinderopvang maakt. 
-- Vul verder de naam en hoedanigheid van de ondertekenaar in. 
-- Onderaan kan ook de handtekening van de ondertekenaar geselecteerd worden (indien die werd ingescand en doorgegeven aan het Toolbox-team via toolbox@kobavzw.be). 
-- Wanneer de attesten kinderopvang via mail verstuurd worden, kan je hier de tekst voor het e-mailbericht instellen. Daarvoor kan je gebruik maken van enkele dynamische variabelen die bij het versturen van het bericht opgevuld zullen worden met de corresponderende leerlingengegevens.
-- Als alles correct is ingesteld, klik je op 'School bijwerken'.  
-
-![attest4](./attest4.png)
-
-### 2.3 In Informat
-
-Alle persoonsgegevens van zowel de leerlingen als de leerplichtverantwoordelijken worden via de synchronisatiemodule uit Informat gehaald. Om automatisch in Toolbox de correcte persoonsgegevens op de fiscale attesten te kunnen overnemen, moeten in Informat al deze gegevens correct geregistreerd zijn.
-
-- **Leerplichtverantwoordelijke** 
-
-    Vul in Informat (=> Relaties) het juiste rijksregisternummer in bij de juiste leerplichtverantwoordelijke. Wil je een relatie wijzigen van bv. LPV 2 naar LPV 1, klik dan op de pen helemaal vooraan bij de relatie, bv. in geval van gescheiden ouders.  
-
-    ![Informat1](./Informat1.PNG)
-
-    Toolbox zal prioritair rekening houden met de leerplichtverantwoordelijke waarvoor een rijksregisternummer is ingevuld. Mogelijke situaties:
-    - Zowel voor LPV 1 als LPV 2 zijn de rijksregisternummers ingevuld => Toolbox neemt de gegevens van LPV 1 over op het fiscaal attest.
-    - Enkel voor LPV 1 is het rijksregisternummer ingevuld => Toolbox neemt de gegevens van LPV 1 over op het fiscaal attest.
-    - Enkel voor LPV 2 is het rijksregisternummer ingevuld => Toolbox neemt de gegevens van LPV 2 over op het fiscaal attest.
-
-- **Domicilieadres van de leerplichtverantwoordelijke**
-
-    Koppel in Informat (=> Adressen) het juiste adres als domicilieadres aan de juiste leerplichtverantwoordelijke. Indien er meerdere adressen beschikbaar zijn, koppel je elk adres aan de juiste relatie. Indien er geen adres gekoppeld is als domicilieadres, zal Toolbox geen leerplichtverantwoordelijke kunnen tonen op het fiscaal attest. 
-
-    ![Informat2](./Informat2.png)
-
-### 2.4 Rijksregisternummers controleren
-Alvorens je de fiscale attesten genereert, kan je controleren voor welke leerlingen of leerplichtverantwoordelijken er géén rijksregisternummer is ingevuld in Informat. Deze rijksregisternummers zijn noodzakelijk voor het afleveren van het attest en het indienen via Belcotax-on-web. 
-
-Ga naar de module **Leerlingenrekeningen => Rapporten => Attest kinderopvang**. Selecteer het inkomstenjaar (bv. 2023 voor de aangifte in het jaar 2024) en klik op volgend icoon <LegacyAction img="rrnr.png"/>. 
-
-Voor de getoonde leerlingen **met LPV zonder rijksregisternummer** is er voor geen enkele leerplichtverantwoordelijke een rijksregisternummer ingevuld in het administratief pakket. Van zodra er voor minimaal één LPV een rijksregisternummer beschikbaar is, zal de leerling niet meer getoond worden in dit overzicht. 
-
-Wanneer je de rijksregisternummers hebt aangevuld in het administratief pakket, laat je de twee eerste stappen van de synchronisatie (Leerlingen of Leerlingen basisschool) in Toolbox nog eens lopen. 
-
-<br/>
-
-![rrnr1](./rrnr1.PNG)
-
 ## 3. Attesten kinderopvang genereren
 
-Je kan attesten kinderopvang aanmaken in de module **Leerlingenrekeningen => Rapporten => Attest kinderopvang**. Selecteer het inkomstenjaar (bv. 2023 voor de aangifte in het jaar 2024).
+Je kan attesten kinderopvang aanmaken in de module **Leerlingenrekeningen => Rapporten => Attest kinderopvang**. Selecteer het inkomstenjaar (bv. 2024 voor de aangifte in het jaar 2025).
 
 Als je nog geen attesten hebt aangemaakt, krijg je hiervoor een melding. Er wordt kort samengevat wat je eerst moet doen alvorens de attesten aan te maken:
 
 - Laat de synchronisatie met Informat/Wisa nog een keer lopen. Dat doe je in de module **Synchronisatie leerlingen** voor leerlingen van het secundair onderwijs en in de module **Synchronisatie leerlingen basis** voor leerlingen van de basisschool. Daar voer je de eerste twee stappen uit (Informat/Wisa uitlezen + Synchroniseer leerlingen). 
-- Kijk goed na of alle aangemaakte (en verzonden) facturen zijn doorgeboekt naar Exact Online. Je kan dit makkelijk zien in het menu **Zoek Facturen** van de module **Leerlingenrekeningen**. Daar klik je in de menubalk op het icoontje van Exact <LegacyAction img="exact.png"/>.
+- Kijk goed na of alle aangemaakte (en verzonden) facturen zijn doorgeboekt naar Exact Online. Je kan dit eenvoudig terugvinden in het menu **Zoek Facturen** van de module **Leerlingenrekeningen**. Daar klik je in de menubalk bovenaan op het icoontje van Exact <LegacyAction img="exact.png"/>. Je krijgt nu een lijst te zien van alle facturen die nog niet zijn overgezet naar Exact Online. 
 
-- Zorg dat alle betaalde facturen in Exact zijn afgepunt. De fiscale attesten kunnen enkel uitgereikt worden voor bedragen die effectief betaald zijn. Als de facturen dus niet (correct) afgepunt zijn in Exact, worden deze bedragen niet meegenomen voor het fiscaal attest.
-- Haal de openstaande facturen op uit Exact Online. Zo weet Toolbox welke facturen nog niet betaald zijn. Als het ophalen van de openstaande facturen gebeurt vanuit een centrale Toolbox, kan je in de module **Openstaande facturen** steeds zien wanneer er voor het laatst gegevens werden opgehaald. 
+- Zorg dat alle betaalde facturen in Exact zijn afgepunt. De fiscale attesten kunnen enkel uitgereikt worden voor facturen die effectief betaald zijn. Als de facturen dus niet (correct) afgepunt zijn in Exact, worden deze bedragen niet meegenomen voor het fiscaal attest.
+- Haal de openstaande facturen op uit Exact Online. Zo weet Toolbox welke facturen nog niet betaald zijn. Als het ophalen van de openstaande facturen gebeurt vanuit een centrale Toolbox, kan je in de module **Openstaande facturen** steeds zien wanneer er voor het laatst gegevens werden opgehaald. Het ophalen van de openstaande facturen moet gebeurd zijn op de dag van het genereren van de fiscale attesten. Is dat langer geleden, zal je hiervan een melding krijgen. 
 
 Bij het opmaken van de fiscale attesten maken we een onderscheid tussen:
 - Fiscale attesten voor voor-en naschoolse opvang => Alle opvang wordt samengebracht op 1 attest.
@@ -129,7 +136,11 @@ Bij het opmaken van de fiscale attesten maken we een onderscheid tussen:
 
 ### 3.1 Fiscaal attest voor voor- en naschoolse opvang en opvang tijdens middagpauzes
 
-Als je hogervermelde stappen hebt doorlopen, dan klik je bovenaan links op de rekenmachine <LegacyAction img="calculator.png"/>. Je krijgt nu de vraag of je de attesten voor 2023 wil laten berekenen. Klik op OK en er verschijnt een voortgangsindicator. Laat die even lopen.
+Als je hogervermelde stappen hebt doorlopen, dan klik je bovenaan links op de rekenmachine <LegacyAction img="calculator.png"/>. Je krijgt nu de vraag of je de attesten voor 2024 wil laten berekenen. Klik op OK en er verschijnt een voortgangsindicator. Laat die even lopen.
+
+:::danger OPGELET
+Je kan de attesten maar **1 keer berekenen**. Daarna kan je ze niet meer verwijderen en opnieuw berekenen. Zorg dus dat je zeker alle voorbereidende stappen hebt genomen. 
+:::
 
 ![attest5](./attest5.png) 
 
@@ -143,7 +154,7 @@ Je krijgt nu de tabel te zien met de aangemaakte attesten. Standaard wordt er é
 
 Je kan de attesten als pdf generen of rechtstreeks mailen naar de ouders. Selecteer de leerlingen waarvoor je het attest wil afdrukken/mailen en klik bovenaan op één van volgende iconen <LegacyAction img="pdf.png"/> <LegacyAction img="mailEnveloppe.png"/>.
 
-Verder kan je attesten ook volledig verwijderen door ze te selecteren en bovenaan te klikken op <LegacyAction img="remove.png"/>. Nadat een attest verwijderd is, kan je het opnieuw genereren door terug op de rekenmachine <LegacyAction img="calculator.png"/> te klikken. 
+Krijg je rode lijnen of waarschuwingstekens <LegacyAction img="alert.png"/> te zien, klik dan [hier](#7-foutieve-of-ontbrekende-persoonsgegevens-op-de-fiscale-attesten) om na te gaan wat er mis zou kunnen zijn en hoe je dat kan oplossen. 
 
 ### 3.2 Fiscaal attest voor uitstappen tijdens het weekend en schoolvakanties
 
@@ -154,13 +165,13 @@ Klik bovenaan op de rode bus <LegacyAction img="busred.png"/> om fiscale atteste
 In een dropdownlijst zie je alle activiteiten uit de activiteitenmodule waarvoor er facturen werden gemaakt. Selecteer uit deze lijst de activiteit waarvoor je fiscale attesten wil maken.  
 
 :::caution belangrijk
-Indien er voor een activiteit meerdere (voorschot)facturen werden gemaakt, moeten alle deelfacturen aan deze activiteit gekoppeld zijn om het correcte bedrag op het fiscaal attest te kunnen weergeven. Klik [hier](/fiscale_attesten_kinderopvang#12-uitstappen-tijdens-het-weekend-en-schoolvakanties) om te lezen hoe je activiteiten kan koppelen aan een aanrekening. 
+Indien er voor een activiteit meerdere (voorschot)facturen werden gemaakt, moeten alle deelfacturen aan deze activiteit gekoppeld zijn om het correcte bedrag op het fiscaal attest te kunnen weergeven. Klik [hier](#22-uitstappen-tijdens-het-weekend-en-schoolvakanties) om te lezen hoe je activiteiten kan koppelen aan een aanrekening. 
 :::
 
 ![attest12](./attest12.PNG)
 
 Enkel wanneer de factuur (of alle deelfacturen) voor een activiteit volledig is (zijn) betaald, zal je een attest kunnen genereren. 
-Selecteer de leerlingen waarvoor je het attest wil opmaken. Achter de naam van de leerling kan je controleren hoe oud de leerling was bij aanvang en bij afloop van de activiteit. Wanneer een leerling tijdens de activiteit de leeftijd van 14 jaar bereikte, kan het attest in een latere fase manueel gecorrigeerd worden [(zie punt 5)](/fiscale_attesten_kinderopvang#5-attest-aanpassen-bedrag-en-aantal-dagen). 
+Selecteer de leerlingen waarvoor je het attest wil opmaken. Achter de naam van de leerling kan je controleren hoe oud de leerling was bij aanvang en bij afloop van de activiteit. Wanneer een leerling tijdens de activiteit de leeftijd van 14 jaar bereikte, kan het attest in een latere fase manueel gecorrigeerd worden [(zie punt 5)](#5-attest-aanpassen-bedrag-en-aantal-dagen). 
 Wanneer je de checkbox bovenaan gebruikt om alle leerlingen te selecteren, zullen enkel de leerlingen geselecteerd worden die bij aanvang van de activiteit nog niet de leeftijd van 14 jaar hadden bereikt en dus recht hebben op een fiscaal attest. 
 
 Klik op 'Maak attest aan voor geselecteerde leerlingen'.
@@ -173,7 +184,7 @@ Je krijgt nu de tabel te zien met de aangemaakte attesten. Standaard wordt er é
 
 Je kan de attesten als pdf generen of rechtstreeks mailen naar de ouders. Selecteer de leerlingen waarvoor je het attest wil afdrukken/mailen en klik bovenaan op één van volgende iconen <LegacyAction img="pdf.png"/> <LegacyAction img="mailEnveloppe.png"/>.
 
-Verder kan je attesten ook volledig verwijderen door ze te selecteren en bovenaan te klikken op <LegacyAction img="remove.png"/>. Nadat een attest verwijderd is, kan je het opnieuw genereren door terug op de rekenmachine <LegacyAction img="calculator.png"/> te klikken. 
+Krijg je rode lijnen of waarschuwingstekens <LegacyAction img="alert.png"/> te zien, klik dan [hier](#7-foutieve-of-ontbrekende-persoonsgegevens-op-de-fiscale-attesten) om na te gaan wat er mis zou kunnen zijn en hoe je dat kan oplossen. 
 
 ## 4. Controle op leeftijd (14+)
 
@@ -202,7 +213,7 @@ Klik op 'Wijzig attest' om de aanpassingen te bewaren.
 ![attest16](./attest16.PNG)
 
 :::caution nota
-Wanneer het dagbedrag lager is dan het toegelaten maximumbedrag van 15,70 euro, moet dit niet worden ingevuld op het attest. 
+Wanneer het dagbedrag lager is dan het toegelaten maximumbedrag van 16,40 euro (voor inkomstenjaar 2024), moet dit niet worden ingevuld op het attest. 
 :::
 
 ## 6. Attest opsplitsen of overzetten naar andere leerplichtverantwoordelijke (LPV)
@@ -234,7 +245,7 @@ Aan de hand van het  waarschuwingsicoon <LegacyAction img="alert.png"/> kan je a
 
 Op basis van de foutmeldingen in Toolbox voer je de nodige aanpassingen door in het administratief pakket en synchroniseer je opnieuw met Toolbox via de module 'Synchronisatie leerlingen'.
 
-De attesten in Toolbox worden NIET AUTOMATISCH GEÜPDATET na aanpassingen in het administratief pakket. Je kan het attest updaten door achteraan op het splitsingsicoon <LegacyAction img="splits.png"/> te klikken en (opnieuw) de juiste leerplichtverantwoordelijke te selecteren. Indien het gaat om veel attesten, kan je ook de foutieve attesten verwijderen en opnieuw genereren. Vink hiervoor alle foutieve attesten in Toolbox aan verwijder ze via het rode kruisje <LegacyAction img="remove.png"/> bovenaan. Ik het geval van attesten zonder leerplichtverantwoordelijke kan je gebruik maken van de link 'Selecteer attesten zonder relatie' net boven de tabel. Klik opnieuw op de rekenmachine <LegacyAction img="calculator.png"/> om de gecorrigeerde attesten aan te maken. Voor leerlingen die reeds een correct attest hadden in het overzicht, zal met deze actie geen nieuw (lees: dubbel) attest aangemaakt worden. 
+De attesten in Toolbox worden NIET AUTOMATISCH GEÜPDATET na aanpassingen in het administratief pakket. Je kan het attest updaten door achteraan op het splitsingsicoon <LegacyAction img="splits.png"/> te klikken en (opnieuw) de juiste leerplichtverantwoordelijke te selecteren. 
 
 ![foutmelding](./foutmelding.png)
 
@@ -260,13 +271,13 @@ Ook deze gegevens dien je aan te passen in het administratief pakket (Informat o
 
 ![Informat2](./Informat2.png)
 
-De attesten in Toolbox worden NIET AUTOMATISCH GEÜPDATET na aanpassingen in het administratief pakket. Je kan het attest updaten door achteraan op het splitsingsicoon <LegacyAction img="splits.png"/> te klikken en (opnieuw) de juiste leerplichtverantwoordelijke te selecteren. Indien het gaat om veel attesten, kan je ook de foutieve attesten verwijderen en opnieuw genereren. Vink hiervoor alle foutieve attesten in Toolbox aan verwijder ze via het rode kruisje <LegacyAction img="remove.png"/> bovenaan. Klik opnieuw op de rekenmachine <LegacyAction img="calculator.png"/> om de gecorrigeerde attesten aan te maken. Voor leerlingen die reeds een correct attest hadden in het overzicht, zal met deze actie geen nieuw (lees: dubbel) attest aangemaakt worden. 
+De attesten in Toolbox worden NIET AUTOMATISCH GEÜPDATET na aanpassingen in het administratief pakket. Je kan het attest updaten door achteraan op het splitsingsicoon <LegacyAction img="splits.png"/> te klikken en (opnieuw) de juiste leerplichtverantwoordelijke te selecteren. 
 
 ### 7.3 Voor leerlingen die uitgeschreven zijn, worden de aanpassingen niet automatisch mee overgenomen naar Toolbox na synchronisatie.
 
-De reden dat we de aangepaste informatie niet ophalen, is omdat de leerling op dit moment geen actieve loopbaan heeft. Tijdens een syncrhonisatie halen we enkel actuele gegevens op van leerlingen die op dit moment een inschrijving hebben op de school. Om de aangepaste gegevens van uitgeschreven leerlingen in te laden in Toolbox, zal je de referentiedatum voor de synchronisatie moeten aanpassen om op die manier gegevens uit het verleden te synchroniseren. 
+De reden dat we de aangepaste informatie niet ophalen, is omdat de leerling op dit moment geen actieve loopbaan heeft. Tijdens een synchronisatie halen we enkel actuele gegevens op van leerlingen die op dit moment een inschrijving hebben op de school. Om de aangepaste gegevens van uitgeschreven leerlingen in te laden in Toolbox, zal je de referentiedatum voor de synchronisatie moeten aanpassen om op die manier gegevens uit het verleden te synchroniseren. 
 
-STAP 1: Ga naar de module **Instellingen => Schooljaar => Schooljaar Informat leerlingen**. Vul hier vorig schooljaar in en hanteer hierbij de volgende schrijfwijze: 2022-23.
+STAP 1: Ga naar de module **Instellingen => Schooljaar => Schooljaar Informat leerlingen**. Vul hier vorig schooljaar in en hanteer hierbij de volgende schrijfwijze: 2023-24.
 
 ![sync1](./sync1.png)
 
