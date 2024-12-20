@@ -44,34 +44,9 @@ Tot slot kan je onder het menu 'Controle gebruikersnamen' ook het **koppeldveld 
 
 ## Koppeling met administratief pakket 
 ### Gegevens uit Informat ophalen
-Het ophalen van gegevens uit Informat gebeurt via de webservices van Informat. Hiervoor zijn drie WSDLs voorzien:
-
-Algemeen
-https://webservice.informatsoftware.be/wsInfSoft/wsInformat.asmx?wsdl 
-
-Leerlingen
-https://webservice.informatsoftware.be/wsInfSoftLeerlingen.asmx?wsdl 
-
-Leraren
-https://webservice.informatsoftware.be/wsInfSoftpersoneel.asmx?wsdl
-
-Om de gegevens op te kunnen halen, moet in Informat een gebruiker worden aangemaakt. Die moet in een Toegangsgroep (niet in een Programmagroep) zitten met leesrechten op de nodige instellingen.
-Belangrijk: na het aanmaken van die gebruiker, vraag je via de Informat helpdesk om deze gebruiker te koppelen aan de webservices, incl. de KOBAM webservices.
+Het ophalen van gegevens uit Informat gebeurt via de REST API's van Informat. De Toolbox helpdesk zal zorgen voor de juiste koppeling.
 
 In de instellingen vul je zeker ook de instellingsnummers in waarvoor je gegevens wenst op te halen.
-
-Als de verschillende instellingsnummers bij Informat in één databank zitten én de aangemaakte gebruiker heeft rechten op al die instellingsnummers, zullen de gegevens zonder problemen doorkomen.
-
-Heb je echter een gebruiker die geen toegang heeft tot alle instellingsnummers, dan kan je in de instellingen bijkomende gebruikers/paswoorden opgeven. In de configuratie gebruikers webservice kan je dan aangeven voor welke instellingsnummers een andere gebruiker moet gebruikt worden dan de standaard gebruiker.
-
-Bijvoorbeeld: voor de instellingsnummers 117093 en 048728 moet een andere gebruiker worden gebruikt dan de standaard gebruiker die is ingevuld bij Gebruiker webservice Informat. Dan voeg je die bijkomende gebruiker bij Gebruiker/paswoord webservice Informat 2 toe.
-
-In de configuratie zet je deze regels:
-
-117093=2;
-048728=2;
-
-Die regels zeggen dat voor die twee instellingsnummers de tweede gebruiker/paswoord moet worden gebruikt.
 
 
 ### Gegevens uit Wisa ophalen
