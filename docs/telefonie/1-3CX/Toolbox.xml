@@ -1,0 +1,129 @@
+<?xml version="1.0"?>
+<Crm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Country="BE" Name="Toolbox" Version="1" SupportsEmojis="true">
+  <Number Prefix="Plus" MaxLength="20" />
+  <Connection MaxConcurrentRequests="2" />
+  <Parameters>
+    <Parameter Name="ClientId" Type="String" Parent="General Configuration" Editor="String" Title="Client ID:" />
+    <Parameter Name="ClientSecret" Type="String" Parent="General Configuration" Editor="String" Title="Client Secret:" />
+    <Parameter Name="Domein" Type="String" Parent="General Configuration" Editor="String" Title="Domein" />
+  </Parameters>
+  <Authentication Type="Scenario">
+    <Value>Auth</Value>
+  </Authentication>
+  <Scenarios>
+    <Scenario Id="Auth" Type="REST">
+      <Request SkipIf="" Url="https://[Domein]/oauth/token" MessagePasses="0" Message="" RequestContentType="application/x-www-form-urlencoded" RequestEncoding="UrlEncoded" RequestType="Post" ResponseType="Json">
+        <PostValues>
+          <Value Key="grant_type" Passes="0" Type="String">client_credentials</Value>
+          <Value Key="client_id" Passes="0" Type="String">[ClientId]</Value>
+          <Value Key="client_secret" Passes="0" Type="String">[ClientSecret]</Value>
+          <Value Key="scope" Passes="0" Type="String">beller_identificatie</Value>
+        </PostValues>
+      </Request>
+      <Rules>
+        <Rule Type="Any">access_token</Rule>
+      </Rules>
+      <Variables>
+        <Variable Name="AccessToken" Path="access_token">
+          <Filter />
+        </Variable>
+        <Variable Name="ExpiresIn" Path="expires_in">
+          <Filter />
+        </Variable>
+      </Variables>
+      <Outputs Next="" AllowEmpty="false">
+        <Output Type="HeaderName" Passes="0" Value="Authorization" />
+        <Output Type="HeaderValue" Passes="0" Value="Bearer [AccessToken]" />
+        <Output Type="BearerExpiration" Passes="0" Value="[ExpiresIn]" />
+      </Outputs>
+    </Scenario>
+    <Scenario Id="" Type="REST">
+      <Request Url="https://[Domein]/api/v1/beller_identificatie/telefoon?telefoonnummer=[Number]" MessagePasses="0" RequestEncoding="UrlEncoded" RequestType="Get" ResponseType="Json" />
+      <Rules>
+        <Rule Type="Any">data.id</Rule>
+      </Rules>
+      <Variables>
+        <Variable Name="ContactID" Path="data.id">
+          <Filter />
+        </Variable>
+        <Variable Name="FirstName" Path="data.firstname">
+          <Filter />
+        </Variable>
+        <Variable Name="LastName" Path="data.lastname">
+          <Filter />
+        </Variable>
+        <Variable Name="Email" Path="data.email">
+          <Filter />
+        </Variable>
+        <Variable Name="PhoneBusiness" Path="data.phone">
+          <Filter />
+        </Variable>
+        <Variable Name="PhoneMobile" Path="data.mobile">
+          <Filter />
+        </Variable>
+        <Variable Name="CustomValue" Path="data.customvalue">
+          <Filter />
+        </Variable>
+        <Variable Name="ContactUrl" Path="data.url">
+          <Filter />
+        </Variable>
+      </Variables>
+      <Outputs AllowEmpty="false">
+        <Output Type="ContactID" Passes="0" Value="[ContactID]" />
+        <Output Type="FirstName" Passes="0" Value="[FirstName]" />
+        <Output Type="LastName" Passes="0" Value="[LastName]" />
+        <Output Type="Email" Passes="0" Value="[Email]" />
+        <Output Type="PhoneBusiness" Passes="0" Value="[PhoneBusiness]" />
+        <Output Type="PhoneMobile" Passes="0" Value="[PhoneMobile]" />
+        <Output Type="CustomValue" Passes="0" Value="[CustomValue]" />
+        <Output Type="ContactUrl" Passes="0" Value="[ContactUrl]" />
+        <Output Type="EntityId" Passes="0" Value="[ContactID]" />
+        <Output Type="EntityType" Passes="0" Value="Contacts" />
+      </Outputs>
+    </Scenario>
+    <Scenario Id="LookupByEmail" Type="REST">
+      <Request Url="https://[Domein]/api/v1/beller_identificatie/email?email=[Email]" MessagePasses="0" RequestEncoding="UrlEncoded" RequestType="Get" ResponseType="Json" />
+      <Rules>
+        <Rule Type="Any">data.id</Rule>
+      </Rules>
+      <Variables>
+        <Variable Name="ContactID" Path="data.id">
+          <Filter />
+        </Variable>
+        <Variable Name="FirstName" Path="data.firstname">
+          <Filter />
+        </Variable>
+        <Variable Name="LastName" Path="data.lastname">
+          <Filter />
+        </Variable>
+        <Variable Name="Email" Path="data.email">
+          <Filter />
+        </Variable>
+        <Variable Name="PhoneBusiness" Path="data.phone">
+          <Filter />
+        </Variable>
+        <Variable Name="PhoneMobile" Path="data.mobile">
+          <Filter />
+        </Variable>
+        <Variable Name="CustomValue" Path="data.customvalue">
+          <Filter />
+        </Variable>
+        <Variable Name="ContactUrl" Path="data.url">
+          <Filter />
+        </Variable>
+      </Variables>
+      <Outputs AllowEmpty="false">
+        <Output Type="ContactID" Passes="0" Value="[ContactID]" />
+        <Output Type="FirstName" Passes="0" Value="[FirstName]" />
+        <Output Type="LastName" Passes="0" Value="[LastName]" />
+        <Output Type="Email" Passes="0" Value="[Email]" />
+        <Output Type="PhoneBusiness" Passes="0" Value="[PhoneBusiness]" />
+        <Output Type="PhoneMobile" Passes="0" Value="[PhoneMobile]" />
+        <Output Type="CustomValue" Passes="0" Value="[CustomValue]" />
+        <Output Type="ContactUrl" Passes="0" Value="[ContactUrl]" />
+        <Output Type="EntityId" Passes="0" Value="[ContactID]" />
+        <Output Type="EntityType" Passes="0" Value="Contacts" />
+      </Outputs>
+    </Scenario>
+  </Scenarios>
+</Crm>
