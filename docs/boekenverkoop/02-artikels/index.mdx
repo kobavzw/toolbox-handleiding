@@ -7,9 +7,50 @@ Vooraleer je boekenlijsten of materiaallijsten kan aanmaken per studierichting, 
 - Heb je een reeks dezelfde huurboeken op voorraad? Registreer ook dan het item maar 1x in de artikellijst. In het menu **Huur** zal je het aantal beschikbare exemplaren van een bepaald item kunnen instellen en je inventaris beheren. 
 
 ## 1. Artikels ingeven in Toolbox
-Het eerste jaar dat er gebruik wordt gemaakt van de module Boekenverkoop is de artikellijst nog leeg. Er zijn dan 3 mogelijke methodes om de gewenste artikels in te voeren in Toolbox. De volgende jaren kan je steeds de artikels van vorig schooljaar opnieuw ophalen. Dit heeft als voordeel dat alle koppelingen (tussen studierichtingen, vakken en artikels) die de vorige schooljaren werden gelegd ook mee worden overgenomen. Meer info hierover vind je in het onderdeel [Structuur](../structuur/).  
+Het eerste jaar dat er gebruik wordt gemaakt van de module Boekenverkoop is de artikellijst nog leeg. Er zijn dan verschillende methodes om de gewenste artikels in te voeren in Toolbox. De volgende jaren kan je steeds de artikels van vorig schooljaar opnieuw ophalen. Dit heeft als voordeel dat alle koppelingen (tussen studierichtingen, vakken en artikels) die de vorige schooljaren werden gelegd ook mee worden overgenomen. Meer info hierover vind je in het onderdeel [Structuur](../structuur/).  
 
-### 1.1 Import via Excel-bestand
+### 1.1 Import via automatische koppeling met titelbestand Standaard Boekhandel
+Standaard Boekhandel heeft in samenwerking met Toolbox een koppeling gerealiseerd tussen de twee softwarepakketten. Hierdoor kan je met een eenvoudige druk op de knop de volledige boekenlijst van Standaard Boekhandel (voor secundair onderwijs) importeren in Toolbox en worden elke nacht de meest recente wijzingen opgehaald. Dat maakt dat de import via de automatische koppeling met Standaard Boekhandel veruit de snelste en meest eenvoudige manier is om je boekenlijst in Toolbox in te laden. Op deze manier beschik je steeds over de meest recente informatie en prijzen. 
+
+Gebruik de knop 'Koppel artikelbestand SB automatisch' en niet de knop 'Import SB'. Die laatste is bedoeld voor een manuele import via de SBS-applicatie van Standaard Boekhandel. Die manier van importeren kan voor de boekenverkoop van schooljaar 2025-2026 nog gebruikt worden, maar is uitdovend. 
+
+![artikel_importeren5](./artikel_importeren5.png)
+
+Bij een eerste gebruik van de automatische koppeling zal je onderstaande melding te zien krijgen. Maak een ticket aan bij de helpdesk via het vraagteken in Toolbox rechtsbovenaan om de koppeling te activeren. Die zal geactiveerd worden door Toolbox op voorwaarde dat de school effectief klant in bij Standaard Boekhandel. 
+
+
+![koppeling_sb](./koppeling_sb.PNG)
+
+Van zodra de koppeling actief is, kan je klikken op 'Vernieuw artikelbestand'. 
+
+![artikel_importeren6](./artikel_importeren6.png)
+
+Indien er in de module 'Instellingen > Boekenverkoop' een marge werd ingesteld op de verkoopprijs, dan wordt het percentage in de pop up automatisch ingevuld. Die marge kan in dit scherm nog gewijzigd worden. Pas in dat geval ook in de module 'Instellingen > Boekenverkoop' het percentage op dezelfde manier aan. Zoniet worden alle verkoopprijzen in het rood getoond, omdat die niet overeen komen met de ingestelde marge. Klik vervolgens op 'Importeer het actuele bestand'. 
+
+![koppeling_sb3](./koppeling_sb3.PNG)
+
+![koppeling_sb2](./koppeling_sb2.PNG)
+
+Het volledige titelbestand voor secundair onderwijs van Standaard Boekhandel is nu toegevoegd. Deze artikels hebben nog geen interne code gekregen. Om ze te kunnen koppelen aan een studierichting in Toolbox is zo'n interne code noodzakelijk. Om de volledige lijst met artikels te kunnen raadplegen filter je bovenaan op:
+- 'Toon: Enkel zonder interne code' 
+
+    OF
+
+- 'Toon: Alles'
+
+![koppeling_sb4](./koppeling_sb4.png)
+
+### 1.2 Import via applicatie van Standaard Boekhandel (SBS)
+
+Indien je gebruik maakt van de applicatie van Standaard Boekhandel (SBS) voor het beheren van je boekenlijst kan je in die applicatie een export maken die je vervolgens kan importeren in Toolbox. De export vind je in SBS terug bij Artikelen => Vakboeken => Uitgebreide XLSX export. Dit Excel-bestand kan je in de module Boekenverkoop importeren via het menu **Artikels** door te klikken op volgend icoon <LegacyAction img="SBS.png"/>. 
+
+Na de import kan je elk artikel nog individueel aanpassen of zelfs terug verwijderen. Voor meer info, ga naar [Artikels: Instellingen en mogelijkheden](#2-artikels-instellingen-en-mogelijkheden).
+
+
+![artikel_importeren2](./artikel_importeren2.png)
+![standaardboekhandel2](./standaardboekhandel2.png)
+
+### 1.3 Import via Excel-bestand
 
 Heb je een Excel-bestand van je artikelen ter beschikking? Dan kan je de artikels eenvoudig importeren via het menu **Artikels => Bestand importeren**. Om correct te kunnen importeren, moet het bestand op een specifieke manier zijn opgebouwd. Hiervoor kan je volgend sjabloon gebruiken: [Importbestand boekenverkoop](./importbestand_artikels.xlsx). Let op dat je de structuur van het bestand behoudt en het bestand opslaat als .xlsx (en niet .xls). Enkel de kolommen 'Titel' en 'Prijs' zijn verplicht in te vullen om te kunnen importeren. De overige kolommen mogen leeg blijven indien niet van toepassing. 
 
@@ -24,17 +65,7 @@ Heb je een Excel-bestand van je artikelen ter beschikking? Dan kan je de artikel
 
 Na de import kan je elk artikel nog individueel aanpassen of zelfs terug verwijderen. Voor meer info, ga naar [Artikels: Instellingen en mogelijkheden](#2-artikels-instellingen-en-mogelijkheden).
 
-### 1.2 Via de applicatie van Standaard Boekhandel (SBS)
-
-Indien je gebruik maakt van de applicatie van Standaard Boekhandel (SBS) voor het beheren van je boekenlijst kan je in die applicatie een export maken die je vervolgens kan importeren in Toolbox. De export vind je in SBS terug bij Artikelen => Vakboeken => Uitgebreide XLSX export. Dit Excel-bestand kan je in de module Boekenverkoop importeren via het menu **Artikels** door te klikken op volgend icoon <LegacyAction img="SBS.png"/>. 
-
-Na de import kan je elk artikel nog individueel aanpassen of zelfs terug verwijderen. Voor meer info, ga naar [Artikels: Instellingen en mogelijkheden](#2-artikels-instellingen-en-mogelijkheden).
-
-
-![artikel_importeren2](./artikel_importeren2.png)
-![standaardboekhandel2](./standaardboekhandel2.png)
-
-### 1.3 Manueel ingeven
+### 1.4 Manueel ingeven
 
 Het is steeds mogelijk om manueel artikels toe te voegen door middel van de witte plus-knop, ook wanneer er reeds een bestand werd geïmporteerd (zie hoger). Voor meer info over de in te vullen velden zie [Artikels: Instellingen en mogelijkheden](#2-artikels-instellingen-en-mogelijkheden).
 
