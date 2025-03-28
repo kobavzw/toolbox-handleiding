@@ -16,8 +16,7 @@ Gebruik de knop 'Koppel artikelbestand SB automatisch' en niet de knop 'Import S
 
 ![artikel_importeren5](./artikel_importeren5.png)
 
-Bij een eerste gebruik van de automatische koppeling zal je onderstaande melding te zien krijgen. Maak een ticket aan bij de helpdesk via het vraagteken in Toolbox rechtsbovenaan om de koppeling te activeren. Die zal geactiveerd worden door Toolbox op voorwaarde dat de school effectief klant in bij Standaard Boekhandel. 
-
+Bij een eerste gebruik van de automatische koppeling zal je onderstaande melding te zien krijgen. Maak een ticket aan bij de helpdesk via het vraagteken in Toolbox rechtsbovenaan om de koppeling te activeren. Die zal geactiveerd worden door Toolbox **op voorwaarde dat de school effectief klant in bij Standaard Boekhandel**. 
 
 ![koppeling_sb](./koppeling_sb.PNG)
 
@@ -25,7 +24,9 @@ Van zodra de koppeling actief is, kan je klikken op 'Vernieuw artikelbestand'.
 
 ![artikel_importeren6](./artikel_importeren6.png)
 
-Indien er in de module 'Instellingen > Boekenverkoop' een marge werd ingesteld op de verkoopprijs, dan wordt het percentage in de pop up automatisch ingevuld. Die marge kan in dit scherm nog gewijzigd worden. Pas in dat geval ook in de module 'Instellingen > Boekenverkoop' het percentage op dezelfde manier aan. Zoniet worden alle verkoopprijzen in het rood getoond, omdat die niet overeen komen met de ingestelde marge. Klik vervolgens op 'Importeer het actuele bestand'. 
+Indien er in de module 'Instellingen > Boekenverkoop' een extra winstmarge voor de school (of korting voor de leerling) werd ingesteld op de verkoopprijs, dan wordt het percentage in de pop up automatisch ingevuld. Die marge kan in dit scherm nog gewijzigd worden. Pas in dat geval ook in de module 'Instellingen > Boekenverkoop' het percentage op dezelfde manier aan. Zoniet worden alle verkoopprijzen in het rood getoond, omdat die niet overeen komen met de ingestelde marge. Klik vervolgens op 'Importeer het actuele bestand'. 
+
+Klik [hier](../voorbereiding/#3-standaard-boekhandel) voor meer info over de geïmporteerde prijzen en het gebruik van de marge. 
 
 ![koppeling_sb3](./koppeling_sb3.PNG)
 
@@ -39,6 +40,11 @@ Het volledige titelbestand voor secundair onderwijs van Standaard Boekhandel is 
 - 'Toon: Alles'
 
 ![koppeling_sb4](./koppeling_sb4.png)
+
+Door met de muis over de aankoopprijs te bewegen, krijg je meer info te zien over het artikel. Zo zal je kunnen nagaan wanneer de prijs voor het laatst werd bijwerkt, of er door Standaard Boekhandel een melding werd toegevoegd en wat de vermoedelijke verschijningsdatum is (indien van toepassing). 
+
+![koppeling_sb5](./koppeling_sb5.PNG)
+
 
 ### 1.2 Import via applicatie van Standaard Boekhandel (SBS)
 
@@ -134,9 +140,45 @@ Indien er leveranciers zijn aangemaakt in het menu **Artikels => Leveranciers**,
 
 ### 2.2 Prijsaanpassing
 
-De prijs van een artikel kan aangepast worden in het menu **Artikels**. Dat kan zowel via het edit-icoon <LegacyAction img="edit.png"/> als via de blauwe link (de prijs) in het globaal overzicht. 
-- Een prijsaanpassing via het edit-icoon is van toepassing voor nieuwe bestellingen, maar wordt ook steeds doorgevoerd naar alle openstaande bestellingen. Indien er reeds items werden uitgeleverd en bijgevolg ook automatisch gefactureerd, wordt de prijs voor deze items niet meer aangepast. 
-- Klik je op de blauwe link (de prijs) in het globaal overzicht om de prijs aan te passen, dan heb je de keuze om de prijs enkel aan te passen voor de toekomstige bestellingen of ook ineens voor alle openstaande bestellingen die nog niet werden uitgeleverd.
+**a. Via de automatische koppeling met Standaard Boekhandel**
+
+Omdat het titelbestand van Standaard Boekhandel met alle details zoals prijs en levertermijn elke nacht automatisch wordt geüpdatet, kan je op een eenvoudige manier eventuele prijswijzigingen overnemen in Toolbox. Hiervoor klik je in het menu Artikels op 'Vernieuw artikelbestand'. 
+
+![prijsaanpassing2](./prijsaanpassing2.PNG)
+
+Importeer het actuele bestand. Indien in de module Instellingen een extra winstmarge werd ingesteld, zal die hier automatisch ingevuld worden. 
+
+![prijsaanpassing3](./prijsaanpassing3.PNG)
+
+Wanneer de import geslaagd is, krijg je onderstaande melding te zien. Enkel wanneer er nieuwe artikels werden gedetecteerd, worden die toegevoegd zonder interne code. De instellingen van de overige artikels blijven behouden. Dit is een standaard melding voor een succesvolle import. Ook wanneer er geen nieuwe artikels werden toegevoegd, krijg je die te zien. 
+
+![prijsaanpassing4](./prijsaanpassing4.PNG)
+
+De prijsaanpassingen worden niet automatisch overgenomen in Toolbox. Wanneer de ingestelde verkoopprijs niet meer overeenkomt met de voorgestelde verkoopprijs door Standaard Boekhandel, dan wordt die in het rood geaccentueerd. Door even door de lijst met artikels (met interne code) te scrollen, kan je heel snel achterhalen welke prijzen zijn aangepast. Om de aanpassing door te voeren in Toolbox is er nog een manuele actie vereist. Klik op de rood geaccentueerde prijs om die aan te passen. 
+
+![prijsaanpassing5](./prijsaanpassing5.PNG)
+
+In de pop up die vervolgens getoond wordt, heb je 2 of 3 mogelijkheden om de prijs aan te passen, afhankelijk van de instellingen m.b.t. de bijkomende winstmarge. 
+- Mogelijkheid 1: Klik op de blauwe prijs die wordt voorsteld door Standaard Boekhandel. Het bedrag wordt vervolgens overgenomen in het veld daaronder. 
+- Mogelijkheid 2: Klik op de blauwe prijs die rekening houdt met de bijkomende winstmarge, ingesteld in de module Instellingen > Boekenverkoop. Dit bedrag zal enkel getoond worden wanneer er daadwerkelijk een marge (verschillend van 0) werd ingesteld. 
+- Mogelijkheid 3: Wil je nog een andere prijssetting toepassen dan de voorgestelde prijzen, pas dan manueel de prijs in het tekstveld aan.
+
+Indien er reeds bestellingen zijn geplaatst, kan je de prijs voor dit artikel in die bestellingen ook updaten. Indien gewenst, selecteer je de daarvoor voorziene optie en klik je vervolgens op 'Pas toe'. Als de optie niet wordt aangevinkt, is de prijsaanpassing enkel van toepassing voor nieuwe bestellingen. 
+
+:::caution Ter info
+De prijs van reeds uitgeleverde of gefactureerde bestellingen kan niet meer worden aangepast. 
+:::
+
+![prijsaanpassing6](./prijsaanpassing6.PNG)
+
+
+**b. Manuele prijsaanpassing**
+
+De prijs van een artikel kan ook steeds manueel aangepast worden in het menu **Artikels**. Dat kan zowel via het edit-icoon <LegacyAction img="edit.png"/> als via de blauwe link (de prijs) in het globaal overzicht. 
+- Een prijsaanpassing via het **edit-icoon** is van toepassing voor nieuwe bestellingen, maar wordt ook steeds doorgevoerd naar alle openstaande bestellingen. Indien er reeds items werden uitgeleverd en bijgevolg ook automatisch gefactureerd, wordt de prijs voor deze items niet meer aangepast. 
+- Klik je op de **blauwe link (de prijs)** in het globaal overzicht om de prijs aan te passen, dan heb je de keuze om de prijs enkel aan te passen voor de toekomstige bestellingen of ook ineens voor alle openstaande bestellingen die nog niet werden uitgeleverd.
+
+![prijsaanpassing](./prijsaanpassing.PNG)
 
 ![prijs](./prijs.PNG)
 
