@@ -50,11 +50,17 @@ De studierichting heeft quota = 2
     - Leerling D start een inschrijving om 17:00 → inschrijving wordt afgerond en gerealiseerd omdat enkel leerling A een gerealiseerde plaats heeft.
     
     Merk op dat leerling D gerealiseerd wordt en leerling C niet. Dit scenario borgt de volgordes niet en moeten we zien te vermijden. Daarom hanteren we hogeromschreven maatregel.
-    
-## 5. De quota zijn nog niet bereikt, maar wanneer ik mijn niet gerealiseerde thuisaanmelding finaliseer, blijft deze “niet gerealiseerd”.
+
+## 5. De nummers op de weigeringsattesten komen niet overeen met de volgorde van de wachtrij.
+
+Toolbox bepaalt de volgorde van het weigeringsattest bij de start van de inschrijving, meer bepaald bij de selectie van de studierichting. Op dat moment wordt er een plaatsje gereserveerd dat 2 uur geldig blijft en wordt er ook reeds een nummer voor het weigeringsattest gegenereerd. Als er een inschrijving vervolgens niet wordt afgerond, dan ontstaat er een "gat" in de nummering op de weigeringsattesten.
+
+De "wachtrij positie" kolom in Toolbox duidt de effectieve positie aan van de leerling op de wachtlijst van de studieriching die ook rekening houdt met verschuivingen door gerealiseerde of uitgeschreven inschrijvingen. Zo kan je, bijvoorbeeld wanneer een ouder belt, steeds de actuele positie op de wachtlijst geven. 
+
+## 6. De quota zijn nog niet bereikt, maar wanneer ik mijn niet gerealiseerde thuisaanmelding finaliseer, blijft deze “niet gerealiseerd”.
 Dat klopt, wanneer een thuisaanmelding gefinaliseerd wordt, behoudt de uiteindelijke inschrijving de originele status (gerealiseerd of niet gerealiseerd) en volgnummer (indien niet gerealiseerd). Aangezien thuisaanmeldingen op volgorde gefinaliseerd moeten kunnen worden, is dit nodig om de volgorde te behouden. Je kan de inschrijving uiteraard achteraf altijd realiseren.
 
-## 6. Als ik het overzicht van een studierichting raapleeg, is het aantal geraliseerde inschrijvingen hoger dan het effectief aantal gerealiseerde inschrijvingen.
+## 7. Als ik het overzicht van een studierichting raapleeg, is het aantal geraliseerde inschrijvingen hoger dan het effectief aantal gerealiseerde inschrijvingen.
     
     Dat is inderdaad mogelijk. Het aantal lopende inschrijvingen (inschrijvingen of thuisaanmeldingen die minder dan 2 uur geleden begonnen zijn) worden hier bij opgeteld, omdat deze potentieel ook gerealiseerd kunnen worden. Dit geeft het interne aantal aan dat ook gebruikt wordt om de quota te berekenen zodat je kan inschatten of nieuwe inschrijvingen gerealiseerd kunnen worden. Als je hovert over het aantal, kan je een opdeling zien tussen de verschillende onderdelen.
 
@@ -62,7 +68,7 @@ Dat klopt, wanneer een thuisaanmelding gefinaliseerd wordt, behoudt de uiteindel
 
 ![faq1](./faq1.png)
 
-## 7. Zij-instromers moeten al kunnen aanmelden/inschrijven voor volgend schooljaar, maar ik wil voldoende plaatsen reserveren voor eigen leerlingen. 
+## 8. Zij-instromers moeten al kunnen aanmelden/inschrijven voor volgend schooljaar, maar ik wil voldoende plaatsen reserveren voor eigen leerlingen. 
 
 Enkele voorbeelden:
 - In studierichting X zijn voor volgend schooljaar 24 plaatsen voorzien. Er wordt verwacht dat 22 van de 24 plaatsen ingenomen zullen worden door eigen leerlingen. Er zijn momenteel dus 2 plaatsen beschikbaar voor zij-instromers. 
@@ -72,8 +78,7 @@ Enkele voorbeelden:
     - Uiteindelijk schrijven slechts 20 eigen leerlingen in voor studierichting X. Er zijn dus 4 plaatsen vrij voor zij-instromers. Twee van die plaatsen werden eerder al ingenomen. Er zijn dus nog 2 beschikbare plaatsen. 
     - Pas het quota op de studierichtinge aan naar 24. Je kan nu de 2 eerste aanmeldingen op de wachtlijst realiseren en eventueel finaliseren. 
 
-
-## 8. Bij het synchroniseren naar Informat zijn er foutmeldingen. Wat nu?
+## 9. Bij het synchroniseren naar Informat zijn er foutmeldingen. Wat nu?
 
 Lees [hier](/inschrijvingen/importeren_informat/#foutmelding-bij-importeren-informat) hoe je kan achterhalen wat er precies is foutgelopen en hoe je dat kan oplossen in de module Inschrijvingen. 
 
