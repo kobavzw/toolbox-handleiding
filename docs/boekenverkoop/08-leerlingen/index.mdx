@@ -42,14 +42,42 @@ Leerlingen kunnen op verschillende manieren inloggen in de Toolbox voor leerling
 
 ![leerlingen4](./leerlingen4.png)
 
-Nieuwe leerlingen moeten sowieso inloggen met gebruikersnaam en wachtwoord aangezien zij nog niet beschikken over een account in Smartschool, Google of Office. Die inloggegevens zijn terug te vinden in de module **Synchronisatie leerlingen**. Helemaal onderaan kan je een Excel-bestand downloaden. In dit bestand vind je niet alleen de inloggegevens voor Toolbox, maar ook de e-mailadressen van de leerplichtverantwoordelijken. Deze gegevens worden opgehaald uit Informat en zijn rechtstreeks in dat pakket in te voeren of aan te passen. Het Excel-bestand maakt het mogelijk om via een mail merge een gepersonaliseerde mail te sturen naar de ouders met daarin de algemene info i.v.m. de boekenverkoop, maar daarnaast ook de persoonlijke inloggegevens voor Toolbox. 
+Nieuwe leerlingen moeten sowieso inloggen met gebruikersnaam en wachtwoord aangezien zij nog niet beschikken over een account in Smartschool, Google of Office. 
+
+#### a. Inloggegevens in Excel-document
+
+Die inloggegevens zijn terug te vinden in de module **Synchronisatie leerlingen**. Helemaal onderaan kan je een Excel-bestand downloaden. In dit bestand vind je niet alleen de inloggegevens voor Toolbox, maar ook de e-mailadressen van de leerplichtverantwoordelijken. Deze gegevens worden opgehaald uit Informat en zijn rechtstreeks in dat pakket in te voeren of aan te passen. Het Excel-bestand maakt het mogelijk om via een mail merge een gepersonaliseerde mail te sturen naar de ouders met daarin de algemene info i.v.m. de boekenverkoop, maar daarnaast ook de persoonlijke inloggegevens voor Toolbox. 
 
 Een mail merge maak je in MS Word via het lint 'Verzendlijsten':
 - Ga via 'Afdruk samenvoegen starten' naar 'E-mailberichten'. 
 - Stel je e-mailbericht op en koppel het eerder gedownloade en opgeslagen Excel-bestand (via Adressen selecteren). 
 - Via 'Samenvoegvelden invoegen' kan je de benamingen van de kolomkoppen (bv. naam, voornaam, gebruikersnaam, ...) uit je Excel-bestand kiezen. Wanneer het e-mailbericht verstuurd wordt, zullen op basis van de Excel-lijst de toegevoegde samenvoegvelden worden ingevuld en zal het bericht bijgevolg gepersonaliseerd worden. Gebruik dus minimaal de samenvoegvelden voor gebruikersnaam en paswoord. 
 
-![leerling5](./leerling5.PNG)
+    ![leerling5](./leerling5.PNG)
+
+#### b. Inloggegevens mailen vanuit Toolbox
+Via de module Boekenverkoop kan je de inloggegevens van de leerlingen ook versturen via e-mail. 
+De tekst voor het e-mailbericht kan je instellen in de module [Instellingen > Boekenverkoop](/boekenverkoop/voorbereiding/#3-inloggegevens-mailen).
+- Ga in de module Boekenverkoop naar het menu Leerlingen om de mails te versturen.
+- Selecteer de leerlingen waarvoor je de inloggegevens wil versturen. Bovenaan de kolommen kan je de blauwe linken (naam, voornaam, klas, ...) gebruiken om de gegevens te sorteren.
+Leerlingen waarvoor geen huidige klas is ingevuld, zijn nieuwe inschrijvingen. 
+- Door middel van de checkbox bovenaan selecteer je ineens alle leerlingen.
+- Via dit icoon <LegacyAction img="filter.png"/> selecteer je enkel de leerlingen waarvoor de inloggegevens nog niet verstuurd werden.
+- Klik bovenaan op 'Mail procedure'. 
+
+    ![mailen1](./mailen1.png)
+
+- De pop-up geeft weer voor hoeveel leerlingen de inloggegevens verstuurd zullen worden.
+- Klik op 'Start verzenden'.
+
+<Thumbnails img={[
+        require('./mailen2.PNG').default, 
+    ]} />
+
+- In de kolom 'mail verzonden' zal je kunnen terugvinden wanneer de mail met de inloggegevens verstuurd is. 
+- Indien er voor de mailing gebruik gemaakt wordt van Toolboxmail, kan je via de module [Toolboxmail logs](/toolboxmail_log) nagaan of er foutmeldingen zijn teruggekomen na de verzendpoging. 
+
+    ![mailen3](./mailen3.png)
 
 ### 2.3 Bestelling plaatsen
 
@@ -59,7 +87,6 @@ Eens ingelogd in de Toolbox voor Leerlingen kunnen de leerlingen hun bestelling 
     <Thumbnails img={[
         require('./webshop1.PNG').default, 
     ]} />
-
 
 - Wanneer leerlingen nieuwe een bestelling plaatsen, moeten ze zelf selecteren welke studierichting ze volgend schooljaar gaan volgen. 
 
