@@ -1,0 +1,219 @@
+# Toolbox Handleiding
+
+This file contains links to documentation sections following the llmstxt.org standard.
+
+## Table of Contents
+
+- [Home](https://handleiding.tbvs.be/docs/01-index.md): Een overzicht van alle modules binnen toolbox voor scholen.
+- [FAQ](https://handleiding.tbvs.be/FAQ.md): Module Toolbox: FAQ, leerlingenrekeningen.
+- [Opleidingskalender](https://handleiding.tbvs.be/opleidingskalender.md): Module Opleidingskalender: geplande opleidingen en webinars schooljaar 2025-2026, opleidingen module leerlingenrekeningen, basisopleiding leerlinge...
+- [Voorbereiding en beheer](https://handleiding.tbvs.be/docs/activiteiten/1.%20voorbereiding.md): Module Activiteiten: instellingen, gebruikersrechten, gebruikersbeheer, goedkeuringsflow aanmaken.
+- [Meldingen](https://handleiding.tbvs.be/docs/activiteiten/10.%20meldingen.md): <ImageTitle img="activiteiten.png">Meldingen</ImageTitle>
+- [FAQ](https://handleiding.tbvs.be/docs/activiteiten/11.%20FAQ.md): Module Activiteiten: FAQ, deelnameprijs aanpassen, flow archiveren, verkeerde flow, aanwezigheden per klas.
+- [Activiteit aanvragen](https://handleiding.tbvs.be/docs/activiteiten/2.%20aanvragen.md): Module Activiteiten: activiteit aanvragen, activiteit toevoegen, tags toevoegen, klassen en leraren toevoegen.
+- [Aanvraag goedkeuren/afkeuren](https://handleiding.tbvs.be/docs/activiteiten/3.%20aanvraag%20goedkeuren.md): Module Activiteiten: aanvraag goedkeuren of afkeuren, aanvraagdetails bekijken, tags beheren, afkeuring motiveren, overlappingen controleren.
+- [Notificaties](https://handleiding.tbvs.be/docs/activiteiten/4.%20notificaties.md): Module Activiteiten: notificaties activeren, browsermeldingen, smartphonemeldingen, aanvragen en goedkeuringen opvolgen.
+- [Aanwezigheden registreren](https://handleiding.tbvs.be/docs/activiteiten/5.%20aanwezigheden.md): Module Activiteiten: aanwezigheden registreren, leerlingenrekeningen, afwezigheden.
+- [Kalender](https://handleiding.tbvs.be/docs/activiteiten/6.%20kalender.md): Module Activiteiten: kalenderweergave, activiteiten per dag, filteren op flow, tags, klas en begeleider.
+- [Overzicht activiteiten](https://handleiding.tbvs.be/docs/activiteiten/7.%20overzicht.md): Module Activiteiten: overzicht activiteiten, gebruikersrechten.
+- [Attest mutualiteit](https://handleiding.tbvs.be/docs/activiteiten/8.%20attest%20mutualiteit.md): Module Activiteiten: attest mutualiteit, leerlingenrekeningen, attesten, rapporten.
+- [Verwerking leerlingenrekeningen](https://handleiding.tbvs.be/docs/activiteiten/9.%20leerlingenrekeningen.md): Module Activiteiten: verwerking leerlingenrekeningen, via het menu importeer, vanuit het menu aanrekenen (artikel), leerlingenrekeningen.
+- [Activiteiten](https://handleiding.tbvs.be/activiteiten.md): Module Activiteiten: activiteiten aanvragen, goedkeuringsflows, deelnemers registreren, leerlingenrekeningen, mutualiteitsattesten, afwezigheden.
+- [Adresboek personeel](https://handleiding.tbvs.be/docs/adresboek/1.%20adresboek%20personeel.md): Module Adresboek: adresboek personeel, bepaalde gebruikers toegang geven tot alle informatie, functie toevoegen aan adresboek, Exact Online.
+- [Adresboek leerlingen](https://handleiding.tbvs.be/docs/adresboek/2.%20adresboek%20leerlingen.md): Module Adresboek: adresboek leerlingen, bepaalde gebruikers toegang geven tot alle informatie, Exact Online, gebruikersrechten.
+- [Adresboek](https://handleiding.tbvs.be/adresboek.md): Module Adresboek: personeelsgegevens, leerlinggegevens, contactgegevens, lessenroosters, toegangsrechten.
+- [Koppeling & provisioning](https://handleiding.tbvs.be/docs/afdrukcentrum/1.%20provisioning.md): Module Afdrukcentrum: koppeling & provisioning, afdrukcentrum koppelen, canon uniflow, ricoh myq.
+- [Voorbereiding Toolbox-module](https://handleiding.tbvs.be/docs/afdrukcentrum/2.%20voorbereiding.md): Module Afdrukcentrum: voorbereiding Toolbox-module, module activeren, gebruikersrechten toekennen, algemene instellingen.
+- [Beheerder van het afdrukcentrum](https://handleiding.tbvs.be/docs/afdrukcentrum/3.%20beheer.md): Module Afdrukcentrum: beheerder van het afdrukcentrum, beheer, log, eigen groepen.
+- [Printopdracht aanmaken](https://handleiding.tbvs.be/docs/afdrukcentrum/4.%20printopdracht%20geven.md): Module Afdrukcentrum: printopdracht aanmaken, nieuwe afdrukopdracht, pdf document opladen, afwerkingsmogelijkheden selecteren.
+- [Printkosten op schoolrekening](https://handleiding.tbvs.be/docs/afdrukcentrum/5.%20Printkosten%20op%20leerlingenrekening.md): Module Afdrukcentrum: printkosten op schoolrekening, canon uniflow, ricoh myq, leerlingenrekeningen.
+- [Afdrukcentrum](https://handleiding.tbvs.be/afdrukcentrum.md): Module Afdrukcentrum: printopdrachten doorsturen, Canon Uniflow, Ricoh MyQ, PDF klaarzetten, kostenplaatsen, leerlingenrekeningen.
+- [Instellingen](https://handleiding.tbvs.be/docs/afwezigheden/1.%20instellingen.md): Module Afwezigheden: instellingen, gebruikersrechten, lessenrooster, afwezigheidstypes, goedkeurders.
+- [Mijn afwezigheden](https://handleiding.tbvs.be/docs/afwezigheden/2.%20mijn_afwezigheden.md): Module Afwezigheden: mijn afwezigheden, eigen afwezigheid aanvragen, aangevraagde afwezigheid opvolgen, afwezigheidsattest.
+- [Afwezigheden](https://handleiding.tbvs.be/docs/afwezigheden/3.%20afwezigheden.md): Module Afwezigheden: afwezige leraar toevoegen, overzicht afwezige leraren & vervanging ingeven, aangevraagde afwezigheden behandelen.
+- [Afwezigheden](https://handleiding.tbvs.be/afwezigheden.md): Module Afwezigheden: afwezigheden, vervangingen.
+- [Begroting](https://handleiding.tbvs.be/begroting.md): Module Begroting: module activeren en gebruikersrechten, de module gebruiken, lijnen effectief begroten, gebruikersrechten.
+- [Belcotax validatiemodule](https://handleiding.tbvs.be/belcotax.md): Module Belcotax: validatiemodule inkomstenjaar 2024, xml.
+- [Voorbereiding en beheer](https://handleiding.tbvs.be/boekenverkoop/voorbereiding.md): Module Boekenverkoop: instellingen, gebruikersrechten, gebruikersbeheer, algemene instellingen.
+- [Artikels en prijzen](https://handleiding.tbvs.be/boekenverkoop/artikels.md): Module Boekenverkoop: artikels en prijzen, artikels ingeven in toolbox, 1 import via automatische koppeling met titelbestand standaard boekhandel, ...
+- [Schooljaar](https://handleiding.tbvs.be/boekenverkoop/schooljaar.md): Module Boekenverkoop: schooljaar, schooljaar.
+- [Structuur](https://handleiding.tbvs.be/boekenverkoop/structuur.md): Module Boekenverkoop: structuur, studierichtingen, vakken en vaktypes ingeven, 1 studierichtingen, 2 vakken.
+- [Opstart nieuw schooljaar](https://handleiding.tbvs.be/boekenverkoop/nieuw_schooljaar.md): Module Boekenverkoop: opstart nieuw schooljaar, nieuw schooljaar activeren, instellingen controleren, artikels toevoegen.
+- [Tweedehandsboeken](https://handleiding.tbvs.be/boekenverkoop/tweedehands.md): Module Boekenverkoop: tweedehandsboeken, tweedehandsboeken aanduiden als 'in te leveren' (leerling), tweedehandsboeken inleveren, ingeleverde boeke...
+- [Huurboeken](https://handleiding.tbvs.be/boekenverkoop/verhuur.md): Module Boekenverkoop: huurboeken, huurboek als artikel, huurboeken ingeven, beheren & barcodes genereren, huurboeken toewijzen.
+- [Leerlingen en webshop](https://handleiding.tbvs.be/boekenverkoop/leerlingen.md): Module Boekenverkoop: leerlingen en webshop, leerlingen synchroniseren met de module boekenverkoop, webshop, 1 toolbox voor leerlingen.
+- [Bestellingen opvolgen](https://handleiding.tbvs.be/boekenverkoop/bestelling.md): Module Boekenverkoop: bestellingen opvolgen, bestelling opvolgen & wijzigen, 1 bestelbon per leerling genereren, 2 overzicht leerlingen zonder best...
+- [Betalingen en facturen](https://handleiding.tbvs.be/boekenverkoop/betalingen_facturen.md): Module Boekenverkoop: betalingen en facturen, bestelling betalen, 1 onmiddellijke betaling via de webshop (pom), 2 een betaling ontvangen en regist...
+- [Boekenverkoop](https://handleiding.tbvs.be/boekenverkoop.md): Module Boekenverkoop: boekenverkoop herbekijk hier de online sessie van 24 april 2025 over de nieuwigheden en de opstart van het nieuwe schooljaar ...
+- [Buitengaan](https://handleiding.tbvs.be/buitengaan.md): Module Buitengaan: instellen wie toestemming heeft om de school te verlaten, uitzonderingen ingeven, gegevens tonen op de leerlingenkaart, Smartsch...
+- [Controle leerlingengegevens](https://handleiding.tbvs.be/controle_leerlingengegevens.md): Module Controle leerlingengegevens: module activeren en gebruikersrechten, voor ouders, opvolging door administratie, Smartschool.
+- [Digital Signage](https://handleiding.tbvs.be/digital_signage.md): Module Digital Signage: gebruikersrechten toekennen, scherm aanmaken, scherm wijzigen, verwijderen, publiceren, gebruikersrechten.
+- [E-mail instellen](https://handleiding.tbvs.be/e-mail.md): Module E-mail: leerlingenrekeningen, Smartschool, afwezigheden.
+- [Beheer instellingen](https://handleiding.tbvs.be/fietsvergoeding/beheer_instellingen.md): Module Fietsvergoeding: instellingen, gebruikersrechten, tegel fietsvergoeding, fietsvergoeding per km.
+- [Eindgebruiker](https://handleiding.tbvs.be/fietsvergoeding/eindgebruiker.md): Module Fietsvergoeding: eindgebruiker, samengestelde trajecten, invullen en indienen, gebruikersrechten.
+- [Verwerking door beheerder](https://handleiding.tbvs.be/fietsvergoeding/verwerking.md): Module Fietsvergoeding: verwerking door beheerder, meerdere instellingsnummers met andere boekhoudkundige parameters, Exact Online, gebruikersrechten.
+- [Fietsvergoeding](https://handleiding.tbvs.be/fietsvergoeding.md): Module Fietsvergoeding: fietsvergoeding bekijk in deze video hoe je je fietsvergoeding aanvraagt via toolbox.
+- [Foto's fotograaf Smartschool](https://handleiding.tbvs.be/foto_smartschool.md): Module Fotograaf smartschool: foto's opladen in toolbox, foto's synchroniseren met smartschool, Smartschool.
+- [Fotolijst leraren](https://handleiding.tbvs.be/fotolijst.md): Module Fotolijst: foto's individueel toevoegen, foto's in bulk toevoegen, functie toevoegen aan fotolijst, gebruikersrechten.
+- [Functiebeschrijvingen](https://handleiding.tbvs.be/functiebeschrijvingen.md): Module Functiebeschrijvingen: functiebeschrijvingen de werking van deze module is uitgebreid toegelicht in deze video.
+- [Gebouwen en lokalen](https://handleiding.tbvs.be/gebouwen_lokalen.md): Module Gebouwen en lokalen: module activeren, gebruikersrechten, lokalen beheren, QR-codes, inventarisitems koppelen.
+- [Gebruikersbeheer](https://handleiding.tbvs.be/gebruikersbeheer.md): Module Gebruikersbeheer: personeelsleden, personeelslid/-leden aan gebruikersrecht koppelen, gebruikersrecht(en) aan personeelslid koppelen, Office...
+- [Inloggen & navigeren](https://handleiding.tbvs.be/inloggen.md): Module Inloggen: gebruikersnaam en paswoord, smartschool account, office 365, Smartschool.
+- [Gebruikersrechten toekennen](https://handleiding.tbvs.be/inschrijvingen/opstart_config/rechten_gebruikers.md): Module Inschrijvingen: gebruikersrechten toekennen, inschrijvingen beheer, inschrijvingen gebruik, inschrijvingen klasverdeling.
+- [Algemene instellingen](https://handleiding.tbvs.be/inschrijvingen/opstart_config/instelling.md): Module Inschrijvingen: algemene instellingen, algemene gegevens betreffende schooljaar en school, thuis aanmelden, e-mailberichten naar eigen leerl...
+- [Keuzevakken aanmaken](https://handleiding.tbvs.be/inschrijvingen/opstart_config/keuzevakken.md): Module Inschrijvingen: keuzevakken aanmaken, keuzevakken aanmaken.
+- [Documenten en brieven toevoegen](https://handleiding.tbvs.be/inschrijvingen/opstart_config/documenten_brieven.md): Module Inschrijvingen: documenten en brieven toevoegen, dynamische documenten in bulk afdrukken, vervangingen, e-mail.
+- [Pagina's aanmaken](https://handleiding.tbvs.be/inschrijvingen/opstart_config/pagina.md): Module Inschrijvingen: pagina's aanmaken, vaste tekst, tekstveld (enkele lijn of meerdere lijnen), dropdown.
+- [Studierichtingen toevoegen](https://handleiding.tbvs.be/inschrijvingen/opstart_config/studierichting.md): Module Inschrijvingen: studierichtingen toevoegen, info eigen leerlingen, thuisregistratie instellen, registraties via aanmeldsysteem.
+- [Opstart en configuratie](https://handleiding.tbvs.be/inschrijvingen/opstart_config.md): Module Inschrijvingen: instellingen, gebruikersrechten, instellingen, gebruikersrechten.
+- [Nieuwe inschrijving](https://handleiding.tbvs.be/inschrijvingen/inschrijven/nieuwe_inschrijving.md): Module Inschrijvingen: nieuwe inschrijving, leerjaar en studierichting, leerlinggegevens, keuzevakken.
+- [Testinschrijving](https://handleiding.tbvs.be/inschrijvingen/inschrijven/testinschrijving.md): Module Inschrijvingen: testinschrijving, testinschrijving, testinschrijving ingeven, testinschrijving raadplegen en verwijderen.
+- [Eigen leerlingen (her)inschrijven](https://handleiding.tbvs.be/inschrijvingen/inschrijven/herinschrijven.md): Module Inschrijvingen: eigen leerlingen (her)inschrijven, leerling of klas zoeken en kolommen instellen, leerling herinschrijven, documenten bij he...
+- [Thuis aanmelden](https://handleiding.tbvs.be/inschrijvingen/inschrijven/thuis_aanmelden.md): Module Inschrijvingen: thuis aanmelden, Smartschool, attesten, e-mail.
+- [Aanmeldingen uit aanmeldsysteem importeren](https://handleiding.tbvs.be/inschrijvingen/inschrijven/importeren.md): Module Inschrijvingen: aanmeldingen uit aanmeldsysteem importeren, importeren.
+- [Inschrijven](https://handleiding.tbvs.be/inschrijvingen/inschrijven.md): Module Inschrijvingen: inschrijven, inschrijven.
+- [Inschrijvingen raadplegen en opvolgen](https://handleiding.tbvs.be/inschrijvingen/opvolging.md): Module Inschrijvingen: inschrijvingen raadplegen en opvolgen, opvolging per studierichting, opvolging per keuzevak, globaal overzicht.
+- [Importeren in Informat/Wisa](https://handleiding.tbvs.be/inschrijvingen/importeren_informat.md): Module Inschrijvingen: importeren in Informat/Wisa, informat, foutmelding bij importeren (informat), wisa/excel.
+- [Klasverdeling](https://handleiding.tbvs.be/inschrijvingen/klasverdeling.md): Module Inschrijvingen: klasverdeling, gebruikersrechten, klassen toevoegen aan studierichting, leerlingen toevoegen aan klas.
+- [Vergelijking met bestellingen boekenverkoop](https://handleiding.tbvs.be/inschrijvingen/boekenverkoop.md): Module Inschrijvingen: vergelijking met bestellingen boekenverkoop, vergelijking met bestellingen boekenverkoop.
+- [FAQ](https://handleiding.tbvs.be/inschrijvingen/FAQ.md): Module Inschrijvingen: FAQ, welke quota kan je instellen op een studierichting?, hoe beïnvloeden de quota nieuwe inschrijvingen?, 1 quota.
+- [Inschrijvingen](https://handleiding.tbvs.be/inschrijvingen.md): Module Inschrijvingen: attesten, vervangingen.
+- [Voorbereiding](https://handleiding.tbvs.be/docs/inventaris/1.%20voorbereiding.md): Module Inventaris: voorbereiding, gebruikersrechten toekennen, algemene instellingen, voorbereiding in de module inventaris.
+- [Items aanmaken en beheren](https://handleiding.tbvs.be/docs/inventaris/2.%20items.md): Module Inventaris: items aanmaken en beheren, items aanmaken, manueel toevoegen, importeren.
+- [Toestellen toewijzen, contracten & facturen](https://handleiding.tbvs.be/docs/inventaris/3.%20toestel_toewijzen.md): Module Inventaris: toestellen toewijzen, contracten & facturen, toestel toewijzen, contract, contract ondertekenen.
+- [Facturen en creditnota's](https://handleiding.tbvs.be/docs/inventaris/4.%20Facturen.md): Module Inventaris: facturen en creditnota's, waarborgfacturen, herstelfacturen, terugbetaling waarborg.
+- [Herstellingen](https://handleiding.tbvs.be/docs/inventaris/5.%20herstelling.md): Module Inventaris: herstellingen, defect toestel registreren, herstellingen opvolgen, herstelfactuur.
+- [Documenten](https://handleiding.tbvs.be/docs/inventaris/6.%20documenten.md): Module Inventaris: documenten, een document aan een item koppelen, een document aan een contract koppelen, een document aan een schadegeval/herstel...
+- [Video's](https://handleiding.tbvs.be/docs/inventaris/7.%20videos.md): Module Inventaris: video's, webinar inventaris: organisatie opstart schooljaar, webinar inventaris: organisatie einde schooljaar, webinar inventaris.
+- [FAQ](https://handleiding.tbvs.be/inventaris/FAQ.md): Module Inventaris: FAQ, hoe voeg ik een logo toe aan een contract?.
+- [Inventaris](https://handleiding.tbvs.be/inventaris.md): Module Inventaris: QR-codes.
+- [Rechten toekennen aan gebruikers](https://handleiding.tbvs.be/kas/opstart_configuratie/rechten_toekennen.md): Module Kas: rechten toekennen aan gebruikers, gebruikersrechten.
+- [Instellen nieuwe kas](https://handleiding.tbvs.be/kas/opstart_configuratie/nieuwe_kas_toevoegen.md): Module Kas: instellen nieuwe kas, Exact Online, gebruikersrechten.
+- [Openingssaldo toevoegen](https://handleiding.tbvs.be/kas/opstart_configuratie/openingssaldo_toevoegen.md): Module Kas: openingssaldo toevoegen, openingssaldo toevoegen.
+- [Gebruikers toewijzen of verwijderen](https://handleiding.tbvs.be/kas/opstart_configuratie/gebruikersbeheer.md): Module Kas: gebruikers toewijzen of verwijderen, Exact Online, gebruikersrechten.
+- [Kasinstellingen en -gebruik](https://handleiding.tbvs.be/kas/opstart_configuratie/kasinstellingen_beheer.md): Module Kas: kasinstellingen en -gebruik, kasinstellingen, kas verwijderen, kasblad openen om verrichtingen te registreren.
+- [Opstart en configuratie](https://handleiding.tbvs.be/kas/opstart_configuratie.md): Module Kas: instellingen, gebruikersrechten, instellingen, gebruikersrechten.
+- [Kasverrichting toevoegen](https://handleiding.tbvs.be/kas/administratieve_verwerking/kasverrichting_toevoegen.md): Module Kas: kasverrichting toevoegen, datum, relatie, omschrijving.
+- [Kasverrichting wijzigen en documenten toevoegen](https://handleiding.tbvs.be/kas/administratieve_verwerking/kasverrichting_wijzigen.md): Module Kas: kasverrichting wijzigen en documenten toevoegen, kasverrichting wijzigen, documenten toevoegen, Exact Online.
+- [Ontvangstbewijs of kasoverzicht afdrukken](https://handleiding.tbvs.be/kas/administratieve_verwerking/ontvangstbewijzen.md): Module Kas: ontvangstbewijs of kasoverzicht afdrukken, ontvangstbewijs of kasoverzicht afdrukken.
+- [Kastelling toevoegen en valideren](https://handleiding.tbvs.be/kas/administratieve_verwerking/kastellingen.md): Module Kas: kastelling toevoegen en valideren, betalingen, gebruikersrechten.
+- [Kasverrichting doorboeken naar Exact Online](https://handleiding.tbvs.be/kas/administratieve_verwerking/kasverrichtingen_doorboeken.md): Module Kas: kasverrichting doorboeken naar Exact Online, Exact Online, gebruikersrechten.
+- [Administratieve verwerking](https://handleiding.tbvs.be/kas/administratieve_verwerking.md): Module Kas: administratieve verwerking, administratieve verwerking.
+- [Kas](https://handleiding.tbvs.be/kas.md): Module Kas: Exact Online, facturen, betalingen.
+- [Kassa aanmaken](https://handleiding.tbvs.be/kassa/opstart_configuratie/kassa_aanmaken.md): Module Kassa: kassa aanmaken, kassa instellen, betaalmodaliteiten instellen, boekhoudkundige parameters.
+- [Rechten toekennen aan gebruikers](https://handleiding.tbvs.be/kassa/opstart_configuratie/rechten_toekennen.md): Module Kassa: rechten toekennen aan gebruikers, beheren van de kassa's, bedienen van de kassa's, gebruikersrechten.
+- [Beheer artikels](https://handleiding.tbvs.be/kassa/opstart_configuratie/artikels.md): Module Kassa: beheer artikels, artikel toevoegen, artikel aanpassen, artikel verwijderen.
+- [Beheer kassiers](https://handleiding.tbvs.be/kassa/opstart_configuratie/kassiers.md): Module Kassa: beheer kassiers, een kassier toevoegen, gegevens kassier aanpassen, kassier verwijderen.
+- [Beheer budgetten](https://handleiding.tbvs.be/kassa/opstart_configuratie/budgetten.md): Module Kassa: beheer budgetten, leerlingenrekeningen.
+- [Opstart en configuratie](https://handleiding.tbvs.be/kassa/opstart_configuratie.md): Module Kassa: instellingen, gebruikersrechten, instellingen, gebruikersrechten.
+- [Kassa openen](https://handleiding.tbvs.be/kassa/gebruik_verwerking/openen.md): Module Kassa: kassa openen, via de module kassa, via de module instellingen toolbox, via de link van de kassa.
+- [Kassa bedienen](https://handleiding.tbvs.be/kassa/gebruik_verwerking/bedienen.md): Module Kassa: kassa bedienen, inloggen, artikels aanrekenen, selecteer de categorie.
+- [Kassa afsluiten](https://handleiding.tbvs.be/kassa/gebruik_verwerking/afsluiten.md): Module Kassa: kassa afsluiten, kassa afsluiten.
+- [Verkopen opvolgen](https://handleiding.tbvs.be/kassa/gebruik_verwerking/verkopen_opvolgen.md): Module Kassa: verkopen opvolgen, opvolging verkopen, opvolging aanrekeningen (via leerlingenrekeningen), opvolging budgetten.
+- [Gebruik en verwerking](https://handleiding.tbvs.be/kassa/gebruik_verwerking.md): Module Kassa: gebruik en verwerking, gebruik en verwerking.
+- [Kassa](https://handleiding.tbvs.be/kassa.md): Module Kassa: leerlingenrekeningen, Exact Online, facturen.
+- [LeerID](https://handleiding.tbvs.be/leerid.md): Module LeerID: leerid importeren in toolbox, leerid gebruikersnaam en paswoord opvragen in toolbox, pdf-document per leerling met inloggegevens, im...
+- [Leerlingenkaarten](https://handleiding.tbvs.be/leerlingenkaarten.md): Module Leerlingenkaarten: instelling van de module, gebruikersbeheer, leerlingenkaarten aanmaken, Smartschool.
+- [Start](https://handleiding.tbvs.be/docs/leerlingenrekeningen/1.%20Start.md): Module Leerlingenrekeningen: start, leerlingenrekeningen, facturen, tags.
+- [Nota's](https://handleiding.tbvs.be/docs/leerlingenrekeningen/10.%20Nota.md): Module Leerlingenrekeningen: nota's, Exact Online, facturen, importeren.
+- [Facturen](https://handleiding.tbvs.be/docs/leerlingenrekeningen/11.%20Facturen.md): Module Leerlingenrekeningen: nota omzetten naar factuur, factuurnummer, OGM, Exact Online, Smartschool.
+- [Fiscale attesten kinderopvang](https://handleiding.tbvs.be/docs/leerlingenrekeningen/12.%20Rapporten/attesten_kinderopvang.md): Module Leerlingenrekeningen: fiscale attesten kinderopvang, tijdslijn, december, eind december.
+- [Rapporten](https://handleiding.tbvs.be/docs/leerlingenrekeningen/12.%20Rapporten.md): Module Leerlingenrekeningen: rapporten, leerlingen zonder aanrekening of nota, totaal maximumfactuur op schooljaarbasis, via smartschool verstuurde...
+- [Facturen zoeken](https://handleiding.tbvs.be/docs/leerlingenrekeningen/13.%20Facturen_zoeken.md): Module Leerlingenrekeningen: facturen zoeken, Exact Online, facturen, tags.
+- [Voorbeeldfactuur](https://handleiding.tbvs.be/docs/leerlingenrekeningen/14.%20voorbeeldfactuur.md): Module Leerlingenrekeningen: voorbeeldfactuur, factuurlay-out, betaalgegevens, artikelregels.
+- [Grootboekrekenigen KOBA](https://handleiding.tbvs.be/docs/leerlingenrekeningen/15.%20grootboekrekeningen.md): Module Leerlingenrekeningen: grootboekrekeningen KOBA, opbrengsten MAR, boekhoudkundige koppelingen.
+- [Scholen](https://handleiding.tbvs.be/docs/leerlingenrekeningen/2.%20Scholen.md): Module Leerlingenrekeningen: scholen, facturen, e-mail, smartschool, parentcom en questi, boekhouding.
+- [Schooljaren](https://handleiding.tbvs.be/docs/leerlingenrekeningen/3.%20Schooljaar.md): Module Leerlingenrekeningen: schooljaren aanmaken, actief schooljaar kiezen, instellingen per schooljaar.
+- [Inschrijvingen](https://handleiding.tbvs.be/docs/leerlingenrekeningen/4.%20Inschrijvingen.md): Module Leerlingenrekeningen: inschrijvingen, e-mailadressen, domiciliëring, betalingsregeling.
+- [Mijn groepen](https://handleiding.tbvs.be/docs/leerlingenrekeningen/5.%20Mijn%20groepen.md): Module Leerlingenrekeningen: mijn groepen, groep toevoegen, leerlingen toevoegen, overige acties.
+- [Notagroepen](https://handleiding.tbvs.be/docs/leerlingenrekeningen/6.%20Notagroepen.md): Module Leerlingenrekeningen: notagroepen, Exact Online, Smartschool, facturen.
+- [Artikels en artikelgroepen](https://handleiding.tbvs.be/docs/leerlingenrekeningen/7.%20Artikels%20en%20artikelgroepen.md): Module Leerlingenrekeningen: artikels en artikelgroepen, artikels, nieuw artikel aanmaken, artikels wijzigen.
+- [Aanrekenen (artikel)](https://handleiding.tbvs.be/docs/leerlingenrekeningen/8.%20Aanrekenen.md): Module Leerlingenrekeningen: aanrekenen (artikel), aanrekenen, titel definiëren, artikels zoeken.
+- [Importeren](https://handleiding.tbvs.be/docs/leerlingenrekeningen/9.%20Importeren.md): Module Leerlingenrekeningen: importeren, exact online, toolbox, canon uniflow en ricoh myq.
+- [FAQ](https://handleiding.tbvs.be/leerlingenrekeningen/FAQ.md): Module Leerlingenrekeningen: FAQ, hoe maak ik een creditnota?, hoeveel is er al aangerekend in het kader van de maximumfactuur?, ouders melden dat ...
+- [Leerlingenrekeningen](https://handleiding.tbvs.be/leerlingenrekeningen.md): Module Leerlingenrekeningen: leerlingenrekeningen, Exact Online, Smartschool.
+- [Uurrooster beheren](https://handleiding.tbvs.be/lessenrooster/uurrooster_beheren.md): Module Lessenrooster: uurrooster beheren, actief lessenrooster, controle lessenrooster, opbouw lessenrooster.
+- [Roosterbestand uploaden](https://handleiding.tbvs.be/lessenrooster/rooster_uploaden.md): Module Lessenrooster: roosterbestand uploaden, importeren, afwezigheden, vervangingen.
+- [Rooster verwijderen](https://handleiding.tbvs.be/lessenrooster/rooster_verwijderen.md): Module Lessenrooster: rooster verwijderen, Smartschool.
+- [Lessenrooster](https://handleiding.tbvs.be/lessenrooster.md): Module Lessenrooster: Smartschool, importeren, afwezigheden.
+- [Lokalen en items reserveren](https://handleiding.tbvs.be/lokaalreservaties.md): Module Lokaalreservaties: module activeren / gebruikersrechten toekennen, lokalen instellen, in de module 'gebouwen en lokalen', gebruikersrechten.
+- [Mail logs](https://handleiding.tbvs.be/toolboxmail_log.md): Module Mail logs: gebruikersrechten, overzicht verzonden mails, overzicht bounces, leerlingenrekeningen.
+- [Mediabox](https://handleiding.tbvs.be/mediabox.md): Module Mediabox: toolbox gateway voor mediabox, instellingen in toolbox, tags.
+- [Netwerken](https://handleiding.tbvs.be/netwerken.md): Module Netwerken: vlans, patchkasten, netwerk outlets.
+- [Nieuwsbrieven](https://handleiding.tbvs.be/nieuwsbrieven.md): Module Nieuwsbrieven: e-mail.
+- [Voorbereiding en beheer](https://handleiding.tbvs.be/docs/onkosten/1_voorbereiding_beheer.md): Module Onkosten: instellingen, gebruikersrechten, gebruikersbeheer, algemene instellingen.
+- [Aanvraag terugbetaling dienstverplaatsing](https://handleiding.tbvs.be/docs/onkosten/2_aanvraag_dienstverplaatsing.md): Module Onkosten: aanvraag terugbetaling dienstverplaatsing, aanvraag invullen, vast traject aanmaken, document opladen (parking & openbaar vervoer).
+- [Aanvraag terugbetaling aankoop](https://handleiding.tbvs.be/docs/onkosten/3_aanvraag_kost.md): Module Onkosten: aanvraag terugbetaling aankoop, aanvraag invullen, kosten doorrekenen aan leerlingen, aanvraag indienen ter goedkeuring.
+- [Aanvraag goedkeuren/afkeuren](https://handleiding.tbvs.be/docs/onkosten/4_aanvraag_goedkeuren_afkeuren.md): Module Onkosten: aanvraag goedkeuren/afkeuren, goedkeuren dienstverplaatsing, goedkeuren terugbetaling aankoop, Smartschool.
+- [Aanvraag boekhoudkundig verwerken](https://handleiding.tbvs.be/docs/onkosten/5_aanvraag_verwerken.md): Module Onkosten: aanvraag boekhoudkundig verwerken, verwerken dienstverplaatsing, verwerken terugbetaling aankoop, Exact Online.
+- [Verwerking leerlingenrekeningen](https://handleiding.tbvs.be/docs/onkosten/6_import_leerlingenrekeningen.md): Module Onkosten: verwerking leerlingenrekeningen, leerlingenrekeningen, importeren, tags.
+- [TOAH terugvorderingsdocument](https://handleiding.tbvs.be/docs/onkosten/7_TOAH.md): Module Onkosten: tOAH terugvorderingsdocument, betalingen.
+- [Onkosten](https://handleiding.tbvs.be/onkosten.md): Module Onkosten: goedkeuringsflows, Exact Online, attesten.
+- [Notificaties](https://handleiding.tbvs.be/onkosten/notificaties.md): Module Onkosten: notificaties, notificaties.
+- [Voorbereiding](https://handleiding.tbvs.be/docs/opdrachten/1.%20voorbereiding.md): Module Opdrachten: voorbereiding, gebruikersbeheer, versie, 1 blanco versie aanmaken.
+- [Structuur](https://handleiding.tbvs.be/docs/opdrachten/2.%20structuur.md): Module Opdrachten: structuur, vakken, officiële vakkenlijst, manueel toevoegen.
+- [Leraren](https://handleiding.tbvs.be/docs/opdrachten/3.%20leraren.md): Module Opdrachten: leraren, leraar toevoegen aan opdrachtenmodule, 1 leraar is gekend in informat, 2 leraar is (nog) niet gekend in informat.
+- [Rapporten](https://handleiding.tbvs.be/docs/opdrachten/4.%20rapporten.md): Module Opdrachten: rapporten, exporteren, rapporten.
+- [Export naar roosterprogramma's](https://handleiding.tbvs.be/docs/opdrachten/5.%20export.md): Module Opdrachten: export naar roosterprogramma's, untis, mondriaan, exporteren.
+- [Opdrachten](https://handleiding.tbvs.be/opdrachten.md): Module Opdrachten: exporteren, rapporten, tags.
+- [Beheer instellingen](https://handleiding.tbvs.be/openbaar_vervoer/instellingen.md): Module Openbaar vervoer: instellingen, gebruikersrechten, tegel openbaar vervoer, algemene instellingen.
+- [Eindgebruiker](https://handleiding.tbvs.be/openbaar_vervoer/eindgebruiker.md): Module Openbaar vervoer: eindgebruiker, nieuwe aanvraag, aanvraag opvolgen, betalingen.
+- [Verwerking door beheerder](https://handleiding.tbvs.be/openbaar_vervoer/verwerking.md): Module Openbaar vervoer: verwerking door beheerder, verwerkte aanvraag uitbetalen, Exact Online, betalingen.
+- [Openbaar vervoer](https://handleiding.tbvs.be/openbaar_vervoer.md): Module Openbaar vervoer: betalingen.
+- [Instellingen](https://handleiding.tbvs.be/docs/openstaande_facturen/1.%20instellingen.md): Module Openstaande facturen: instellingen, leerlingenrekeningen, Exact Online, Smartschool.
+- [Voorbeeldteksten](https://handleiding.tbvs.be/docs/openstaande_facturen/2.%20voorbeeldteksten.md): Module Openstaande facturen: voorbeeldteksten, eerste tekst = eerste herinnering, tweede tekst = tweede herinnering, derde tekst = naar incasso of ...
+- [FAQ](https://handleiding.tbvs.be/docs/openstaande_facturen/3.%20FAQ.md): Module Openstaande facturen: FAQ, Exact Online, Smartschool, facturen.
+- [Openstaande facturen](https://handleiding.tbvs.be/openstaande_facturen.md): Module Openstaande facturen: synchronisatie met exact online, gegevens zoeken, filteren en sorteren, mogelijke acties, leerlingenrekeningen.
+- [Opstart schooljaar](https://handleiding.tbvs.be/opstart_schooljaar.md): Module Opstart schooljaar: stel het nieuwe schooljaar in, informat, wisa, leerlingenrekeningen.
+- [Overheidsopdrachten](https://handleiding.tbvs.be/overheidsopdrachten.md): Module Overheidsopdrachten: toolbox-rechten: 3 niveaus, vragen…, over contracten, gebruikersrechten.
+- [Personeelsdossiers](https://handleiding.tbvs.be/personeelsdossiers.md): <ImageTitle img="personeelsdossiers.svg">Personeelsdossiers</ImageTitle>
+- [Privacy](https://handleiding.tbvs.be/privacy.md): <ImageTitle img="privacy.png">Privacy</ImageTitle>
+- [Beheer en instellingen](https://handleiding.tbvs.be/registratie_basisschool/beheer_instellingen.md): Module Registratie basisschool: instellingen, gebruikersrechten, gebruikersrechten toekennen, items instellen.
+- [Eindgebruiker](https://handleiding.tbvs.be/registratie_basisschool/eindgebruiker.md): Module Registratie basisschool: eindgebruiker, scannen, manueel registreren of een registratie aanpassen/verwijderen, leerlingenrekeningen.
+- [Registratie basisschool](https://handleiding.tbvs.be/registratie_basisschool.md): Module Registratie basisschool: leerlingenrekeningen, importeren.
+- [Controle en rapportage](https://handleiding.tbvs.be/registratie_basisschool/rapport.md): Module Registratie basisschool: controle en rapportage, per klas, per item, leerling.
+- [Beheer en instellingen](https://handleiding.tbvs.be/registratie_basisschool_V2/beheer_instellingen.md): Om de module Registratie basisschool te kunnen gebruiken, moeten er rechten toegekend worden. Dat gebeurt door een beheerder via de module [Gebruik...
+- [Eindgebruiker](https://handleiding.tbvs.be/registratie_basisschool_V2/eindgebruiker.md): Log in bij Toolbox en ga naar de module Registratie Basisschool. 
+- [Registratie basisschool Versie2](https://handleiding.tbvs.be/registratie_basisschool_Versie2.md): <ImageTitle img="registratieBasisschool.png">Registratie basisschool</ImageTitle>
+- [Controle en rapportage](https://handleiding.tbvs.be/registratie_basisschool_V2/rapport.md): Via het rapport kan je de registraties opvolgen per klas, per item of per leerling en dit voor een bepaalde periode. Je kan ook nagaan of er foutie...
+- [RL/Personaberichten](https://handleiding.tbvs.be/rl.md): Module Rl: voorbereiding, rl/personabericht toevoegen of verwijderen, rl/pesonabericht versturen per e-mail, Smartschool.
+- [Salto](https://handleiding.tbvs.be/salto.md): Module Salto: importeren.
+- [Schoolfoto's](https://handleiding.tbvs.be/schoolfotos.md): Module Schoolfotos: gebruikersbeheer, instellingen, foto's uitdelen, leerlingenrekeningen.
+- [Smartschool bulkmail](https://handleiding.tbvs.be/smartschool_bulkmail.md): Module Smartschool Bulkmail: voorbereiding, module activeren, gebruikersrechten toekennen, Smartschool.
+- [Smartschool co-accounts](https://handleiding.tbvs.be/smartschool_coaccounts.md): Module Smartschool co-accounts: co-accounts automatisch aanmaken (in bulk), co-account manueel aanmaken (individueel), co-accounts beheren en paswo...
+- [Synchronisatie leerlingen (basisschool) en internaten](https://handleiding.tbvs.be/synchronisatie/synchronisatie_lln.md): Module Synchronisatie: synchronisatie leerlingen (basisschool) en internaten, synchroniseren, inloggegevens, gebruikersnamen controleren en/of wijz...
+- [Synchronisatie leraren](https://handleiding.tbvs.be/synchronisatie/synchronisatie_leraren.md): Module Synchronisatie: synchronisatie leraren, synchroniseren, inloggegevens, gebruikersnamen controleren en/of wijzigen.
+- [Synchronisatie externen](https://handleiding.tbvs.be/synchronisatie/synchronisatie_externen.md): Module Synchronisatie: synchronisatie externen, toolbox voor externen, gebruikersrechten.
+- [Synchronisatie met ActiveDirectory](https://handleiding.tbvs.be/synchronisatie/synchronisatie_AD.md): Module Synchronisatie: synchronisatie met ActiveDirectory, webserver installeren, php op de webserver installeren, toolbox gateway ad installeren.
+- [Synchronisatie Exact Online](https://handleiding.tbvs.be/synchronisatie/synchronisatie_EOL.md): Module Synchronisatie: synchronisatie Exact Online, meest voorkomende problemen/foutmeldingen, error 429, leerlingen worden niet automatisch uitges...
+- [Synchronisatie Smartschool](https://handleiding.tbvs.be/synchronisatie/synchronisatie%20Smartschool.md): Module Synchronisatie: synchronisatie Smartschool, globaal wachtwoord, doelgroep, hoofdgroepen.
+- [Synchronisatie O365 via app-credentials](https://handleiding.tbvs.be/synchronisatie/O365_app_credentials.md): Module Synchronisatie: synchronisatie O365 via app-credentials, nieuwe app-registratie, machtiging toevoegen, clientgeheim toevoegen.
+- [Synchronisatie met Google Workspace](https://handleiding.tbvs.be/synchronisatie/Google.md): Module Synchronisatie: synchronisatie met Google Workspace, google workspace setup, een serviceaccount aanmaken, een admin account aanmaken.
+- [Synchronisatie met Colibris](https://handleiding.tbvs.be/synchronisatie/synchronisatie_colibris.md): Module Synchronisatie: synchronisatie met Colibris, api key genereren, lenersgroepen aanmaken, specifieke velden instellen.
+- [Sychronisatiemodules](https://handleiding.tbvs.be/synchronisatie.md): Module Synchronisatie: Exact Online, Smartschool.
+- [Koppeling met 3CX centrale](https://handleiding.tbvs.be/telefonie/1-3CX.md): Module Telefonie: koppeling met 3CX centrale, credentials aanvragen, xml uploaden.
+- [Telefonie](https://handleiding.tbvs.be/telefonie.md): Module Telefonie: e-mail.
+- [Toezichten basisschool](https://handleiding.tbvs.be/toezichten_basisschool.md): Module Toezichten basisschool: toezichten aanmaken, registreren, geregistreerde toezichten opvolgen, exporteren.
+- [Toolbox updates](https://handleiding.tbvs.be/updates.md): Module Updates: 19.1 - 17 oktober 2025, 19.0 - 16 oktober 2025, startpagina, leerlingenrekeningen.
+- [Verhuurcontracten](https://handleiding.tbvs.be/Verhuurcontracten.md): Module Verhuurcontracten: school (verhuurder) instellen, tegenpartij (huurder) instellen, 1 nieuwe tegenpartij aanmaken, e-mail.
+- [Opstart en configuratie](https://handleiding.tbvs.be/vervangingslijsten/opstart_config.md): Module Vervangingslijsten: instellingen, gebruikersrechten, gebruikersrechten toekennen, algemene instellingen.
+- [Afwezigheid leraar](https://handleiding.tbvs.be/vervangingslijsten/afwezigheid_leraar.md): Module Vervangingslijsten: afwezigheid leraar, afwezigheden, vervangingen.
+- [Afwezigheid klas](https://handleiding.tbvs.be/vervangingslijsten/afwezigheid_klas.md): Module Vervangingslijsten: afwezigheid klas, afwezigheden, vervangingen.
+- [Vervangingsrooster maken](https://handleiding.tbvs.be/vervangingslijsten/vervangingsrooster.md): Module Vervangingslijsten: vervangingsrooster maken, roosteropties kiezen, vervangingsrooster aanpassen, toezichtrooster aanpassen.
+- [Vervangingslijsten leraren](https://handleiding.tbvs.be/vervangingslijsten.md): Module Vervangingslijsten: afwezigheden, vervangingen.
+- [Wachtbeurten](https://handleiding.tbvs.be/wacht_toezicht/wachtbeuren.md): Module Wacht- en toezichtbeurten: wachtbeurten, via het lessenrooster, manueel, vervangingen.
+- [Toezichtbeurten](https://handleiding.tbvs.be/wacht_toezicht/toezichtsbeurten.md): Module Wacht- en toezichtbeurten: toezichtbeurten, toezichturen & toezichtlocaties definiëren, toezichten beheren, afwezigheden.
+- [Wacht- en toezichtbeurten](https://handleiding.tbvs.be/wacht_toezicht.md): Module Wacht- en toezichtbeurten: afwezigheden, vervangingen.
+- [Wachtwoorden leerlingen](https://handleiding.tbvs.be/wachtwoorden_leerlingen.md): <ImageTitle img="paswoord.png">Wachtwoorden leerlingen</ImageTitle>
+- [Wallet](https://handleiding.tbvs.be/wallet.md): Module Wallet: instellingen, wallet voor personeel, wallet voor leerlingen, Exact Online.
+- [Voorbereiding en instellingen](https://handleiding.tbvs.be/webshop/Voorbereiding%20en%20instellingen.md): Module Webshop: instellingen, gebruikersrechten, gebruikersbeheer, algemene instellingen.
+- [Webshop Beheer](https://handleiding.tbvs.be/webshop/beheer.md): De webshopbeheer pagina biedt een overzicht van alle webshops. Hier kun je nieuwe webshops toevoegen en bestellingen van alle webshops in één keer ...
+- [Webshop pagina](https://handleiding.tbvs.be/webshop/webshopPagina.md): ![Webshop bewerken,verwijderen,bestellingen](webshops_webshoppagina_1.png)
+- [Bestellingen](https://handleiding.tbvs.be/webshop/bestellingen.md): Hier vind je een overzicht terug waarmee je de bestellingen van je webshop kan opvolgen
+- [Artikel beheer](https://handleiding.tbvs.be/webshop/artikelbeheer.md): In het artikelbeheer beheer je al de producten en diensten voor je webshops. Je kan de artikels navigeren
+- [Archief](https://handleiding.tbvs.be/webshop/archief.md): De archief pagina biedt een overzicht van alle webshops die momenteel in het archief staan.
+- [Overzetten](https://handleiding.tbvs.be/webshop/overzetten.md): Hier vind je een overzicht terug van al de betaalde bestellingen van alle webshops.
+- [Externen](https://handleiding.tbvs.be/webshop/externen.md): Wanneer een externe enkel de geplaatste bestellingen moet kunnen opvolgen, kan het gebruikersrecht **webshop_bestellingen_opvolgen** worden toegekend.
+- [Webshop](https://handleiding.tbvs.be/webshop.md): Module Webshop: Exact Online.
+- [Weddecontrole](https://handleiding.tbvs.be/weddecontrole.md): Module Weddecontrole: nieuw weddebestand uploaden, weddebestand nakijken, weddebestand verwijderen.
+- [Woon-werkverkeer en Belcotax](https://handleiding.tbvs.be/woon_werverkeer.md): Module Woon-werkverkeer: instellingen, synchronisatie leraren, fiscale fiches aanmaken, Exact Online.
