@@ -1,5 +1,6 @@
 ---
 title: Kasverrichting doorboeken naar Exact Online
+description: "Module Kas: kasverrichting doorboeken naar Exact Online, Exact Online, gebruikersrechten."
 ---
 
 Klik op dit symbool <LegacyAction img="geld.png" /> om het kasblad te openen.

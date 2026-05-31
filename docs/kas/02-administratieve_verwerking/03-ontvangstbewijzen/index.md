@@ -1,5 +1,6 @@
 ---
 title: Ontvangstbewijs of kasoverzicht afdrukken
+description: "Module Kas: ontvangstbewijs of kasoverzicht afdrukken, ontvangstbewijs of kasoverzicht afdrukken."
 ---
 
 Klik op dit symbool <LegacyAction img="geld.png" /> om het kasblad te openen.

@@ -1,5 +1,6 @@
 ---
 title: Kasinstellingen en -gebruik
+description: "Module Kas: kasinstellingen en -gebruik, kasinstellingen, kas verwijderen, kasblad openen om verrichtingen te registreren."
 ---
 
 ## Kasinstellingen
