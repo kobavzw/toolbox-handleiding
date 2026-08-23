@@ -6,7 +6,7 @@ This file contains links to documentation sections following the llmstxt.org sta
 
 - [Home](https://handleiding.tbvs.be/docs/01-index.md): Een overzicht van alle modules binnen toolbox voor scholen.
 - [FAQ](https://handleiding.tbvs.be/FAQ.md): Module Toolbox: FAQ, leerlingenrekeningen.
-- [Opleidingskalender](https://handleiding.tbvs.be/opleidingskalender.md): Module Opleidingskalender: geplande opleidingen en webinars schooljaar 2025-2026, opleidingen module leerlingenrekeningen, basisopleiding leerlinge...
+- [Opleidingskalender](https://handleiding.tbvs.be/opleidingskalender.md): Module Opleidingskalender: geplande opleidingen en webinars schooljaar 2026-2027, opleidingen module leerlingenrekeningen, basisopleiding leerlinge...
 - [Voorbereiding en beheer](https://handleiding.tbvs.be/docs/activiteiten/1.%20voorbereiding.md): Module Activiteiten: instellingen, gebruikersrechten, gebruikersbeheer, goedkeuringsflow aanmaken.
 - [Meldingen](https://handleiding.tbvs.be/docs/activiteiten/10.%20meldingen.md): <ImageTitle img="activiteiten.png">Meldingen</ImageTitle>
 - [FAQ](https://handleiding.tbvs.be/docs/activiteiten/11.%20FAQ.md): Module Activiteiten: FAQ, deelnameprijs aanpassen, flow archiveren, verkeerde flow, aanwezigheden per klas.
