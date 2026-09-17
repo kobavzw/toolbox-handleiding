@@ -139,6 +139,12 @@ This file contains links to documentation sections following the llmstxt.org sta
 - [Lokalen en items reserveren](https://handleiding.tbvs.be/lokaalreservaties.md): Module Lokaalreservaties: module activeren / gebruikersrechten toekennen, lokalen instellen, in de module 'gebouwen en lokalen', gebruikersrechten.
 - [Mail logs](https://handleiding.tbvs.be/toolboxmail_log.md): Module Mail logs: gebruikersrechten, overzicht verzonden mails, overzicht bounces, leerlingenrekeningen.
 - [Mediabox](https://handleiding.tbvs.be/mediabox.md): Module Mediabox: toolbox gateway voor mediabox, instellingen in toolbox, tags.
+- [Voorbereiding en beheer](https://handleiding.tbvs.be/docs/nascholingen/1_voorbereiding_beheer.md): Module Nascholingen: module activeren, gebruikersrechten, flow aanmaken, goedkeuringsproces, domeinen en subdomeinen, meldingen.
+- [Een nascholing aanvragen](https://handleiding.tbvs.be/docs/nascholingen/2_nascholing_aanvragen.md): Module Nascholingen: nascholing aanvragen, flow, competenties, aanvraag indienen.
+- [Een aanvraag opvolgen, goedkeuren of afkeuren](https://handleiding.tbvs.be/docs/nascholingen/3_aanvraag_opvolgen.md): Module Nascholingen: status opvolgen, goedkeuren, afkeuren, inschrijving bevestigen, attest uploaden, evaluatie invullen.
+- [Eigen nascholingen toevoegen (extra professionalisering)](https://handleiding.tbvs.be/docs/nascholingen/4_eigen_nascholingen_toevoegen.md): Module Nascholingen: extra professionalisering toevoegen, eigen nascholingen, curriculum, competenties.
+- [Nascholingsprofiel](https://handleiding.tbvs.be/docs/nascholingen/5_nascholingsprofiel.md): Module Nascholingen: nascholingsprofiel, competentieprofiel, radargrafiek, afdrukken.
+- [Nascholingen](https://handleiding.tbvs.be/nascholingen.md): Module Nascholingen: nascholing aanvragen, goedkeuringsflow, domeinen en subdomeinen, extra professionalisering, nascholingsprofiel.
 - [Netwerken](https://handleiding.tbvs.be/netwerken.md): Module Netwerken: vlans, patchkasten, netwerk outlets.
 - [Nieuwsbrieven](https://handleiding.tbvs.be/nieuwsbrieven.md): Module Nieuwsbrieven: e-mail.
 - [Voorbereiding en beheer](https://handleiding.tbvs.be/docs/onkosten/1_voorbereiding_beheer.md): Module Onkosten: instellingen, gebruikersrechten, gebruikersbeheer, algemene instellingen.

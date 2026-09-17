@@ -45,6 +45,7 @@ This file contains all documentation content in a single document following the 
     {title: "Lokalen en items reserveren", image: "lokaalreservatie.png", link: "lokaalreservaties"},
     {title: "Mail logs", image: "toolboxmail.png", link: "toolboxmail_log"},
     {title: "Mediabox", image: "mediabox.png", link: "Mediabox"},
+    {title: "Nascholingen", image: "nascholingen.svg", link: "nascholingen"},
     {title: "Netwerken", image: "vlan.png", link: "netwerken"},
     {title: "Onkosten", image: "onkosten2.png", link: "onkosten"},
     {title: "Opdrachten", image: "opdrachten.PNG", link: "opdrachten"},
@@ -7647,6 +7648,304 @@ Heb je meerdere servers die van thuis uit beschikbaar moeten zijn, stel dan éé
 
 ---
 
+## Voorbereiding en beheer(1_voorbereiding_beheer)
+
+Vooraleer personeelsleden een nascholing kunnen aanvragen, moet een beheerder de module voorbereiden: de module activeren, minstens één **flow** (goedkeuringsprocedure) aanmaken en de **competentiedomeinen** instellen.
+
+## Module activeren
+
+De module Nascholingen wordt geactiveerd via de module **Instellingen => Modules** (instelling **'Nascholingen actief'**). Klik rechts bovenaan in Toolbox op het vraagteken om te achterhalen wie beheerder is in jouw Toolbox.
+
+## Gebruikersrechten
+
+Elk personeelslid met toegang tot Toolbox kan, zodra de module actief is, zelf nascholingen aanvragen en eigen professionalisering toevoegen. Voor het beheer van de module (flows, domeinen, meldingen en het overzicht van alle aanvragen) zijn bijkomende rechten vereist. Deze ken je toe via de module [Gebruikersbeheer](/gebruikersbeheer).
+
+- **nascholing_beheer**: geeft toegang tot **Beheer** binnen de module Nascholingen (flows, domeinen, meldingen, overzicht van alle nascholingen en extra professionaliseringen). Personen met dit recht kunnen bovendien een nascholing nog aanpassen of verwijderen nadat die is afgerond, ook als ze zelf geen goedkeurder of deelnemer zijn.
+- **nascholing_bekijk_profielen**: laat toe om het [nascholingsprofiel](../nascholingsprofiel) van andere personeelsleden te bekijken (bv. voor een pedagogisch coördinator of een directielid dat geen volledig beheerdersrecht moet krijgen), zonder toegang tot Beheer.
+
+Wie als **goedkeurder** aan een processtap van een flow gekoppeld wordt (zie verder), hoeft daarvoor geen apart gebruikersrecht te krijgen. Het is de koppeling aan de processtap zelf die bepaalt wie welke aanvragen mag goedkeuren of afkeuren.
+
+## Flows: de goedkeuringsprocedure
+
+Een **flow** bepaalt hoe een aanvraag voor een nascholing wordt behandeld: welke stappen van goedkeuring ze moet doorlopen, wie op elke stap goedkeurt, en hoe betrokkenen daarvan op de hoogte worden gebracht. Elke nascholing wordt bij het aanvragen gekoppeld aan precies één flow. Een school kan meerdere flows aanmaken, bv. één voor korte, goedkopere nascholingen en één voor meerdaagse, dure opleidingen met een uitgebreidere goedkeuring.
+
+Ga naar **Nascholingen => Beheer => Flows**.
+
+### Een flow aanmaken
+
+- Klik op **Flow toevoegen**.
+- Geef de flow een duidelijke **naam** (bv. "Standaard goedkeuringsflow" of "Nascholingen > 500 euro") en bevestig.
+
+De nieuwe flow verschijnt in de lijst, samen met het aantal nascholingen en processtappen dat eraan gekoppeld is. Klik op de flow om ze verder in te stellen.
+
+### Communicatie
+
+Stel in via welk kanaal betrokkenen (goedkeurders, aanvrager, deelnemers) een bericht ontvangen bij elke statuswijziging van een nascholing die onder deze flow valt:
+
+- **Geen meldingen**: er wordt geen extern bericht verstuurd. Betrokkenen zien de wijziging wel steeds terug via een melding in Toolbox zelf (belletje) en, indien geactiveerd, een webpush-notificatie.
+- **E-mail**: kies bijkomend een **afzender**. Afzenders worden aangemaakt in de module [E-mail](/e-mail).
+- **Smartschool**: kies bijkomend het gewenste **Smartschoolplatform**. Dit platform moet ingesteld zijn in de module **Instellingen => Smartschool**.
+
+### Procesverloop: goedkeuringsstappen
+
+Onder **Procesverloop** stel je de opeenvolgende goedkeuringsstappen van deze flow in. Elke nascholing die aan deze flow gekoppeld wordt, doorloopt deze stappen in de ingestelde volgorde.
+
+Klik op **Processtap toevoegen** en vul in:
+
+- **Naam van de processtap** (verplicht), bv. "Goedkeuring directie" of "Goedkeuring bestuur".
+- **Goedkeuring vanaf minimumbedrag**: schakel deze schuifbalk in als deze stap enkel moet doorlopen worden wanneer de kostprijs van de aanvraag een bepaald bedrag bereikt. Vul in dat geval het **minimumbedrag** (€) in. Blijft de kostprijs van de aanvraag onder dit bedrag, dan wordt deze stap automatisch overgeslagen.
+- **Goedkeurders kunnen aanvraag bewerken tijdens goedkeuringsproces**: schakel dit in als de goedkeurder(s) van deze stap de gegevens van de aanvraag nog mogen wijzigen (bv. de kostprijs corrigeren) vooraleer ze goed of af te keuren.
+- **Voeg goedkeurder toe**: zoek en selecteer één of meerdere personeelsleden die op deze stap een aanvraag mogen goedkeuren of afkeuren.
+
+Je kan meerdere processtappen toevoegen; ze worden na elkaar doorlopen. Een stap kan achteraf nog aangepast of verwijderd worden.
+
+:::info voorbeeld
+Een flow met twee stappen: "Goedkeuring directie" (zonder minimumbedrag, dus altijd van toepassing) en "Goedkeuring bestuur" (met minimumbedrag 500 euro). Een aanvraag van 300 euro moet dan enkel door de directie goedgekeurd worden. Een aanvraag van 800 euro moet na goedkeuring door de directie ook nog door het bestuur goedgekeurd worden.
+:::
+
+### Aanwezigheidsattest
+
+Schakel **Aanwezigheidsattest is uploadbaar** in als deelnemers, nadat de nascholing is gevolgd, een aanwezigheidsattest moeten/mogen opladen bij hun deelname. Staat deze instelling uit, dan krijgen deelnemers deze mogelijkheid niet te zien.
+
+### Omschrijvingsjabloon
+
+Dit is een tekst (met opmaak) die automatisch wordt ingevuld in het veld **Extra opmerking** wanneer een personeelslid een nieuwe nascholing aanvraagt onder deze flow. Handig om bijvoorbeeld standaard te verwijzen naar de afsprakennota rond nascholingen, of om aan te geven welke bijkomende informatie de aanvrager best meegeeft.
+
+### Evaluatiesjabloon
+
+Dit is het evaluatieformulier (met opmaak) dat een deelnemer moet invullen nadat de nascholing als "gevolgd" wordt gemarkeerd. Je kan hier bijvoorbeeld een aantal open vragen of aandachtspunten in kwijt die de school standaard aan personeelsleden wil voorleggen na afloop van een nascholing.
+
+### Flow archiveren of verwijderen
+
+- **Flow archiveren**: een gearchiveerde flow kan niet meer geselecteerd worden bij het aanvragen van een nieuwe nascholing. Bestaande nascholingen die aan deze flow gekoppeld zijn, blijven gewoon zichtbaar en de flow zelf wordt in dat geval enkel nog alleen-lezen getoond.
+- **Flow verwijderen**: dit kan enkel als er geen enkele nascholing (meer) aan deze flow gekoppeld is. Zijn er nog gekoppelde nascholingen, dan moet je de flow archiveren in plaats van verwijderen.
+
+## Domeinen en subdomeinen
+
+Elke nascholing en extra professionalisering wordt gekoppeld aan één of meerdere **competenties**. Deze competenties zijn opgebouwd uit **domeinen** (hoofdcategorieën) met daaronder **subdomeinen**. Dit is de basis voor het nascholingsprofiel van elk personeelslid.
+
+Ga naar **Nascholingen => Beheer => Domeinen**.
+
+Bij de eerste installatie worden 5 standaarddomeinen voorzien, elk met een reeks standaard subdomeinen:
+
+- Didactische competenties
+- Pedagogische competenties
+- Inhoudelijke competenties
+- Persoonlijke competenties
+- Leidinggevende competenties
+
+Deze lijst kan volledig aangepast worden aan de eigen visie van de school.
+
+### Een domein toevoegen
+
+- Klik op **Domein toevoegen**.
+- Geef het domein een **naam** en bevestig.
+
+### Een domein en zijn subdomeinen aanpassen
+
+- Klap het gewenste domein open in de lijst.
+- Pas de **naam van het domein** aan indien nodig.
+- Elk bestaand subdomein staat in een eigen tekstveld: pas de naam rechtstreeks aan, of verwijder een subdomein met het vuilnisbakje.
+- Voeg een nieuw subdomein toe door de naam in te typen in het veld **Naam van het subdomein** en op **+** te klikken.
+- Klik pas op **Domein aanpassen** om alle wijzigingen (naam van het domein + toegevoegde, hernoemde en verwijderde subdomeinen) in één keer te bewaren.
+
+:::info opgelet
+Wijzigingen aan subdomeinen worden pas bewaard bij het klikken op **Domein aanpassen**. Verlaat je het scherm voordien, dan gaan de aanpassingen verloren.
+:::
+
+### Een domein verwijderen
+
+Klik op **Domein verwijderen**. Dit verwijdert ook alle onderliggende subdomeinen. Nascholingen die al aan dit domein of deze subdomeinen gekoppeld waren, blijven behouden, maar tonen die koppeling dan niet meer.
+
+## Meldingen: extra ontvangers per actie
+
+Naast de vaste ontvangers van een bericht (de aanvrager, de goedkeurder(s) van de lopende stap en de deelnemers, afhankelijk van de actie) kan een beheerder bijkomende personeelsleden laten meelezen bij bepaalde acties binnen een specifieke flow. Dit doe je via **meldingen**.
+
+Ga naar **Nascholingen => Beheer => Meldingen**.
+
+- Klik op **Melding toevoegen**, geef de melding een **naam** en **selecteer een flow**.
+- Open de melding om ze verder in te stellen:
+  - **Selecteer de acties**: schakel per actie in of de bijkomende ontvangers een bericht moeten krijgen: *aangevraagd*, *goedgekeurd*, *afgekeurd*, *toegevoegd* of *verwijderd*.
+  - **Voeg ontvangers toe**: zoek en selecteer de personeelsleden die bij de aangevinkte acties bijkomend verwittigd moeten worden. Deze personen hoeven zelf geen goedkeurder of beheerder te zijn.
+
+:::info voorbeeld
+Een school wil dat de nascholingsverantwoordelijke steeds op de hoogte is van elke afgekeurde nascholing binnen de flow "Standaard goedkeuringsflow", zonder dat die persoon zelf goedkeurder moet worden. Dit stel je in via een melding op deze flow, met enkel de actie *afgekeurd* aangevinkt en de nascholingsverantwoordelijke als ontvanger.
+:::
+
+## Overzicht van alle nascholingen en extra professionaliseringen
+
+Onder **Nascholingen => Beheer => Nascholingen** vindt een beheerder (recht **nascholing_beheer**) een volledig overzicht, ook van aanvragen waar hij zelf geen goedkeurder of deelnemer van is. Dit overzicht bestaat uit twee tabbladen:
+
+- **Aangevraagde nascholingen**: alle nascholingen, met filters op titel, aanvraagjaar, flow, status (*Aangevraagd*, *Goedgekeurd*, *Afgekeurd*, *Gevolgd*), periode en domein/subdomein. Per nascholing zie je de aanvrager, de datums, de status, de kostprijs en het aantal deelnemers. Van zodra een nascholing gevolgd is, zie je ook in één oogopslag hoeveel deelnemers hun evaluatie en/of attest al hebben ingediend (bv. "3/5"). Bovenaan het overzicht wordt de **totale kostprijs** van de gefilterde nascholingen opgeteld, handig als budgetopvolging.
+- **Extra professionaliseringen**: een gelijkaardig, filterbaar overzicht van alle door personeelsleden zelf toegevoegde professionaliseringen (zie [Eigen nascholingen toevoegen](../eigen_nascholingen_toevoegen)).
+
+Via de knop **Nascholing toevoegen** kan een beheerder ook rechtstreeks een reeds goedgekeurde nascholing aanmaken voor een personeelslid, bijvoorbeeld om een nascholing die buiten Toolbox om al werd goedgekeurd, alsnog te registreren. Deze nascholing doorloopt in dat geval geen goedkeuringsstappen meer en krijgt onmiddellijk de status *Klaar om te volgen*.
+
+---
+
+## Een nascholing aanvragen
+
+Van zodra de module Nascholingen actief is, kan elk personeelslid zelf een nascholing aanvragen. Ga naar de tegel **Nascholingen** en klik op **Nascholing aanvragen**.
+
+Het aanvragen van een nascholing gebeurt in 3 stappen. Bij elke stap worden de ingevulde gegevens gevalideerd vooraleer je verder kan naar de volgende stap.
+
+## Stap 1: algemene informatie
+
+- **Titel van de nascholing** (verplicht)
+- **Selecteer een flow** (verplicht): de goedkeuringsprocedure waaronder deze aanvraag moet lopen. Is er maar één flow ingesteld, dan wordt die automatisch geselecteerd. Enkel actieve (niet-gearchiveerde) flows zijn selecteerbaar.
+- **Naam van de organisator** (verplicht)
+- Kostprijs: geef in of het gaat om een **kostprijs per persoon** of, via de schuifbalk **Totaalprijs**, om een totaalbedrag voor alle deelnemers samen.
+- **Website van de nascholing** (optioneel)
+- **Vooraf betalen?**: Ja, Nee of Onbekend.
+- **Nascholing gaat online door**: schakel deze schuifbalk uit als de nascholing op een fysieke locatie plaatsvindt. Vul dan het adres in:
+  - **Selecteer een adres**: een handig hulpmiddel om snel een eerder gebruikt adres te hergebruiken.
+  - **Straat + nummer**, **Postcode** en **Gemeente** (verplicht), **Land** (optioneel).
+- **Datum(s)**: geef minstens één datum in waarop de nascholing doorgaat, met optioneel een beginuur en einduur. Via **Extra datum toevoegen** kan je meerdaagse of periodieke nascholingen met meerdere sessiedata ingeven; verwijder een datum met het vuilnisbakje.
+
+## Stap 2: competenties (domeinen)
+
+Koppel de nascholing aan één of meerdere competenties. Kies uit **Mogelijke competenties** (de boomstructuur van domeinen en subdomeinen die een beheerder heeft ingesteld) en voeg ze toe aan **Geselecteerde competenties**. Deze koppeling bepaalt hoe de nascholing meetelt in het [nascholingsprofiel](../nascholingsprofiel) van de deelnemers.
+
+## Stap 3: motivatie, opmerkingen en deelnemers
+
+- **Motivatie**: geef aan waarom je deze nascholing wil volgen.
+- **Extra opmerking**: een vrij tekstveld met opmaakmogelijkheden. Als de gekozen flow een omschrijvingsjabloon heeft, wordt dit veld automatisch vooraf ingevuld; je kan de tekst nog aanpassen.
+- **Voeg personen toe**: zoek en voeg collega's toe die samen met jou aan deze nascholing deelnemen. Jijzelf staat standaard bij **Geselecteerde personen** en kan niet verwijderd worden.
+
+Klik tot slot op **Aanvraag aanmaken**. Je aanvraag staat dan nog **in opmaak** (een kladversie) en is nog niet zichtbaar voor de goedkeurder(s).
+
+:::info opgelet
+Een aanvraag "in opmaak" is nog niet ingediend! Je wordt na het aanmaken naar het bewerkingsscherm van de aanvraag gebracht, met de melding *"De aanvraag voor een nascholing staat nog in opmaak. Vergeet niet om de aanvraag in te dienen."* Zolang je niet effectief indient (zie hieronder), ziet niemand anders je aanvraag en start de goedkeuringsprocedure niet.
+:::
+
+## De aanvraag indienen
+
+Controleer in het bewerkingsscherm alle ingevulde gegevens en pas ze eventueel nog aan. Klik vervolgens op **Aanvraag indienen**.
+
+Je krijgt een bevestigingsvraag: *"Ben je zeker dat je de aanvraag wilt indienen? Je kan hierna de gegevens niet meer aanpassen."* Bevestig je dit, dan krijgt de aanvraag de status **Aangevraagd** en wordt ze doorgestuurd naar de goedkeurder(s) van de eerste stap van de gekozen flow. Zij worden hiervan verwittigd via een melding in Toolbox en, afhankelijk van de instelling van de flow, via e-mail of Smartschool.
+
+Hoe je nadien de status van je aanvraag opvolgt en wat er gebeurt bij goedkeuring of afkeuring, lees je in [Een aanvraag opvolgen](../aanvraag_opvolgen).
+
+---
+
+## Een aanvraag opvolgen, goedkeuren of afkeuren
+
+## Status van een nascholing
+
+Elke nascholing doorloopt een aantal statussen, telkens weergegeven als een gekleurd label bovenaan de detailpagina:
+
+- **In opmaak**: de aanvraag is nog niet ingediend (enkel zichtbaar voor de aanvrager).
+- **Aangevraagd**: de aanvraag is ingediend en wacht op goedkeuring door de huidige processtap.
+- **Goedgekeurd**: de huidige stap is goedgekeurd. Is er nog een volgende processtap van toepassing (rekening houdend met het eventuele minimumbedrag), dan gaat de aanvraag automatisch naar die volgende stap. Buiten het volledige logoverzicht wordt deze tussentijdse status aan gewone gebruikers getoond als **In behandeling**.
+- **Afgekeurd**: de aanvraag is afgekeurd op een van de stappen. De aanvrager kan de aanvraag terug aanpassen en opnieuw indienen.
+- **Klaar om in te schrijven**: de aanvraag is volledig goedgekeurd, maar de deelnemer moet zijn inschrijving nog zelf bevestigen.
+- **Klaar om te volgen**: de nascholing is definitief goedgekeurd (en, indien van toepassing, de inschrijving bevestigd) en kan gevolgd worden.
+- **Gevolgd**: de laatste sessiedatum (en einduur) van de nascholing is voorbij. Deze status wordt automatisch toegekend.
+
+Klik op het statuslabel (behalve bij "in opmaak") om de volledige **historiek** van de aanvraag te raadplegen: elke statuswijziging met datum en uur, de betrokken processtap, wie de actie uitvoerde, en bij een afkeuring de opgegeven reden.
+
+## Een aanvraag goedkeuren of afkeuren
+
+Ben je als goedkeurder aan de huidige processtap van een nascholing gekoppeld, dan zie je op de detailpagina van die aanvraag de knoppen **Goedkeuren** en **Afkeuren**.
+
+- **Goedkeuren**: is dit de laatste stap van de flow, dan kan je via de schuifbalk **Personeelslid moet zichzelf inschrijven** bepalen of de deelnemer nog zelf zijn inschrijving moet bevestigen (status wordt dan *Klaar om in te schrijven*) of dat de nascholing onmiddellijk *Klaar om te volgen* is. Is er nog een volgende processtap van toepassing, dan gaat de aanvraag automatisch daarnaartoe.
+- **Afkeuren**: vul verplicht een **omschrijving** in met de reden van afkeuring. De aanvrager ziet deze reden terug in de historiek van de aanvraag en kan de aanvraag aanpassen en opnieuw indienen.
+
+Bij elke goedkeuring of afkeuring worden de betrokkenen (aanvrager, deelnemers, en eventueel bijkomende ontvangers via een [melding](../voorbereiding_beheer#meldingen-extra-ontvangers-per-actie)) hiervan verwittigd.
+
+## Inschrijving bevestigen
+
+Staat een nascholing op **Klaar om in te schrijven**, dan moet de aanvrager zelf nog zijn inschrijving bevestigen via de knop **Inschrijving bevestigen**. Na bevestiging krijgt de nascholing de status **Klaar om te volgen**.
+
+## Na afloop: attest en evaluatie
+
+Van zodra de laatste sessie van de nascholing voorbij is, krijgt de nascholing automatisch de status **Gevolgd**. Elke deelnemer krijgt dan op de detailpagina volgende mogelijkheden:
+
+- **Attest uploaden**: enkel beschikbaar als de gekoppelde flow instelt dat een aanwezigheidsattest uploadbaar is, en zolang je zelf nog geen attest hebt opgeladen. Klik op **Attest uploaden** en **selecteer het aanwezigheidsattest**.
+- **Evaluatie invullen**: vul een **score** in (0 tot 5 sterren) en, indien de flow een evaluatiesjabloon bevat, het bijhorende **formulier**. Voeg eventueel een **opmerking** toe en klik op **Evaluatie indienen**. Nadien kan je je ingediende evaluatie nog raadplegen (niet meer aanpassen) via **Evaluatie**.
+
+## Overige acties op een nascholing
+
+Via het tandwielicoon (⚙) op de detailpagina van een nascholing zijn, afhankelijk van je rechten en de status van de aanvraag, volgende extra acties beschikbaar:
+
+- **Extra's uploaden**: bijkomende documenten toevoegen aan de nascholing (bv. een inschrijvingsbevestiging of programma), zichtbaar onder "Extra documenten" met vermelding van wie het document heeft toegevoegd.
+- **Bewerken**: de algemene gegevens van de nascholing aanpassen, zolang de status dit toelaat.
+- **Domeinen aanpassen**: de gekoppelde competenties wijzigen.
+- **Personen aanpassen**: deelnemers toevoegen of verwijderen.
+- **Datums aanpassen**: sessiedata wijzigen, toevoegen of verwijderen.
+- **Verwijderen**: de nascholing volledig verwijderen.
+
+Wie deze acties precies mag uitvoeren, hangt af van de status van de nascholing en van de rol van de gebruiker: de aanvrager/deelnemer (zolang de status dit toelaat), de goedkeurder van de huidige stap (enkel als die stap werd ingesteld met **"Goedkeurders kunnen aanvraag bewerken tijdens goedkeuringsproces"**), of een beheerder met het recht **nascholing_beheer** (ook nog nadat de nascholing is afgerond).
+
+---
+
+## Eigen nascholingen toevoegen (extra professionalisering)
+
+Naast het aanvragen van een nascholing via de goedkeuringsflow, kan elk personeelslid ook **zelf** een reeds gevolgde vorming of professionaliseringsactiviteit aan zijn eigen curriculum toevoegen. Dit wordt een **extra professionalisering** genoemd. Denk bijvoorbeeld aan een zelfstudie, een webinar, een lerend netwerk of een vorming die niet via de klassieke aanvraagprocedure van de school liep.
+
+Een extra professionalisering doorloopt **geen goedkeuringsflow**: ze wordt onmiddellijk aan je eigen professionaliseringstraject toegevoegd, zonder tussenkomst van een goedkeurder.
+
+## Een extra professionalisering toevoegen
+
+Ga naar de tegel **Nascholingen** en klik op **Extra professionalisering toevoegen**.
+
+Vul het formulier in:
+
+- **Titel van de nascholing** (verplicht)
+- **Naam van de organisator** (optioneel)
+- **Website extra info** (optioneel)
+- **Beschrijving** (verplicht)
+- **Begindatum** (verplicht) en **Einddatum** (optioneel)
+- **Voeg een bestand toe** (optioneel): bijvoorbeeld een attest, certificaat of programma van de activiteit.
+- Koppel, net zoals bij een gewone nascholingsaanvraag, één of meerdere **competenties** (domeinen/subdomeinen) aan deze activiteit.
+
+Klik op **Toevoegen** om de extra professionalisering onmiddellijk te bewaren. Ze verschijnt vanaf dan bij je eigen extra professionaliseringen en telt mee in je [nascholingsprofiel](../nascholingsprofiel).
+
+## Aanpassen of verwijderen
+
+Je kan een extra professionalisering die je zelf hebt toegevoegd, later nog **aanpassen** of **verwijderen** via je overzicht "Extra professionaliseringen" op de tegel Nascholingen. Een beheerder (recht **nascholing_beheer**) ziet alle extra professionaliseringen van alle personeelsleden terug via **Beheer => Nascholingen => Extra professionaliseringen**.
+
+---
+
+## Nascholingsprofiel
+
+Het **nascholingsprofiel** geeft een overzicht van je volledige professionaliseringstraject: al je gevolgde nascholingen en extra professionaliseringen, gegroepeerd per competentiedomein.
+
+Ga naar de tegel **Nascholingen** en klik op **Nascholingsprofiel**.
+
+## Overzicht
+
+Bovenaan zie je een **radargrafiek** met het aantal (extra) nascholingen per competentiedomein. Klik op een as van de grafiek om enkel de nascholingen binnen dat domein te tonen.
+
+Daaronder vind je twee tabbladen:
+
+- **Nascholingen**: al je aangevraagde en gevolgde nascholingen.
+- **Extra professionaliseringen**: al je zelf toegevoegde professionaliseringen.
+
+Je kan beide lijsten filteren op status en op periode.
+
+## Afdrukken
+
+Klik op **Afdrukken** om een printbaar (PDF-)overzicht van je nascholingsprofiel te genereren, bijvoorbeeld voor een functioneringsgesprek of een dossier.
+
+## Het profiel van een collega bekijken
+
+Standaard kan je enkel je eigen nascholingsprofiel raadplegen. Personeelsleden met het gebruikersrecht **nascholing_bekijk_profielen** (bv. een pedagogisch coördinator) krijgen bijkomend een zoekveld te zien waarmee ze het nascholingsprofiel van een ander personeelslid kunnen opzoeken en raadplegen.
+
+---
+
+## Nascholingen
+
+<ImageTitle img="nascholingen.svg">Nascholingen</ImageTitle>
+
+Via de module Nascholingen kunnen personeelsleden een nascholing aanvragen en laten goedkeuren, hun deelname aan een nascholing opvolgen (aanwezigheidsattest, evaluatie) en hun eigen professionaliseringstraject bijhouden. Elke nascholing en extra professionalisering wordt gekoppeld aan één of meerdere **competentiedomeinen**, zodat een personeelslid via het **nascholingsprofiel** een overzicht krijgt van zijn volledige professionaliseringstraject.
+
+De aanvraag en goedkeuring van een nascholing verloopt via een **flow**: een goedkeuringsprocedure die de school zelf samenstelt (bv. eerst goedkeuring door de directie, vanaf een bepaald bedrag ook goedkeuring door het bestuur). Een beheerder moet deze flow(s), samen met de competentiedomeinen, voorbereiden vooraleer personeelsleden nascholingen kunnen aanvragen.
+
+<DocCardList />
+
+---
+
 ## Netwerken
 
 <ImageTitle img="vlan.png">Netwerken</ImageTitle>
@@ -7702,7 +8001,7 @@ De meest recente nieuwsbrieven zijn hieronder terug te vinden:
 
 ---
 
-## Voorbereiding en beheer(1_voorbereiding_beheer)
+## Voorbereiding en beheer(3)
 
 ## Gebruikersbeheer
 
