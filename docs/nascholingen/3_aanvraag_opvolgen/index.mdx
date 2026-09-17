@@ -1,0 +1,51 @@
+---
+title: Een aanvraag opvolgen, goedkeuren of afkeuren
+description: "Module Nascholingen: status opvolgen, goedkeuren, afkeuren, inschrijving bevestigen, attest uploaden, evaluatie invullen."
+---
+
+## Status van een nascholing
+
+Elke nascholing doorloopt een aantal statussen, telkens weergegeven als een gekleurd label bovenaan de detailpagina:
+
+- **In opmaak**: de aanvraag is nog niet ingediend (enkel zichtbaar voor de aanvrager).
+- **Aangevraagd**: de aanvraag is ingediend en wacht op goedkeuring door de huidige processtap.
+- **Goedgekeurd**: de huidige stap is goedgekeurd. Is er nog een volgende processtap van toepassing (rekening houdend met het eventuele minimumbedrag), dan gaat de aanvraag automatisch naar die volgende stap. Buiten het volledige logoverzicht wordt deze tussentijdse status aan gewone gebruikers getoond als **In behandeling**.
+- **Afgekeurd**: de aanvraag is afgekeurd op een van de stappen. De aanvrager kan de aanvraag terug aanpassen en opnieuw indienen.
+- **Klaar om in te schrijven**: de aanvraag is volledig goedgekeurd, maar de deelnemer moet zijn inschrijving nog zelf bevestigen.
+- **Klaar om te volgen**: de nascholing is definitief goedgekeurd (en, indien van toepassing, de inschrijving bevestigd) en kan gevolgd worden.
+- **Gevolgd**: de laatste sessiedatum (en einduur) van de nascholing is voorbij. Deze status wordt automatisch toegekend.
+
+Klik op het statuslabel (behalve bij "in opmaak") om de volledige **historiek** van de aanvraag te raadplegen: elke statuswijziging met datum en uur, de betrokken processtap, wie de actie uitvoerde, en bij een afkeuring de opgegeven reden.
+
+## Een aanvraag goedkeuren of afkeuren
+
+Ben je als goedkeurder aan de huidige processtap van een nascholing gekoppeld, dan zie je op de detailpagina van die aanvraag de knoppen **Goedkeuren** en **Afkeuren**.
+
+- **Goedkeuren**: is dit de laatste stap van de flow, dan kan je via de schuifbalk **Personeelslid moet zichzelf inschrijven** bepalen of de deelnemer nog zelf zijn inschrijving moet bevestigen (status wordt dan *Klaar om in te schrijven*) of dat de nascholing onmiddellijk *Klaar om te volgen* is. Is er nog een volgende processtap van toepassing, dan gaat de aanvraag automatisch daarnaartoe.
+- **Afkeuren**: vul verplicht een **omschrijving** in met de reden van afkeuring. De aanvrager ziet deze reden terug in de historiek van de aanvraag en kan de aanvraag aanpassen en opnieuw indienen.
+
+Bij elke goedkeuring of afkeuring worden de betrokkenen (aanvrager, deelnemers, en eventueel bijkomende ontvangers via een [melding](../voorbereiding_beheer#meldingen-extra-ontvangers-per-actie)) hiervan verwittigd.
+
+## Inschrijving bevestigen
+
+Staat een nascholing op **Klaar om in te schrijven**, dan moet de aanvrager zelf nog zijn inschrijving bevestigen via de knop **Inschrijving bevestigen**. Na bevestiging krijgt de nascholing de status **Klaar om te volgen**.
+
+## Na afloop: attest en evaluatie
+
+Van zodra de laatste sessie van de nascholing voorbij is, krijgt de nascholing automatisch de status **Gevolgd**. Elke deelnemer krijgt dan op de detailpagina volgende mogelijkheden:
+
+- **Attest uploaden**: enkel beschikbaar als de gekoppelde flow instelt dat een aanwezigheidsattest uploadbaar is, en zolang je zelf nog geen attest hebt opgeladen. Klik op **Attest uploaden** en **selecteer het aanwezigheidsattest**.
+- **Evaluatie invullen**: vul een **score** in (0 tot 5 sterren) en, indien de flow een evaluatiesjabloon bevat, het bijhorende **formulier**. Voeg eventueel een **opmerking** toe en klik op **Evaluatie indienen**. Nadien kan je je ingediende evaluatie nog raadplegen (niet meer aanpassen) via **Evaluatie**.
+
+## Overige acties op een nascholing
+
+Via het tandwielicoon (⚙) op de detailpagina van een nascholing zijn, afhankelijk van je rechten en de status van de aanvraag, volgende extra acties beschikbaar:
+
+- **Extra's uploaden**: bijkomende documenten toevoegen aan de nascholing (bv. een inschrijvingsbevestiging of programma), zichtbaar onder "Extra documenten" met vermelding van wie het document heeft toegevoegd.
+- **Bewerken**: de algemene gegevens van de nascholing aanpassen, zolang de status dit toelaat.
+- **Domeinen aanpassen**: de gekoppelde competenties wijzigen.
+- **Personen aanpassen**: deelnemers toevoegen of verwijderen.
+- **Datums aanpassen**: sessiedata wijzigen, toevoegen of verwijderen.
+- **Verwijderen**: de nascholing volledig verwijderen.
+
+Wie deze acties precies mag uitvoeren, hangt af van de status van de nascholing en van de rol van de gebruiker: de aanvrager/deelnemer (zolang de status dit toelaat), de goedkeurder van de huidige stap (enkel als die stap werd ingesteld met **"Goedkeurders kunnen aanvraag bewerken tijdens goedkeuringsproces"**), of een beheerder met het recht **nascholing_beheer** (ook nog nadat de nascholing is afgerond).
