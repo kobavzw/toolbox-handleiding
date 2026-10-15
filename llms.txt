@@ -182,7 +182,8 @@ This file contains links to documentation sections following the llmstxt.org sta
 - [Eindgebruiker](https://handleiding.tbvs.be/registratie_basisschool_V2/eindgebruiker.md): Log in bij Toolbox en ga naar de module Registratie Basisschool. 
 - [Registratie basisschool Versie2](https://handleiding.tbvs.be/registratie_basisschool_Versie2.md): <ImageTitle img="registratieBasisschool.png">Registratie basisschool</ImageTitle>
 - [Controle en rapportage](https://handleiding.tbvs.be/registratie_basisschool_V2/rapport.md): Via het rapport kan je de registraties opvolgen per klas, per item of per leerling en dit voor een bepaalde periode. Je kan ook nagaan of er foutie...
-- [RL/Personaberichten](https://handleiding.tbvs.be/rl.md): Module Rl: voorbereiding, rl/personabericht toevoegen of verwijderen, rl/pesonabericht versturen per e-mail, Smartschool.
+- [RL/Personaberichten](https://handleiding.tbvs.be/rl.md): RL's en Personaberichten ophalen uit Informat, versturen via e-mail of Smartschool, zichtbaar maken in het profiel van de leraar, status en histori...
+- [Oude module](https://handleiding.tbvs.be/rl/oude_module.md): Module Rl: voorbereiding, rl/personabericht toevoegen of verwijderen, rl/pesonabericht versturen per e-mail, Smartschool.
 - [Salto](https://handleiding.tbvs.be/salto.md): Module Salto: importeren.
 - [Schoolfoto's](https://handleiding.tbvs.be/schoolfotos.md): Module Schoolfotos: gebruikersbeheer, instellingen, foto's uitdelen, leerlingenrekeningen.
 - [Smartschool bulkmail](https://handleiding.tbvs.be/smartschool_bulkmail.md): Module Smartschool Bulkmail: voorbereiding, module activeren, gebruikersrechten toekennen, Smartschool.

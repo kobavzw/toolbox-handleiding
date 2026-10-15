@@ -10375,6 +10375,160 @@ Ook hier kan je nog verder filteren op klas en op leerling.
 ## RL/Personaberichten
 
 <ImageTitle img="rl.png">RL/Personaberichten</ImageTitle>
+Deze module laat toe om alle RL's en Personaberichten uit Informat op te halen,
+digitaal (via E-mail of Smartschool) aan personeelsleden te bezorgen en/of
+beschikbaar te stellen in hun persoonlijk profiel in Toolbox.
+
+## Voorbereiding
+
+Het personeelslid dat deze module zal beheren, moet beschikken over het gebruikersrecht _rl_beheer_. Dat kan toegekend worden door een Toolboxbeheerder via de module [Gebruikersbeheer](/gebruikersbeheer). Klik in Toolbox op het vraagteken rechtsbovenaan om na te gaan wie Toolboxbeheerder is in jouw school.
+
+De standaardwaarden voor het versturen via mail en Smartschool en de instelling voor digitaal ondertekenen vind je onder **Instellingen > RL**. Ze worden op de bijbehorende plaatsen in deze handleiding toegelicht.
+
+## Oude module
+
+De oude module is nog beschikbaar via de knop "Oude module". We raden aan om vanaf nu de nieuwe module te gebruiken, want de oude module zal op termijn verwijderd worden. Het is niet mogelijk om de documenten in de oude module te linken aan de nieuwe module.
+De handleiding hiervan vind je [hier](rl/oude_module) terug.
+
+## Ophalen
+
+Klik op de knop **Documenten ophalen** om het ophaalmenu te openen. Hier kun je het volgende instellen:
+
+- **Schooljaar:** het schooljaar waarvoor je documenten wilt ophalen.
+- **Instellingsnummer:** laat dit op _Alle beschikbare instellingen_ staan, of kies één instellingsnummer om enkel de documenten voor dat instellingsnummer op te halen.
+- **Versturen via:** kies of de documenten meteen verstuurd worden via [mail](#versturen-via-mail) of [Smartschool](#versturen-via-smartschool). Bij _Niet versturen_ worden ze enkel opgehaald.
+
+Met de schakelaar onderaan bepaal je of de documenten standaard zichtbaar of onzichtbaar zijn in het profiel van de leraren. Je kunt dit nadien nog aanpassen, zie [zichtbaar maken in profiel](#zichtbaar-of-onzichtbaar-maken-in-profiel).
+
+## Documenten lijst
+
+Na het ophalen verschijnen de documenten in een lijst. Elke rij is één document.
+
+### Kolommen
+
+| Kolom                   | Betekenis                                                                                            |
+| ----------------------- | ---------------------------------------------------------------------------------------------------- |
+| **Type**                | Het soort document: _Edison_ of _Persona_.                                                           |
+| **Naam** / **Voornaam** | De leraar voor wie het document bestemd is.                                                          |
+| **Instellingsnr.**      | Het instellingsnummer waartoe het document behoort.                                                  |
+| **Aangemaakt op**       | De datum waarop het document in Informat is aangemaakt.                                              |
+| **Nr.**                 | Het nummer van het document. Bij Persona is dit het _berichtnummer_, bij Edison het _zendingnummer_. |
+| **RL**                  | Het RL-type (RL1, RL2 of RL4).                                                                       |
+| **Status**              | De huidige status van het document, zie [status](#status).                                           |
+| **Omschrijving**        | De omschrijving van het document, zoals ze in Informat staat.                                        |
+
+Aan het einde van elke rij staan twee knoppen:
+
+- **Oog:** maakt het document zichtbaar/onzichtbaar in het profiel van de leraar, zie [zichtbaar of onzichtbaar maken in profiel](#zichtbaar-of-onzichtbaar-maken-in-profiel).
+- **Bestand:** opent een preview van het document, waarin je het ook kunt downloaden.
+
+Via de selectievakjes links vooraan selecteer je documenten voor [acties](#acties) zoals versturen.
+
+### Status
+
+Elk document heeft een status die aangeeft hoever het in het proces zit:
+
+| Status                    | Betekenis                                                                                  |
+| ------------------------- | ------------------------------------------------------------------------------------------ |
+| **Opgehaald**             | Het document is opgehaald uit Informat, maar nog niet verstuurd.                           |
+| **Verzonden mail**        | Het document is via mail verstuurd.                                                        |
+| **Verzonden Smartschool** | Het document is via Smartschool verstuurd.                                                 |
+| **Verzenden mislukt**     | Het versturen is niet gelukt. De reden zie je in de [historiek](#historiek).               |
+| **Bekeken**               | De leraar heeft het document geopend.                                                      |
+| **Ondertekend**           | De leraar heeft het document [digitaal ondertekend](#digitaal-ondertekenen).               |
+| **Geweigerd**             | De leraar heeft het ondertekenen geweigerd. De reden zie je in de [historiek](#historiek). |
+
+Een document toont altijd de **meest gevorderde** status. Is het document bijvoorbeeld verstuurd en daarna bekeken, dan zie je _Bekeken_.
+
+### Historiek
+
+Klik op de status van een document om de **historiek** te openen. Daarin zie je alle gebeurtenissen van dat document, met de **nieuwste bovenaan**.
+
+Bij een mislukte verzending of een weigering staat ook de reden onder de gebeurtenis.
+
+## Acties
+
+Acties voer je uit op **geselecteerde documenten**. Zonder selectie kun je geen actie uitvoeren.
+
+1. Vink in de lijst de documenten aan waarvoor je een actie wilt uitvoeren. Met het vakje in de kolomkop selecteer je alle documenten op de pagina.
+2. Klik op **Acties**. Het cijfer op de knop toont hoeveel documenten je geselecteerd hebt.
+3. Kies de gewenste actie.
+
+De selectie blijft behouden terwijl je van acties wisselt, maar wordt leeggemaakt zodra je filtert, sorteert of naar een andere pagina gaat.
+
+### Versturen via mail
+
+Kies in het menu **Acties** de optie **E-mail**. Er opent een venster **Versturen via E-Mail**.
+
+:::info
+Documenten die niet zichtbaar zijn in het profiel worden niet verzonden. Maak ze eerst [zichtbaar](#zichtbaar-of-onzichtbaar-maken-in-profiel).
+:::
+
+Je kunt hier het volgende instellen:
+
+- **Afzender mail:** het mailadres waarmee de documenten verstuurd worden. Kies het gewenste adres in de lijst.
+- **Kopie verzenden aan:** vul een e-mailadres in en klik op **+** om het toe te voegen. Dit adres ontvangt een kopie van de mails. Je kunt meerdere adressen toevoegen.
+- **Gebruik privé mailadressen in plaats van school mailadressen:** standaard wordt het schooladres van de leraar gebruikt. Schakel dit in om het privé mailadres van het personeelslid te gebruiken.
+
+Deze velden staan vooraf ingevuld met de standaardwaarden uit **Instellingen > RL**. Je kunt ze hier per verzending aanpassen, zonder de standaardwaarden te wijzigen.
+
+Klik op **Verzenden** om de mails te versturen. Alle leraren ontvangen een e-mail met hun document.
+
+### Versturen via Smartschool
+
+Kies in het menu **Acties** de optie **Smartschool**. Er opent een venster **Versturen via Smartschool**.
+
+:::info
+Documenten die niet zichtbaar zijn in het profiel worden niet verzonden. Maak ze eerst [zichtbaar](#zichtbaar-of-onzichtbaar-maken-in-profiel).
+:::
+
+Je kunt hier het volgende instellen:
+
+- **Smartschool platform:** kies in de lijst via welk Smartschool-platform de berichten verstuurd worden.
+- **Verzend vanuit ingelogde gebruiker indien afzender leeg is:** is er geen afzender ingevuld, dan kun je met deze schakelaar het bericht laten versturen door de gebruiker die in Toolbox is ingelogd.
+
+De standaardwaarde van deze schakelaar stel je in onder **Instellingen > RL > Smartschool**. Je kunt hem hier per verzending aanpassen.
+
+Klik op **Verzenden** om de berichten te versturen. Alle leraren ontvangen een bericht in Smartschool met hun document.
+
+### Zichtbaar of onzichtbaar maken in profiel
+
+Standaard bepaalt de schakelaar in het venster [Documenten ophalen](#ophalen) of een document zichtbaar is in het profiel van de leraar. Nadien kun je dat aanpassen via de knop **Acties**:
+
+1. Selecteer met de selectievakjes links één of meerdere documenten.
+2. Klik op **Acties**. Het cijfer op de knop toont hoeveel documenten je geselecteerd hebt.
+3. Kies **Zichtbaar maken** of **Onzichtbaar maken**.
+
+De wijziging geldt voor alle geselecteerde documenten tegelijk.
+
+Voor één enkel document kan het ook sneller met de **oogknop** aan het einde van de rij. Een open oog betekent dat het document zichtbaar is voor de leraar, een doorgestreept oog dat het verborgen is.
+
+## Filteren
+
+Met de knop **Filters** beperk je de lijst tot de documenten die je zoekt. Het cijfer op de knop toont hoeveel filters actief zijn. Zodra je een filter wijzigt, springt de lijst terug naar de eerste pagina.
+
+Je kunt meerdere filters combineren: een document moet dan aan alle ingestelde filters voldoen. Vink je binnen één filter meerdere waarden aan (bv. twee statussen), dan volstaat het dat het document aan één ervan voldoet.
+
+Met het **prullenbakje** rechtsboven in een filter wis je enkel die filter.
+
+## Sorteren
+
+Klik op de kolomkop **Aangemaakt op** of **Nr.** om de lijst te sorteren. Elke klik wisselt tussen oplopend, aflopend en de standaardvolgorde.
+
+Sorteren werkt samen met de [filters](#filteren): je sorteert enkel de documenten die overblijven na het filteren. Na elke wijziging van de sortering ga je terug naar de eerste pagina.
+
+## Digitaal ondertekenen
+
+Documenten kunnen digitaal ondertekend worden via **Digitaal Ondertekenen**. Of je school dit gebruikt, bepaal je met de instelling _Gebruik digitaal ondertekenen_ onder **Instellingen > RL**. Die instelling schakelt het digitaal ondertekenen van RL en Personaberichten in voor alle personeelsleden.
+
+- **Ingeschakeld:** De leraren ontvangen in hun mail of Smartschool-bericht een link naar Digitaal Ondertekenen. Via die link openen ze het document en ondertekenen of weigeren ze het.
+- **Uitgeschakeld:** De leraren krijgen geen ondertekenlink en het document wordt niet digitaal ondertekend. De leraren krijgen wel een link om het document te bekijken.
+
+---
+
+## Oude module
+
+<ImageTitle img="rl.png">RL/Personaberichten</ImageTitle>
 
 Deze module laat toe om alle RL's en Personaberichten uit Informat digitaal (via E-mail of Smartschool) aan personeelsleden te bezorgen en/of beschikbaar te stellen in hun persoonlijk profiel in Toolbox. 
 
