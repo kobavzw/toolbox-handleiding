@@ -4,6 +4,7 @@ hide_title: true
 slug: /rl
 description: "RL's en Personaberichten ophalen uit Informat, versturen via e-mail of Smartschool, zichtbaar maken in het profiel van de leraar, status en historiek raadplegen, filteren, sorteren en digitaal ondertekenen."
 ---
+
 <ImageTitle img="rl.png">RL/Personaberichten</ImageTitle>
 Deze module laat toe om alle RL's en Personaberichten uit Informat op te halen,
 digitaal (via E-mail of Smartschool) aan personeelsleden te bezorgen en/of
@@ -137,9 +138,34 @@ Voor één enkel document kan het ook sneller met de **oogknop** aan het einde v
 
 Met de knop **Filters** beperk je de lijst tot de documenten die je zoekt. Het cijfer op de knop toont hoeveel filters actief zijn. Zodra je een filter wijzigt, springt de lijst terug naar de eerste pagina.
 
-Je kunt meerdere filters combineren: een document moet dan aan alle ingestelde filters voldoen. Vink je binnen één filter meerdere waarden aan (bv. twee statussen), dan volstaat het dat het document aan één ervan voldoet.
+Je kunt meerdere filters combineren: een document moet dan aan alle ingestelde filters voldoen. Vink je binnen een gewone filter meerdere waarden aan (bv. twee leraren), dan volstaat het dat het document aan één ervan voldoet.
 
 Met het **prullenbakje** rechtsboven in een filter wis je enkel die filter.
+
+### Status
+
+De statusfilter werkt anders dan de andere filters. Voor elke [status](#status) kies je afzonderlijk:
+
+| Keuze      | Betekenis                                   |
+| ---------- | ------------------------------------------- |
+| Ja         | Het document heeft deze status wel (gehad). |
+| Nee        | Het document heeft deze status niet.        |
+| Geen keuze | De status speelt geen rol bij het filteren. |
+
+#### Combineren
+
+- **Meerdere keer ja:** het document moet minstens één van die statussen hebben.
+- **Meerdere keer nee:** het document mag minstens één van die statussen niet hebben.
+- **ja én nee samen:** het document moet aan beide groepen voldoen.
+
+:::info Voorbeelden
+
+- **Bekeken (ja) en geweigerd (ja):** toont de documenten die bekeken **of** geweigerd zijn.
+- **Ondertekend (nee) en geweigerd (nee):** toont de documenten die niet ondertekend zijn **of** niet geweigerd zijn.
+- **Bekeken (ja) en ondertekend (nee):** toont de documenten die de leraar bekeken heeft **en** die nog niet ondertekend zijn.
+- **Verzonden via e-mail (ja), verzonden via Smartschool (ja), ondertekend (nee) en geweigerd (nee):** toont de documenten die per e-mail **of** via Smartschool verstuurd zijn **en** die nog niet ondertekend **of** geweigerd zijn.
+
+:::
 
 ## Sorteren
 
