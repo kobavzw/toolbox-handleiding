@@ -10,6 +10,7 @@ This file contains all documentation content in a single document following the 
     {title: "Opleidingskalender", image: "calendar.png", link: "opleidingskalender"},    
     {title: "FAQ", image: "FAQ.png", link: "FAQ"},
     {title: "Inloggen & navigeren", image: "login.png", link: "inloggen"},
+    {title: "Synchroniseren: stappenplan", image: "externen.png", link: "synchronisatie/stappenplan"},
     {title: "Nieuwsbrieven", image: "newsletter.png", link: "nieuwsbrieven"},
     {title: "Toolbox updates", image: "verzekering.png", link: "updates"},
     {title: "Fiscale attesten kinderopvang", image:"leerlingenrekeningen.png", link: "fiscale_attesten_kinderopvang", minMonth: 1, maxMonth: 3, minDay: 1, maxDay: 20 },
@@ -3390,7 +3391,7 @@ Voer dit paswoord in bij het gebruikersbeheer en klik vervolgens op 'Paswoord wi
 *Klik op de afbeelding om te vergroten.*
 
 Een beheerder kan per gebruiker een aantal gebruikersopties wijzigen. Zo kan men:
-- een personeelslid met de status **'effectief in dienst'** eventueel op **'niet effectief in dienst'** zetten. Dit kan handig zijn voor personeelsleden die bv. enkel administratief op de school ingeschreven zijn, bv. staf- of regiomedewerkers. Als zij in Toolbox de status 'Niet effectief in dienst' krijgen, worden zij vanuit Toolbox niet verder meegenomen naar andere synchronisaties zoals bv. Office 365.   
+- een personeelslid met de status **'effectief in dienst'** eventueel op **'niet effectief in dienst'** zetten. Dit kan handig zijn voor personeelsleden die bv. enkel administratief op de school ingeschreven zijn, bv. staf- of regiomedewerkers. Als zij in Toolbox de status 'Niet effectief in dienst' krijgen, worden zij vanuit Toolbox niet verder meegenomen naar andere synchronisaties zoals bv. Office 365. Meer info vind je bij [Personeelslid uit dienst zetten](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#personeelslid-uit-dienst-zetten).
 - de gegevens van een gebruiker voor alle personeelsleden zichtbaar maken in de module [**Adresboek**](/adresboek). Opgelet! Leraren kunnen via hun persoonlijk profiel kiezen of ze deze gegevens willen tonen aan collega's. Houd rekening met de regelgeving rond privacy en deel nooit zomaar persoonlijke gegevens zonder de toestemming van het personeelslid in kwestie. 
 - een gebruiker **'persistent'** maken. Zo blijft die in Toolbox altijd 'in dienst' en wordt die status niet overschreven na een nieuwe synchronisatie met informat wanneer het personeelslid in Informat op non-actief werd gezet. Dit kan handig zijn voor bv. regiomedewerkers die enkel administratief zijn ingeschreven in Informat. 
 - de **gebruikersnaam** van een personeelslid wijzigen. Dat kan eveneens via de module [Synchonisatie leraren](/synchronisatie/synchronisatie_leraren/#gebruikersnamen-controleren-enof-wijzigen).
@@ -10917,13 +10918,554 @@ Iemand met het de permissie 'Beheerder' heeft sowieso toegang tot de rapportage.
 
 ---
 
+## Stap 1 en 2: uitlezen en synchroniseren naar Toolbox
+
+Elke synchronisatie begint met dezelfde twee stappen in de synchronisatiemodule (bv. **Synchronisatie leraren** of **Synchronisatie leerlingen**). Ze staan bovenaan in het menu links.
+
+## Stap 1: het administratief pakket uitlezen
+
+Klik op **Informat uitlezen**. Werkt je school met een ander pakket, dan heet de knop **Wisa uitlezen**, **Broekx uitlezen** of **DKO3 uitlezen**.
+
+Toolbox haalt nu alle personeelsleden of leerlingen op uit het administratief pakket en zet ze in een **tijdelijke tabel**. In Toolbox zelf is er op dat moment nog niets gewijzigd: gebruikers, gebruikersnamen en wachtwoorden blijven zoals ze waren.
+
+Toolbox haalt enkel gegevens op van:
+- de **instellingsnummers** die ingesteld zijn in Toolbox;
+- personeelsleden die op de **referentiedatum** in dienst zijn en leerlingen die op die datum ingeschreven zijn. Standaard is dat vandaag. Rond de start van het schooljaar kan je een andere datum instellen, zie [Opstart schooljaar](/opstart_schooljaar).
+
+Lees het verslag rechts na. Krijg je een foutmelding over de verbinding of over ontbrekende rechten, neem dan contact op met de Toolbox helpdesk.
+
+## Stap 2: synchroniseren naar Toolbox
+
+Klik op **Synchroniseer leraren** (of **Synchroniseer leerlingen**). Toolbox vergelijkt nu de tijdelijke tabel met de gebruikers die al in Toolbox staan.
+
+### Wat gebeurt er met personeelsleden?
+
+| Situatie | Wat doet Toolbox? |
+| --- | --- |
+| **Nieuw personeelslid** | Wordt toegevoegd aan Toolbox. Toolbox berekent een gebruikersnaam (volgens het formaat in de instellingen) en een wachtwoord. Het personeelslid heeft meteen toegang tot de basismodules van Toolbox. |
+| **Bestaand personeelslid** | De persoonlijke gegevens (naam, adres, e-mailadres, afkorting, ...) worden bijgewerkt. De **gebruikersnaam wordt niet automatisch gewijzigd**, ook niet bij een naamswijziging. Zie [Gebruikersnamen controleren](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/). |
+| **Personeelslid komt terug in dienst** | Wordt terug in dienst gezet met dezelfde gebruikersnaam als vroeger. Gebruikersrechten die vroeger toegekend waren, moet je opnieuw toekennen via [Gebruikersbeheer](/gebruikersbeheer). |
+| **Personeelslid staat niet meer in het administratief pakket** | Wordt **uit dienst** gezet. De gebruikersrechten in Toolbox worden ingetrokken en de persoon wordt niet meer meegenomen in de andere synchronisaties. Is het personeelslid *persistent* gemaakt, dan blijft het wel in dienst. |
+
+### Wat gebeurt er met leerlingen?
+
+| Situatie | Wat doet Toolbox? |
+| --- | --- |
+| **Nieuwe leerling** | Wordt toegevoegd met een berekende gebruikersnaam en een wachtwoord. |
+| **Bestaande leerling** | Gewijzigde gegevens (bv. klas, adres, ...) worden bijgewerkt. Het verslag toont per leerling welk veld gewijzigd is. |
+| **Leerling staat niet meer in het administratief pakket** | Wordt in Toolbox **uitgeschreven**. |
+
+### Controle op dubbele afkortingen (personeel)
+
+Staat in **Instellingen => Synchronisatie leraren** de optie **Controleren op dubbele afkortingen** aan, dan stopt de synchronisatie wanneer twee personeelsleden dezelfde afkorting hebben. Het verslag toont welke afkortingen dubbel zijn. Pas dit aan in het administratief pakket en voer daarna stap 1 en 2 opnieuw uit.
+
+### Personeelsleden die enkel administratief ingeschreven zijn
+
+Sommige personen (bv. regio- of stafmedewerkers) staan niet altijd actief in het administratief pakket, maar moeten wel toegang houden tot Toolbox. Maak die gebruiker dan **persistent** via **Gebruikersbeheer => Gebruikersopties wijzigen**. Een persistente gebruiker blijft altijd in dienst, ook als die niet meer in het administratief pakket gevonden wordt. Meer info vind je bij [Gebruikersopties wijzigen](/gebruikersbeheer#e-gebruikersopties-wijzigen).
+
+Wil je net het omgekeerde (iemand staat wel in het administratief pakket, maar mag niet mee naar Smartschool, Office 365, ...)? Zie dan [Personeelslid uit dienst zetten](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#personeelslid-uit-dienst-zetten).
+
+## Veelvoorkomende problemen
+
+**"Fout: geen leraren in de tijdelijke tabel. Haal opnieuw de gegevens op!"**
+Je hebt stap 2 uitgevoerd zonder eerst stap 1 te doen, of stap 1 gaf geen resultaten. Voer stap 1 opnieuw uit en lees het verslag na.
+
+**Een nieuw personeelslid of een nieuwe leerling ontbreekt.**
+Controleer in het administratief pakket of de persoon op de referentiedatum actief (in dienst of ingeschreven) is, en dat voor een instellingsnummer dat in Toolbox ingesteld staat. Voer daarna stap 1 en 2 opnieuw uit.
+
+**Een personeelslid wordt onterecht uit dienst gezet.**
+Meestal is de opdracht in het administratief pakket afgelopen of nog niet gestart. Pas dit aan in het administratief pakket, of maak de gebruiker persistent als die altijd in dienst moet blijven.
+
+**De voornaam van een personeelslid klopt niet (roepnaam).**
+Gebruikt een personeelslid een andere voornaam dan de officiële? Vul dan in Informat het vrij veld *Roepnaam* in. Zie [Roepnaam](/synchronisatie/synchronisatie_leraren/#roepnaam).
+
+---
+
+## Stap 3: gebruikersnamen controleren en personeel uit dienst zetten
+
+Na stap 1 en 2 staan alle gebruikers in Toolbox. Voor je verder synchroniseert met Smartschool, Google of Microsoft, controleer je best of de gebruikersnamen kloppen en of er personeelsleden zijn die niet mee gesynchroniseerd mogen worden.
+
+## Waarom is de gebruikersnaam zo belangrijk?
+
+- Toolbox gebruikt de gebruikersnaam om accounts aan te maken en terug te vinden in Smartschool, Google en Microsoft.
+- Meld je aan via Smartschool, Microsoft of Google (single sign-on), dan moet de gebruikersnaam in Toolbox **exact dezelfde** zijn als op dat platform. Bij Microsoft en Google is dat alles vóór de @.
+- Toolbox berekent de gebruikersnaam **één keer**, wanneer een persoon voor het eerst gesynchroniseerd wordt. Daarna wordt die nooit meer automatisch aangepast, ook niet bij een naamswijziging in het administratief pakket. Zo blijven de accounts op de andere platformen stabiel.
+
+## Controle gebruikersnamen
+
+Klik in de synchronisatiemodule links op **Controle gebruikersnamen**. Bovenaan zie je een aantal tabbladen:
+
+| Tabblad | Wat zie je? |
+| --- | --- |
+| **Controle op lengte** | Gebruikersnamen die de maximale lengte bereiken. Die lengte stel je in via **Instellingen => Synchronisatie leraren/leerlingen => Maximum lengte gebruikersnaam**. Staat ze op 0, dan wordt 20 karakters gebruikt. |
+| **Controle op naamswijzigingen** | Personen van wie de huidige gebruikersnaam verschilt van de gebruikersnaam die Toolbox nu zou berekenen, bv. na een naamswijziging of omdat de gebruikersnaam ooit manueel gewijzigd werd. |
+| **Vrij wijzigen** | Alle personen, met een filter op naam, instelling en gevalideerd. Bij personeelsleden kan je hier ook aanduiden of iemand *effectief in dienst* is (zie verder). |
+| **Koppelveld lesrooster** | Enkel bij personeelsleden: het veld dat Toolbox koppelt aan de leraar in het roosterprogramma. Zie [Controle lessenrooster](/lessenrooster/uurrooster_beheren/#controle-lessenrooster). |
+
+Wat kan je doen in deze overzichten?
+
+- <LegacyAction img="edit.png"/> **Gebruikersnaam wijzigen**: klik op het potloodje, typ de nieuwe gebruikersnaam en bevestig. Is de gebruikersnaam al in gebruik door iemand anders, dan krijg je een melding en wordt er niets gewijzigd.
+- <LegacyAction img="config.png"/> **Berekende gebruikersnaam overnemen**: in het tabblad *Controle op naamswijzigingen* neem je met één klik de gebruikersnaam over die Toolbox voorstelt.
+- <LegacyAction img="vinkjeGrijsRond.png"/> **Valideren**: heb je een gebruikersnaam nagekeken en is die goed, klik dan op het grijze vinkje. Het wordt groen <LegacyAction img="vinkjeGroenRond.png"/>. Zo weet je bij een volgende controle welke gebruikersnamen al bekeken zijn.
+
+:::danger herbereken alle gebruikersnamen
+Onderaan het tabblad *Controle op naamswijzigingen* staat de knop **Herbereken ALLE gebruikersnamen**. Die berekent de gebruikersnaam van **iedereen** opnieuw, ook van gevalideerde gebruikers en van gebruikers waarvan je de gebruikersnaam bewust gewijzigd hebt. Gebruik deze knop enkel als je zeker weet wat je doet, bv. bij de allereerste opstart van Toolbox.
+:::
+
+### Na het wijzigen van een gebruikersnaam
+
+Een gewijzigde gebruikersnaam in Toolbox moet ook op de andere platformen aangepast worden:
+
+- **Smartschool**: de knop **Synchroniseer gegevens** (personeel) of **Leerlingengegevens** (leerlingen) toont het verschil en past de gebruikersnaam aan als in **Instellingen => Smartschool** de optie **Gebruikersnaam corrigeren** aan staat. Smartschool zoekt de gebruiker daarbij op via het intern nummer, dat moet dus correct ingevuld zijn.
+- **Office 365**: bij de volgende volledige synchronisatie verschijnt een wijziging *gebruikersnaam wijzigen* in de wachtrij.
+- **Google en Active Directory**: controleer na de volgende synchronisatie of de gebruikersnaam correct is aangepast. Doe dit indien nodig manueel.
+
+Kijk het resultaat altijd na. De gebruiker meldt zich daarna aan met de nieuwe gebruikersnaam.
+
+## Personeelslid uit dienst zetten
+
+Soms staat een personeelslid wel in het administratief pakket, maar wil je die persoon **niet** meenemen naar Smartschool, Office 365, Active Directory, Google of Colibris. Denk aan staf- of regiomedewerkers die enkel administratief op de school ingeschreven zijn. Zet die persoon dan op **niet effectief in dienst**.
+
+Dat kan op twee manieren:
+
+1. Via **Synchronisatie leraren => Controle gebruikersnamen => Vrij wijzigen**. In de kolom **Effectief in dienst** klik je op de schakelaar: groen <LegacyAction img="SwitchGreen.png"/> is effectief in dienst, rood is niet effectief in dienst. De wijziging wordt meteen bewaard.
+2. Via **Gebruikersbeheer => Gebruikersopties wijzigen => Gebruiker is effectief in dienst**. Zie [Gebruikersopties wijzigen](/gebruikersbeheer#e-gebruikersopties-wijzigen). Hiervoor moet je beheerder zijn.
+
+Wat gebeurt er dan?
+
+- De persoon blijft gebruiker van Toolbox, met dezelfde gebruikersnaam en dezelfde gebruikersrechten.
+- De persoon wordt niet meer meegenomen in de synchronisaties met Smartschool, Office 365, Active Directory, Google en Colibris.
+- De persoon wordt niet meer getoond in onder meer het [Adresboek](/adresboek) en de [Fotolijst leraren](/fotolijst).
+- De volgende keer dat je stap 1 en 2 uitvoert, blijft deze instelling behouden.
+
+:::caution opgelet
+Heeft het personeelslid al een account in Smartschool, Office 365, Active Directory of Google? Dan beschouwt Toolbox dat account bij de volgende synchronisatie als een account dat er niet meer hoort. Je ziet het dan bij de **te verwijderen**, **inactief te zetten** of **uit dienst te zetten** accounts. Wil je het account behouden, voer die wijziging dan niet uit:
+- bij Office 365 en Active Directory verwijder je de wijziging uit de wachtrij;
+- bij Google zet je de persoon op de negeerlijst (vlagje);
+- bij Smartschool wijzigt Toolbox de status van personeelsaccounts nooit automatisch.
+:::
+
+### Niet effectief in dienst of persistent?
+
+Beide opties lijken op elkaar, maar doen net het omgekeerde:
+
+| | Niet effectief in dienst | Persistent |
+| --- | --- | --- |
+| **Wanneer gebruiken?** | De persoon staat in het administratief pakket, maar mag niet naar de andere platformen. | De persoon staat (soms) niet meer in het administratief pakket, maar moet toegang tot Toolbox houden. |
+| **Toegang tot Toolbox** | Ja | Ja |
+| **Mee naar Smartschool, Office 365, AD, Google** | Nee | Ja |
+| **Waar instellen?** | Controle gebruikersnamen (Vrij wijzigen) of Gebruikersbeheer | Gebruikersbeheer |
+
+Leerlingen kan je niet uit dienst zetten. Zij volgen altijd de inschrijvingen in het administratief pakket.
+
+---
+
+## Stap 4: synchroniseren met Smartschool
+
+<ImageTitle img="smartschool.png">Synchroniseren met Smartschool</ImageTitle>
+
+Voer deze stap pas uit nadat je [stap 1 en 2](/synchronisatie/stappenplan/administratief_pakket/) gedaan hebt.
+
+## Voor je begint
+
+- De webservices van Smartschool moeten geactiveerd zijn en het Smartschoolplatform moet ingesteld zijn in **Instellingen => Smartschool**. Zie [Synchronisatie Smartschool](/synchronisatie/synchronisatie%20Smartschool/) voor de technische uitleg.
+- Per platform bepaal je in **Instellingen => Smartschool** wat Toolbox mag doen:
+    - **Synchroniseer leraren met Smartschool**: Toolbox maakt personeelsaccounts aan.
+    - **Synchroniseer leerlingen met smartschool**: Toolbox maakt leerlingenaccounts aan en beheert de klassen.
+    - **Gebruikersnamen overnemen**: Toolbox neemt de gebruikersnamen van leerlingen over uit Smartschool (als Smartschool de leerlingen rechtstreeks uit het administratief pakket krijgt).
+    - **Gebruikt co-accounts**: Toolbox kan co-accounts aanmaken en verzenden.
+- In de synchronisatiemodule staat onderaan een blok per Smartschoolplatform, met de naam van het platform als titel. Heeft je school meerdere platformen (bv. een basisschool en een secundaire school), voer de stappen dan uit per platform.
+
+## Eerst kijken, dan uitvoeren
+
+Boven de Smartschoolblokken staat een knop die aangeeft wat er met de wijzigingen gebeurt:
+
+- **Wijzigingen worden enkel getoond**: Toolbox toont in het verslag wat er zou veranderen, maar past niets aan in Smartschool. Ideaal om te testen.
+- **Wijzigingen worden doorgevoerd!** (in het rood): Toolbox voert de wijzigingen echt uit in Smartschool.
+
+Klik op de knop om te wisselen. De keuze geldt voor alle Smartschoolacties in alle synchronisatiemodules.
+
+:::tip werkwijze voor beginners
+1. Zet de knop op **Wijzigingen worden enkel getoond**.
+2. Voer de gewenste actie uit en lees het verslag na.
+3. Klopt alles? Zet de knop op **Wijzigingen worden doorgevoerd!** en voer dezelfde actie opnieuw uit.
+4. Zet de knop daarna terug op **Wijzigingen worden enkel getoond**, zodat een volgende gebruiker niet per ongeluk wijzigingen doorvoert.
+:::
+
+## Personeel (module Synchronisatie leraren)
+
+| Knop | Wat doet het? |
+| --- | --- |
+| **Synchroniseer met Smartschool** | Maakt personeelsleden die nog niet in Smartschool staan aan. Ze komen eerst in de *webservice groep* en worden daarna verplaatst naar de groep die is ingesteld bij *Personeelsgroep nieuwe leraar*. Onderaan zie je de **te verwijderen leraren**. |
+| **Synchroniseer gegevens** | Vergelijkt de gegevens in Smartschool (naam, adres, gsm, gebruikersnaam, intern nummer, koppelveld schoolagenda, ...) met Toolbox en werkt ze bij. |
+| **Erf groepen over** | Geeft een personeelslid dezelfde Smartschoolgroepen als een ander personeelslid, bv. een vervanger. |
+| **Co-accounts** | Geeft een interimaris toegang tot het account van de leraar die vervangen wordt. |
+| **Titularissen** | Toont de titularissen per klas zoals ze in Smartschool staan. |
+| **Scancodes ophalen** | Neemt de scancodes van de gebruikers over uit Smartschool in Toolbox. |
+
+### Welke personeelsleden worden gesynchroniseerd?
+
+Dat bepaal je per platform in **Instellingen => Smartschool => Leraren synchronisatie => Synchroniseren op**:
+- **Alle leraren**: alle personeelsleden in Toolbox.
+- **Instellingsnummers**: enkel personeelsleden van de gekozen instellingsnummers.
+- **Vrije velden**: enkel personeelsleden met een bepaalde waarde in een vrij veld van het administratief pakket.
+
+Personeelsleden die **niet effectief in dienst** staan (zie [Personeelslid uit dienst zetten](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#personeelslid-uit-dienst-zetten)) en personeelsleden in de lijst **Te negeren leraren** worden nooit meegenomen.
+
+### Te verwijderen leraren
+
+Onderaan het verslag van **Synchroniseer met Smartschool** staat de lijst **Te verwijderen leraren (manueel in Smartschool)**. Dat zijn accounts in de personeelsgroep van Smartschool die niet (meer) in Toolbox gevonden worden. Toolbox verwijdert of blokkeert die accounts **nooit automatisch**. Je ziet per account de laatste login en de huidige status. Via de keuzelijst in de kolom **Status** wijzig je de status van het account in Smartschool.
+
+:::caution opgelet
+Staat er bij een account *Opgelet: deze gebruiker staat geregistreerd in de module Externen!*, dan gaat het om een externe medewerker. Die hoort niet in de lijst van personeelsleden, dus wijzig de status niet zomaar.
+:::
+
+### Groepen overerven
+
+Handig wanneer een vervanger dezelfde klassen en groepen moet krijgen als de leraar die afwezig is.
+
+1. Klik op **Erf groepen over**.
+2. Kies in de eerste keuzelijst het personeelslid dat de groepen krijgt, en in de tweede keuzelijst het personeelslid van wie de groepen overgenomen worden (*... erft de groepen over van ...*).
+3. Je ziet de groepen van dat tweede personeelslid. Vink de groepen aan die je wil overzetten.
+4. Klik op **Zet geselecteerde groepen over**.
+
+Het personeelslid wordt toegevoegd aan de gekozen groepen. De oorspronkelijke leraar blijft ook in die groepen.
+
+### Co-accounts voor interimarissen
+
+Met een co-account kan een interimaris inloggen op het Smartschoolaccount van de leraar die vervangen wordt. Zo krijgt de interimaris toegang tot de berichten, vakken en klassen van die leraar.
+
+1. Klik op **Co-accounts** en selecteer bij **Selecteer de te vervangen leraar** de afwezige leraar.
+2. Je ziet de co-accounts van die leraar. Kies bij een vrije co-account achter **Co-account toewijzen aan** de interimaris. Dat kan een personeelslid of een externe zijn.
+3. Klik op **Wijs toe**.
+4. Download de inloggegevens via **Download PDF** en bezorg ze aan de interimaris.
+5. Klik op de status om in te stellen tot wanneer de co-account actief blijft.
+6. Is de vervanging voorbij, klik dan op **Verwijder deze co-account**.
+
+Via **Haal leraren op** onderaan krijg je een overzicht van alle leraren met co-accounts. Een leraar die beheerder is in Smartschool kan geen co-accounts krijgen.
+
+## Leerlingen (module Synchronisatie leerlingen of leerlingen basisschool)
+
+Welke knoppen je ziet, hangt af van hoe je school werkt.
+
+### Situatie A: Smartschool krijgt de leerlingen rechtstreeks uit het administratief pakket
+
+Sommige scholen laten de leerlingen rechtstreeks van Informat of Wisa naar Smartschool synchroniseren. Toolbox maakt dan zelf geen leerlingenaccounts aan, maar moet wel dezelfde gebruikersnamen gebruiken. Zet in dat geval enkel **Gebruikersnamen overnemen** aan.
+
+| Knop | Wat doet het? |
+| --- | --- |
+| **Haal gebruikersnamen op uit Smartschool** | Zoekt elke leerling op via het intern nummer en neemt de gebruikersnaam uit Smartschool over in Toolbox. Voer dit uit na elke synchronisatie (stap 1 en 2), zodat ook nieuwe leerlingen de juiste gebruikersnaam krijgen. |
+| **Paswoorden instellen** | Stelt in Smartschool het wachtwoord uit Toolbox in, enkel voor leerlingen die **nog nooit** in Smartschool ingelogd hebben. Zo kunnen nieuwe leerlingen inloggen met de gegevens van de PDF uit Toolbox. |
+
+### Situatie B: Toolbox synchroniseert de leerlingen naar Smartschool
+
+Staat **Synchroniseer leerlingen met smartschool** aan, dan beheert Toolbox de leerlingenaccounts en hun klassen.
+
+| Knop | Wat doet het? |
+| --- | --- |
+| **Controleer klassen** | Vergelijkt de klassen en groepen in Toolbox met die in Smartschool. Ontbrekende groepen worden aangemaakt. Officiële klassen kunnen niet automatisch aangemaakt worden: die maak je zelf aan in Smartschool. |
+| **Synchroniseer met Smartschool** | Maakt nieuwe leerlingen aan en plaatst ze in hun klas. Staat in **Instellingen => Smartschool** de optie **Leerlingen uitschrijven** aan, dan worden leerlingen die niet meer ingeschreven zijn ook uitgeschreven in Smartschool. |
+| **Klaswijzigingen** | Controleert per klas welke leerlingen erbij moeten en welke eruit moeten, en past dat aan. |
+| **Leerlingengegevens** | Werkt de gegevens van de leerlingen bij in Smartschool: afhankelijk van de instellingen adres, geslacht, geboortegegevens, rijksregisternummer, relaties, ... |
+| **Haal bijkomende groepen op** | Neemt de bijkomende (niet-officiële) groepen waarin leerlingen in Smartschool zitten over in Toolbox, zodat je ze in andere modules kan gebruiken. |
+| **Activeer alle leerlingen** | Zet leerlingen die in Smartschool op niet-actief staan terug actief. |
+| **Nieuwe leerlingen** | Maakt al accounts aan voor leerlingen die ingeschreven zijn voor het volgende schooljaar. Deze knop verschijnt enkel als er een schooljaar voor de inschrijvingen ingesteld is. |
+
+Een goede volgorde is:
+
+1. **Controleer klassen** (zeker bij de start van het schooljaar of als er nieuwe klassen zijn);
+2. **Synchroniseer met Smartschool**;
+3. **Klaswijzigingen**;
+4. **Leerlingengegevens**.
+
+Welke leerlingen meegaan, bepaal je per platform via **Instellingen => Smartschool => Leerlingen synchronisatie => Synchroniseren op** (alle leerlingen, op klas, op instellingsnummer of op vestigingscode).
+
+### Co-accounts voor ouders
+
+Staat **Gebruikt co-accounts** aan, dan zie je ook de knoppen **Maak Co-accounts** en **Verzend Co-accounts**. Daarmee maak je in bulk co-accounts aan voor de ouders, op basis van de relaties in het administratief pakket, en verstuur je de inloggegevens. De volledige werkwijze staat bij [Smartschool co-accounts](/smartschool_coaccounts).
+
+## Veelvoorkomende problemen
+
+**Er blijven gebruikers in de webservice groep staan.**
+Nieuwe accounts komen eerst in de webservice groep en worden daarna verplaatst. Blijven ze daar staan, dan klopt er iets niet in de instellingen van het platform, bv. de groep bij *Personeelsgroep nieuwe leraar* of de unieke klas- of groepscode. Zie [Synchronisatie Smartschool](/synchronisatie/synchronisatie%20Smartschool/#doelgroep).
+
+**Een personeelslid staat al in Smartschool, maar Toolbox wil het opnieuw aanmaken.**
+Toolbox zoekt personeelsleden in Smartschool op via de gebruikersnaam. Verschilt die gebruikersnaam tussen Toolbox en Smartschool, dan ziet Toolbox het personeelslid als nieuw. Het staat dan ook in de lijst *Te verwijderen leraren*. Pas de gebruikersnaam in Toolbox aan via [Controle gebruikersnamen](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#controle-gebruikersnamen), zodat die overeenkomt met Smartschool. Werk daarbij eerst met **Wijzigingen worden enkel getoond**, zodat er geen dubbel account aangemaakt wordt.
+
+**"Fout bij ..." gevolgd door een foutcode.**
+Dat is een foutmelding van Smartschool zelf. Vaak ontbreekt er een methode in het webserviceprofiel. Kijk de lijst met methodes na bij [Synchronisatie Smartschool](/synchronisatie/synchronisatie%20Smartschool/#profielen).
+
+---
+
+## Stap 4: synchroniseren met Google Workspace
+
+<ImageTitle img="google.png">Synchroniseren met Google Workspace</ImageTitle>
+
+Voer deze stap pas uit nadat je [stap 1 en 2](/synchronisatie/stappenplan/administratief_pakket/) gedaan hebt en de [gebruikersnamen](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/) gecontroleerd zijn.
+
+## Voor je begint
+
+- De koppeling met Google Workspace moet ingesteld zijn (serviceaccount, adminaccount en de instellingen in Toolbox). Zie [Synchronisatie met Google Workspace](/synchronisatie/Google/).
+- De synchronisatie met Google moet aangezet zijn in de instellingen van de synchronisatiemodule, bv. **Instellingen => Synchronisatie leraren => Synchroniseer met Google GSuite**.
+- In **Instellingen => Google** vul je per doelgroep minstens het volgende in:
+
+| Instelling | Betekenis |
+| --- | --- |
+| **OU Personeel ophalen** / **OU Leerlingen ophalen** | De organisatie-eenheid (OU) in Google waarin Toolbox de bestaande accounts zoekt. Accounts buiten deze OU worden nooit aangepast of verwijderd. |
+| **OU Personeel toevoegen** / **OU Leerlingen toevoegen** | De OU waarin nieuwe accounts aangemaakt worden. |
+| **Maildomein leraren** / **Maildomein leerlingen** | Het domein van het e-mailadres, bv. `school.be`. Het e-mailadres wordt dan *gebruikersnaam@school.be*. |
+| **Leraren/Leerlingen verplicht paswoord laten wijzigen** | De gebruiker moet bij de eerste aanmelding een nieuw wachtwoord kiezen. |
+
+:::tip kies de OU's zorgvuldig
+Laat de OU waarin Toolbox accounts ophaalt enkel de accounts bevatten die Toolbox beheert. Zet beheerdersaccounts, gedeelde accounts en accounts van externe diensten in een andere OU. Zo komen ze nooit in de lijst met te verwijderen accounts terecht.
+:::
+
+## De synchronisatie uitvoeren
+
+1. Klik in de synchronisatiemodule op **Synchroniseer met Google** (bij personeel heet de knop **Synchroniseer met Google v2**). Er opent een nieuw tabblad.
+2. Klik op **Herbereken wijzigingen**. Toolbox vergelijkt de gebruikers in Toolbox met de accounts in Google en toont de voorgestelde wijzigingen in drie blokken:
+    - **Toe te voegen**: personen die nog geen Google-account hebben.
+    - **Aan te passen**: accounts waarvan een gegeven verschilt, bv. de naam, de OU of het departement. Je ziet per wijziging de veldnaam, de oude en de nieuwe waarde.
+    - **Te verwijderen**: Google-accounts in de OU die niet (meer) bij een persoon in Toolbox horen.
+3. Vink de wijzigingen aan die je wil uitvoeren. Met het vinkje bovenaan een blok selecteer je alles in dat blok. In het blok *Aan te passen* kan je ook in één keer alle wijzigingen van hetzelfde veld selecteren.
+4. Klik op **Voer ... wijzigingen uit**. De wijzigingen worden op de achtergrond verwerkt. Daarna zie je per regel een groen vinkje (gelukt) of een rood waarschuwingsteken (mislukt).
+5. Een wijziging die je niet wil uitvoeren, haal je uit de lijst met de knop **Verwijder ...** of met het rode prullenbakje achter de regel. Het Google-account zelf blijft dan ongewijzigd. Bij een volgende herberekening kan de wijziging wel opnieuw voorgesteld worden.
+
+:::danger te verwijderen accounts
+Een uitgevoerde wijziging in het blok **Te verwijderen** verwijdert het account definitief uit Google Workspace, samen met de mails en bestanden, tenzij die eerst overgedragen werden. Kijk deze lijst altijd grondig na en selecteer nooit zomaar het hele blok.
+:::
+
+## Accounts die je wil behouden: de negeerlijst
+
+Wil je een account in Google behouden, ook al hoort het niet (meer) bij een persoon in Toolbox? Bijvoorbeeld een personeelslid dat vertrokken is, maar zijn account nog even mag houden. Klik dan in het blok **Te verwijderen** op het vlagje achter het account en kies **Toevoegen**. Het account komt op de negeerlijst en wordt voortaan niet meer meegenomen in de synchronisatie. Het wordt dus ook nooit verwijderd.
+
+Voor leerlingen kan je ook vaste uitzonderingen instellen via **Instellingen => Google => Leerlingenaccounts die niet verwijderd mogen worden**. Vul daar de gebruikersnamen in (zonder domein), gescheiden door een komma.
+
+## Wie wordt er meegenomen?
+
+- **Personeel**: alle personeelsleden die in dienst zijn, behalve wie op **niet effectief in dienst** staat. Zie [Personeelslid uit dienst zetten](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#personeelslid-uit-dienst-zetten).
+- **Leerlingen**: alle ingeschreven leerlingen. Via **Instellingen => Google** kan je de selectie beperken tot bepaalde instellingsnummers of vestigingscodes, en met **Google Bepaal OU op** de leerlingen per klas of instellingsnummer in een andere OU plaatsen.
+
+Toolbox koppelt een persoon aan een Google-account via het intern nummer (pointer) uit het administratief pakket of via het e-mailadres (*gebruikersnaam@maildomein*, ook aliassen tellen mee). Een account in de OU waarin Toolbox accounts ophaalt, dat op geen van beide manieren bij een persoon in Toolbox past, wordt als *te verwijderen* voorgesteld. Dat gebeurt bv. ook wanneer de gebruikersnaam in Toolbox niet overeenkomt met het e-mailadres in Google en het account nog geen intern nummer heeft. Controleer daarom eerst de [gebruikersnamen](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#controle-gebruikersnamen).
+
+---
+
+## Stap 4: synchroniseren met Microsoft (Office 365 en Active Directory)
+
+<ImageTitle img="activeDirectory.png">Synchroniseren met Microsoft</ImageTitle>
+
+Voer deze stap pas uit nadat je [stap 1 en 2](/synchronisatie/stappenplan/administratief_pakket/) gedaan hebt en de [gebruikersnamen](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/) gecontroleerd zijn.
+
+## Office 365 of Active Directory?
+
+Toolbox kan met twee Microsoft-omgevingen synchroniseren:
+
+| | Office 365 | Active Directory |
+| --- | --- | --- |
+| **Wat?** | De cloudaccounts van Microsoft 365 (Entra ID) voor Teams, Outlook, OneDrive, ... | Het lokale Windows-domein van de school, bv. om aan te melden op schoolcomputers. |
+| **Hoe praat Toolbox ermee?** | Rechtstreeks, via een app-registratie. Zie [Synchronisatie O365 via app-credentials](/synchronisatie/O365_app_credentials/). | Via de Toolbox Gateway op een server in de school. Zie [Synchronisatie met ActiveDirectory](/synchronisatie/synchronisatie_AD/). |
+| **Knop in de synchronisatiemodule** | **Synchroniseer met Office365** | **Synchroniseer met ActiveDirectory** |
+| **Aanzetten via** | **Instellingen => Synchronisatie leraren => Synchroniseer met Office365** | **Instellingen => Synchronisatie leraren => Synchroniseer met ActiveDirectory** |
+
+Welke van de twee je nodig hebt, hangt af van het netwerk van de school. Synchroniseert je lokale Active Directory zelf al naar Microsoft 365 (bv. via Entra Connect), dan maak je de accounts aan in de Active Directory en niet rechtstreeks in Office 365. Twijfel je? Vraag het na bij je ICT-verantwoordelijke of bij de Toolbox helpdesk.
+
+## Werkwijze: eerst zoeken, dan doorvoeren
+
+Office 365 en Active Directory werken op dezelfde manier: Toolbox zoekt eerst alle wijzigingen en zet ze in een **wachtrij**. Pas wanneer jij op de knop klikt, worden ze uitgevoerd.
+
+1. Klik in de synchronisatiemodule op **Synchroniseer met Office365** of **Synchroniseer met ActiveDirectory**. Je ziet de wijzigingen die nog in de wachtrij staan, of de melding *Er staan geen wijzigingen in de wachtrij*.
+2. Klik op <LegacyAction img="sync.png" text="Start volledige synchronisatie"/>. Toolbox vergelijkt de gebruikers in Toolbox met de accounts in Microsoft en zet alle gevonden wijzigingen in de wachtrij. Een eventuele oude wachtrij wordt vervangen. Er wordt nog **niets** uitgevoerd.
+3. **Controleer de wachtrij.** Je ziet per wijziging de gebruikersnaam, de actie (bv. *toevoegen*, *naam_wijzigen*, *groep_toevoegen*), de oude en de nieuwe waarde. Is een wijziging niet gewenst? Vink ze aan en klik op <LegacyAction img="remove.png" text="Verwijder geselecteerde mutaties"/>. Het account zelf blijft dan ongewijzigd.
+4. Klik op <LegacyAction img="play.png" text="Voer deze ... wijziging(en) door"/>. Nu worden de wijzigingen effectief uitgevoerd in Office 365 of in de Active Directory.
+5. Start daarna nog eens een volledige synchronisatie. Is alles goed verlopen, dan blijft de wachtrij leeg.
+
+:::caution opgelet
+De knop **Voer deze ... wijziging(en) door** voert **alle** wijzigingen in de wachtrij uit, niet enkel de aangevinkte. De vinkjes dienen om wijzigingen uit de wachtrij te verwijderen. Verwijder dus eerst wat je niet wil, en klik dan pas op doorvoeren.
+:::
+
+Accounts verwijderen of inactief zetten staat apart onder de wachtrij en gebeurt nooit met de knop doorvoeren. Zie [Accounts inactief zetten of verwijderen](#accounts-inactief-zetten-of-verwijderen).
+
+## Office 365
+
+### Belangrijke instellingen
+
+Je vindt ze in **Instellingen => Office365**, per doelgroep (leraren, leerlingen, leerlingen basisschool, externen).
+
+| Instelling | Betekenis |
+| --- | --- |
+| **Office365 Interactief** | Uit: Toolbox gebruikt de app-registratie en je hoeft zelf geen beheerder te zijn in Microsoft. Dat is de aanbevolen werkwijze. |
+| **Office365 Domein leraren** | Het domein van de accounts, bv. `school.be`. Wil je een ander domein per instelling of per vrij veld, gebruik dan **Leraren domein bepalen op**. |
+| **Selecteer enkel leraren met instellingsnummer** | Beperkt de synchronisatie tot bepaalde instellingsnummers. |
+| **Licentie leraren** | De licentie die nieuwe accounts krijgen. |
+| **DisplayName leraren**, **Functie**, **Departement**, **Bedrijf (companyName)**, **Stad** | De gegevens die Toolbox invult bij het account. |
+| **Bepaal groep op** / **Leraren standaard groep(en)** | In welke groepen Toolbox de accounts plaatst. |
+| **Leraren filteren op bedrijfsnaam** / **Leraren filteren op functie** | Toolbox bekijkt enkel accounts met de ingestelde bedrijfsnaam of functie (zie hieronder). |
+| **Leraren uit dienst inactief zetten** | Accounts van personeelsleden die niet meer in Toolbox staan, worden voorgesteld om inactief te zetten. |
+| **Paswoord wijzigen bij login** | De gebruiker moet bij de eerste aanmelding een nieuw wachtwoord kiezen. |
+
+### Welke accounts bekijkt Toolbox?
+
+Toolbox bekijkt enkel de Microsoft-accounts met het domein dat voor de doelgroep ingesteld is. Elk account in dat domein dat niet bij een persoon in Toolbox hoort, komt in de lijst met **te verwijderen** accounts terecht. Dat kunnen ook beheerdersaccounts, gedeelde mailboxen of accounts van andere diensten zijn.
+
+:::tip gebruik een filter
+Delen personeel en andere accounts hetzelfde domein? Vul dan bij de accounts die Toolbox beheert een vaste **bedrijfsnaam** of **functie** in (via de instellingen *Bedrijf* of *Functie*) en zet **Leraren filteren op bedrijfsnaam** of **Leraren filteren op functie** aan. Toolbox bekijkt dan enkel nog accounts met die bedrijfsnaam of functie.
+:::
+
+### Klassen als groep (leerlingen)
+
+In de modules voor leerlingen staat ook de knop **Synchroniseer klassen Office365**. Daarmee maakt Toolbox voor elke klas een dynamische groep aan in Office 365, bv. om in Teams te gebruiken. Met **Prefix voor klassen** en **Suffix voor klassen** in **Instellingen => Office365** bepaal je de naam van die groepen.
+
+## Active Directory
+
+Voor de Active Directory moet de Toolbox Gateway geïnstalleerd en bereikbaar zijn. Je kan de verbinding testen via **Instellingen => Active Directory => Test gateway**. Zie [Synchronisatie met ActiveDirectory](/synchronisatie/synchronisatie_AD/).
+
+De belangrijkste instellingen staan in **Instellingen => Active Directory**, per doelgroep:
+
+| Instelling | Betekenis |
+| --- | --- |
+| **Leraren standaard OU** / **Bepaal OU op** | In welke organisatie-eenheid (OU) Toolbox de accounts plaatst: allemaal in één OU of per instellingsnummer, vrij veld of (bij leerlingen) klas. |
+| **Leraren standaard groep(en)** / **Bepaal groep op** | In welke groepen Toolbox de accounts plaatst. |
+| **Domein leraren** / **UPN Domein leraren** | Het domein van de accounts. |
+| **Display name**, **Omschrijving**, **Title** | De gegevens die Toolbox invult bij het account. |
+| **Homefolder**, **Driveletter**, **Logon script** | De netwerkschijf en het aanmeldscript van de gebruiker. |
+| **Paswoord vervalt nooit**, **Paswoord wijzigen bij login**, **Kan paswoord niet wijzigen** | Het wachtwoordbeleid voor nieuwe accounts. |
+| **Leraren uit dienst verhuizen naar ou** | Accounts van personeelsleden die niet meer in Toolbox staan, worden naar deze OU verplaatst in plaats van voorgesteld om te verwijderen. |
+
+Bij de Active Directory controleert Toolbox ook of elk account in de juiste OU staat. Staat het ergens anders, dan verschijnt er een wijziging om het account te verplaatsen.
+
+:::tip augustus
+Wil je in augustus al de leerlingen van het nieuwe schooljaar aanmaken, stel dan de referentiedatum in. Zie [Opstart schooljaar](/opstart_schooljaar#2-synchronisatie-met-active-directory).
+:::
+
+## Accounts inactief zetten of verwijderen
+
+Onder de wachtrij staan, los van de gewone wijzigingen, de accounts die volgens Toolbox niet meer nodig zijn. Die worden **nooit automatisch** verwijderd.
+
+**Inactief te zetten accounts (Office 365)**
+Staat **Leraren uit dienst inactief zetten** aan, dan zie je de lijst **Personeelsleden inactief zetten**. Vink de accounts aan en klik op <LegacyAction img="noAccess.png" text="Zet deze gebruikers in bulk inactief in Office 365"/>. Een inactief account kan niet meer aanmelden, maar het account en de gegevens blijven bewaard.
+
+**Uit dienst te zetten accounts (Active Directory)**
+Is **Leraren uit dienst verhuizen naar ou** ingevuld, dan komen deze accounts als wijziging *uitdienst* in de wachtrij. Ze worden naar die OU verplaatst wanneer je de wachtrij doorvoert.
+
+**Te verwijderen accounts**
+Klik bij een account op <LegacyAction img="noAccess.png"/> om het te verwijderen en bevestig. Bij de Active Directory krijg je onder **In batch verwijderen** ook een PowerShell-script met alle te verwijderen accounts, dat je zelf op de server kan uitvoeren.
+
+:::danger kijk elke lijn na
+Controleer voor je iets inactief zet of verwijdert altijd of het account echt weg mag. Staat er een account tussen dat je wil behouden (bv. van een personeelslid dat [niet effectief in dienst](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#personeelslid-uit-dienst-zetten) staat), laat het dan gewoon staan. Zet bij voorkeur eerst inactief en verwijder pas later.
+:::
+
+---
+
+## Aan de slag met synchroniseren
+
+<ImageTitle img="externen.png">Aan de slag met synchroniseren</ImageTitle>
+
+Ben je nieuw in Toolbox en moet je de synchronisaties uitvoeren? Dan ben je hier aan het juiste adres. Dit stappenplan legt uit in welke volgorde je de synchronisaties uitvoert, wat er bij elke stap gebeurt en waar je extra moet opletten. De technische koppelingen (bv. de Toolbox Gateway of de app-registratie bij Microsoft) moeten op voorhand al in orde zijn. Die vind je verder in het onderdeel [Synchronisatiemodules](/synchronisatie).
+
+## Het principe
+
+Het **administratief pakket** (Informat, Wisa, Broekx of DKO3) is altijd het vertrekpunt. Daar worden personeelsleden en leerlingen ingeschreven en up-to-date gehouden. Toolbox haalt die gegevens op, maakt er gebruikers van met een gebruikersnaam en een wachtwoord en stuurt ze daarna door naar de andere platformen die de school gebruikt, zoals Smartschool, Google Workspace, Office 365 of Active Directory.
+
+![Schema van de synchronisatie: administratief pakket, Toolbox en andere platformen](./synchronisatieschema.svg)
+
+Dat betekent ook:
+- Personeelsleden en leerlingen maak je **nooit manueel** aan in Toolbox. Ontbreekt er iemand, kijk dan eerst na of die persoon correct in het administratief pakket staat.
+- Gegevens zoals naam, adres of klas wijzig je **in het administratief pakket** en niet in Toolbox. Bij de volgende synchronisatie worden ze automatisch overgenomen.
+- Accounts die door Toolbox beheerd worden, maak je bij voorkeur ook niet manueel aan in Smartschool, Google of Microsoft. Zo voorkom je dubbele accounts en verschillende gebruikersnamen.
+
+## De synchronisatiemodules
+
+Er is een aparte synchronisatiemodule per doelgroep. Elke module werkt op dezelfde manier.
+
+| Module | Voor wie? | Gegevens komen uit |
+| --- | --- | --- |
+| **Synchronisatie leraren** | alle personeelsleden | Informat, Wisa, Broekx of DKO3 |
+| **Synchronisatie leerlingen** | leerlingen secundair onderwijs | Informat, Wisa, Broekx of DKO3 |
+| **Synchronisatie leerlingen basisschool** | leerlingen basisonderwijs | Informat, Wisa, Broekx of DKO3 |
+| **Synchronisatie leerlingen internaat** | internen | Informat of Wisa |
+| **Synchronisatie externen** | externe medewerkers (CLB, ondersteuners, ...) | worden in Toolbox zelf beheerd |
+
+Zie je de module niet op je startpagina? Vraag dan aan een beheerder om je het juiste gebruikersrecht te geven via de module [Gebruikersbeheer](/gebruikersbeheer). Het gebruikersrecht heeft dezelfde naam als de module:
+- `synchronisatie_leraren`
+- `synchronisatie_leerlingen`
+- `synchronisatie_leerlingen_basisschool`
+- `synchronisatie_leerlingen_internaat`
+- `synchronisatie_externen`
+
+Uit welk administratief pakket de gegevens komen, stel je in via **Instellingen => Synchronisatie leraren => Gegevens leraren ophalen uit** en **Instellingen => Synchronisatie leerlingen => Gegevens leerlingen ophalen uit**.
+
+## Zo ziet een synchronisatiemodule eruit
+
+Links staat het menu, rechts verschijnt het verslag van de stap die je uitvoert. Het menu is opgedeeld in blokken:
+
+1. **Ophalen en synchroniseren**: *Informat uitlezen* (of *Wisa*, *Broekx* of *DKO3 uitlezen*), *Synchroniseer leraren/leerlingen* en *Controle gebruikersnamen*.
+2. **Google en Office 365**: *Synchroniseer met Google* en *Synchroniseer met Office365*.
+3. **Andere platformen**: *Synchroniseer met ActiveDirectory*, *Synchroniseer met Exact Online*, *Synchroniseer met Colibris*, ...
+4. **Smartschool**: een blok per Smartschoolplatform, met de naam van het platform als titel.
+5. **Inloggegevens**: *PDF afdrukken* en *Exporteer XLSX*.
+
+Je ziet enkel de onderdelen die voor jouw school aangezet zijn. Of een platform in het menu verschijnt, bepaal je in de instellingen van de synchronisatiemodule (bv. **Instellingen => Synchronisatie leraren => Synchroniseer met Office365**).
+
+:::tip geduld
+Het verslag verschijnt pas wanneer een stap volledig klaar is. Bij grote scholen kan dat enkele minuten duren. Zolang je het laadicoon ziet, klik je niet opnieuw en sluit je de pagina niet.
+:::
+
+## De volgorde in het kort
+
+Voer de synchronisaties altijd in deze volgorde uit:
+
+1. **[Administratief pakket uitlezen](/synchronisatie/stappenplan/administratief_pakket/)**: de meest recente gegevens ophalen.
+2. **[Synchroniseren naar Toolbox](/synchronisatie/stappenplan/administratief_pakket/#stap-2-synchroniseren-naar-toolbox)**: nieuwe personen toevoegen, gewijzigde gegevens bijwerken en vertrokken personen uit dienst zetten of uitschrijven.
+3. **[Gebruikersnamen controleren](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/)** en eventueel personeelsleden **uit dienst zetten** die niet mee gesynchroniseerd mogen worden.
+4. **Synchroniseren met de andere platformen**: [Smartschool](/synchronisatie/stappenplan/smartschool/), [Google](/synchronisatie/stappenplan/google/) en [Microsoft (Office 365 en Active Directory)](/synchronisatie/stappenplan/microsoft/). De volgorde tussen deze platformen maakt niet uit.
+5. **Inloggegevens bezorgen** aan nieuwe personeelsleden en leerlingen via *PDF afdrukken* of *Exporteer XLSX*. Meer info vind je bij [Synchronisatie leraren](/synchronisatie/synchronisatie_leraren/#inloggegevens) en [Synchronisatie leerlingen](/synchronisatie/synchronisatie_lln/#inloggegevens).
+
+:::caution opgelet
+Begin altijd met stap 1 en 2. Synchroniseer je meteen met bv. Smartschool of Office 365, dan werk je met de gegevens van de vorige keer en worden nieuwe personeelsleden of leerlingen nog niet meegenomen.
+:::
+
+## Hoe vaak synchroniseren?
+
+Synchroniseer telkens wanneer er iets gewijzigd is in het administratief pakket: een nieuw personeelslid, een personeelslid dat vertrekt, een nieuwe leerling, een klaswijziging, ... Rond de start van het schooljaar is dat vaak, tijdens het schooljaar kan je bijvoorbeeld wekelijks synchroniseren.
+
+Wil je eind augustus al de leerlingen en personeelsleden van het nieuwe schooljaar ophalen? Stel dan eerst de referentiedatum in zoals beschreven bij [Opstart schooljaar](/opstart_schooljaar).
+
+## Vijf gouden regels
+
+1. **Eerst uitlezen, dan synchroniseren.** Stap 1 en 2 komen altijd eerst.
+2. **Eerst kijken, dan uitvoeren.** Bij Smartschool kan je de wijzigingen eerst enkel laten tonen. Bij Office 365, Active Directory en Google zie je eerst een lijst met voorgestelde wijzigingen die je pas daarna uitvoert. Lees die lijst altijd na.
+3. **Verwijder nooit blind.** Toolbox stelt soms voor om accounts te verwijderen of inactief te zetten. Kijk telkens na of dat de bedoeling is: verwijderde accounts en hun gegevens krijg je meestal niet meer terug.
+4. **Eén gebruikersnaam overal.** De gebruikersnaam in Toolbox moet dezelfde zijn als in Smartschool, Google en Microsoft. Anders lukt aanmelden via single sign-on niet.
+5. **Wijzig gegevens in het administratief pakket.** Enkel de gebruikersnaam, het koppelveld lesrooster en de opties *effectief in dienst* en *persistent* beheer je in Toolbox zelf.
+
+## Eenmalige voorbereiding
+
+Voor je de eerste keer synchroniseert, moet het volgende ingesteld zijn. Meestal gebeurt dat samen met de Toolbox helpdesk.
+
+- De koppeling met het administratief pakket. Zie [Koppeling met administratief pakket](/synchronisatie/synchronisatie_leraren/#koppeling-met-administratief-pakket).
+- Het formaat van de gebruikersnamen en de maximale lengte, via **Instellingen => Synchronisatie leraren** en **Instellingen => Synchronisatie leerlingen**. Kies dit formaat bij voorkeur één keer en wijzig het daarna niet meer.
+- De koppeling met elk platform waarmee je wil synchroniseren:
+    - [Smartschool](/synchronisatie/synchronisatie%20Smartschool/)
+    - [Google Workspace](/synchronisatie/Google/)
+    - [Office 365](/synchronisatie/O365_app_credentials/)
+    - [Active Directory](/synchronisatie/synchronisatie_AD/)
+    - [Exact Online](/synchronisatie/synchronisatie_EOL/) en [Colibris](/synchronisatie/synchronisatie_colibris/)
+
+Klaar? Ga verder met [stap 1 en 2: uitlezen en synchroniseren naar Toolbox](/synchronisatie/stappenplan/administratief_pakket/).
+
+---
+
 ## Synchronisatie leerlingen (basisschool) en internaten
 
 <ImageTitle img="leerlingen.png">Synchronisatie leerlingen (basisschool) en internaten</ImageTitle>
 <ImageTitle img="basisschool.png">Sync leerlingen basisschool</ImageTitle>
 <ImageTitle img="internaat.png">Sync leerlingen internaat</ImageTitle>
 
-In Toolbox moeten leerlingen nooit manueel worden aangemaakt. Het vertrekpunt is steeds het administratief pakket waar het leerlingendossier up-to-date gehouden wordt. Via de synchronisatiemodules in Toolbox worden de gegevens van leerlingen opgehaald uit Informat of Wisa. In de module Instellingen > Synchronisatie leerlingen (...) kan je instellen uit welke software die gegevens moeten komen.
+In Toolbox moeten leerlingen nooit manueel worden aangemaakt. Het vertrekpunt is steeds het administratief pakket waar het leerlingendossier up-to-date gehouden wordt. Via de synchronisatiemodules in Toolbox worden de gegevens van leerlingen opgehaald uit Informat, Wisa, Broekx of DKO3 (internaten: Informat of Wisa). In de module Instellingen > Synchronisatie leerlingen (...) kan je instellen uit welke software die gegevens moeten komen.
+
+:::tip
+Ben je nieuw met synchroniseren? Volg dan het stappenplan [Aan de slag met synchroniseren](/synchronisatie/stappenplan/).
+:::
 
 Toolbox maakt gebruik van het intern nummer (pointer) uit Informat of Wisa. Bij Informat is dat nummer sowieso uniek. Bij Wisa kan het voorvallen dat een leerling en een personeelslid eenzelfde intern nummer hebben gekregen. Om dat op te lossen kan er in de module Instellingen een prefix ingesteld worden die voor de pointer wordt gezet. Op die manier kunnen leraren en leerlingen uit elkaar gehouden worden.
 
@@ -10987,7 +11529,11 @@ Wil je de leerlingen/personeel van een andere datum opvragen, dan vul je bij de 
 
 <ImageTitle img="leraren.png">Synchronisatie leraren</ImageTitle>
 
-In Toolbox moeten personeelsleden nooit manueel worden aangemaakt. Het vertrekpunt is steeds het administratief pakket waar het personeelsdossier up-to-date gehouden wordt. Via de synchronisatiemodules in Toolbox worden de gegevens van personeelsleden opgehaald uit Informat of Wisa. In de module Instellingen > Synchronisatie leraren kan je instellen uit welke software die gegevens moeten komen.
+In Toolbox moeten personeelsleden nooit manueel worden aangemaakt. Het vertrekpunt is steeds het administratief pakket waar het personeelsdossier up-to-date gehouden wordt. Via de synchronisatiemodules in Toolbox worden de gegevens van personeelsleden opgehaald uit Informat, Wisa, Broekx of DKO3. In de module Instellingen > Synchronisatie leraren kan je instellen uit welke software die gegevens moeten komen.
+
+:::tip
+Ben je nieuw met synchroniseren? Volg dan het stappenplan [Aan de slag met synchroniseren](/synchronisatie/stappenplan/). Daar lees je ook hoe je een personeelslid [uit dienst zet](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#personeelslid-uit-dienst-zetten) zodat het niet mee gesynchroniseerd wordt.
+:::
 
 Toolbox maakt gebruik van het intern nummer (pointer) uit Informat of Wisa. Bij Informat is dat nummer sowieso uniek. Bij Wisa kan het voorvallen dat een leerling en een personeelslid eenzelfde intern nummer hebben gekregen. Om dat op te lossen kan er in de module Instellingen een prefix ingesteld worden die voor de pointer wordt gezet. Op die manier kunnen leraren en leerlingen uit elkaar gehouden worden.
 
@@ -11661,15 +12207,19 @@ Verder is het mogelijk om een in te stellen of Colibris een welkomsmail moet ver
 
 ---
 
-## Sychronisatiemodules
+## Synchronisatiemodules
 
 <ImageTitle img="externen.png">Synchronisatie</ImageTitle>
 
 Toolbox heeft verschillende synchronisatiemodules.
 
-De synchronisatiemodules leraren, leerlingen (basisschool) en internaten halen hun gegevens op uit Informat of Wisa. De synchronisatie Externen laat toe om in Toolbox een lijst van externe medewerkers (bv. ondersteuners, CLB medewerkers, onderhoudspersoneel, ...) op te bouwen en van daaruit te synchroniseren.
+De synchronisatiemodules leraren, leerlingen (basisschool) en internaten halen hun gegevens op uit het administratief pakket: Informat, Wisa, Broekx of DKO3. De synchronisatie Externen laat toe om in Toolbox een lijst van externe medewerkers (bv. ondersteuners, CLB medewerkers, onderhoudspersoneel, ...) op te bouwen en van daaruit te synchroniseren.
 
-Elke module kan synchroniseren met andere software zoals ActiveDirectory, Smartschool of Exact Online.
+Elke module kan synchroniseren met andere software zoals Smartschool, Google Workspace, Office 365, Active Directory, Exact Online of Colibris.
+
+:::tip nieuw met synchroniseren?
+Begin dan bij het stappenplan [Aan de slag met synchroniseren](/synchronisatie/stappenplan/). Daar lees je in welke volgorde je de synchronisaties uitvoert en waar je moet op letten. De andere pagina's in dit onderdeel gaan vooral over het instellen van de koppelingen.
+:::
 
 <DocCardList />
 
