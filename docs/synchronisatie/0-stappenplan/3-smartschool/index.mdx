@@ -1,0 +1,139 @@
+---
+title: "Stap 4: synchroniseren met Smartschool"
+sidebar_label: "Smartschool"
+hide_title: true
+description: "Stappenplan synchronisatie met Smartschool: wijzigingen enkel tonen, personeel synchroniseren, gegevens synchroniseren, groepen overerven, co-accounts voor interims, gebruikersnamen ophalen uit Smartschool, paswoorden instellen, leerlingen synchroniseren, klaswijzigingen, leerlingengegevens, controleer klassen, co-accounts voor ouders."
+---
+
+<ImageTitle img="smartschool.png">Synchroniseren met Smartschool</ImageTitle>
+
+Voer deze stap pas uit nadat je [stap 1 en 2](/synchronisatie/stappenplan/administratief_pakket/) gedaan hebt.
+
+## Voor je begint
+
+- De webservices van Smartschool moeten geactiveerd zijn en het Smartschoolplatform moet ingesteld zijn in **Instellingen => Smartschool**. Zie [Synchronisatie Smartschool](/synchronisatie/synchronisatie%20Smartschool/) voor de technische uitleg.
+- Per platform bepaal je in **Instellingen => Smartschool** wat Toolbox mag doen:
+    - **Synchroniseer leraren met Smartschool**: Toolbox maakt personeelsaccounts aan.
+    - **Synchroniseer leerlingen met smartschool**: Toolbox maakt leerlingenaccounts aan en beheert de klassen.
+    - **Gebruikersnamen overnemen**: Toolbox neemt de gebruikersnamen van leerlingen over uit Smartschool (als Smartschool de leerlingen rechtstreeks uit het administratief pakket krijgt).
+    - **Gebruikt co-accounts**: Toolbox kan co-accounts aanmaken en verzenden.
+- In de synchronisatiemodule staat onderaan een blok per Smartschoolplatform, met de naam van het platform als titel. Heeft je school meerdere platformen (bv. een basisschool en een secundaire school), voer de stappen dan uit per platform.
+
+## Eerst kijken, dan uitvoeren
+
+Boven de Smartschoolblokken staat een knop die aangeeft wat er met de wijzigingen gebeurt:
+
+- **Wijzigingen worden enkel getoond**: Toolbox toont in het verslag wat er zou veranderen, maar past niets aan in Smartschool. Ideaal om te testen.
+- **Wijzigingen worden doorgevoerd!** (in het rood): Toolbox voert de wijzigingen echt uit in Smartschool.
+
+Klik op de knop om te wisselen. De keuze geldt voor alle Smartschoolacties in alle synchronisatiemodules.
+
+:::tip werkwijze voor beginners
+1. Zet de knop op **Wijzigingen worden enkel getoond**.
+2. Voer de gewenste actie uit en lees het verslag na.
+3. Klopt alles? Zet de knop op **Wijzigingen worden doorgevoerd!** en voer dezelfde actie opnieuw uit.
+4. Zet de knop daarna terug op **Wijzigingen worden enkel getoond**, zodat een volgende gebruiker niet per ongeluk wijzigingen doorvoert.
+:::
+
+## Personeel (module Synchronisatie leraren)
+
+| Knop | Wat doet het? |
+| --- | --- |
+| **Synchroniseer met Smartschool** | Maakt personeelsleden die nog niet in Smartschool staan aan. Ze komen eerst in de *webservice groep* en worden daarna verplaatst naar de groep die is ingesteld bij *Personeelsgroep nieuwe leraar*. Onderaan zie je de **te verwijderen leraren**. |
+| **Synchroniseer gegevens** | Vergelijkt de gegevens in Smartschool (naam, adres, gsm, gebruikersnaam, intern nummer, koppelveld schoolagenda, ...) met Toolbox en werkt ze bij. |
+| **Erf groepen over** | Geeft een personeelslid dezelfde Smartschoolgroepen als een ander personeelslid, bv. een vervanger. |
+| **Co-accounts** | Geeft een interimaris toegang tot het account van de leraar die vervangen wordt. |
+| **Titularissen** | Toont de titularissen per klas zoals ze in Smartschool staan. |
+| **Scancodes ophalen** | Neemt de scancodes van de gebruikers over uit Smartschool in Toolbox. |
+
+### Welke personeelsleden worden gesynchroniseerd?
+
+Dat bepaal je per platform in **Instellingen => Smartschool => Leraren synchronisatie => Synchroniseren op**:
+- **Alle leraren**: alle personeelsleden in Toolbox.
+- **Instellingsnummers**: enkel personeelsleden van de gekozen instellingsnummers.
+- **Vrije velden**: enkel personeelsleden met een bepaalde waarde in een vrij veld van het administratief pakket.
+
+Personeelsleden die **niet effectief in dienst** staan (zie [Personeelslid uit dienst zetten](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#personeelslid-uit-dienst-zetten)) en personeelsleden in de lijst **Te negeren leraren** worden nooit meegenomen.
+
+### Te verwijderen leraren
+
+Onderaan het verslag van **Synchroniseer met Smartschool** staat de lijst **Te verwijderen leraren (manueel in Smartschool)**. Dat zijn accounts in de personeelsgroep van Smartschool die niet (meer) in Toolbox gevonden worden. Toolbox verwijdert of blokkeert die accounts **nooit automatisch**. Je ziet per account de laatste login en de huidige status. Via de keuzelijst in de kolom **Status** wijzig je de status van het account in Smartschool.
+
+:::caution opgelet
+Staat er bij een account *Opgelet: deze gebruiker staat geregistreerd in de module Externen!*, dan gaat het om een externe medewerker. Die hoort niet in de lijst van personeelsleden, dus wijzig de status niet zomaar.
+:::
+
+### Groepen overerven
+
+Handig wanneer een vervanger dezelfde klassen en groepen moet krijgen als de leraar die afwezig is.
+
+1. Klik op **Erf groepen over**.
+2. Kies in de eerste keuzelijst het personeelslid dat de groepen krijgt, en in de tweede keuzelijst het personeelslid van wie de groepen overgenomen worden (*... erft de groepen over van ...*).
+3. Je ziet de groepen van dat tweede personeelslid. Vink de groepen aan die je wil overzetten.
+4. Klik op **Zet geselecteerde groepen over**.
+
+Het personeelslid wordt toegevoegd aan de gekozen groepen. De oorspronkelijke leraar blijft ook in die groepen.
+
+### Co-accounts voor interimarissen
+
+Met een co-account kan een interimaris inloggen op het Smartschoolaccount van de leraar die vervangen wordt. Zo krijgt de interimaris toegang tot de berichten, vakken en klassen van die leraar.
+
+1. Klik op **Co-accounts** en selecteer bij **Selecteer de te vervangen leraar** de afwezige leraar.
+2. Je ziet de co-accounts van die leraar. Kies bij een vrije co-account achter **Co-account toewijzen aan** de interimaris. Dat kan een personeelslid of een externe zijn.
+3. Klik op **Wijs toe**.
+4. Download de inloggegevens via **Download PDF** en bezorg ze aan de interimaris.
+5. Klik op de status om in te stellen tot wanneer de co-account actief blijft.
+6. Is de vervanging voorbij, klik dan op **Verwijder deze co-account**.
+
+Via **Haal leraren op** onderaan krijg je een overzicht van alle leraren met co-accounts. Een leraar die beheerder is in Smartschool kan geen co-accounts krijgen.
+
+## Leerlingen (module Synchronisatie leerlingen of leerlingen basisschool)
+
+Welke knoppen je ziet, hangt af van hoe je school werkt.
+
+### Situatie A: Smartschool krijgt de leerlingen rechtstreeks uit het administratief pakket
+
+Sommige scholen laten de leerlingen rechtstreeks van Informat of Wisa naar Smartschool synchroniseren. Toolbox maakt dan zelf geen leerlingenaccounts aan, maar moet wel dezelfde gebruikersnamen gebruiken. Zet in dat geval enkel **Gebruikersnamen overnemen** aan.
+
+| Knop | Wat doet het? |
+| --- | --- |
+| **Haal gebruikersnamen op uit Smartschool** | Zoekt elke leerling op via het intern nummer en neemt de gebruikersnaam uit Smartschool over in Toolbox. Voer dit uit na elke synchronisatie (stap 1 en 2), zodat ook nieuwe leerlingen de juiste gebruikersnaam krijgen. |
+| **Paswoorden instellen** | Stelt in Smartschool het wachtwoord uit Toolbox in, enkel voor leerlingen die **nog nooit** in Smartschool ingelogd hebben. Zo kunnen nieuwe leerlingen inloggen met de gegevens van de PDF uit Toolbox. |
+
+### Situatie B: Toolbox synchroniseert de leerlingen naar Smartschool
+
+Staat **Synchroniseer leerlingen met smartschool** aan, dan beheert Toolbox de leerlingenaccounts en hun klassen.
+
+| Knop | Wat doet het? |
+| --- | --- |
+| **Controleer klassen** | Vergelijkt de klassen en groepen in Toolbox met die in Smartschool. Ontbrekende groepen worden aangemaakt. Officiële klassen kunnen niet automatisch aangemaakt worden: die maak je zelf aan in Smartschool. |
+| **Synchroniseer met Smartschool** | Maakt nieuwe leerlingen aan en plaatst ze in hun klas. Staat in **Instellingen => Smartschool** de optie **Leerlingen uitschrijven** aan, dan worden leerlingen die niet meer ingeschreven zijn ook uitgeschreven in Smartschool. |
+| **Klaswijzigingen** | Controleert per klas welke leerlingen erbij moeten en welke eruit moeten, en past dat aan. |
+| **Leerlingengegevens** | Werkt de gegevens van de leerlingen bij in Smartschool: afhankelijk van de instellingen adres, geslacht, geboortegegevens, rijksregisternummer, relaties, ... |
+| **Haal bijkomende groepen op** | Neemt de bijkomende (niet-officiële) groepen waarin leerlingen in Smartschool zitten over in Toolbox, zodat je ze in andere modules kan gebruiken. |
+| **Activeer alle leerlingen** | Zet leerlingen die in Smartschool op niet-actief staan terug actief. |
+| **Nieuwe leerlingen** | Maakt al accounts aan voor leerlingen die ingeschreven zijn voor het volgende schooljaar. Deze knop verschijnt enkel als er een schooljaar voor de inschrijvingen ingesteld is. |
+
+Een goede volgorde is:
+
+1. **Controleer klassen** (zeker bij de start van het schooljaar of als er nieuwe klassen zijn);
+2. **Synchroniseer met Smartschool**;
+3. **Klaswijzigingen**;
+4. **Leerlingengegevens**.
+
+Welke leerlingen meegaan, bepaal je per platform via **Instellingen => Smartschool => Leerlingen synchronisatie => Synchroniseren op** (alle leerlingen, op klas, op instellingsnummer of op vestigingscode).
+
+### Co-accounts voor ouders
+
+Staat **Gebruikt co-accounts** aan, dan zie je ook de knoppen **Maak Co-accounts** en **Verzend Co-accounts**. Daarmee maak je in bulk co-accounts aan voor de ouders, op basis van de relaties in het administratief pakket, en verstuur je de inloggegevens. De volledige werkwijze staat bij [Smartschool co-accounts](/smartschool_coaccounts).
+
+## Veelvoorkomende problemen
+
+**Er blijven gebruikers in de webservice groep staan.**<br />
+Nieuwe accounts komen eerst in de webservice groep en worden daarna verplaatst. Blijven ze daar staan, dan klopt er iets niet in de instellingen van het platform, bv. de groep bij *Personeelsgroep nieuwe leraar* of de unieke klas- of groepscode. Zie [Synchronisatie Smartschool](/synchronisatie/synchronisatie%20Smartschool/#doelgroep).
+
+**Een personeelslid staat al in Smartschool, maar Toolbox wil het opnieuw aanmaken.**<br />
+Toolbox zoekt personeelsleden in Smartschool op via de gebruikersnaam. Verschilt die gebruikersnaam tussen Toolbox en Smartschool, dan ziet Toolbox het personeelslid als nieuw. Het staat dan ook in de lijst *Te verwijderen leraren*. Pas de gebruikersnaam in Toolbox aan via [Controle gebruikersnamen](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#controle-gebruikersnamen), zodat die overeenkomt met Smartschool. Werk daarbij eerst met **Wijzigingen worden enkel getoond**, zodat er geen dubbel account aangemaakt wordt.
+
+**"Fout bij ..." gevolgd door een foutcode.**<br />
+Dat is een foutmelding van Smartschool zelf. Vaak ontbreekt er een methode in het webserviceprofiel. Kijk de lijst met methodes na bij [Synchronisatie Smartschool](/synchronisatie/synchronisatie%20Smartschool/#profielen).

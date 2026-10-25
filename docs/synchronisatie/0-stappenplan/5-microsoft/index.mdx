@@ -1,0 +1,108 @@
+---
+title: "Stap 4: synchroniseren met Microsoft (Office 365 en Active Directory)"
+sidebar_label: "Microsoft (Office 365 en AD)"
+hide_title: true
+description: "Stappenplan synchronisatie met Microsoft: Office 365 (Entra ID) en Active Directory, volledige synchronisatie, wachtrij met mutaties, wijzigingen doorvoeren, mutaties verwijderen, accounts inactief zetten, accounts verwijderen, klassen als dynamische groep."
+---
+
+<ImageTitle img="activeDirectory.png">Synchroniseren met Microsoft</ImageTitle>
+
+Voer deze stap pas uit nadat je [stap 1 en 2](/synchronisatie/stappenplan/administratief_pakket/) gedaan hebt en de [gebruikersnamen](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/) gecontroleerd zijn.
+
+## Office 365 of Active Directory?
+
+Toolbox kan met twee Microsoft-omgevingen synchroniseren:
+
+| | Office 365 | Active Directory |
+| --- | --- | --- |
+| **Wat?** | De cloudaccounts van Microsoft 365 (Entra ID) voor Teams, Outlook, OneDrive, ... | Het lokale Windows-domein van de school, bv. om aan te melden op schoolcomputers. |
+| **Hoe praat Toolbox ermee?** | Rechtstreeks, via een app-registratie. Zie [Synchronisatie O365 via app-credentials](/synchronisatie/O365_app_credentials/). | Via de Toolbox Gateway op een server in de school. Zie [Synchronisatie met ActiveDirectory](/synchronisatie/synchronisatie_AD/). |
+| **Knop in de synchronisatiemodule** | **Synchroniseer met Office365** | **Synchroniseer met ActiveDirectory** |
+| **Aanzetten via** | **Instellingen => Synchronisatie leraren => Synchroniseer met Office365** | **Instellingen => Synchronisatie leraren => Synchroniseer met ActiveDirectory** |
+
+Welke van de twee je nodig hebt, hangt af van het netwerk van de school. Synchroniseert je lokale Active Directory zelf al naar Microsoft 365 (bv. via Entra Connect), dan maak je de accounts aan in de Active Directory en niet rechtstreeks in Office 365. Twijfel je? Vraag het na bij je ICT-verantwoordelijke of bij de Toolbox helpdesk.
+
+## Werkwijze: eerst zoeken, dan doorvoeren
+
+Office 365 en Active Directory werken op dezelfde manier: Toolbox zoekt eerst alle wijzigingen en zet ze in een **wachtrij**. Pas wanneer jij op de knop klikt, worden ze uitgevoerd.
+
+1. Klik in de synchronisatiemodule op **Synchroniseer met Office365** of **Synchroniseer met ActiveDirectory**. Je ziet de wijzigingen die nog in de wachtrij staan, of de melding *Er staan geen wijzigingen in de wachtrij*.
+2. Klik op <LegacyAction img="sync.png" text="Start volledige synchronisatie"/>. Toolbox vergelijkt de gebruikers in Toolbox met de accounts in Microsoft en zet alle gevonden wijzigingen in de wachtrij. Een eventuele oude wachtrij wordt vervangen. Er wordt nog **niets** uitgevoerd.
+3. **Controleer de wachtrij.** Je ziet per wijziging de gebruikersnaam, de actie (bv. *toevoegen*, *naam_wijzigen*, *groep_toevoegen*), de oude en de nieuwe waarde. Is een wijziging niet gewenst? Vink ze aan en klik op <LegacyAction img="remove.png" text="Verwijder geselecteerde mutaties"/>. Het account zelf blijft dan ongewijzigd.
+4. Klik op <LegacyAction img="play.png" text="Voer deze ... wijziging(en) door"/>. Nu worden de wijzigingen effectief uitgevoerd in Office 365 of in de Active Directory.
+5. Start daarna nog eens een volledige synchronisatie. Is alles goed verlopen, dan blijft de wachtrij leeg.
+
+:::caution opgelet
+De knop **Voer deze ... wijziging(en) door** voert **alle** wijzigingen in de wachtrij uit, niet enkel de aangevinkte. De vinkjes dienen om wijzigingen uit de wachtrij te verwijderen. Verwijder dus eerst wat je niet wil, en klik dan pas op doorvoeren.
+:::
+
+Accounts verwijderen of inactief zetten staat apart onder de wachtrij en gebeurt nooit met de knop doorvoeren. Zie [Accounts inactief zetten of verwijderen](#accounts-inactief-zetten-of-verwijderen).
+
+## Office 365
+
+### Belangrijke instellingen
+
+Je vindt ze in **Instellingen => Office365**, per doelgroep (leraren, leerlingen, leerlingen basisschool, externen).
+
+| Instelling | Betekenis |
+| --- | --- |
+| **Office365 Interactief** | Uit: Toolbox gebruikt de app-registratie en je hoeft zelf geen beheerder te zijn in Microsoft. Dat is de aanbevolen werkwijze. |
+| **Office365 Domein leraren** | Het domein van de accounts, bv. `school.be`. Wil je een ander domein per instelling of per vrij veld, gebruik dan **Leraren domein bepalen op**. |
+| **Selecteer enkel leraren met instellingsnummer** | Beperkt de synchronisatie tot bepaalde instellingsnummers. |
+| **Licentie leraren** | De licentie die nieuwe accounts krijgen. |
+| **DisplayName leraren**, **Functie**, **Departement**, **Bedrijf (companyName)**, **Stad** | De gegevens die Toolbox invult bij het account. |
+| **Bepaal groep op** / **Leraren standaard groep(en)** | In welke groepen Toolbox de accounts plaatst. |
+| **Leraren filteren op bedrijfsnaam** / **Leraren filteren op functie** | Toolbox bekijkt enkel accounts met de ingestelde bedrijfsnaam of functie (zie hieronder). |
+| **Leraren uit dienst inactief zetten** | Accounts van personeelsleden die niet meer in Toolbox staan, worden voorgesteld om inactief te zetten. |
+| **Paswoord wijzigen bij login** | De gebruiker moet bij de eerste aanmelding een nieuw wachtwoord kiezen. |
+
+### Welke accounts bekijkt Toolbox?
+
+Toolbox bekijkt enkel de Microsoft-accounts met het domein dat voor de doelgroep ingesteld is. Elk account in dat domein dat niet bij een persoon in Toolbox hoort, komt in de lijst met **te verwijderen** accounts terecht. Dat kunnen ook beheerdersaccounts, gedeelde mailboxen of accounts van andere diensten zijn.
+
+:::tip gebruik een filter
+Delen personeel en andere accounts hetzelfde domein? Vul dan bij de accounts die Toolbox beheert een vaste **bedrijfsnaam** of **functie** in (via de instellingen *Bedrijf* of *Functie*) en zet **Leraren filteren op bedrijfsnaam** of **Leraren filteren op functie** aan. Toolbox bekijkt dan enkel nog accounts met die bedrijfsnaam of functie.
+:::
+
+### Klassen als groep (leerlingen)
+
+In de modules voor leerlingen staat ook de knop **Synchroniseer klassen Office365**. Daarmee maakt Toolbox voor elke klas een dynamische groep aan in Office 365, bv. om in Teams te gebruiken. Met **Prefix voor klassen** en **Suffix voor klassen** in **Instellingen => Office365** bepaal je de naam van die groepen.
+
+## Active Directory
+
+Voor de Active Directory moet de Toolbox Gateway geïnstalleerd en bereikbaar zijn. Je kan de verbinding testen via **Instellingen => Active Directory => Test gateway**. Zie [Synchronisatie met ActiveDirectory](/synchronisatie/synchronisatie_AD/).
+
+De belangrijkste instellingen staan in **Instellingen => Active Directory**, per doelgroep:
+
+| Instelling | Betekenis |
+| --- | --- |
+| **Leraren standaard OU** / **Bepaal OU op** | In welke organisatie-eenheid (OU) Toolbox de accounts plaatst: allemaal in één OU of per instellingsnummer, vrij veld of (bij leerlingen) klas. |
+| **Leraren standaard groep(en)** / **Bepaal groep op** | In welke groepen Toolbox de accounts plaatst. |
+| **Domein leraren** / **UPN Domein leraren** | Het domein van de accounts. |
+| **Display name**, **Omschrijving**, **Title** | De gegevens die Toolbox invult bij het account. |
+| **Homefolder**, **Driveletter**, **Logon script** | De netwerkschijf en het aanmeldscript van de gebruiker. |
+| **Paswoord vervalt nooit**, **Paswoord wijzigen bij login**, **Kan paswoord niet wijzigen** | Het wachtwoordbeleid voor nieuwe accounts. |
+| **Leraren uit dienst verhuizen naar ou** | Accounts van personeelsleden die niet meer in Toolbox staan, worden naar deze OU verplaatst in plaats van voorgesteld om te verwijderen. |
+
+Bij de Active Directory controleert Toolbox ook of elk account in de juiste OU staat. Staat het ergens anders, dan verschijnt er een wijziging om het account te verplaatsen.
+
+:::tip augustus
+Wil je in augustus al de leerlingen van het nieuwe schooljaar aanmaken, stel dan de referentiedatum in. Zie [Opstart schooljaar](/opstart_schooljaar#2-synchronisatie-met-active-directory).
+:::
+
+## Accounts inactief zetten of verwijderen
+
+Onder de wachtrij staan, los van de gewone wijzigingen, de accounts die volgens Toolbox niet meer nodig zijn. Die worden **nooit automatisch** verwijderd.
+
+**Inactief te zetten accounts (Office 365)**<br />
+Staat **Leraren uit dienst inactief zetten** aan, dan zie je de lijst **Personeelsleden inactief zetten**. Vink de accounts aan en klik op <LegacyAction img="noAccess.png" text="Zet deze gebruikers in bulk inactief in Office 365"/>. Een inactief account kan niet meer aanmelden, maar het account en de gegevens blijven bewaard.
+
+**Uit dienst te zetten accounts (Active Directory)**<br />
+Is **Leraren uit dienst verhuizen naar ou** ingevuld, dan komen deze accounts als wijziging *uitdienst* in de wachtrij. Ze worden naar die OU verplaatst wanneer je de wachtrij doorvoert.
+
+**Te verwijderen accounts**<br />
+Klik bij een account op <LegacyAction img="noAccess.png"/> om het te verwijderen en bevestig. Bij de Active Directory krijg je onder **In batch verwijderen** ook een PowerShell-script met alle te verwijderen accounts, dat je zelf op de server kan uitvoeren.
+
+:::danger kijk elke lijn na
+Controleer voor je iets inactief zet of verwijdert altijd of het account echt weg mag. Staat er een account tussen dat je wil behouden (bv. van een personeelslid dat [niet effectief in dienst](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#personeelslid-uit-dienst-zetten) staat), laat het dan gewoon staan. Zet bij voorkeur eerst inactief en verwijder pas later.
+:::

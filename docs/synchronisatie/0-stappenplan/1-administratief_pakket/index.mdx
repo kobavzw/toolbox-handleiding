@@ -1,0 +1,64 @@
+---
+title: "Stap 1 en 2: uitlezen en synchroniseren naar Toolbox"
+sidebar_label: "Uitlezen en synchroniseren"
+description: "Stappenplan synchronisatie: Informat, Wisa, Broekx of DKO3 uitlezen, synchroniseer leraren, synchroniseer leerlingen, nieuwe personeelsleden, personeelsleden uit dienst, uitgeschreven leerlingen, dubbele afkortingen, persistente gebruiker."
+---
+
+Elke synchronisatie begint met dezelfde twee stappen in de synchronisatiemodule (bv. **Synchronisatie leraren** of **Synchronisatie leerlingen**). Ze staan bovenaan in het menu links.
+
+## Stap 1: het administratief pakket uitlezen
+
+Klik op **Informat uitlezen**. Werkt je school met een ander pakket, dan heet de knop **Wisa uitlezen**, **Broekx uitlezen** of **DKO3 uitlezen**.
+
+Toolbox haalt nu alle personeelsleden of leerlingen op uit het administratief pakket en zet ze in een **tijdelijke tabel**. In Toolbox zelf is er op dat moment nog niets gewijzigd: gebruikers, gebruikersnamen en wachtwoorden blijven zoals ze waren.
+
+Toolbox haalt enkel gegevens op van:
+- de **instellingsnummers** die ingesteld zijn in Toolbox;
+- personeelsleden die op de **referentiedatum** in dienst zijn en leerlingen die op die datum ingeschreven zijn. Standaard is dat vandaag. Rond de start van het schooljaar kan je een andere datum instellen, zie [Opstart schooljaar](/opstart_schooljaar).
+
+Lees het verslag rechts na. Krijg je een foutmelding over de verbinding of over ontbrekende rechten, neem dan contact op met de Toolbox helpdesk.
+
+## Stap 2: synchroniseren naar Toolbox
+
+Klik op **Synchroniseer leraren** (of **Synchroniseer leerlingen**). Toolbox vergelijkt nu de tijdelijke tabel met de gebruikers die al in Toolbox staan.
+
+### Wat gebeurt er met personeelsleden?
+
+| Situatie | Wat doet Toolbox? |
+| --- | --- |
+| **Nieuw personeelslid** | Wordt toegevoegd aan Toolbox. Toolbox berekent een gebruikersnaam (volgens het formaat in de instellingen) en een wachtwoord. Het personeelslid heeft meteen toegang tot de basismodules van Toolbox. |
+| **Bestaand personeelslid** | De persoonlijke gegevens (naam, adres, e-mailadres, afkorting, ...) worden bijgewerkt. De **gebruikersnaam wordt niet automatisch gewijzigd**, ook niet bij een naamswijziging. Zie [Gebruikersnamen controleren](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/). |
+| **Personeelslid komt terug in dienst** | Wordt terug in dienst gezet met dezelfde gebruikersnaam als vroeger. Gebruikersrechten die vroeger toegekend waren, moet je opnieuw toekennen via [Gebruikersbeheer](/gebruikersbeheer). |
+| **Personeelslid staat niet meer in het administratief pakket** | Wordt **uit dienst** gezet. De gebruikersrechten in Toolbox worden ingetrokken en de persoon wordt niet meer meegenomen in de andere synchronisaties. Is het personeelslid *persistent* gemaakt, dan blijft het wel in dienst. |
+
+### Wat gebeurt er met leerlingen?
+
+| Situatie | Wat doet Toolbox? |
+| --- | --- |
+| **Nieuwe leerling** | Wordt toegevoegd met een berekende gebruikersnaam en een wachtwoord. |
+| **Bestaande leerling** | Gewijzigde gegevens (bv. klas, adres, ...) worden bijgewerkt. Het verslag toont per leerling welk veld gewijzigd is. |
+| **Leerling staat niet meer in het administratief pakket** | Wordt in Toolbox **uitgeschreven**. |
+
+### Controle op dubbele afkortingen (personeel)
+
+Staat in **Instellingen => Synchronisatie leraren** de optie **Controleren op dubbele afkortingen** aan, dan stopt de synchronisatie wanneer twee personeelsleden dezelfde afkorting hebben. Het verslag toont welke afkortingen dubbel zijn. Pas dit aan in het administratief pakket en voer daarna stap 1 en 2 opnieuw uit.
+
+### Personeelsleden die enkel administratief ingeschreven zijn
+
+Sommige personen (bv. regio- of stafmedewerkers) staan niet altijd actief in het administratief pakket, maar moeten wel toegang houden tot Toolbox. Maak die gebruiker dan **persistent** via **Gebruikersbeheer => Gebruikersopties wijzigen**. Een persistente gebruiker blijft altijd in dienst, ook als die niet meer in het administratief pakket gevonden wordt. Meer info vind je bij [Gebruikersopties wijzigen](/gebruikersbeheer#e-gebruikersopties-wijzigen).
+
+Wil je net het omgekeerde (iemand staat wel in het administratief pakket, maar mag niet mee naar Smartschool, Office 365, ...)? Zie dan [Personeelslid uit dienst zetten](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#personeelslid-uit-dienst-zetten).
+
+## Veelvoorkomende problemen
+
+**"Fout: geen leraren in de tijdelijke tabel. Haal opnieuw de gegevens op!"**<br />
+Je hebt stap 2 uitgevoerd zonder eerst stap 1 te doen, of stap 1 gaf geen resultaten. Voer stap 1 opnieuw uit en lees het verslag na.
+
+**Een nieuw personeelslid of een nieuwe leerling ontbreekt.**<br />
+Controleer in het administratief pakket of de persoon op de referentiedatum actief (in dienst of ingeschreven) is, en dat voor een instellingsnummer dat in Toolbox ingesteld staat. Voer daarna stap 1 en 2 opnieuw uit.
+
+**Een personeelslid wordt onterecht uit dienst gezet.**<br />
+Meestal is de opdracht in het administratief pakket afgelopen of nog niet gestart. Pas dit aan in het administratief pakket, of maak de gebruiker persistent als die altijd in dienst moet blijven.
+
+**De voornaam van een personeelslid klopt niet (roepnaam).**<br />
+Gebruikt een personeelslid een andere voornaam dan de officiële? Vul dan in Informat het vrij veld *Roepnaam* in. Zie [Roepnaam](/synchronisatie/synchronisatie_leraren/#roepnaam).

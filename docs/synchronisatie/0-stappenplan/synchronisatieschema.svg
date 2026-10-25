@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 572" width="900" height="572" font-family="'Noto Sans', Arial, Helvetica, sans-serif">
+  <defs>
+    <marker id="pijl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#0038ca"/>
+    </marker>
+  </defs>
+
+  <rect x="1" y="1" width="898" height="570" rx="16" fill="#ffffff" stroke="#e5e7eb" stroke-width="2"/>
+
+  <!-- Administratief pakket -->
+  <rect x="300" y="24" width="300" height="72" rx="10" fill="#f3f4f6" stroke="#9ca3af" stroke-width="1.5"/>
+  <text x="450" y="55" text-anchor="middle" font-size="18" font-weight="bold" fill="#111827">Administratief pakket</text>
+  <text x="450" y="79" text-anchor="middle" font-size="14" fill="#4b5563">Informat · Wisa · Broekx · DKO3</text>
+
+  <!-- Stap 1 -->
+  <line x1="450" y1="96" x2="450" y2="148" stroke="#0038ca" stroke-width="2.5" marker-end="url(#pijl)"/>
+  <text x="470" y="127" font-size="15" font-weight="bold" fill="#0038ca">Stap 1 – gegevens uitlezen</text>
+
+  <!-- Tijdelijke tabel -->
+  <rect x="300" y="152" width="300" height="64" rx="10" fill="#eef2ff" stroke="#0038ca" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="450" y="180" text-anchor="middle" font-size="16" font-weight="bold" fill="#111827">Tijdelijke tabel in Toolbox</text>
+  <text x="450" y="202" text-anchor="middle" font-size="13" fill="#4b5563">er is nog niets gewijzigd</text>
+
+  <!-- Stap 2 -->
+  <line x1="450" y1="216" x2="450" y2="268" stroke="#0038ca" stroke-width="2.5" marker-end="url(#pijl)"/>
+  <text x="470" y="247" font-size="15" font-weight="bold" fill="#0038ca">Stap 2 – synchroniseer leraren / leerlingen</text>
+
+  <!-- Toolbox -->
+  <rect x="250" y="272" width="400" height="76" rx="10" fill="#0038ca"/>
+  <text x="450" y="305" text-anchor="middle" font-size="20" font-weight="bold" fill="#ffffff">Toolbox</text>
+  <text x="450" y="329" text-anchor="middle" font-size="13" fill="#dbe4ff">gebruikers met gebruikersnaam en wachtwoord</text>
+
+  <!-- Stap 3 -->
+  <line x1="650" y1="310" x2="676" y2="310" stroke="#d97706" stroke-width="2" stroke-dasharray="4 3"/>
+  <rect x="676" y="284" width="206" height="52" rx="10" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+  <text x="779" y="306" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">Stap 3 – controleer</text>
+  <text x="779" y="325" text-anchor="middle" font-size="13" fill="#92400e">gebruikersnamen</text>
+
+  <!-- Stap 4 -->
+  <line x1="450" y1="348" x2="450" y2="394" stroke="#0038ca" stroke-width="2.5"/>
+  <text x="470" y="378" font-size="15" font-weight="bold" fill="#0038ca">Stap 4 – synchroniseren met andere platformen</text>
+  <line x1="100" y1="394" x2="800" y2="394" stroke="#0038ca" stroke-width="2.5"/>
+  <line x1="100" y1="393" x2="100" y2="436" stroke="#0038ca" stroke-width="2.5" marker-end="url(#pijl)"/>
+  <line x1="275" y1="394" x2="275" y2="436" stroke="#0038ca" stroke-width="2.5" marker-end="url(#pijl)"/>
+  <line x1="450" y1="394" x2="450" y2="436" stroke="#0038ca" stroke-width="2.5" marker-end="url(#pijl)"/>
+  <line x1="625" y1="394" x2="625" y2="436" stroke="#0038ca" stroke-width="2.5" marker-end="url(#pijl)"/>
+  <line x1="800" y1="393" x2="800" y2="436" stroke="#0038ca" stroke-width="2.5" marker-end="url(#pijl)"/>
+
+  <!-- Platformen -->
+  <g font-size="12" fill="#4b5563" text-anchor="middle">
+    <rect x="20" y="440" width="160" height="88" rx="10" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+    <text x="100" y="470" font-size="15" font-weight="bold" fill="#111827">Smartschool</text>
+    <text x="100" y="492">accounts, klassen</text>
+    <text x="100" y="508">en co-accounts</text>
+
+    <rect x="195" y="440" width="160" height="88" rx="10" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+    <text x="275" y="470" font-size="15" font-weight="bold" fill="#111827">Google Workspace</text>
+    <text x="275" y="492">accounts in de juiste</text>
+    <text x="275" y="508">organisatie-eenheid</text>
+
+    <rect x="370" y="440" width="160" height="88" rx="10" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+    <text x="450" y="470" font-size="15" font-weight="bold" fill="#111827">Office 365</text>
+    <text x="450" y="492">accounts, groepen</text>
+    <text x="450" y="508">en licenties</text>
+
+    <rect x="545" y="440" width="160" height="88" rx="10" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+    <text x="625" y="470" font-size="15" font-weight="bold" fill="#111827">Active Directory</text>
+    <text x="625" y="492">accounts via de</text>
+    <text x="625" y="508">Toolbox Gateway</text>
+
+    <rect x="720" y="440" width="160" height="88" rx="10" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.5"/>
+    <text x="800" y="465" font-size="15" font-weight="bold" fill="#111827">Andere platformen</text>
+    <text x="800" y="485" font-size="13" fill="#111827">Exact Online</text>
+    <text x="800" y="502" font-size="13" fill="#111827">Colibris</text>
+    <text x="800" y="519" font-size="13" fill="#111827">Boekenverkoop</text>
+  </g>
+
+  <text x="450" y="556" text-anchor="middle" font-size="13" fill="#6b7280">Je ziet in stap 4 enkel de platformen die in de instellingen van de synchronisatiemodule aangezet zijn.</text>
+</svg>

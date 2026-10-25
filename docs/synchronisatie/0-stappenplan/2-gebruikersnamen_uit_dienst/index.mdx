@@ -1,0 +1,80 @@
+---
+title: "Stap 3: gebruikersnamen controleren en personeel uit dienst zetten"
+sidebar_label: "Gebruikersnamen en uit dienst"
+description: "Stappenplan synchronisatie: controle gebruikersnamen, controle op lengte, controle op naamswijzigingen, gebruikersnaam vrij wijzigen, gebruikersnaam valideren, herbereken alle gebruikersnamen, personeelslid niet effectief in dienst zetten, persistente gebruiker."
+---
+
+Na stap 1 en 2 staan alle gebruikers in Toolbox. Voor je verder synchroniseert met Smartschool, Google of Microsoft, controleer je best of de gebruikersnamen kloppen en of er personeelsleden zijn die niet mee gesynchroniseerd mogen worden.
+
+## Waarom is de gebruikersnaam zo belangrijk?
+
+- Toolbox gebruikt de gebruikersnaam om accounts aan te maken en terug te vinden in Smartschool, Google en Microsoft.
+- Meld je aan via Smartschool, Microsoft of Google (single sign-on), dan moet de gebruikersnaam in Toolbox **exact dezelfde** zijn als op dat platform. Bij Microsoft en Google is dat alles vóór de @.
+- Toolbox berekent de gebruikersnaam **één keer**, wanneer een persoon voor het eerst gesynchroniseerd wordt. Daarna wordt die nooit meer automatisch aangepast, ook niet bij een naamswijziging in het administratief pakket. Zo blijven de accounts op de andere platformen stabiel.
+
+## Controle gebruikersnamen
+
+Klik in de synchronisatiemodule links op **Controle gebruikersnamen**. Bovenaan zie je een aantal tabbladen:
+
+| Tabblad | Wat zie je? |
+| --- | --- |
+| **Controle op lengte** | Gebruikersnamen die de maximale lengte bereiken. Die lengte stel je in via **Instellingen => Synchronisatie leraren/leerlingen => Maximum lengte gebruikersnaam**. Staat ze op 0, dan wordt 20 karakters gebruikt. |
+| **Controle op naamswijzigingen** | Personen van wie de huidige gebruikersnaam verschilt van de gebruikersnaam die Toolbox nu zou berekenen, bv. na een naamswijziging of omdat de gebruikersnaam ooit manueel gewijzigd werd. |
+| **Vrij wijzigen** | Alle personen, met een filter op naam, instelling en gevalideerd. Bij personeelsleden kan je hier ook aanduiden of iemand *effectief in dienst* is (zie verder). |
+| **Koppelveld lesrooster** | Enkel bij personeelsleden: het veld dat Toolbox koppelt aan de leraar in het roosterprogramma. Zie [Controle lessenrooster](/lessenrooster/uurrooster_beheren/#controle-lessenrooster). |
+
+Wat kan je doen in deze overzichten?
+
+- <LegacyAction img="edit.png"/> **Gebruikersnaam wijzigen**: klik op het potloodje, typ de nieuwe gebruikersnaam en bevestig. Is de gebruikersnaam al in gebruik door iemand anders, dan krijg je een melding en wordt er niets gewijzigd.
+- <LegacyAction img="config.png"/> **Berekende gebruikersnaam overnemen**: in het tabblad *Controle op naamswijzigingen* neem je met één klik de gebruikersnaam over die Toolbox voorstelt.
+- <LegacyAction img="vinkjeGrijsRond.png"/> **Valideren**: heb je een gebruikersnaam nagekeken en is die goed, klik dan op het grijze vinkje. Het wordt groen <LegacyAction img="vinkjeGroenRond.png"/>. Zo weet je bij een volgende controle welke gebruikersnamen al bekeken zijn.
+
+:::danger herbereken alle gebruikersnamen
+Onderaan het tabblad *Controle op naamswijzigingen* staat de knop **Herbereken ALLE gebruikersnamen**. Die berekent de gebruikersnaam van **iedereen** opnieuw, ook van gevalideerde gebruikers en van gebruikers waarvan je de gebruikersnaam bewust gewijzigd hebt. Gebruik deze knop enkel als je zeker weet wat je doet, bv. bij de allereerste opstart van Toolbox.
+:::
+
+### Na het wijzigen van een gebruikersnaam
+
+Een gewijzigde gebruikersnaam in Toolbox moet ook op de andere platformen aangepast worden:
+
+- **Smartschool**: de knop **Synchroniseer gegevens** (personeel) of **Leerlingengegevens** (leerlingen) toont het verschil en past de gebruikersnaam aan als in **Instellingen => Smartschool** de optie **Gebruikersnaam corrigeren** aan staat. Smartschool zoekt de gebruiker daarbij op via het intern nummer, dat moet dus correct ingevuld zijn.
+- **Office 365**: bij de volgende volledige synchronisatie verschijnt een wijziging *gebruikersnaam wijzigen* in de wachtrij.
+- **Google en Active Directory**: controleer na de volgende synchronisatie of de gebruikersnaam correct is aangepast. Doe dit indien nodig manueel.
+
+Kijk het resultaat altijd na. De gebruiker meldt zich daarna aan met de nieuwe gebruikersnaam.
+
+## Personeelslid uit dienst zetten
+
+Soms staat een personeelslid wel in het administratief pakket, maar wil je die persoon **niet** meenemen naar Smartschool, Office 365, Active Directory, Google of Colibris. Denk aan staf- of regiomedewerkers die enkel administratief op de school ingeschreven zijn. Zet die persoon dan op **niet effectief in dienst**.
+
+Dat kan op twee manieren:
+
+1. Via **Synchronisatie leraren => Controle gebruikersnamen => Vrij wijzigen**. In de kolom **Effectief in dienst** klik je op de schakelaar: groen <LegacyAction img="SwitchGreen.png"/> is effectief in dienst, rood is niet effectief in dienst. De wijziging wordt meteen bewaard.
+2. Via **Gebruikersbeheer => Gebruikersopties wijzigen => Gebruiker is effectief in dienst**. Zie [Gebruikersopties wijzigen](/gebruikersbeheer#e-gebruikersopties-wijzigen). Hiervoor moet je beheerder zijn.
+
+Wat gebeurt er dan?
+
+- De persoon blijft gebruiker van Toolbox, met dezelfde gebruikersnaam en dezelfde gebruikersrechten.
+- De persoon wordt niet meer meegenomen in de synchronisaties met Smartschool, Office 365, Active Directory, Google en Colibris.
+- De persoon wordt niet meer getoond in onder meer het [Adresboek](/adresboek) en de [Fotolijst leraren](/fotolijst).
+- De volgende keer dat je stap 1 en 2 uitvoert, blijft deze instelling behouden.
+
+:::caution opgelet
+Heeft het personeelslid al een account in Smartschool, Office 365, Active Directory of Google? Dan beschouwt Toolbox dat account bij de volgende synchronisatie als een account dat er niet meer hoort. Je ziet het dan bij de **te verwijderen**, **inactief te zetten** of **uit dienst te zetten** accounts. Wil je het account behouden, voer die wijziging dan niet uit:
+- bij Office 365 en Active Directory verwijder je de wijziging uit de wachtrij;
+- bij Google zet je de persoon op de negeerlijst (vlagje);
+- bij Smartschool wijzigt Toolbox de status van personeelsaccounts nooit automatisch.
+:::
+
+### Niet effectief in dienst of persistent?
+
+Beide opties lijken op elkaar, maar doen net het omgekeerde:
+
+| | Niet effectief in dienst | Persistent |
+| --- | --- | --- |
+| **Wanneer gebruiken?** | De persoon staat in het administratief pakket, maar mag niet naar de andere platformen. | De persoon staat (soms) niet meer in het administratief pakket, maar moet toegang tot Toolbox houden. |
+| **Toegang tot Toolbox** | Ja | Ja |
+| **Mee naar Smartschool, Office 365, AD, Google** | Nee | Ja |
+| **Waar instellen?** | Controle gebruikersnamen (Vrij wijzigen) of Gebruikersbeheer | Gebruikersbeheer |
+
+Leerlingen kan je niet uit dienst zetten. Zij volgen altijd de inschrijvingen in het administratief pakket.

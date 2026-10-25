@@ -1,0 +1,55 @@
+---
+title: "Stap 4: synchroniseren met Google Workspace"
+sidebar_label: "Google"
+hide_title: true
+description: "Stappenplan synchronisatie met Google Workspace: synchroniseer met Google, herbereken wijzigingen, toe te voegen, aan te passen en te verwijderen accounts, wijzigingen uitvoeren, negeerlijst, organisatie-eenheden."
+---
+
+<ImageTitle img="google.png">Synchroniseren met Google Workspace</ImageTitle>
+
+Voer deze stap pas uit nadat je [stap 1 en 2](/synchronisatie/stappenplan/administratief_pakket/) gedaan hebt en de [gebruikersnamen](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/) gecontroleerd zijn.
+
+## Voor je begint
+
+- De koppeling met Google Workspace moet ingesteld zijn (serviceaccount, adminaccount en de instellingen in Toolbox). Zie [Synchronisatie met Google Workspace](/synchronisatie/Google/).
+- De synchronisatie met Google moet aangezet zijn in de instellingen van de synchronisatiemodule, bv. **Instellingen => Synchronisatie leraren => Synchroniseer met Google GSuite**.
+- In **Instellingen => Google** vul je per doelgroep minstens het volgende in:
+
+| Instelling | Betekenis |
+| --- | --- |
+| **OU Personeel ophalen** / **OU Leerlingen ophalen** | De organisatie-eenheid (OU) in Google waarin Toolbox de bestaande accounts zoekt. Accounts buiten deze OU worden nooit aangepast of verwijderd. |
+| **OU Personeel toevoegen** / **OU Leerlingen toevoegen** | De OU waarin nieuwe accounts aangemaakt worden. |
+| **Maildomein leraren** / **Maildomein leerlingen** | Het domein van het e-mailadres, bv. `school.be`. Het e-mailadres wordt dan *gebruikersnaam@school.be*. |
+| **Leraren/Leerlingen verplicht paswoord laten wijzigen** | De gebruiker moet bij de eerste aanmelding een nieuw wachtwoord kiezen. |
+
+:::tip kies de OU's zorgvuldig
+Laat de OU waarin Toolbox accounts ophaalt enkel de accounts bevatten die Toolbox beheert. Zet beheerdersaccounts, gedeelde accounts en accounts van externe diensten in een andere OU. Zo komen ze nooit in de lijst met te verwijderen accounts terecht.
+:::
+
+## De synchronisatie uitvoeren
+
+1. Klik in de synchronisatiemodule op **Synchroniseer met Google** (bij personeel heet de knop **Synchroniseer met Google v2**). Er opent een nieuw tabblad.
+2. Klik op **Herbereken wijzigingen**. Toolbox vergelijkt de gebruikers in Toolbox met de accounts in Google en toont de voorgestelde wijzigingen in drie blokken:
+    - **Toe te voegen**: personen die nog geen Google-account hebben.
+    - **Aan te passen**: accounts waarvan een gegeven verschilt, bv. de naam, de OU of het departement. Je ziet per wijziging de veldnaam, de oude en de nieuwe waarde.
+    - **Te verwijderen**: Google-accounts in de OU die niet (meer) bij een persoon in Toolbox horen.
+3. Vink de wijzigingen aan die je wil uitvoeren. Met het vinkje bovenaan een blok selecteer je alles in dat blok. In het blok *Aan te passen* kan je ook in één keer alle wijzigingen van hetzelfde veld selecteren.
+4. Klik op **Voer ... wijzigingen uit**. De wijzigingen worden op de achtergrond verwerkt. Daarna zie je per regel een groen vinkje (gelukt) of een rood waarschuwingsteken (mislukt).
+5. Een wijziging die je niet wil uitvoeren, haal je uit de lijst met de knop **Verwijder ...** of met het rode prullenbakje achter de regel. Het Google-account zelf blijft dan ongewijzigd. Bij een volgende herberekening kan de wijziging wel opnieuw voorgesteld worden.
+
+:::danger te verwijderen accounts
+Een uitgevoerde wijziging in het blok **Te verwijderen** verwijdert het account definitief uit Google Workspace, samen met de mails en bestanden, tenzij die eerst overgedragen werden. Kijk deze lijst altijd grondig na en selecteer nooit zomaar het hele blok.
+:::
+
+## Accounts die je wil behouden: de negeerlijst
+
+Wil je een account in Google behouden, ook al hoort het niet (meer) bij een persoon in Toolbox? Bijvoorbeeld een personeelslid dat vertrokken is, maar zijn account nog even mag houden. Klik dan in het blok **Te verwijderen** op het vlagje achter het account en kies **Toevoegen**. Het account komt op de negeerlijst en wordt voortaan niet meer meegenomen in de synchronisatie. Het wordt dus ook nooit verwijderd.
+
+Voor leerlingen kan je ook vaste uitzonderingen instellen via **Instellingen => Google => Leerlingenaccounts die niet verwijderd mogen worden**. Vul daar de gebruikersnamen in (zonder domein), gescheiden door een komma.
+
+## Wie wordt er meegenomen?
+
+- **Personeel**: alle personeelsleden die in dienst zijn, behalve wie op **niet effectief in dienst** staat. Zie [Personeelslid uit dienst zetten](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#personeelslid-uit-dienst-zetten).
+- **Leerlingen**: alle ingeschreven leerlingen. Via **Instellingen => Google** kan je de selectie beperken tot bepaalde instellingsnummers of vestigingscodes, en met **Google Bepaal OU op** de leerlingen per klas of instellingsnummer in een andere OU plaatsen.
+
+Toolbox koppelt een persoon aan een Google-account via het intern nummer (pointer) uit het administratief pakket of via het e-mailadres (*gebruikersnaam@maildomein*, ook aliassen tellen mee). Een account in de OU waarin Toolbox accounts ophaalt, dat op geen van beide manieren bij een persoon in Toolbox past, wordt als *te verwijderen* voorgesteld. Dat gebeurt bv. ook wanneer de gebruikersnaam in Toolbox niet overeenkomt met het e-mailadres in Google en het account nog geen intern nummer heeft. Controleer daarom eerst de [gebruikersnamen](/synchronisatie/stappenplan/gebruikersnamen_uit_dienst/#controle-gebruikersnamen).
