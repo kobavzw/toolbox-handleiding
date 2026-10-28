@@ -172,9 +172,11 @@ In de variabele `$ad_key` zet je een zelfgemaakte willekeurige sleutel die cijfe
 
 Als je de Toolbox Gateway enkel gebruikt voor de communicatie met ActiveDirectory mag je de uniflow_key en de poort_key negeren.
 
-In de lijst van `$allowed_ips` voeg je het IP-adres van je Toolbox toe. Staat je Toolbox op de tbvs.be server, dan is dat IP 217.19.239.174: `$allowed_ips = array('217.19.239.174')`;
+In de lijst van `$allowed_ips` voeg je het IP-adres van je Toolbox toe. 
+Staat je Toolbox op de KOBA server, dan is dat IP 83.217.67.29: `$allowed_ips = array('83.217.67.29')`;
+Staat je Toolbox op de tbvs.be server, dan is dat IP 217.19.239.174: `$allowed_ips = array('217.19.239.174')`;
 
-Configureer vervolgens op je firewall van de school één poortforwarding zodat de webserver (IIS) die je hebt geïnstalleerd vanaf ons IP (217.19.239.174) toegankelijk is. Welke poort je gebruikt, mag je zelf kiezen.
+Configureer vervolgens op je firewall van de school één poortforwarding zodat de webserver (IIS) die je hebt geïnstalleerd vanaf ons IP (83.217.67.29 of 217.19.239.174) toegankelijk is. Welke poort je gebruikt, mag je zelf kiezen.
 
 Ga nu naar je Toolbox - Instellingen - ActiveDirectory. In het onderdeel Gateway vul je nu volgende gegevens in:
 - Push Key: de sleutel die je in de variabele $ad_key hebt gezet
